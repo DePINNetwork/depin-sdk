@@ -26,7 +26,7 @@ require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.4.0
 	github.com/depinnetwork/bip39 v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/btcutil v0.0.0-00010101000000-000000000000
-	github.com/depinnetwork/por-consensus v0.0.0-20250321112806-4b08bd2e2b2b-20250321112100-653b8b4dd1bc-20250321110407-c5e8a59ea541-20250321110407-c5e8a59ea541
+	github.com/depinnetwork/por-consensus v0.0.0-20250321113431-d202622238c6-20250321112806-4b08bd2e2b2b-20250321112100-653b8b4dd1bc-20250321110407-c5e8a59ea541-20250321110407-c5e8a59ea541
 	github.com/depinnetwork/por-consensus/api/cometbft/abci v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/por-consensus/api/cometbft/crypto v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/por-consensus/api/cometbft/p2p v0.0.0-00010101000000-000000000000
