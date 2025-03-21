@@ -81,7 +81,7 @@ and historical state queries, prefix iteration, and state commitment along with
 Merkle proof operations. The `iavl.Store` also provides the ability to remove
 historical state from the state commitment layer.
 
-An overview of the IAVL implementation can be found [here](https://github.com/cosmos/iavl/blob/master/docs/overview.md).
+An overview of the IAVL implementation can be found [here](https://github.com/depinnetwork/iavl/blob/master/docs/overview.md).
 It is important to note that the IAVL store provides both state commitment and
 logical storage operations, which comes with drawbacks as there are various
 performance impacts, some of which are very drastic, when it comes to the

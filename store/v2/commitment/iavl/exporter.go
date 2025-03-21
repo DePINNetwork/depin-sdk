@@ -3,7 +3,7 @@ package iavl
 import (
 	"errors"
 
-	"github.com/cosmos/iavl"
+	"github.com/depinnetwork/iavl"
 
 	"cosmossdk.io/store/v2/commitment"
 	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"

@@ -3,7 +3,7 @@ package bech32
 import (
 	"fmt"
 
-	"github.com/cosmos/btcutil/bech32"
+	"github.com/depinnetwork/btcutil/bech32"
 )
 
 // ConvertAndEncode converts from a base256 encoded byte string to base32 encoded byte string and then to bech32.

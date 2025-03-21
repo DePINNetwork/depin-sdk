@@ -1,7 +1,7 @@
 package hd
 
 import (
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 	"gitlab.com/yawning/secp256k1-voi/secec"
 
 	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"

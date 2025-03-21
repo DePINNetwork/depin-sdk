@@ -6,7 +6,7 @@ import (
 	"io"
 
 	cmtprotocrypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
-	"github.com/cosmos/iavl"
+	"github.com/depinnetwork/iavl"
 	ics23 "github.com/cosmos/ics23/go"
 
 	corestore "cosmossdk.io/core/store"

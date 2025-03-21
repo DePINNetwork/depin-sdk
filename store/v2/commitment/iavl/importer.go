@@ -1,7 +1,7 @@
 package iavl
 
 import (
-	"github.com/cosmos/iavl"
+	"github.com/depinnetwork/iavl"
 
 	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
 )

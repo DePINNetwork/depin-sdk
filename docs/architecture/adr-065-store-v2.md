@@ -228,7 +228,7 @@ performance implications are for such solutions.
 
 ## References
 
-* [1] https://github.com/cosmos/iavl/pull/676
-* [2] https://github.com/cosmos/iavl/pull/664
+* [1] https://github.com/depinnetwork/iavl/pull/676
+* [2] https://github.com/depinnetwork/iavl/pull/664
 * [3] https://github.com/depinnetwork/depin-sdk/issues/14990
 * [4] https://docs.google.com/document/d/e/2PACX-1vSCFfXZm2vsRsACOPoxGqysMaUg7jY833LwR3YyjA1S3FNHfXRiJor-qLjzx833TavLXLPSIcFZJhyh/pub

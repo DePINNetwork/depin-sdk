@@ -1,8 +1,8 @@
 package iavlv2
 
 import (
-	"github.com/cosmos/iavl/v2"
-	"github.com/cosmos/iavl/v2/metrics"
+	"github.com/depinnetwork/iavl/v2"
+	"github.com/depinnetwork/iavl/v2/metrics"
 )
 
 // Config is the configuration for the IAVL v2 tree.

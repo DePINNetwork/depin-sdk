@@ -11,7 +11,7 @@ import (
 
 	cfg "github.com/depinnetwork/por-consensus/config"
 	cmttypes "github.com/depinnetwork/por-consensus/types"
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 	"github.com/spf13/cobra"
 
 	errorsmod "cosmossdk.io/errors"

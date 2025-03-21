@@ -1135,7 +1135,7 @@ CometBFT is an implementation of the Tendermint consensus algorithm, and the suc
 Due to the import changes, this is a breaking change. Chains need to remove **entirely** their imports of Tendermint Core in their codebase, from direct and indirects imports in their `go.mod`.
 
 * Replace `github.com/tendermint/tendermint` by `github.com/depinnetwork/por-consensus`
-* Replace `github.com/tendermint/tm-db` by `github.com/depinnetwork/por-consensus-db`
+* Replace `github.com/depinnetwork/db` by `github.com/depinnetwork/por-consensus-db`
 * Verify `github.com/tendermint/tendermint` is not an indirect or direct dependency
 * Run `make proto-gen`
 

@@ -91,14 +91,14 @@ Issue: https://github.com/depinnetwork/depin-sdk/issues/12272
 
 ### IAVL
 
-* [x] [ADR 001](https://github.com/cosmos/iavl/pull/608) 
+* [x] [ADR 001](https://github.com/depinnetwork/iavl/pull/608) 
     * Implementation has been completed, waiting on reviewers
-* [x] [Prepare the migration path](https://github.com/cosmos/iavl/issues/675) 
+* [x] [Prepare the migration path](https://github.com/depinnetwork/iavl/issues/675) 
     * Migration path has not been finalized
 * [ ] Test on mainnets 
     * If possible we would like to test the new IAVL design on mainnets to observer behavior changes. 
 
-Issue: https://github.com/cosmos/iavl/issues/548
+Issue: https://github.com/depinnetwork/iavl/issues/548
 
 ## Q2
 

@@ -1526,7 +1526,7 @@ EOL notice. This is the last release of the `v0.46.x` line. Per this version, th
 
 ### Improvements
 
-* (deps) Bump IAVL version to [v0.19.4](https://github.com/cosmos/iavl/releases/tag/v0.19.4).
+* (deps) Bump IAVL version to [v0.19.4](https://github.com/depinnetwork/iavl/releases/tag/v0.19.4).
 
 ### Bug Fixes
 
@@ -1978,7 +1978,7 @@ replace github.com/confio/ics23/go => github.com/depinnetwork/depin-sdk/ics23/go
 
 * [#13896](https://github.com/depinnetwork/depin-sdk/pull/13896) Queries on pruned height returns error instead of empty values.
 * (deps) Bump Tendermint version to [v0.34.23](https://github.com/tendermint/tendermint/releases/tag/v0.34.23).
-* (deps) Bump IAVL version to [v0.19.4](https://github.com/cosmos/iavl/releases/tag/v0.19.4).
+* (deps) Bump IAVL version to [v0.19.4](https://github.com/depinnetwork/iavl/releases/tag/v0.19.4).
 
 ### Bug Fixes
 

@@ -3,7 +3,7 @@ package iavl
 import (
 	"testing"
 
-	"github.com/cosmos/iavl"
+	"github.com/depinnetwork/iavl"
 	"github.com/stretchr/testify/require"
 
 	coretesting "cosmossdk.io/core/testing"

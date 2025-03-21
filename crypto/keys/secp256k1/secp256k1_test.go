@@ -9,7 +9,7 @@ import (
 
 	"github.com/depinnetwork/por-consensus/crypto"
 	tmsecp256k1 "github.com/depinnetwork/por-consensus/crypto/secp256k1"
-	"github.com/cosmos/btcutil/base58"
+	"github.com/depinnetwork/btcutil/base58"
 	secp "github.com/decred/dcrd/dcrec/secp256k1/v4"
 	btcecdsa "github.com/decred/dcrd/dcrec/secp256k1/v4/ecdsa"
 	"github.com/stretchr/testify/assert"

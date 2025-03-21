@@ -3,7 +3,7 @@ package iavlv2
 import (
 	"fmt"
 
-	"github.com/cosmos/iavl/v2"
+	"github.com/depinnetwork/iavl/v2"
 	ics23 "github.com/cosmos/ics23/go"
 
 	"cosmossdk.io/core/log"

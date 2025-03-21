@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	iavl_v2 "github.com/cosmos/iavl/v2"
+	iavl_v2 "github.com/depinnetwork/iavl/v2"
 
 	"cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"

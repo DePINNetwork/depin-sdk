@@ -6,7 +6,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 
 	"github.com/depinnetwork/depin-sdk/crypto/hd"
 )

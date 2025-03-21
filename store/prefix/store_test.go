@@ -4,7 +4,7 @@ import (
 	"crypto/rand"
 	"testing"
 
-	tiavl "github.com/cosmos/iavl"
+	tiavl "github.com/depinnetwork/iavl"
 	"github.com/stretchr/testify/require"
 
 	coretesting "cosmossdk.io/core/testing"

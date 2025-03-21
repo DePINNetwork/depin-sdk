@@ -3,7 +3,7 @@ package iavl
 import (
 	"fmt"
 
-	"github.com/cosmos/iavl"
+	"github.com/depinnetwork/iavl"
 
 	corestore "cosmossdk.io/core/store"
 )

@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 

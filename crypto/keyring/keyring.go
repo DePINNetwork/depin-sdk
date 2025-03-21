@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/99designs/keyring"
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 	"golang.org/x/crypto/bcrypt"
 
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"

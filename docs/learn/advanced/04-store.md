@@ -133,13 +133,13 @@ The default implementation of `KVStore` and `CommitKVStore` used in `baseapp` is
 https://github.com/depinnetwork/depin-sdk/blob/store/v1.1.1/store/iavl/store.go#L36-L41
 ```
 
-`iavl` stores are based around an [IAVL Tree](https://github.com/cosmos/iavl), a self-balancing binary tree which guarantees that:
+`iavl` stores are based around an [IAVL Tree](https://github.com/depinnetwork/iavl), a self-balancing binary tree which guarantees that:
 
 * `Get` and `Set` operations are O(log n), where n is the number of elements in the tree.
 * Iteration efficiently returns the sorted elements within the range.
 * Each tree version is immutable and can be retrieved even after a commit (depending on the pruning settings).
 
-The documentation on the IAVL Tree is located [here](https://github.com/cosmos/iavl/blob/master/docs/overview.md).
+The documentation on the IAVL Tree is located [here](https://github.com/depinnetwork/iavl/blob/master/docs/overview.md).
 
 ### `DbAdapter` Store
 

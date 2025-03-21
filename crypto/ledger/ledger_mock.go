@@ -8,7 +8,7 @@ import (
 	"fmt"
 
 	"github.com/depinnetwork/por-consensus/crypto"
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 	secp "github.com/decred/dcrd/dcrec/secp256k1/v4"
 	"github.com/decred/dcrd/dcrec/secp256k1/v4/ecdsa"
 

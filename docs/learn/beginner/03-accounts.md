@@ -211,7 +211,7 @@ After that `secp256r1Algo` can be implemented.
 package hd
 
 import (
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 	
 	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256r1"
 	"github.com/depinnetwork/depin-sdk/crypto/types"

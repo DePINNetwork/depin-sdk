@@ -8,7 +8,7 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/cosmos/iavl"
+	"github.com/depinnetwork/iavl"
 	"github.com/stretchr/testify/require"
 
 	corestore "cosmossdk.io/core/store"

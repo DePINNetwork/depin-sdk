@@ -7,7 +7,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	"github.com/spf13/pflag"
 	"google.golang.org/protobuf/types/known/anypb"

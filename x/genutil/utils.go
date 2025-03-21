@@ -14,7 +14,7 @@ import (
 	tmed25519 "github.com/depinnetwork/por-consensus/crypto/ed25519"
 	"github.com/depinnetwork/por-consensus/p2p"
 	"github.com/depinnetwork/por-consensus/privval"
-	"github.com/cosmos/go-bip39"
+	"github.com/depinnetwork/bip39"
 
 	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
 	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cosmos/iavl/v2"
+	"github.com/depinnetwork/iavl/v2"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
