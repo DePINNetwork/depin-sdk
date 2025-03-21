@@ -17,7 +17,7 @@ import (
 	"cosmossdk.io/client/v2/internal/flags"
 	"cosmossdk.io/core/transaction"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec"
 )
 
 // GenerateAndBroadcastTxCLIWithBroadcaster will either generate and print an unsigned transaction

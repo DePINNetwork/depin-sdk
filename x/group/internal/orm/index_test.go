@@ -11,13 +11,13 @@ import (
 	storetypes "cosmossdk.io/store/types"
 	"cosmossdk.io/x/group/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 var _ Indexable = &nilRowGetterBuilder{}

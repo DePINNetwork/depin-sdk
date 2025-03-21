@@ -12,11 +12,11 @@ import (
 	"cosmossdk.io/x/slashing/simulation"
 	"cosmossdk.io/x/slashing/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

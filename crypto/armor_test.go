@@ -7,7 +7,7 @@ import (
 	"io"
 	"testing"
 
-	cmtcrypto "github.com/cometbft/cometbft/crypto"
+	cmtcrypto "github.com/depinnetwork/por-consensus/crypto"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
@@ -15,19 +15,19 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/bcrypt"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/xsalsa20symmetric"
-	_ "github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/codec/legacy"
+	"github.com/depinnetwork/depin-sdk/crypto"
+	"github.com/depinnetwork/depin-sdk/crypto/hd"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/bcrypt"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/crypto/xsalsa20symmetric"
+	_ "github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil/configurator"
+	"github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestArmorUnarmorPrivKey(t *testing.T) {

@@ -9,11 +9,11 @@ import (
 	"cosmossdk.io/x/bank/testutil"
 	"cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/query"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	vestingtypes "github.com/depinnetwork/depin-sdk/x/auth/vesting/types"
 )
 
 func (suite *KeeperTestSuite) TestQueryBalance() {

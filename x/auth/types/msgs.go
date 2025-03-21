@@ -3,7 +3,7 @@ package types
 import (
 	coretransaction "cosmossdk.io/core/transaction"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // GetMessages returns the cache values from the MsgNonAtomicExec.Msgs if present.

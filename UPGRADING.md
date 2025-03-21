@@ -48,12 +48,12 @@ transaction simulation. -->
 
 #### `x/params`
 
-The `x/params` module has been removed from the Cosmos SDK.  The following [migration](https://github.com/cosmos/cosmos-sdk/blob/828fcf2f05db0c4759ed370852b6dacc589ea472/x/mint/migrations/v2/migrate.go) 
-and [PR](https://github.com/cosmos/cosmos-sdk/pull/12363) can be used as a reference for migrating a legacy params module to the supported module-managed params paradigm.
+The `x/params` module has been removed from the Cosmos SDK.  The following [migration](https://github.com/depinnetwork/depin-sdk/blob/828fcf2f05db0c4759ed370852b6dacc589ea472/x/mint/migrations/v2/migrate.go) 
+and [PR](https://github.com/depinnetwork/depin-sdk/pull/12363) can be used as a reference for migrating a legacy params module to the supported module-managed params paradigm.
 
-More information can be found in the [deprecation notice](https://github.com/cosmos/cosmos-sdk/blob/main/UPGRADING.md#xparams).
+More information can be found in the [deprecation notice](https://github.com/depinnetwork/depin-sdk/blob/main/UPGRADING.md#xparams).
 
-## [v0.52.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.52.0-beta.1)
+## [v0.52.x](https://github.com/depinnetwork/depin-sdk/releases/tag/v0.52.0-beta.1)
 
 Documentation to migrate an application from v0.50.x to server/v2 is available elsewhere.
 It is additional to the changes described here.
@@ -62,7 +62,7 @@ It is additional to the changes described here.
 
 In this section we describe the changes made in Cosmos SDK' SimApp.
 **These changes are directly applicable to your application wiring.**
-Please read this section first, but for an exhaustive list of changes, refer to the [CHANGELOG](https://github.com/cosmos/cosmos-sdk/blob/release/v0.52.x/simapp/CHANGELOG.md).
+Please read this section first, but for an exhaustive list of changes, refer to the [CHANGELOG](https://github.com/depinnetwork/depin-sdk/blob/release/v0.52.x/simapp/CHANGELOG.md).
 
 #### Client (`root.go`)
 
@@ -325,7 +325,7 @@ If you are still using the legacy wiring, you must enable unordered transactions
 To submit an unordered transaction, the client must set the `unordered` flag to
 `true` and ensure a reasonable `timeout_height` is set. The `timeout_height` is
 used as a TTL for the transaction and is used to provide replay protection. See
-[ADR-070](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-070-unordered-transactions.md)
+[ADR-070](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-070-unordered-transactions.md)
 for more details.
 
 #### Sign Mode Textual
@@ -363,7 +363,7 @@ version: v1
 plugins:
   - name: gocosmos
     out: ..
-- 	 opt: plugins=grpc,Mgoogle/protobuf/any.proto=github.com/cosmos/cosmos-sdk/codec/types,Mcosmos/orm/v1/orm.proto=cosmossdk.io/orm
+- 	 opt: plugins=grpc,Mgoogle/protobuf/any.proto=github.com/depinnetwork/depin-sdk/codec/types,Mcosmos/orm/v1/orm.proto=cosmossdk.io/orm
 +    opt: plugins=grpc,Mgoogle/protobuf/any.proto=github.com/cosmos/gogoproto/types/any,Mcosmos/orm/v1/orm.proto=cosmossdk.io/orm
   - name: grpc-gateway
     out: ..
@@ -424,7 +424,7 @@ been added to avoid the use of the Accounts.String() method.
 +type MsgSimulatorFn func(r *rand.Rand, accs []Account, cdc address.Codec) (sdk.Msg, error)
 ```
 
-The interface `HasProposalMsgs` has been renamed to `HasLegacyProposalMsgs`, as we've introduced a new simulation framework, simpler and easier to use, named [simsx](https://github.com/cosmos/cosmos-sdk/blob/main/simsx/README.md).
+The interface `HasProposalMsgs` has been renamed to `HasLegacyProposalMsgs`, as we've introduced a new simulation framework, simpler and easier to use, named [simsx](https://github.com/depinnetwork/depin-sdk/blob/main/simsx/README.md).
 
 ##### Depinject
 
@@ -467,7 +467,7 @@ Use `x/accounts` lockup accounts or implement an `x/accounts` vesting account in
 Accounts's AccountNumber will be used as a global account number tracking replacing Auth legacy AccountNumber. Must set accounts's AccountNumber with auth's AccountNumber value in upgrade handler. This is done through auth keeper MigrateAccountNumber function.
 
 ```go
-import authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper" 
+import authkeeper "github.com/depinnetwork/depin-sdk/x/auth/keeper" 
 ...
 app.UpgradeKeeper.SetUpgradeHandler(planName,
 	func(ctx context.Context, _ upgradetypes.Plan, fromVM appmodule.VersionMap) (appmodule.VersionMap, error) {
@@ -567,9 +567,9 @@ You can however always extend them by adding extra tx validators (see `x/validat
 
 #### `tools/benchmark`
 
-Introducing [`tools/benchmark`](https://github.com/cosmos/cosmos-sdk/tree/main/tools/benchmark) a Cosmos SDK module for benchmarking your chain. It is a standalone module that can be added to your chain to stress test it. This module should NOT be added in a production environment.
+Introducing [`tools/benchmark`](https://github.com/depinnetwork/depin-sdk/tree/main/tools/benchmark) a Cosmos SDK module for benchmarking your chain. It is a standalone module that can be added to your chain to stress test it. This module should NOT be added in a production environment.
 
-## [v0.50.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.0-alpha.0)
+## [v0.50.x](https://github.com/depinnetwork/depin-sdk/releases/tag/v0.50.0-alpha.0)
 
 ### Migration to CometBFT (Part 2)
 
@@ -591,7 +591,7 @@ For backward compatibility, the `**/tendermint/**` gRPC services are still suppo
 Additionally, the SDK is starting its abstraction from CometBFT Go types through the codebase:
 
 * The usage of the CometBFT logger has been replaced by the Cosmos SDK logger interface (`cosmossdk.io/log.Logger`).
-* The usage of `github.com/cometbft/cometbft/libs/bytes.HexByte` has been replaced by `[]byte`.
+* The usage of `github.com/depinnetwork/por-consensus/libs/bytes.HexByte` has been replaced by `[]byte`.
 * Usage of an application genesis (see [genutil](#xgenutil)).
 
 #### Enable Vote Extensions
@@ -636,7 +636,7 @@ for more info.
 #### Set PreBlocker
 
 A `SetPreBlocker` method has been added to BaseApp. This is essential for BaseApp to run `PreBlock` which runs before begin blocker other modules, and allows to modify consensus parameters, and the changes are visible to the following state machine logics.
-Read more about other use cases [here](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-068-preblock.md).
+Read more about other use cases [here](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-068-preblock.md).
 
 `depinject` / app di users need to add `x/upgrade` in their `app_config.go` / `app.yml`:
 
@@ -710,14 +710,14 @@ ClevelDB, BoltDB and BadgerDB are not supported anymore. To migrate from an unsu
 
 With the deprecation of the Amino JSON codec defined in [cosmos/gogoproto](https://github.com/cosmos/gogoproto) in favor of the protoreflect powered x/tx/aminojson codec, module developers are encouraged verify that their messages have the correct protobuf annotations to deterministically produce identical output from both codecs.
 
-For core SDK types equivalence is asserted by generative testing of [SignableTypes](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-beta.0/tests/integration/rapidgen/rapidgen.go#L102) in [TestAminoJSON_Equivalence](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-beta.0/tests/integration/tx/aminojson/aminojson_test.go#L94).
+For core SDK types equivalence is asserted by generative testing of [SignableTypes](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-beta.0/tests/integration/rapidgen/rapidgen.go#L102) in [TestAminoJSON_Equivalence](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-beta.0/tests/integration/tx/aminojson/aminojson_test.go#L94).
 
 Read more about the available annotations [here](https://docs.cosmos.network/v0.50/build/building-modules/protobuf-annotations).
 
 #### Stringer
 
 The `gogoproto.goproto_stringer = false` annotation has been removed from most proto files. This means that the `String()` method is being generated for types that previously had this annotation. The generated `String()` method uses `proto.CompactTextString` for _stringifying_ structs.
-[Verify](https://github.com/cosmos/cosmos-sdk/pull/13850#issuecomment-1328889651) the usage of the modified `String()` methods and double-check that they are not used in state-machine code.
+[Verify](https://github.com/depinnetwork/depin-sdk/pull/13850#issuecomment-1328889651) the usage of the modified `String()` methods and double-check that they are not used in state-machine code.
 
 ### SimApp
 
@@ -816,7 +816,7 @@ if err := autoCliOpts.EnhanceRootCommand(rootCmd); err != nil {
 ```
 
 Where `autoCliOpts` is the autocli options of the app, containing all modules and codecs.
-That value can injected by depinject ([see root_v2.go](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-beta.0/simapp/simd/cmd/root_v2.go#L49-L67)) or manually provided by the app ([see legacy app.go](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-beta.0/simapp/app.go#L636-L655)).
+That value can injected by depinject ([see root_v2.go](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-beta.0/simapp/simd/cmd/root_v2.go#L49-L67)) or manually provided by the app ([see legacy app.go](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-beta.0/simapp/app.go#L636-L655)).
 
 :::warning
 Not doing this will result in all core SDK modules queries not to be included in the binary.
@@ -853,7 +853,7 @@ References to `types/store.go` which contained aliases for store types have been
 ##### Extract Store to a standalone module
 
 The `store` module is extracted to have a separate go.mod file which allows it be a standalone module.
-All the store imports are now renamed to use `cosmossdk.io/store` instead of `github.com/cosmos/cosmos-sdk/store` across the SDK.
+All the store imports are now renamed to use `cosmossdk.io/store` instead of `github.com/depinnetwork/depin-sdk/store` across the SDK.
 
 ##### Streaming
 
@@ -995,7 +995,7 @@ Read more on those interfaces [here](https://docs.cosmos.network/v0.50/building-
 
 * `GetSigners()` is no longer required to be implemented on `Msg` types. The SDK will automatically infer the signers from the `Signer` field on the message. The signer field is required on all messages unless using a custom signer function.
 
-To find out more please read the [signer field](https://github.com/cosmos/cosmos-sdk/blob/main/docs/build/building-modules/05-protobuf-annotations.md) & [here](https://github.com/cosmos/cosmos-sdk/blob/7352d0bce8e72121e824297df453eb1059c28da8/docs/docs/build/building-modules/02-messages-and-queries.md#L40) documentation.
+To find out more please read the [signer field](https://github.com/depinnetwork/depin-sdk/blob/main/docs/build/building-modules/05-protobuf-annotations.md) & [here](https://github.com/depinnetwork/depin-sdk/blob/7352d0bce8e72121e824297df453eb1059c28da8/docs/docs/build/building-modules/02-messages-and-queries.md#L40) documentation.
 <!-- Link to docs once redeployed -->
 
 #### `x/auth`
@@ -1095,28 +1095,28 @@ By default, the new `ProposalCancelRatio` parameter is set to `0.5` during migra
 ##### Extract evidence to a standalone module
 
 The `x/evidence` module is extracted to have a separate go.mod file which allows it be a standalone module.
-All the evidence imports are now renamed to use `cosmossdk.io/x/evidence` instead of `github.com/cosmos/cosmos-sdk/x/evidence` across the SDK.
+All the evidence imports are now renamed to use `cosmossdk.io/x/evidence` instead of `github.com/depinnetwork/depin-sdk/x/evidence` across the SDK.
 
 #### `x/nft`
 
 ##### Extract nft to a standalone module
 
 The `x/nft` module is extracted to have a separate go.mod file which allows it to be a standalone module.
-All the evidence imports are now renamed to use `cosmossdk.io/x/nft` instead of `github.com/cosmos/cosmos-sdk/x/nft` across the SDK.
+All the evidence imports are now renamed to use `cosmossdk.io/x/nft` instead of `github.com/depinnetwork/depin-sdk/x/nft` across the SDK.
 
 #### x/feegrant
 
 ##### Extract feegrant to a standalone module
 
 The `x/feegrant` module is extracted to have a separate go.mod file which allows it to be a standalone module.
-All the feegrant imports are now renamed to use `cosmossdk.io/x/feegrant` instead of `github.com/cosmos/cosmos-sdk/x/feegrant` across the SDK.
+All the feegrant imports are now renamed to use `cosmossdk.io/x/feegrant` instead of `github.com/depinnetwork/depin-sdk/x/feegrant` across the SDK.
 
 #### `x/upgrade`
 
 ##### Extract upgrade to a standalone module
 
 The `x/upgrade` module is extracted to have a separate go.mod file which allows it to be a standalone module.
-All the upgrade imports are now renamed to use `cosmossdk.io/x/upgrade` instead of `github.com/cosmos/cosmos-sdk/x/upgrade` across the SDK.
+All the upgrade imports are now renamed to use `cosmossdk.io/x/upgrade` instead of `github.com/depinnetwork/depin-sdk/x/upgrade` across the SDK.
 
 ### Tooling
 
@@ -1126,7 +1126,7 @@ Rosetta has moved to it's own [repo](https://github.com/cosmos/rosetta) and not 
 Any user who is interested on using the tool can connect it standalone to any node without the need to add it as part of the node binary.
 The rosetta tool also allows multi chain connections.
 
-## [v0.47.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.47.0)
+## [v0.47.x](https://github.com/depinnetwork/depin-sdk/releases/tag/v0.47.0)
 
 ### Migration to CometBFT (Part 1)
 
@@ -1134,8 +1134,8 @@ The Cosmos SDK has migrated to CometBFT, as its default consensus engine.
 CometBFT is an implementation of the Tendermint consensus algorithm, and the successor of Tendermint Core.
 Due to the import changes, this is a breaking change. Chains need to remove **entirely** their imports of Tendermint Core in their codebase, from direct and indirects imports in their `go.mod`.
 
-* Replace `github.com/tendermint/tendermint` by `github.com/cometbft/cometbft`
-* Replace `github.com/tendermint/tm-db` by `github.com/cometbft/cometbft-db`
+* Replace `github.com/tendermint/tendermint` by `github.com/depinnetwork/por-consensus`
+* Replace `github.com/tendermint/tm-db` by `github.com/depinnetwork/por-consensus-db`
 * Verify `github.com/tendermint/tendermint` is not an indirect or direct dependency
 * Run `make proto-gen`
 
@@ -1172,13 +1172,13 @@ by this change.
 
 ### SimApp
 
-The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/testutil/sims) for application testing.
+The `simapp` package **should not be imported in your own app**. Instead, you should import the `runtime.AppI` interface, that defines an `App`, and use the [`simtestutil` package](https://pkg.go.dev/github.com/depinnetwork/depin-sdk/testutil/sims) for application testing.
 
 #### App Wiring
 
 SimApp's `app_di.go` is using [App Wiring](https://docs.cosmos.network/main/build/building-apps/app-go-di), the dependency injection framework of the Cosmos SDK.
-This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/cosmos/cosmos-sdk/tree/release/v0.50.x/simapp/app_config.go).
-The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/cosmos/cosmos-sdk/tree/release/v0.50.x/simapp/app.go) and is not going anywhere.
+This means that modules are injected directly into SimApp thanks to a [configuration file](https://github.com/depinnetwork/depin-sdk/tree/release/v0.50.x/simapp/app_config.go).
+The previous behavior, without the dependency injection framework, is still present in [`app.go`](https://github.com/depinnetwork/depin-sdk/tree/release/v0.50.x/simapp/app.go) and is not going anywhere.
 
 If you are using a `app.go` without dependency injection, add the following lines to your `app.go` in order to provide newer gRPC services:
 
@@ -1214,7 +1214,7 @@ That argument should be passed to the module maanager `ExportGenesisFromModules`
 The `GoLevelDB` version must pinned to `v1.0.1-0.20210819022825-2ae1ddf74ef7` in the application, following versions might cause unexpected behavior.
 This can be done adding `replace github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7` to the `go.mod` file.
 
-* [issue #14949 on cosmos-sdk](https://github.com/cosmos/cosmos-sdk/issues/14949)
+* [issue #14949 on cosmos-sdk](https://github.com/depinnetwork/depin-sdk/issues/14949)
 * [issue #25413 on go-ethereum](https://github.com/ethereum/go-ethereum/pull/25413)
 
 ### Protobuf
@@ -1226,7 +1226,7 @@ This allows you to remove the replace directive `replace github.com/gogo/protobu
 
 Please use the `ghcr.io/cosmos/proto-builder` image (version >= `0.11.5`) for generating protobuf files.
 
-See which buf commit for `cosmos/cosmos-sdk` to pin in your `buf.yaml` file [here](https://github.com/cosmos/cosmos-sdk/blob/main/proto/README.md).
+See which buf commit for `cosmos/cosmos-sdk` to pin in your `buf.yaml` file [here](https://github.com/depinnetwork/depin-sdk/blob/main/proto/README.md).
 
 #### Gogoproto Import Paths
 
@@ -1259,7 +1259,7 @@ Here are the following replacements that you need to perform on your proto files
 
 Please also check that in your own app's proto files that there are no single-word names for those two proto annotations. If so, then replace them with fully-qualified names, even though those names don't actually resolve to an actual protobuf entity.
 
-For more information, see the [encoding guide](https://github.com/cosmos/cosmos-sdk/blob/main/docs/learn/advanced/05-encoding.md).
+For more information, see the [encoding guide](https://github.com/depinnetwork/depin-sdk/blob/main/docs/learn/advanced/05-encoding.md).
 
 ### Transactions
 
@@ -1295,7 +1295,7 @@ In case a module does not follow the standard message path, (e.g. IBC), it is ad
 
 The `params` module was deprecated since v0.46. The Cosmos SDK has migrated away from `x/params` for its own modules.
 Cosmos SDK modules now store their parameters directly in its respective modules.
-The `params` module will be removed in `v0.50`, as mentioned [in v0.46 release](https://github.com/cosmos/cosmos-sdk/blob/v0.46.1/UPGRADING.md#xparams). It is strongly encouraged to migrate away from `x/params` before `v0.50`.
+The `params` module will be removed in `v0.50`, as mentioned [in v0.46 release](https://github.com/depinnetwork/depin-sdk/blob/v0.46.1/UPGRADING.md#xparams). It is strongly encouraged to migrate away from `x/params` before `v0.50`.
 
 When performing a chain migration, the params table must be initialized manually. This was done in the modules keepers in previous versions.
 Have a look at `simapp.RegisterUpgradeHandlers()` for an example.
@@ -1331,10 +1331,10 @@ The `Proposal` proto has been updated with proposer field. For proposal state mi
 
 ```go
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	v4 "github.com/cosmos/cosmos-sdk/x/gov/migrations/v4"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	v4 "github.com/depinnetwork/depin-sdk/x/gov/migrations/v4"
+	upgradetypes "github.com/depinnetwork/depin-sdk/x/upgrade/types"
 )
 
 func (app SimApp) RegisterUpgradeHandlers() {
@@ -1416,7 +1416,7 @@ Ledger support has been generalized to enable use of different apps and keytypes
 
 This is not a breaking change, as all values will default to use the standard Cosmos app implementation unless specified otherwise.
 
-## [v0.46.x](https://github.com/cosmos/cosmos-sdk/releases/tag/v0.46.0)
+## [v0.46.x](https://github.com/depinnetwork/depin-sdk/releases/tag/v0.46.0)
 
 ### Go API Changes
 
@@ -1439,7 +1439,7 @@ To improve clarity of the API, some renaming and improvements has been done:
 | `x/gov`   | `keeper.RefundDeposits`            | `keeper.RefundAndDeleteDeposits`     |
 | `x/{mod}` | package `legacy`                   | package `migrations`                 |
 
-For the exhaustive list of API renaming, please refer to the [CHANGELOG](https://github.com/cosmos/cosmos-sdk/blob/main/CHANGELOG.md).
+For the exhaustive list of API renaming, please refer to the [CHANGELOG](https://github.com/depinnetwork/depin-sdk/blob/main/CHANGELOG.md).
 
 #### new packages
 
@@ -1494,7 +1494,7 @@ mistakes.
 
 #### `x/params`
 
-* The `x/params` module has been deprecated in favour of each module housing and providing way to modify their parameters. Each module that has parameters that are changeable during runtime has an authority, the authority can be a module or user account. The Cosmos SDK team recommends migrating modules away from using the param module. An example of how this could look like can be found [here](https://github.com/cosmos/cosmos-sdk/pull/12363).
+* The `x/params` module has been deprecated in favour of each module housing and providing way to modify their parameters. Each module that has parameters that are changeable during runtime has an authority, the authority can be a module or user account. The Cosmos SDK team recommends migrating modules away from using the param module. An example of how this could look like can be found [here](https://github.com/depinnetwork/depin-sdk/pull/12363).
 * The Param module will be maintained until April 18, 2023. At this point the module will reach end of life and be removed from the Cosmos SDK.
 
 #### `x/gov`
@@ -1511,7 +1511,7 @@ The `staking module` added a new message type to cancel unbonding delegations. U
 
 ### Protobuf
 
-The `third_party/proto` folder that existed in [previous version](https://github.com/cosmos/cosmos-sdk/tree/v0.45.3/third_party/proto) now does not contain directly the [proto files](https://github.com/cosmos/cosmos-sdk/tree/release/v0.46.x/third_party/proto).
+The `third_party/proto` folder that existed in [previous version](https://github.com/depinnetwork/depin-sdk/tree/v0.45.3/third_party/proto) now does not contain directly the [proto files](https://github.com/depinnetwork/depin-sdk/tree/release/v0.46.x/third_party/proto).
 
 Instead, the SDK uses [`buf`](https://buf.build). Clients should have their own [`buf.yaml`](https://docs.buf.build/configuration/v1/buf-yaml) with `buf.build/cosmos/cosmos-sdk` as dependency, in order to avoid having to copy paste these files.
 

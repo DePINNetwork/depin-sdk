@@ -7,9 +7,9 @@ import (
 	slashingtypes "cosmossdk.io/x/slashing/types"
 	"cosmossdk.io/x/staking/types"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var ac = addresscodec.NewBech32Codec("cosmos")

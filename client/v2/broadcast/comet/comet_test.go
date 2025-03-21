@@ -5,16 +5,16 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/cometbft/cometbft/mempool"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
+	"github.com/depinnetwork/por-consensus/mempool"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
 	apiacbci "cosmossdk.io/api/cosmos/base/abci/v1beta1"
 	mockrpc "cosmossdk.io/client/v2/broadcast/comet/testutil"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/testutil"
 )
 
 var cdc = testutil.CodecOptions{}.NewCodec()

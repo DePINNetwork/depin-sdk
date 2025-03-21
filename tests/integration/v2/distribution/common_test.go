@@ -10,7 +10,7 @@ import (
 	stakingtestutil "cosmossdk.io/x/staking/testutil"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func setupValidatorWithCommission(t *testing.T, f *fixture, valAddr sdk.ValAddress, initialStake int64) {

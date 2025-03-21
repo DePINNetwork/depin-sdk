@@ -9,10 +9,10 @@ import (
 	"cosmossdk.io/log"
 	basedepinject "cosmossdk.io/x/accounts/defaults/base/depinject"
 
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	"github.com/depinnetwork/depin-sdk/testutil/configurator"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/x/auth/keeper"
 )
 
 func BenchmarkAccountMapperGetAccountFound(b *testing.B) {

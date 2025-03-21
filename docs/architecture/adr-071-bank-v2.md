@@ -105,5 +105,5 @@ Additionally, as bank plans to integrate token factory, migrations functions wil
 
 ### References
 
-* Current bank module implementation: https://github.com/cosmos/cosmos-sdk/blob/v0.50.6/x/bank/keeper/keeper.go#L22-L53
+* Current bank module implementation: https://github.com/depinnetwork/depin-sdk/blob/v0.50.6/x/bank/keeper/keeper.go#L22-L53
 * Osmosis token factory: https://github.com/osmosis-labs/osmosis/tree/v25.0.0/x/tokenfactory/keeper

@@ -3,8 +3,8 @@ package types_test
 import (
 	"testing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/x/auth/vesting/types"
 )
 
 func TestPeriodsString(t *testing.T) {

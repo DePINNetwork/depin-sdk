@@ -4,7 +4,7 @@ package cosmos.slashing.v1beta1;
 option go_package = "cosmossdk.io/x/slashing/types";
 
 import "gogoproto/gogo.proto";
-import "cosmos/slashing/v1beta1/slashing.proto";
+import "depin/slashing/v1beta1/slashing.proto";
 import "cosmos_proto/cosmos.proto";
 import "amino/amino.proto";
 

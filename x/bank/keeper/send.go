@@ -11,9 +11,9 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // SendKeeper defines a module interface that facilitates the transfer of coins

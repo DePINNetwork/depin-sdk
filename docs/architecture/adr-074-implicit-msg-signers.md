@@ -42,7 +42,7 @@ address belongs to a module or not? All of these thorny questions are delaying t
 inter-module message passing because we do not want an implementation that is overly complex.
 There are many use cases for inter-module message passing which are still relevant, the most
 immediate of which is a more robust denom management system in `x/bank` `v2` which is being explored
-in [ADR 071](https://github.com/cosmos/cosmos-sdk/pull/20316).
+in [ADR 071](https://github.com/depinnetwork/depin-sdk/pull/20316).
 
 ## Alternatives
 

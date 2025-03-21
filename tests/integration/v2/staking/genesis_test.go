@@ -13,9 +13,9 @@ import (
 	"cosmossdk.io/x/staking"
 	"cosmossdk.io/x/staking/types"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
 )
 
 func bootstrapGenesisTest(t *testing.T, numAddrs int) (*fixture, []sdk.AccAddress) {

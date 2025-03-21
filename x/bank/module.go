@@ -18,11 +18,11 @@ import (
 	"cosmossdk.io/x/bank/simulation"
 	"cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/simsx"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // ConsensusVersion defines the current x/bank module consensus version.

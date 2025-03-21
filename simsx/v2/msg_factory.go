@@ -3,7 +3,7 @@ package v2
 import (
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 // NextFactoryFn shuffles and processes a list of weighted factories, returning a selection function for factory objects.

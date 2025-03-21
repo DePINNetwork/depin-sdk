@@ -12,17 +12,17 @@ import (
 	"testing"
 	"time"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 
 	"cosmossdk.io/core/address"
 	"cosmossdk.io/core/header"
 	corelog "cosmossdk.io/core/log"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 const AverageBlockTime = 6 * time.Second

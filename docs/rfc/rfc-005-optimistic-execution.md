@@ -121,4 +121,4 @@ This can only be implemented on SDK versions using ABCI++, meaning v0.50.x and a
 ### References
 
 - [Original RFC by Sei Network](https://github.com/sei-protocol/sei-chain/blob/81b8af7980df722a63a910cc35ff96e60a94cbfe/docs/rfc/rfc-000-optimistic-proposal-processing.md)
-- [ABCI++ methods in CometBFT](https://github.com/cometbft/cometbft/blob/a09f5d33ecd8846369b93cae9063291eb8abc3a0/spec/abci/abci%2B%2B_methods.md)
+- [ABCI++ methods in CometBFT](https://github.com/depinnetwork/por-consensus/blob/a09f5d33ecd8846369b93cae9063291eb8abc3a0/spec/abci/abci%2B%2B_methods.md)

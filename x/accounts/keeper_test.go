@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/x/accounts/accountstd"
 	"cosmossdk.io/x/accounts/internal/implementation"
 
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func TestKeeper_Init(t *testing.T) {

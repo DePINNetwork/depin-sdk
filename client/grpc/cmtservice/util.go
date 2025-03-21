@@ -1,7 +1,7 @@
 package cmtservice
 
 import (
-	cmtprototypes "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	cmtprototypes "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 
 	"cosmossdk.io/core/address"
 )

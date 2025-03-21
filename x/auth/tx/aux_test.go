@@ -10,15 +10,15 @@ import (
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	_ "github.com/cosmos/cosmos-sdk/testutil/testdata/testpb"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	clienttx "github.com/depinnetwork/depin-sdk/client/tx"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	_ "github.com/depinnetwork/depin-sdk/testutil/testdata/testpb"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
+	authsigning "github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 var (

@@ -15,7 +15,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"github.com/tidwall/gjson"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 type (

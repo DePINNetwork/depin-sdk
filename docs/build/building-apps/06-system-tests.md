@@ -17,9 +17,9 @@ A `CLI wrapper` makes it easy to access keys, submit transactions, or execute op
 enable the replication and validation of complex business scenarios.
 
 Here's an example of a double signing test, where a new node is added with the same key as the first validator:
-[double signing test example](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/tests/systemtests/fraud_test.go)
+[double signing test example](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/tests/systemtests/fraud_test.go)
 
-The [getting started tutorial](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/tests/systemtests/getting_started.md)
+The [getting started tutorial](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/tests/systemtests/getting_started.md)
 contains a step-by-step guide to building and running your first system test. It covers setting chain state via genesis
 or
 transactions and validation via transaction response or queries.

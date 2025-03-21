@@ -13,9 +13,9 @@ import (
 	"cosmossdk.io/x/upgrade/keeper"
 	"cosmossdk.io/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 const (

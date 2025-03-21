@@ -3,7 +3,7 @@ package simsx
 import (
 	"math/rand"
 
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // WeightSource interface for retrieving weights based on a name and a default value.

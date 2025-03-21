@@ -19,54 +19,54 @@ All packages and modules should have unit test coverage. Modules should have the
 The SDK uses `mockgen` to generate mocks for keepers:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/scripts/mockgen.sh#L3-L6
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/scripts/mockgen.sh#L3-L6
 ```
 
 You can read more about mockgen [here](https://github.com/golang/mock).
 
 ### Example
 
-As an example, we will walkthrough the [keeper tests](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper_test.go) of the `x/gov` module.
+As an example, we will walkthrough the [keeper tests](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper_test.go) of the `x/gov` module.
 
 The `x/gov` module has a `Keeper` type, which requires a few external dependencies (ie. imports outside `x/gov` to work properly).
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper.go#L22-L24
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper.go#L22-L24
 ```
 
 In order to only test `x/gov`, we mock the [expected keepers](https://docs.cosmos.network/v0.46/building-modules/keeper.html#type-definition) and instantiate the `Keeper` with the mocked dependencies. Note that we may need to configure the mocked dependencies to return the expected values:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/common_test.go#L67-L81
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/common_test.go#L67-L81
 ```
 
 This allows us to test the `x/gov` module without having to import other modules.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper_test.go#L3-L42
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper_test.go#L3-L42
 ```
 
 We can test then create unit tests using the newly created `Keeper` instance.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper_test.go#L83-L107
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/gov/keeper/keeper_test.go#L83-L107
 ```
 
 ## Integration Tests
 
 Integration tests are at the second level of the [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html).
-In the SDK, we locate our integration tests under [`/tests/integrations`](https://github.com/cosmos/cosmos-sdk/tree/main/tests/integration).
+In the SDK, we locate our integration tests under [`/tests/integrations`](https://github.com/depinnetwork/depin-sdk/tree/main/tests/integration).
 
 The goal of these integration tests is to test how a component interacts with other dependencies. Compared to unit tests, integration tests do not mock dependencies. Instead, they use the direct dependencies of the component. This differs as well from end-to-end tests, which test the component with a full application.
 
 Integration tests interact with the tested module via the defined `Msg` and `Query` services. The result of the test can be verified by checking the state of the application, by checking the emitted events or the response. It is advised to combine two of these methods to verify the result of the test.
 
-The SDK provides small helpers for quickly setting up an integration tests. These helpers can be found at <https://github.com/cosmos/cosmos-sdk/blob/main/testutil>.
+The SDK provides small helpers for quickly setting up an integration tests. These helpers can be found at <https://github.com/depinnetwork/depin-sdk/blob/main/testutil>.
 
 ### Example
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/a2f73a7dd37bea0ab303792c55fa1e4e1db3b898/testutil/integration/example_test.go#L30-L116
+https://github.com/depinnetwork/depin-sdk/blob/a2f73a7dd37bea0ab303792c55fa1e4e1db3b898/testutil/integration/example_test.go#L30-L116
 ```
 
 ## Deterministic and Regression tests	
@@ -81,7 +81,7 @@ Each query is tested using 2 methods:
 Here's an example of regression tests:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/tests/integration/bank/keeper/deterministic_test.go#L134-L151
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/tests/integration/bank/keeper/deterministic_test.go#L134-L151
 ```
 
 ## Simulations
@@ -95,13 +95,13 @@ Simulations have been refactored to message factories
 An example for `x/bank/` simulations:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/release/v0.52.x/x/bank/simulation/msg_factory.go#L13-L20
+https://github.com/depinnetwork/depin-sdk/blob/release/v0.52.x/x/bank/simulation/msg_factory.go#L13-L20
 ```
 
 ## System Tests
 
 System tests are at the top of the [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html).
-They test the whole application flow as black box, from the user perspective. They are located under [`/tests/systemtests`](https://github.com/cosmos/cosmos-sdk/tree/main/tests/systemtests).
+They test the whole application flow as black box, from the user perspective. They are located under [`/tests/systemtests`](https://github.com/depinnetwork/depin-sdk/tree/main/tests/systemtests).
 
 For that, the SDK is using the `simapp` binary, but you should use your own binary.
 More details about system test can be found in [building-apps](https://docs.cosmos.network/main/build/building-apps/system-tests)

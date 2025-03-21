@@ -14,7 +14,7 @@ import (
 
 	"cosmossdk.io/tools/confix"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client"
 )
 
 // SetCommand returns a CLI command to interactively update an application config value.

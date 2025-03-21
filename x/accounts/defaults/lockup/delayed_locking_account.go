@@ -8,8 +8,8 @@ import (
 	"cosmossdk.io/x/accounts/accountstd"
 	lockuptypes "cosmossdk.io/x/accounts/defaults/lockup/v1"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // Compile-time type assertions

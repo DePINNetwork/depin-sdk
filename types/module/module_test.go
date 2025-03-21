@@ -7,7 +7,7 @@ import (
 	"io"
 	"testing"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
@@ -16,12 +16,12 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/mock"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/testutil/mock"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 var errFoo = errors.New("dummy")

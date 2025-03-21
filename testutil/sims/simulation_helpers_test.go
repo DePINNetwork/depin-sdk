@@ -13,9 +13,9 @@ import (
 	"cosmossdk.io/store/rootmulti"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/types/kv"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 const (

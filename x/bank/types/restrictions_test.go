@@ -10,7 +10,7 @@ import (
 
 	"cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // MintingRestrictionArgs are the args provided to a MintingRestrictionFn function.

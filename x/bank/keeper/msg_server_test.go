@@ -3,8 +3,8 @@ package keeper_test
 import (
 	banktypes "cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 var govAcc = authtypes.NewEmptyModuleAccount(banktypes.GovModuleName, authtypes.Minter)

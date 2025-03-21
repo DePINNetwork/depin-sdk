@@ -14,15 +14,15 @@ import (
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	"cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/multisig"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
 )
 
 // Factory defines a client transaction factory that facilitates generating and

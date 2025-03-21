@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/x/auth/ante/unorderedtx"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante/unorderedtx"
 )
 
 func TestUnorderedTxManager_Close(t *testing.T) {

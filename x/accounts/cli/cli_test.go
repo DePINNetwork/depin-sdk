@@ -14,15 +14,15 @@ import (
 	v1 "cosmossdk.io/x/accounts/v1"
 	"cosmossdk.io/x/bank"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	clitestutil "github.com/depinnetwork/depin-sdk/testutil/cli"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	testutilmod "github.com/depinnetwork/depin-sdk/types/module/testutil"
 )
 
 type CLITestSuite struct {

@@ -36,9 +36,9 @@ for the key-value pairs from the stores to be decoded (_i.e_ unmarshalled)
 to their corresponding types. In particular, it matches the key to a concrete type
 and then unmarshals the value from the `KVPair` to the type provided.
 
-You can use the example [here](https://github.com/cosmos/cosmos-sdk/blob/main/x/distribution/simulation/decoder.go) from the distribution module to implement your store decoders.
+You can use the example [here](https://github.com/depinnetwork/depin-sdk/blob/main/x/distribution/simulation/decoder.go) from the distribution module to implement your store decoders.
 
-If the module uses the `collections` package, you can use the example [here](https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/bank/module.go#L166) from the Bank module to implement your store decoders.
+If the module uses the `collections` package, you can use the example [here](https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/bank/module.go#L166) from the Bank module to implement your store decoders.
 
 ### Randomized genesis
 
@@ -49,7 +49,7 @@ Once the module genesis parameter are generated randomly (or with the key and
 values defined in a `params` file), they are marshaled to JSON format and added
 to the app genesis JSON to use it on the simulations.
 
-You can check an example on how to create the randomized genesis [here](https://github.com/cosmos/cosmos-sdk/blob/main/x/staking/simulation/genesis.go).
+You can check an example on how to create the randomized genesis [here](https://github.com/depinnetwork/depin-sdk/blob/main/x/staking/simulation/genesis.go).
 
 ### Random weighted operations
 
@@ -63,7 +63,7 @@ Operations on the simulation are simulated using the full [transaction cycle](..
 Shown below is how weights are set:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/staking/depinject.go#L144-L154
+https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/staking/depinject.go#L144-L154
 ```
 
 As you can see, the weights are predefined in this case. Options exist to override this behavior with different weights. One option is to use `*rand.Rand` to define a random weight for the operation, or you can inject your own predefined weights.
@@ -72,7 +72,7 @@ The SDK simulations can be executed like normal tests in Go from the shell or wi
 Make sure that you pass the `-tags='sims` parameter to enable them and other params that make sense for your scenario.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/scripts/build/simulations.mk#L19
+https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/scripts/build/simulations.mk#L19
 ```
 
 ### Random proposal contents
@@ -81,7 +81,7 @@ Randomized governance proposals are also supported on the Cosmos SDK simulator. 
 module must register the message to be used for governance proposals.  
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/staking/depinject.go#L139-L142
+https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/staking/depinject.go#L139-L142
 ```
 
 ## Registering simulation functions
@@ -89,7 +89,7 @@ https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfd
 Now that all the required functions are defined, we need to integrate them into the module pattern within the `module.go`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/staking/depinject.go#L127-L154
+https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/x/staking/depinject.go#L127-L154
 ```
 
 ## App Simulator manager
@@ -135,5 +135,5 @@ The simulations provide deterministic behaviour already. The integration with th
 can be done at a high level with the deterministic pseudo random number generator where the fuzzer provides varying numbers. 
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/scripts/build/simulations.mk#L80-L84
+https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/scripts/build/simulations.mk#L80-L84
 ```

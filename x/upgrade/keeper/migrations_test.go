@@ -9,8 +9,8 @@ import (
 	storetypes "cosmossdk.io/store/types"
 	"cosmossdk.io/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil"
 )
 
 type storedUpgrade struct {

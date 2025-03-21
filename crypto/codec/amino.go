@@ -1,15 +1,15 @@
 package codec
 
 import (
-	"github.com/cometbft/cometbft/crypto/bls12381"
+	"github.com/depinnetwork/por-consensus/crypto/bls12381"
 
 	"cosmossdk.io/core/registry"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/bls12_381"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/bls12_381"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/ed25519"
+	kmultisig "github.com/depinnetwork/depin-sdk/crypto/keys/multisig"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // RegisterCrypto registers all crypto dependency types with the provided Amino

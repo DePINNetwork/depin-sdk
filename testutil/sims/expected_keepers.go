@@ -3,7 +3,7 @@ package sims
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 type BankKeeper interface {

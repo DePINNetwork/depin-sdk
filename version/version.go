@@ -13,7 +13,7 @@
 //	 -X github.com/cosmos/cosmos-sdk/version.AppName=gaiad \
 //	 -X github.com/cosmos/cosmos-sdk/version.Version=1.0 \
 //	 -X github.com/cosmos/cosmos-sdk/version.Commit=f0f7b7dab7e36c20b757cebce0e8f4fc5b95de60 \
-//	 -X "github.com/cosmos/cosmos-sdk/version.BuildTags=linux darwin amd64"
+//	 -X "github.com/depinnetwork/depin-sdk/version.BuildTags=linux darwin amd64"
 package version
 
 import (
@@ -50,7 +50,7 @@ func getSDKBuildInfo(debugBuildInfo *debug.BuildInfo) sdkBuildInfo {
 	var buildInfo sdkBuildInfo
 	for _, dep := range debugBuildInfo.Deps {
 		switch dep.Path {
-		case "github.com/cosmos/cosmos-sdk":
+		case "github.com/depinnetwork/depin-sdk":
 			buildInfo.sdkVersion = extractVersionFromBuildInfo(dep)
 		case "cosmossdk.io/server/v2/cometbft":
 			buildInfo.cometServerVersion = extractVersionFromBuildInfo(dep)

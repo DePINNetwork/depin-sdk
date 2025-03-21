@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/x/slashing/keeper"
 	"cosmossdk.io/x/slashing/types"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 func MsgUnjailFactory(k keeper.Keeper, sk types.StakingKeeper) simsx.SimMsgFactoryX {

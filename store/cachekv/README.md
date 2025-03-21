@@ -94,7 +94,7 @@ Efficient iteration over keys in `KVStore` is important for generating Merkle ra
 
 In the current implementation, there is no guarantee that all values in `parent` have been cached. As a result, iteration is achieved by interleaved iteration through both `parent` and the cache (failing to actually benefit from caching).
 
-[cacheMergeIterator](https://github.com/cosmos/cosmos-sdk/blob/d8391cb6796d770b02448bee70b865d824e43449/store/cachekv/mergeiterator.go) implements functions to provide a single iterator with an input of iterators over `parent` and the cache. This iterator iterates over keys from both iterators in a shared lexicographic order, and overrides the value provided by the parent iterator if the same key is dirty or deleted in the cache.
+[cacheMergeIterator](https://github.com/depinnetwork/depin-sdk/blob/d8391cb6796d770b02448bee70b865d824e43449/store/cachekv/mergeiterator.go) implements functions to provide a single iterator with an input of iterators over `parent` and the cache. This iterator iterates over keys from both iterators in a shared lexicographic order, and overrides the value provided by the parent iterator if the same key is dirty or deleted in the cache.
 
 ### Implementation Overview
 
@@ -137,4 +137,4 @@ In the case that the size of `unsortedCache` is larger than `minSortSize`, a lin
 
 Finally, part 4. is achieved with `memIterator`, which implements an iterator over the items in `sortedCache`. 
 
-As of [PR #12885](https://github.com/cosmos/cosmos-sdk/pull/12885), an optimization to the binary search case mitigates the overhead of sorting the entirety of the key set in `unsortedCache`. To avoid wasting the compute spent sorting, we should ensure that a reasonable amount of values are removed from `unsortedCache`. If the length of the range for iteration is less than `minSortedCache`, we widen the range of values for removal from `unsortedCache` to be up to `minSortedCache` in length. This amortizes the cost of processing elements across multiple calls.
+As of [PR #12885](https://github.com/depinnetwork/depin-sdk/pull/12885), an optimization to the binary search case mitigates the overhead of sorting the entirety of the key set in `unsortedCache`. To avoid wasting the compute spent sorting, we should ensure that a reasonable amount of values are removed from `unsortedCache`. If the length of the range for iteration is less than `minSortedCache`, we widen the range of values for removal from `unsortedCache` to be up to `minSortedCache` in length. This amortizes the cost of processing elements across multiple calls.

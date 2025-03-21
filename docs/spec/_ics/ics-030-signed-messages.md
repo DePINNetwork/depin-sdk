@@ -61,7 +61,7 @@ pre-image attacks, as well as being [deterministic](https://en.wikipedia.org/wik
 ## Specification
 
 CometBFT has a well established protocol for signing messages using a canonical
-JSON representation as defined [here](https://github.com/cometbft/cometbft/blob/master/types/canonical.go).
+JSON representation as defined [here](https://github.com/depinnetwork/por-consensus/blob/master/types/canonical.go).
 
 An example of such a canonical JSON structure is CometBFT's vote structure:
 
@@ -87,7 +87,7 @@ to the Cosmos chain identifier. The user-agent should **refuse** signing if the
 `@chain_id` field does not match the currently active chain! The `@type` field
 must equal the constant `"message"`. The `@type` field corresponds to the type of
 structure the user will be signing in an application. For now, a user is only
-allowed to sign bytes of valid ASCII text ([see here](https://github.com/cometbft/cometbft/blob/v0.38.0/libs/strings/string.go#L57-L67)).
+allowed to sign bytes of valid ASCII text ([see here](https://github.com/depinnetwork/por-consensus/blob/v0.38.0/libs/strings/string.go#L57-L67)).
 However, this will change and evolve to support additional application-specific
 structures that are human-readable and machine-verifiable.
 

@@ -11,7 +11,7 @@ import (
 	"cosmossdk.io/x/group/errors"
 	"cosmossdk.io/x/group/internal/orm/prefixstore"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 // indexer creates and modifies the second MultiKeyIndex based on the operations and changes on the primary object.

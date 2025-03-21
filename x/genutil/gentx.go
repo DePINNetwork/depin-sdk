@@ -9,11 +9,11 @@ import (
 	bankexported "cosmossdk.io/x/bank/exported"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 // SetGenTxsInAppGenesisState - sets the genesis transactions in the app genesis state

@@ -14,15 +14,15 @@ import (
 	"cosmossdk.io/x/feegrant/keeper"
 	"cosmossdk.io/x/feegrant/module"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
 )
 
 var (

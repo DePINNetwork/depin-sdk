@@ -9,7 +9,7 @@ import (
 
 	"cosmossdk.io/x/upgrade/types"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 func mustParseTime(s string) time.Time {

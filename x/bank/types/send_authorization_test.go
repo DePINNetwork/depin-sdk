@@ -12,8 +12,8 @@ import (
 	sdkmath "cosmossdk.io/math"
 	"cosmossdk.io/x/bank/types"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var (

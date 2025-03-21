@@ -8,10 +8,10 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/math"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 var (

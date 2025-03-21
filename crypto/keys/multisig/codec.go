@@ -1,13 +1,13 @@
 package multisig
 
 import (
-	"github.com/cometbft/cometbft/crypto/bls12381"
+	"github.com/depinnetwork/por-consensus/crypto/bls12381"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/bls12_381"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/bls12_381"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/ed25519"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // TODO: Figure out API for others to either add their own pubkey types, or

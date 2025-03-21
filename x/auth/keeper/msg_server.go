@@ -11,9 +11,9 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 var _ types.MsgServer = msgServer{}

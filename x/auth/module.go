@@ -16,15 +16,15 @@ import (
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/schema"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/simsx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/simsx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante"
+	"github.com/depinnetwork/depin-sdk/x/auth/keeper"
+	"github.com/depinnetwork/depin-sdk/x/auth/simulation"
+	"github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 // ConsensusVersion defines the current x/auth module consensus version.

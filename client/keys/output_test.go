@@ -6,17 +6,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/depinnetwork/depin-sdk/codec"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	kmultisig "github.com/depinnetwork/depin-sdk/crypto/keys/multisig"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
 )
 
 func generatePubKeys(n int) []types.PubKey {

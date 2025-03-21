@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	types2 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	types2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/anypb"
 
@@ -14,14 +14,14 @@ import (
 	"cosmossdk.io/errors"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsign "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/client"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
+	authsign "github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 // GenSignedMockTx generates a signed mock transaction.

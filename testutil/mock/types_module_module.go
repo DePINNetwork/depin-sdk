@@ -14,9 +14,9 @@ import (
 	reflect "reflect"
 
 	registry "cosmossdk.io/core/registry"
-	client "github.com/cosmos/cosmos-sdk/client"
-	types "github.com/cosmos/cosmos-sdk/types"
-	module "github.com/cosmos/cosmos-sdk/types/module"
+	client "github.com/depinnetwork/depin-sdk/client"
+	types "github.com/depinnetwork/depin-sdk/types"
+	module "github.com/depinnetwork/depin-sdk/types/module"
 	runtime "github.com/grpc-ecosystem/grpc-gateway/runtime"
 	gomock "go.uber.org/mock/gomock"
 	grpc "google.golang.org/grpc"

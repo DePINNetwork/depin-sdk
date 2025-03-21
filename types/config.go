@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 // DefaultKeyringServiceName defines a default service name for the keyring.

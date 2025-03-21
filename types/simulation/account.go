@@ -4,10 +4,10 @@ import (
 	"errors"
 	"math/rand"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/ed25519"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // Account contains a privkey, pubkey, address tuple

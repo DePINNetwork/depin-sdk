@@ -10,13 +10,13 @@ import (
 	"path/filepath"
 	"time"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmttypes "github.com/cometbft/cometbft/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 const (

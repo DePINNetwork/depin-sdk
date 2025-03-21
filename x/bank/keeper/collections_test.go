@@ -16,12 +16,12 @@ import (
 	banktestutil "cosmossdk.io/x/bank/testutil"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func TestBankStateCompatibility(t *testing.T) {

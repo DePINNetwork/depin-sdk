@@ -9,8 +9,8 @@ import (
 	"cosmossdk.io/core/store"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func NewKVStoreService(storeKey *storetypes.KVStoreKey) store.KVStoreService {

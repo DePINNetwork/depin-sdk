@@ -3,7 +3,7 @@ package types
 import (
 	gogoprotoany "github.com/cosmos/gogoproto/types/any"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func (m *QueryAccountResponse) UnpackInterfaces(unpacker gogoprotoany.AnyUnpacker) error {

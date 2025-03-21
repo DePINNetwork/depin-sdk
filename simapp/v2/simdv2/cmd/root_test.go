@@ -10,8 +10,8 @@ import (
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/simapp/v2/simdv2/cmd"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/x/genutil/client/cli"
 )
 
 func TestInitCmd(t *testing.T) {

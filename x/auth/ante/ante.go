@@ -6,11 +6,11 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante/unorderedtx"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante/unorderedtx"
+	"github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 // HandlerOptions are the options required for constructing a default SDK AnteHandler.

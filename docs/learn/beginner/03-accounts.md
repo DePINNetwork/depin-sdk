@@ -48,9 +48,9 @@ In the node, all data is stored using Protocol Buffers serialization.
 
 The Cosmos SDK supports the following digital key schemes for creating digital signatures:
 
-* `secp256k1`, as implemented in the [Cosmos SDK's `crypto/keys/secp256k1` package](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keys/secp256k1/secp256k1.go).
-* `secp256r1`, as implemented in the [Cosmos SDK's `crypto/keys/secp256r1` package](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keys/secp256r1/pubkey.go),
-* `tm-ed25519`, as implemented in the [Cosmos SDK `crypto/keys/ed25519` package](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keys/ed25519/ed25519.go). This scheme is supported only for the consensus validation.
+* `secp256k1`, as implemented in the [Cosmos SDK's `crypto/keys/secp256k1` package](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keys/secp256k1/secp256k1.go).
+* `secp256r1`, as implemented in the [Cosmos SDK's `crypto/keys/secp256r1` package](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keys/secp256r1/pubkey.go),
+* `tm-ed25519`, as implemented in the [Cosmos SDK `crypto/keys/ed25519` package](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keys/ed25519/ed25519.go). This scheme is supported only for the consensus validation.
 
 |              | Address length in bytes | Public key length in bytes | Used for transaction authentication | Used for consensus (cometbft) |
 | :----------: |:-----------------------:| :------------------------: |:-----------------------------------:| :-----------------------------: |
@@ -71,10 +71,10 @@ Each account is identified using an `Address` which is a sequence of bytes deriv
 These types implement the `Address` interface:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/address.go#L145-L155
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/types/address.go#L145-L155
 ```
 
-Address construction algorithm is defined in [ADR-28](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-028-public-key-addresses.md).
+Address construction algorithm is defined in [ADR-28](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-028-public-key-addresses.md).
 Here is the standard way to obtain an account address from a `pub` public key:
 
 ```go
@@ -86,7 +86,7 @@ Of note, the `Marshal()` and `Bytes()` method both return the same raw `[]byte` 
 For user interaction, addresses are formatted using [Bech32](https://en.bitcoin.it/wiki/Bech32). This formatting is handled by an address codec. The Bech32 format is the only supported format for interacting with a blockchain. The Bech32 human-readable part (Bech32 prefix) is used to denote an address type. The address codec is responsible for encoding and decoding addresses between their binary representation and the Bech32 string format. Here's an example of how the address codec formats addresses:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/codec/address/bech32_codec.go#L95-L111
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/codec/address/bech32_codec.go#L95-L111
 ```
 
 |                    | Address Bech32 Prefix |
@@ -108,11 +108,11 @@ Module account addresses are generated deterministically from the module name, a
 Definition of account permissions is done during the app initialization.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/3a03804c148d0da8d6df1ad839b08c50f6896fa1/simapp/app.go#L130-L141
+https://github.com/depinnetwork/depin-sdk/blob/3a03804c148d0da8d6df1ad839b08c50f6896fa1/simapp/app.go#L130-L141
 ```
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/3a03804c148d0da8d6df1ad839b08c50f6896fa1/simapp/app.go#L328
+https://github.com/depinnetwork/depin-sdk/blob/3a03804c148d0da8d6df1ad839b08c50f6896fa1/simapp/app.go#L328
 ```
 
 ### Public Keys
@@ -120,7 +120,7 @@ https://github.com/cosmos/cosmos-sdk/blob/3a03804c148d0da8d6df1ad839b08c50f6896f
 Public keys in Cosmos SDK are defined by `cryptotypes.PubKey` interface. Since public keys are saved in a store, the `cryptotypes.PubKey` extends the `proto.Message` interface:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/types/types.go#L8-L17
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/types/types.go#L8-L17
 ```
 
 A compressed format is used for `secp256k1` and `secp256r1` serialization.
@@ -131,10 +131,10 @@ A compressed format is used for `secp256k1` and `secp256r1` serialization.
 This prefix is followed by the `x`-coordinate.
 
 Public Keys are not used to reference accounts (or users) and in general are not used when composing transaction messages (with a few exceptions: `MsgCreateValidator`, `Validator` and `Multisig` messages).
-For user interactions, `PubKey` is formatted using Protobufs JSON ([ProtoMarshalJSON](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/codec/json.go#L14-L34) function). Example:
+For user interactions, `PubKey` is formatted using Protobufs JSON ([ProtoMarshalJSON](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/codec/json.go#L14-L34) function). Example:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/client/keys/output.go#L24-L47
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/client/keys/output.go#L24-L47
 ```
 
 ## Keyring
@@ -142,7 +142,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/client/keys/output.go#L
 A `Keyring` is an object that stores and manages accounts. In the Cosmos SDK, a `Keyring` implementation follows the `Keyring` interface:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring.go#L57-L109
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring.go#L57-L109
 ```
 
 The default implementation of `Keyring` comes from the third-party [`99designs/keyring`](https://github.com/99designs/keyring) library.
@@ -152,10 +152,10 @@ A few notes on the `Keyring` methods:
 * `Sign(uid string, msg []byte) ([]byte, types.PubKey, error)` strictly deals with the signature of the `msg` bytes. You must prepare and encode the transaction into a canonical `[]byte` form. Because protobuf is not deterministic, it has been decided in [ADR-020](../../architecture/adr-020-protobuf-transaction-encoding.md) that the canonical `payload` to sign is the `SignDoc` struct, deterministically encoded using [ADR-027](../../architecture/adr-027-deterministic-protobuf-serialization.md). Note that signature verification is not implemented in the Cosmos SDK by default, it is deferred to the [`anteHandler`](../advanced/00-baseapp.md#antehandler).
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/proto/cosmos/tx/v1beta1/tx.proto#L50-L67
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/proto/cosmos/tx/v1beta1/tx.proto#L50-L67
 ```
 
-* `NewAccount(uid, mnemonic, bip39Passphrase, hdPath string, algo SignatureAlgo) (*Record, error)` creates a new account based on the [`bip44 path`](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) and persists it on selected backend. The `PrivKey` is **never stored unencrypted**, instead it is [encrypted with a passphrase](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/crypto/armor.go) before being persisted. In the context of this method, the key type and sequence number refers to the segment of the BIP44 derivation path (for example, `0`, `1`, `2`, ...) that is used to derive a private and a public key from the mnemonic. Using the same mnemonic and derivation path, the same `PrivKey`, `PubKey` and `Address` is generated. The following keys are supported by the keyring:
+* `NewAccount(uid, mnemonic, bip39Passphrase, hdPath string, algo SignatureAlgo) (*Record, error)` creates a new account based on the [`bip44 path`](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) and persists it on selected backend. The `PrivKey` is **never stored unencrypted**, instead it is [encrypted with a passphrase](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/crypto/armor.go) before being persisted. In the context of this method, the key type and sequence number refers to the segment of the BIP44 derivation path (for example, `0`, `1`, `2`, ...) that is used to derive a private and a public key from the mnemonic. Using the same mnemonic and derivation path, the same `PrivKey`, `PubKey` and `Address` is generated. The following keys are supported by the keyring:
 
   * `secp256k1`
   * `ed25519`
@@ -167,19 +167,19 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/proto/cosmos/tx/v1beta1
 To create a new key type for use in the keyring, the `keyring.SignatureAlgo` interface must be fulfilled.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keyring/signing_algorithms.go#L11-L16
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keyring/signing_algorithms.go#L11-L16
 ```
 
 The interface consists in three methods where `Name()` returns the name of the algorithm as a `hd.PubKeyType` and `Derive()` and `Generate()` must return the following functions respectively:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/hd/algo.go#L32-L35
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/hd/algo.go#L32-L35
 ```
 
-Once the `keyring.SignatureAlgo` has been implemented it must be added to the [list of supported algos](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring.go#L209) of the keyring. You can add your new algo to the list by using the [`Option` function](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring_other.go#L17).
+Once the `keyring.SignatureAlgo` has been implemented it must be added to the [list of supported algos](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring.go#L209) of the keyring. You can add your new algo to the list by using the [`Option` function](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring_other.go#L17).
 
 For simplicity the implementation of a new key type should be done inside the `crypto/hd` package.
-There is an example of a working `secp256k1` implementation in [algo.go](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/hd/algo.go#L42-L79).
+There is an example of a working `secp256k1` implementation in [algo.go](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/hd/algo.go#L42-L79).
 
 
 #### Implementing secp256r1 algo
@@ -213,8 +213,8 @@ package hd
 import (
 	"github.com/cosmos/go-bip39"
 	
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256r1"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256r1"
+	"github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // Secp256r1Type uses the secp256r1 ECDSA parameters.
@@ -258,7 +258,7 @@ func (s secp256r1Algo) Generate() GenerateFn {
 }
 ```
 
-Finally, the algo must be added to the list of [supported algos](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring.go#L209) by the keyring.
+Finally, the algo must be added to the list of [supported algos](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/crypto/keyring/keyring.go#L209) by the keyring.
 
 ```go
 // cosmos-sdk/crypto/keyring/keyring.go

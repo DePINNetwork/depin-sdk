@@ -1,7 +1,7 @@
 package cometbft
 
 import (
-	cmtcfg "github.com/cometbft/cometbft/config"
+	cmtcfg "github.com/depinnetwork/por-consensus/config"
 
 	"cosmossdk.io/schema/indexer"
 	"cosmossdk.io/server/v2/cometbft/mempool"

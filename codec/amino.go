@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"io"
 
-	cmttypes "github.com/cometbft/cometbft/types"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 	"github.com/tendermint/go-amino"
 
 	"cosmossdk.io/core/registry"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 // LegacyAmino defines a wrapper for an Amino codec that properly

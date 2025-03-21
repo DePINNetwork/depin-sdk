@@ -14,13 +14,13 @@ import (
 	"cosmossdk.io/x/mint/types"
 	_ "cosmossdk.io/x/staking" // import as blank for app wiring
 
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	_ "github.com/cosmos/cosmos-sdk/x/auth" // import as blank for app wiring
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import as blank for app wiring
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	_ "github.com/cosmos/cosmos-sdk/x/genutil" // import as blank for app wiring
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	"github.com/depinnetwork/depin-sdk/testutil/configurator"
+	_ "github.com/depinnetwork/depin-sdk/x/auth" // import as blank for app wiring
+	authkeeper "github.com/depinnetwork/depin-sdk/x/auth/keeper"
+	_ "github.com/depinnetwork/depin-sdk/x/auth/tx/config" // import as blank for app wiring
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	_ "github.com/depinnetwork/depin-sdk/x/genutil" // import as blank for app wiring
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

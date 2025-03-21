@@ -14,7 +14,7 @@ and `ProcessProposal` for the new proposal.
 Here is the implementation of the default implementation:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/baseapp/abci_utils.go#L224-L231
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/baseapp/abci_utils.go#L224-L231
 ```
 
 Like `PrepareProposal` this implementation is the default and can be modified by

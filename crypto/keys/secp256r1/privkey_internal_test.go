@@ -3,13 +3,13 @@ package secp256r1
 import (
 	"testing"
 
-	"github.com/cometbft/cometbft/crypto"
+	"github.com/depinnetwork/por-consensus/crypto"
 	"github.com/cosmos/gogoproto/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 var _ cryptotypes.PrivKey = &PrivKey{}

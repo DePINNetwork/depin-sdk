@@ -41,7 +41,7 @@ type Keeper struct {
 For example, here is the type definition of the `keeper` from the `staking` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/staking/keeper/keeper.go#L54-L115 
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/staking/keeper/keeper.go#L54-L115 
 ```
 
 Let us go through the different parameters:
@@ -59,13 +59,13 @@ Environment is a struct, part of the module Core APIs (`cosmossdk.io/core/appmod
 A keeper should embed the `environment` struct to get access to the necessary references to services available to the modules. [Runtime](../../build/building-apps/00-runtime.md) ensures that the `Environment` struct is scoped to the module.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/environment.go#L14-L29
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/environment.go#L14-L29
 ```
 
 All services are then easily available to the module wherever the `keeper` is used:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/x/gov/keeper/proposal.go#L110-L112
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/x/gov/keeper/proposal.go#L110-L112
 ```
 
 Learn more about those services in the [core api](../../learn/advanced/02-core.md) documentation.

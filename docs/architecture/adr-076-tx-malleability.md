@@ -48,12 +48,12 @@ increasing account sequence number.
 
 #### Non-deterministic Protobuf Encoding
 
-Cosmos SDK transactions are encoded using protobuf binary encoding when they are submitted to the network. Protobuf binary is not inherently a deterministic encoding meaning that the same logical payload could have several valid bytes representations. In a basic sense, this means that protobuf in general can be decoded and re-encoded to produce a different byte stream (and thus different hash) without changing the logical meaning of the bytes. [ADR 027: Deterministic Protobuf Serialization](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-027-deterministic-protobuf-serialization.md) describes in detail what needs to be done to produce what we consider to be a "canonical", deterministic protobuf serialization. Briefly, the following sources of malleability at the encoding level have been identified and are addressed by this specification:
+Cosmos SDK transactions are encoded using protobuf binary encoding when they are submitted to the network. Protobuf binary is not inherently a deterministic encoding meaning that the same logical payload could have several valid bytes representations. In a basic sense, this means that protobuf in general can be decoded and re-encoded to produce a different byte stream (and thus different hash) without changing the logical meaning of the bytes. [ADR 027: Deterministic Protobuf Serialization](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-027-deterministic-protobuf-serialization.md) describes in detail what needs to be done to produce what we consider to be a "canonical", deterministic protobuf serialization. Briefly, the following sources of malleability at the encoding level have been identified and are addressed by this specification:
 * fields can be emitted in any order
 * default field values can be included or omitted, and this doesn't change meaning unless `optional` is used
 * `repeated` fields of scalars may use packed or "regular" encoding
 * `varint`s can include extra ignored bits
-* extra fields may be added and are usually simply ignored by decoders. [ADR 020](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-020-protobuf-transaction-encoding.md#unknown-field-filtering) specifies that in general such extra fields should cause messages and transactions to be rejected)
+* extra fields may be added and are usually simply ignored by decoders. [ADR 020](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-020-protobuf-transaction-encoding.md#unknown-field-filtering) specifies that in general such extra fields should cause messages and transactions to be rejected)
 
 When using `SIGN_MODE_DIRECT` none of the above malleabilities will be tolerated because:
 * signatures of messages and extensions must be done over the raw encoded bytes of those fields
@@ -63,7 +63,7 @@ Transactions signed with `SIGN_MODE_LEGACY_AMINO_JSON`, however, have no way of 
 
 In addition to being aware of the general non-determinism of protobuf binary, developers need to pay special attention to make sure that unknown protobuf fields get rejected when developing new capabilities related to protobuf transactions. The protobuf serialization format was designed with the assumption that unknown data known to encoders could safely be ignored by decoders. This assumption may have been fairly safe within the walled garden of Google's centralized infrastructure. However, in distributed blockchain systems, this assumption is generally unsafe. If a newer client encodes a protobuf message with data intended for a newer server, it is not safe for an older server to simply ignore and discard instructions that it does not understand. These instructions could include critical information that the transaction signer is relying upon and just assuming that it is unimportant is not safe.
 
-[ADR 020](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-020-protobuf-transaction-encoding.md#unknown-field-filtering) specifies some provisions for "non-critical" fields which can safely be ignored by older servers. In practice, I have not seen any valid usages of this. It is something in the design that maintainers should be aware of, but it may not be necessary or even 100% safe.
+[ADR 020](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-020-protobuf-transaction-encoding.md#unknown-field-filtering) specifies some provisions for "non-critical" fields which can safely be ignored by older servers. In practice, I have not seen any valid usages of this. It is something in the design that maintainers should be aware of, but it may not be necessary or even 100% safe.
 
 #### Non-deterministic Value Encoding
 
@@ -158,8 +158,8 @@ or get rejected.
 
 ## References
 
-* [ADR 027: Deterministic Protobuf Serialization](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-027-deterministic-protobuf-serialization.md)
-* [ADR 020](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-020-protobuf-transaction-encoding.md#unknown-field-filtering)
+* [ADR 027: Deterministic Protobuf Serialization](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-027-deterministic-protobuf-serialization.md)
+* [ADR 020](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-020-protobuf-transaction-encoding.md#unknown-field-filtering)
 * [`aminojson.proto`](../../x/tx/signing/aminojson/internal/aminojsonpb/aminojson.proto)
 * [`tx.proto`](../../proto/cosmos/tx/v1beta1/tx.proto)
 

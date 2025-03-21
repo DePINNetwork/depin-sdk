@@ -3,7 +3,7 @@ package cmtservice
 import (
 	"context"
 
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
 )
 
 // GetNodeStatus returns the status of the node.

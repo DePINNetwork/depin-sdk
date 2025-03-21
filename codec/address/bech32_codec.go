@@ -11,10 +11,10 @@ import (
 	"cosmossdk.io/core/address"
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/internal/conv"
-	sdkAddress "github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/bech32"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/internal/conv"
+	sdkAddress "github.com/depinnetwork/depin-sdk/types/address"
+	"github.com/depinnetwork/depin-sdk/types/bech32"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 var errEmptyAddress = errors.New("empty address string is not allowed")

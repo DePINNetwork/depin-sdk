@@ -3,8 +3,8 @@ syntax = "proto3";
 package cosmos.authz.v1beta1;
 
 import "google/api/annotations.proto";
-import "cosmos/base/query/v1beta1/pagination.proto";
-import "cosmos/authz/v1beta1/authz.proto";
+import "depin/base/query/v1beta1/pagination.proto";
+import "depin/authz/v1beta1/authz.proto";
 import "cosmos_proto/cosmos.proto";
 
 option go_package = "cosmossdk.io/x/authz";
@@ -13,19 +13,19 @@ option go_package = "cosmossdk.io/x/authz";
 service Query {
   // Returns list of `Authorization`, granted to the grantee by the granter.
   rpc Grants(QueryGrantsRequest) returns (QueryGrantsResponse) {
-    option (google.api.http).get = "/cosmos/authz/v1beta1/grants";
+    option (google.api.http).get = "/depin/authz/v1beta1/grants";
   }
 
   // GranterGrants returns list of `GrantAuthorization`, granted by granter.
   rpc GranterGrants(QueryGranterGrantsRequest) returns (QueryGranterGrantsResponse) {
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.46";
-    option (google.api.http).get          = "/cosmos/authz/v1beta1/grants/granter/{granter}";
+    option (google.api.http).get          = "/depin/authz/v1beta1/grants/granter/{granter}";
   }
 
   // GranteeGrants returns a list of `GrantAuthorization` by grantee.
   rpc GranteeGrants(QueryGranteeGrantsRequest) returns (QueryGranteeGrantsResponse) {
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.46";
-    option (google.api.http).get          = "/cosmos/authz/v1beta1/grants/grantee/{grantee}";
+    option (google.api.http).get          = "/depin/authz/v1beta1/grants/grantee/{grantee}";
   }
 }
 

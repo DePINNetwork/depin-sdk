@@ -8,8 +8,8 @@ import (
 
 	"cosmossdk.io/core/codec"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdktx "github.com/cosmos/cosmos-sdk/types/tx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdktx "github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 // DefaultTxEncoder returns a default protobuf TxEncoder using the provided Marshaler

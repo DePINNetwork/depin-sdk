@@ -9,8 +9,8 @@ import (
 	"cosmossdk.io/x/accounts/accountstd"
 	txdecode "cosmossdk.io/x/tx/decode"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	cdctypes "github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 var _ depinject.OnePerModuleType = AppModule{}

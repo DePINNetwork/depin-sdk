@@ -12,12 +12,12 @@ import (
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/x/tx/signing"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	countertypes "github.com/cosmos/cosmos-sdk/testutil/x/counter/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/multisig"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	countertypes "github.com/depinnetwork/depin-sdk/testutil/x/counter/types"
 )
 
 var (

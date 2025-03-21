@@ -8,8 +8,8 @@ import (
 
 	"cosmossdk.io/core/address"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/kv"
 )
 
 // AppEntrypoint defines the method for delivering simulation TX to the app. This is implemented by *Baseapp

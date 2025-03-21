@@ -6,10 +6,10 @@ package tx
 import (
 	context "context"
 	fmt "fmt"
-	v1 "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	_ "github.com/cosmos/cosmos-proto"
-	types "github.com/cosmos/cosmos-sdk/types"
-	query "github.com/cosmos/cosmos-sdk/types/query"
+	types "github.com/depinnetwork/depin-sdk/types"
+	query "github.com/depinnetwork/depin-sdk/types/query"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
 	proto "github.com/cosmos/gogoproto/proto"
 	_ "google.golang.org/genproto/googleapis/api/annotations"

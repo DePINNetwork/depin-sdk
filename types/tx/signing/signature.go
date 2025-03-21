@@ -7,7 +7,7 @@ import (
 
 	signingv1beta1 "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // SignatureV2 is a convenience type that is easier to use in application logic

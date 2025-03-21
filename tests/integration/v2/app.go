@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmttypes "github.com/cometbft/cometbft/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/protobuf/types/known/anypb"
 
@@ -36,18 +36,18 @@ import (
 	consensustypes "cosmossdk.io/x/consensus/types"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/std"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsign "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/std"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
+	authsign "github.com/depinnetwork/depin-sdk/x/auth/signing"
+	"github.com/depinnetwork/depin-sdk/x/auth/tx"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 const DefaultGenTxGas = 10000000

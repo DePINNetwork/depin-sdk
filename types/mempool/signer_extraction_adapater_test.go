@@ -11,10 +11,10 @@ import (
 
 	"cosmossdk.io/core/transaction"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	txsigning "github.com/cosmos/cosmos-sdk/types/tx/signing"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/mempool"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
+	txsigning "github.com/depinnetwork/depin-sdk/types/tx/signing"
 )
 
 type nonVerifiableTx struct{}

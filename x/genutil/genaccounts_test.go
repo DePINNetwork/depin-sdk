@@ -9,13 +9,13 @@ import (
 	"cosmossdk.io/x/bank"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module/testutil"
+	"github.com/depinnetwork/depin-sdk/x/auth"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/x/genutil"
 )
 
 func TestAddGenesisAccounts(t *testing.T) {

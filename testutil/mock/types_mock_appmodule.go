@@ -16,7 +16,7 @@ import (
 
 	appmodule "cosmossdk.io/core/appmodule"
 	appmodulev2 "cosmossdk.io/core/appmodule/v2"
-	module "github.com/cosmos/cosmos-sdk/types/module"
+	module "github.com/depinnetwork/depin-sdk/types/module"
 	gomock "go.uber.org/mock/gomock"
 )
 

@@ -12,7 +12,7 @@ import (
 	account_abstractionv1 "cosmossdk.io/x/accounts/interfaces/account_abstraction/v1"
 	rotationv1 "cosmossdk.io/x/accounts/testing/rotation/v1"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec"
 )
 
 var (

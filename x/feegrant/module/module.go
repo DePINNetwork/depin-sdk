@@ -17,9 +17,9 @@ import (
 	"cosmossdk.io/x/feegrant/client/cli"
 	"cosmossdk.io/x/feegrant/keeper"
 
-	sdkclient "github.com/cosmos/cosmos-sdk/client"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	sdkclient "github.com/depinnetwork/depin-sdk/client"
+	cdctypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
 )
 
 var (

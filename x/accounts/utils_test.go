@@ -18,9 +18,9 @@ import (
 	banktypes "cosmossdk.io/x/bank/types"
 	"cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var _ address.Codec = (*addressCodec)(nil)

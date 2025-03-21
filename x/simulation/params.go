@@ -5,15 +5,15 @@ import (
 	"encoding/json"
 	"math/rand"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	"github.com/cometbft/cometbft/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	"github.com/depinnetwork/por-consensus/types"
 
 	"cosmossdk.io/core/address"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 const (

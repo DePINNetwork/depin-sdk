@@ -12,7 +12,7 @@ import (
 
 	"go.uber.org/mock/gomock"
 
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types"
 )
 
 // MockAnteDecorator is a mock of AnteDecorator interface.

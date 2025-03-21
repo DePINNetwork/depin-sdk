@@ -1,12 +1,12 @@
 syntax = "proto3";
 package cosmos.gov.v1beta1;
 
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/gov/v1beta1/gov.proto";
+import "depin/base/v1beta1/coin.proto";
+import "depin/gov/v1beta1/gov.proto";
 import "cosmos_proto/cosmos.proto";
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
-import "cosmos/msg/v1/msg.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
 
 option go_package = "cosmossdk.io/x/gov/types/v1beta1";
@@ -47,7 +47,7 @@ message MsgSubmitProposal {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"
   ];
 
   // proposer is the account address of the proposer.
@@ -125,7 +125,7 @@ message MsgDeposit {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"
   ];
 }
 

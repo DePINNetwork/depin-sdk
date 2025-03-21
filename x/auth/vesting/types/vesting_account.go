@@ -7,9 +7,9 @@ import (
 
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vestexported "github.com/cosmos/cosmos-sdk/x/auth/vesting/exported"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	vestexported "github.com/depinnetwork/depin-sdk/x/auth/vesting/exported"
 )
 
 // Compile-time type assertions

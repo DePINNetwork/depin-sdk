@@ -15,11 +15,11 @@ import (
 
 	systest "cosmossdk.io/systemtests"
 
-	"github.com/cosmos/cosmos-sdk/client/grpc/cmtservice"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	qtypes "github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/client/grpc/cmtservice"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	qtypes "github.com/depinnetwork/depin-sdk/types/query"
 )
 
 func TestQueryStatus(t *testing.T) {

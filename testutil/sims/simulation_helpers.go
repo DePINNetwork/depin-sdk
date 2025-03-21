@@ -10,9 +10,9 @@ import (
 	corestore "cosmossdk.io/core/store"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/types/kv"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // CheckExportSimulation exports the app state and simulation parameters to JSON

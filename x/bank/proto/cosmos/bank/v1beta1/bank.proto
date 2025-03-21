@@ -3,8 +3,8 @@ package cosmos.bank.v1beta1;
 
 import "gogoproto/gogo.proto";
 import "cosmos_proto/cosmos.proto";
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/msg/v1/msg.proto";
+import "depin/base/v1beta1/coin.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
 
 option go_package = "cosmossdk.io/x/bank/types";
@@ -41,7 +41,7 @@ message Input {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"
   ];
 }
 
@@ -55,7 +55,7 @@ message Output {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"
   ];
 }
 
@@ -75,7 +75,7 @@ message Supply {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"
   ];
 }
 

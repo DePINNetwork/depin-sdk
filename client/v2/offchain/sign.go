@@ -12,7 +12,7 @@ import (
 	"cosmossdk.io/client/v2/internal/offchain"
 	clitx "cosmossdk.io/client/v2/tx"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 const (

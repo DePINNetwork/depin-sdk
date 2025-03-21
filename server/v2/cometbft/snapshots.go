@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/cosmos/gogoproto/proto"
 
 	"cosmossdk.io/store/v2/snapshots"

@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/x/circuit/keeper"
 	"cosmossdk.io/x/circuit/types"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 func TestQueryAccount(t *testing.T) {

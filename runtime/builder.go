@@ -12,11 +12,11 @@ import (
 	corestore "cosmossdk.io/core/store"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante/unorderedtx"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/version"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante/unorderedtx"
 )
 
 // AppBuilder is a type that is injected into a container by the runtime module

@@ -17,16 +17,16 @@ import (
 	slashingtestutil "cosmossdk.io/x/slashing/testutil"
 	slashingtypes "cosmossdk.io/x/slashing/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	sdktestutil "github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	addresstypes "github.com/cosmos/cosmos-sdk/types/address"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	sdktestutil "github.com/depinnetwork/depin-sdk/testutil"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	addresstypes "github.com/depinnetwork/depin-sdk/types/address"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 var consAddr = sdk.ConsAddress("addr1_______________")

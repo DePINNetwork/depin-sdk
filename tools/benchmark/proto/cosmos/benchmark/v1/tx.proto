@@ -2,8 +2,8 @@ syntax = "proto3";
 
 package cosmos.benchmark.v1;
 
-import "cosmos/benchmark/v1/benchmark.proto";
-import "cosmos/msg/v1/msg.proto";
+import "depin/benchmark/v1/benchmark.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
 
 option go_package = "cosmossdk.io/tools/benchmark";

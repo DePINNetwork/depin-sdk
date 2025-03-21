@@ -361,7 +361,7 @@ To implement the `Authentication` interface in x/accounts, an account must expos
 The key message type for authentication is `MsgAuthenticate`, which is defined in the module's protocol buffer files:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/main/x/accounts/proto/cosmos/accounts/interfaces/account_abstraction/v1/interface.proto#L9-L24
+https://github.com/depinnetwork/depin-sdk/blob/main/x/accounts/proto/cosmos/accounts/interfaces/account_abstraction/v1/interface.proto#L9-L24
 ```
 
 ### Authentication Mechanism
@@ -403,8 +403,8 @@ package base
 import (
    "context"
    "errors"
-   aa_interface_v1 "github.com/cosmos/cosmos-sdk/x/accounts/interfaces/account_abstraction/v1"
-   "github.com/cosmos/cosmos-sdk/x/accounts/std"
+   aa_interface_v1 "github.com/depinnetwork/depin-sdk/x/accounts/interfaces/account_abstraction/v1"
+   "github.com/depinnetwork/depin-sdk/x/accounts/std"
 )
 
 // Account represents a base account structure

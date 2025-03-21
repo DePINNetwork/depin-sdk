@@ -18,16 +18,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cometbft/cometbft/libs/sync"
-	client "github.com/cometbft/cometbft/rpc/client/http"
-	ctypes "github.com/cometbft/cometbft/rpc/core/types"
-	tmtypes "github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/libs/sync"
+	client "github.com/depinnetwork/por-consensus/rpc/client/http"
+	ctypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	tmtypes "github.com/depinnetwork/por-consensus/types"
 	"github.com/creachadair/tomledit"
 	"github.com/stretchr/testify/require"
 	"github.com/tidwall/sjson"
 
-	"github.com/cosmos/cosmos-sdk/server"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/server"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var (

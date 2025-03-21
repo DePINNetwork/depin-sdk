@@ -3,8 +3,8 @@ package cmtservice
 import (
 	"context"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	v1 "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	gogoprotoany "github.com/cosmos/gogoproto/types/any"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
@@ -13,13 +13,13 @@ import (
 
 	"cosmossdk.io/core/address"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	qtypes "github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/client"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	qtypes "github.com/depinnetwork/depin-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 var (

@@ -15,9 +15,9 @@ import (
 	reflect "reflect"
 
 	exported "cosmossdk.io/x/bank/exported"
-	codec "github.com/cosmos/cosmos-sdk/codec"
-	types "github.com/cosmos/cosmos-sdk/types"
-	module "github.com/cosmos/cosmos-sdk/types/module"
+	codec "github.com/depinnetwork/depin-sdk/codec"
+	types "github.com/depinnetwork/depin-sdk/types"
+	module "github.com/depinnetwork/depin-sdk/types/module"
 	gomock "go.uber.org/mock/gomock"
 )
 

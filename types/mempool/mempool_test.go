@@ -16,15 +16,15 @@ import (
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/log"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/x/counter"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	txsigning "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/testutil/x/counter"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/mempool"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
+	txsigning "github.com/depinnetwork/depin-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 // testPubKey is a dummy implementation of PubKey used for testing.

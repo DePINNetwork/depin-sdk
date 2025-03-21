@@ -11,14 +11,14 @@ import (
 	"cosmossdk.io/core/transaction"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/simsx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsign "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/depinnetwork/depin-sdk/client"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/simsx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
+	authsign "github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 const DefaultGenTxGas = 10_000_000

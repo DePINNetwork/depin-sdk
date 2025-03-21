@@ -14,8 +14,8 @@ import (
 	storetypes "cosmossdk.io/store/types"
 	"cosmossdk.io/x/feegrant"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestPeriodicFeeValidAllow(t *testing.T) {

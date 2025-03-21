@@ -10,8 +10,8 @@ import (
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/x/accounts/internal/implementation"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/address"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/address"
 )
 
 var (

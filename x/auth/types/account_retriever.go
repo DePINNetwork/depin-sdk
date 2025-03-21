@@ -11,9 +11,9 @@ import (
 	"google.golang.org/grpc/metadata"
 	"google.golang.org/grpc/status"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/depinnetwork/depin-sdk/client"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	grpctypes "github.com/depinnetwork/depin-sdk/types/grpc"
 )
 
 var (

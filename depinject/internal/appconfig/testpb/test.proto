@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package testpb;
 
-import "cosmos/app/v1alpha1/module.proto";
+import "depin/app/v1alpha1/module.proto";
 
 option go_package = "cosmossdk.io/depinject/internal/appconfig/testpb";
 

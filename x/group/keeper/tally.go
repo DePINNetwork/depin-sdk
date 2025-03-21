@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/x/group/errors"
 	"cosmossdk.io/x/group/internal/orm"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // Tally is a function that tallies a proposal by iterating through its votes,

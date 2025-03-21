@@ -5,7 +5,7 @@ import (
 	"cosmossdk.io/core/transaction"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // coinsTransferMsgFunc defines a function that creates a message to send coins from one

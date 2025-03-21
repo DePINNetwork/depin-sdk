@@ -17,7 +17,7 @@ import (
 	lockuptypes "cosmossdk.io/x/accounts/defaults/lockup/v1"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func setupPeriodicAccount(t *testing.T, ctx context.Context, ss store.KVStoreService) *PeriodicLockingAccount {

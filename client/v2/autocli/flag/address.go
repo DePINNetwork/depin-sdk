@@ -10,10 +10,10 @@ import (
 	clientcontext "cosmossdk.io/client/v2/context"
 	"cosmossdk.io/core/address"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 type addressStringType struct{}

@@ -7,17 +7,17 @@ import (
 
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/testutil"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/testutil/x/counter"
-	countertypes "github.com/cosmos/cosmos-sdk/testutil/x/counter/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	typestx "github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/depinnetwork/depin-sdk/client/tx"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/testutil"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	"github.com/depinnetwork/depin-sdk/testutil/x/counter"
+	countertypes "github.com/depinnetwork/depin-sdk/testutil/x/counter/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	typestx "github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 const (

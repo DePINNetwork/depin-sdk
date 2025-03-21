@@ -5,9 +5,9 @@ import (
 
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
 )
 
 // ValidateBasic performs stateless validation of the sign doc.

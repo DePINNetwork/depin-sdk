@@ -10,12 +10,12 @@ import (
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/client/tx"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	txtypes "github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 // ExecTestCLICmd builds the client context, mocks the output and executes the command.

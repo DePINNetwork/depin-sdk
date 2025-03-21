@@ -5,7 +5,7 @@ import (
 
 	banktypes "cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // BankKeeper extends bank `MsgServer` to mock `Send` and to register handlers in MsgServiceRouter

@@ -7,7 +7,7 @@ import (
 	nftv1beta1 "cosmossdk.io/api/cosmos/nft/v1beta1"
 	"cosmossdk.io/x/nft"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

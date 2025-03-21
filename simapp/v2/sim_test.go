@@ -18,9 +18,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	genutil "github.com/cosmos/cosmos-sdk/x/genutil/v2"
-	simcli "github.com/cosmos/cosmos-sdk/x/simulation/client/cli"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
+	genutil "github.com/depinnetwork/depin-sdk/x/genutil/v2"
+	simcli "github.com/depinnetwork/depin-sdk/x/simulation/client/cli"
 )
 
 func init() {

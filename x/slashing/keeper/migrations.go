@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/core/address"
 	v4 "cosmossdk.io/x/slashing/migrations/v4"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/runtime"
 )
 
 // Migrator is a struct for handling in-place store migrations.

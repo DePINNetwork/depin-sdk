@@ -6,10 +6,10 @@ package types
 import (
 	context "context"
 	fmt "fmt"
-	v1 "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	_ "github.com/cosmos/cosmos-proto"
-	_ "github.com/cosmos/cosmos-sdk/types/msgservice"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	_ "github.com/depinnetwork/depin-sdk/types/msgservice"
+	_ "github.com/depinnetwork/depin-sdk/types/tx/amino"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
 	proto "github.com/cosmos/gogoproto/proto"
 	grpc "google.golang.org/grpc"

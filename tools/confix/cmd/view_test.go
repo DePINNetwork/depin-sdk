@@ -10,8 +10,8 @@ import (
 
 	"cosmossdk.io/tools/confix/cmd"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
+	"github.com/depinnetwork/depin-sdk/client"
+	clitestutil "github.com/depinnetwork/depin-sdk/testutil/cli"
 )
 
 func TestViewCmd(t *testing.T) {

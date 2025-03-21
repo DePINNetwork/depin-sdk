@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/depinnetwork/depin-sdk/types/kv"
 )
 
 // Uint64ToBigEndian - marshals uint64 to a bigendian byte slice so it can be sorted

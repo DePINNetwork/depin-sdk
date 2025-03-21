@@ -13,10 +13,10 @@ import (
 	context "context"
 	reflect "reflect"
 
-	bytes "github.com/cometbft/cometbft/libs/bytes"
-	client "github.com/cometbft/cometbft/rpc/client"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
-	types "github.com/cometbft/cometbft/types"
+	bytes "github.com/depinnetwork/por-consensus/libs/bytes"
+	client "github.com/depinnetwork/por-consensus/rpc/client"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	types "github.com/depinnetwork/por-consensus/types"
 	gomock "go.uber.org/mock/gomock"
 )
 

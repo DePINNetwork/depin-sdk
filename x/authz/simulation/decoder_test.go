@@ -13,10 +13,10 @@ import (
 	"cosmossdk.io/x/authz/simulation"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/kv"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
 )
 
 func TestDecodeStore(t *testing.T) {

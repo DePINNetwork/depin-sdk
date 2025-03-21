@@ -6,9 +6,9 @@ package keyring
 import (
 	"io"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/ledger"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/ledger"
+	"github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // Options define the options of the Keyring.

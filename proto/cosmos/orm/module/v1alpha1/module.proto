@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package cosmos.orm.module.v1alpha1;
 
-import "cosmos/app/v1alpha1/module.proto";
+import "depin/app/v1alpha1/module.proto";
 
 // Module defines the ORM module which adds providers to the app container for
 // ORM ModuleDB's and in the future will automatically register query

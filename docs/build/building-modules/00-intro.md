@@ -47,7 +47,7 @@ As a result of this architecture, building a Cosmos SDK application usually revo
 Modules have the ability to perform actions that are not available to regular users. This is because modules are given sudo permissions by the state machine. Modules can reject another modules desire to execute a function but this logic must be explicit. Examples of this can be seen when modules create functions to modify parameters:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/61da5d1c29c16a1eb5bb5488719fde604ec07b10/x/bank/keeper/msg_server.go#L147-L149
+https://github.com/depinnetwork/depin-sdk/blob/61da5d1c29c16a1eb5bb5488719fde604ec07b10/x/bank/keeper/msg_server.go#L147-L149
 ```
 
 ## How to Approach Building Modules as a Developer
@@ -63,7 +63,7 @@ While there are no definitive guidelines for writing modules, here are some impo
 The SDK provides a set of APIs that a module can implement, and a set of services that a module can use.
 Those APIs are defined in the `cosmossdk.io/core/appmodule` package, and are used to defined the module capabilities, which is used by `runtime` during the wiring of the application. 
 
-Whenever possible, a module should strive to use only the core APIs (`cosmossdk.io/core`) and not import the `github.com/cosmos/cosmos-sdk` module. This makes modules reusable across SDK versions and reduces the risk of breaking changes.
+Whenever possible, a module should strive to use only the core APIs (`cosmossdk.io/core`) and not import the `github.com/depinnetwork/depin-sdk` module. This makes modules reusable across SDK versions and reduces the risk of breaking changes.
 
 Learn more about the core APIs for modules [here](../../learn/advanced/02-core.md).
 

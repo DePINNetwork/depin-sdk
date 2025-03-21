@@ -26,15 +26,15 @@ import (
 	banktestutil "cosmossdk.io/x/bank/testutil"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	vesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	"github.com/depinnetwork/depin-sdk/types/query"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	vesting "github.com/depinnetwork/depin-sdk/x/auth/vesting/types"
 )
 
 const (

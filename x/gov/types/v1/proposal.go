@@ -7,8 +7,8 @@ import (
 
 	gogoprotoany "github.com/cosmos/gogoproto/types/any"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdktx "github.com/cosmos/cosmos-sdk/types/tx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdktx "github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 const (

@@ -7,18 +7,18 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/cometbft/cometbft/crypto"
-	tmsecp256k1 "github.com/cometbft/cometbft/crypto/secp256k1"
+	"github.com/depinnetwork/por-consensus/crypto"
+	tmsecp256k1 "github.com/depinnetwork/por-consensus/crypto/secp256k1"
 	"github.com/cosmos/btcutil/base58"
 	secp "github.com/decred/dcrd/dcrec/secp256k1/v4"
 	btcecdsa "github.com/decred/dcrd/dcrec/secp256k1/v4/ecdsa"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/ed25519"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 type keyData struct {

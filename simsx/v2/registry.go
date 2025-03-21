@@ -6,7 +6,7 @@ import (
 
 	"github.com/huandu/skiplist"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 // FutureOpsRegistry is a registry for scheduling and retrieving operations mapped to future block times.

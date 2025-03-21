@@ -5,12 +5,12 @@ import (
 	"errors"
 	"fmt"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	"google.golang.org/grpc"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // QueryServiceTestHelper provides a helper for making grpc query service

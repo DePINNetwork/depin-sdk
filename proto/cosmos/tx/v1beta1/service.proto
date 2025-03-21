@@ -2,48 +2,48 @@ syntax = "proto3";
 package cosmos.tx.v1beta1;
 
 import "google/api/annotations.proto";
-import "cosmos/base/abci/v1beta1/abci.proto";
-import "cosmos/tx/v1beta1/tx.proto";
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "depin/base/abci/v1beta1/abci.proto";
+import "depin/tx/v1beta1/tx.proto";
+import "depin/base/query/v1beta1/pagination.proto";
 import "cometbft/types/v1/block.proto";
 import "cometbft/types/v1/types.proto";
 import "cosmos_proto/cosmos.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/types/tx";
+option go_package = "github.com/depin/cosmos-sdk/types/tx";
 
 // Service defines a gRPC service for interacting with transactions.
 service Service {
   // Simulate simulates executing a transaction for estimating gas usage.
   rpc Simulate(SimulateRequest) returns (SimulateResponse) {
     option (google.api.http) = {
-      post: "/cosmos/tx/v1beta1/simulate"
+      post: "/depin/tx/v1beta1/simulate"
       body: "*"
     };
   }
   // GetTx fetches a tx by hash.
   rpc GetTx(GetTxRequest) returns (GetTxResponse) {
-    option (google.api.http).get = "/cosmos/tx/v1beta1/txs/{hash}";
+    option (google.api.http).get = "/depin/tx/v1beta1/txs/{hash}";
   }
   // BroadcastTx broadcast transaction.
   rpc BroadcastTx(BroadcastTxRequest) returns (BroadcastTxResponse) {
     option (google.api.http) = {
-      post: "/cosmos/tx/v1beta1/txs"
+      post: "/depin/tx/v1beta1/txs"
       body: "*"
     };
   }
   // GetTxsEvent fetches txs by event.
   rpc GetTxsEvent(GetTxsEventRequest) returns (GetTxsEventResponse) {
-    option (google.api.http).get = "/cosmos/tx/v1beta1/txs";
+    option (google.api.http).get = "/depin/tx/v1beta1/txs";
   }
   // GetBlockWithTxs fetches a block with decoded txs.
   rpc GetBlockWithTxs(GetBlockWithTxsRequest) returns (GetBlockWithTxsResponse) {
-    option (google.api.http).get          = "/cosmos/tx/v1beta1/txs/block/{height}";
+    option (google.api.http).get          = "/depin/tx/v1beta1/txs/block/{height}";
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.45.2";
   }
   // TxDecode decodes the transaction.
   rpc TxDecode(TxDecodeRequest) returns (TxDecodeResponse) {
     option (google.api.http) = {
-      post: "/cosmos/tx/v1beta1/decode"
+      post: "/depin/tx/v1beta1/decode"
       body: "*"
     };
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.47";
@@ -51,7 +51,7 @@ service Service {
   // TxEncode encodes the transaction.
   rpc TxEncode(TxEncodeRequest) returns (TxEncodeResponse) {
     option (google.api.http) = {
-      post: "/cosmos/tx/v1beta1/encode"
+      post: "/depin/tx/v1beta1/encode"
       body: "*"
     };
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.47";
@@ -59,7 +59,7 @@ service Service {
   // TxEncodeAmino encodes an Amino transaction from JSON to encoded bytes.
   rpc TxEncodeAmino(TxEncodeAminoRequest) returns (TxEncodeAminoResponse) {
     option (google.api.http) = {
-      post: "/cosmos/tx/v1beta1/encode/amino"
+      post: "/depin/tx/v1beta1/encode/amino"
       body: "*"
     };
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.47";
@@ -67,7 +67,7 @@ service Service {
   // TxDecodeAmino decodes an Amino transaction from encoded bytes to JSON.
   rpc TxDecodeAmino(TxDecodeAminoRequest) returns (TxDecodeAminoResponse) {
     option (google.api.http) = {
-      post: "/cosmos/tx/v1beta1/decode/amino"
+      post: "/depin/tx/v1beta1/decode/amino"
       body: "*"
     };
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.47";

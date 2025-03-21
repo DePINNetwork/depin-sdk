@@ -8,9 +8,9 @@ import (
 	"github.com/muesli/termenv"
 	"sigs.k8s.io/yaml"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	cryptokeyring "github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	cryptokeyring "github.com/depinnetwork/depin-sdk/crypto/keyring"
 )
 
 func printKeyringRecord(w io.Writer, ko KeyOutput, output string) error {

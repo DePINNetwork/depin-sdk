@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/core/codec"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // NewGenesisState creates a new GenesisState object

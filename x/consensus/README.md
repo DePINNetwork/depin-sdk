@@ -31,11 +31,11 @@ it can be updated with governance or the address with authority.
 * Params: `0x05 | ProtocolBuffer(cometbft.ConsensusParams)`
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/consensus/proto/cosmos/consensus/v1/query.proto#L21-L27
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/consensus/proto/cosmos/consensus/v1/query.proto#L21-L27
 ```
 
 ```protobuf reference
-https://github.com/cometbft/cometbft/blob/v0.34.35/proto/tendermint/types/params.proto#L11-L18
+https://github.com/depinnetwork/por-consensus/blob/v0.34.35/proto/tendermint/types/params.proto#L11-L18
 ```
 
 ## Keeper
@@ -65,7 +65,7 @@ Note: It is recommended to use the `x/consensus` module keeper to get consensus 
 Update consensus params.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/consensus/proto/cosmos/consensus/v1/tx.proto#L24-L44
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/consensus/proto/cosmos/consensus/v1/tx.proto#L24-L44
 ```
 
 The message will fail under the following conditions:

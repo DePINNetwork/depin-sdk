@@ -3,7 +3,7 @@ syntax = "proto3";
 package cosmos.feegrant.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "cosmos/feegrant/v1beta1/feegrant.proto";
+import "depin/feegrant/v1beta1/feegrant.proto";
 import "amino/amino.proto";
 
 option go_package = "cosmossdk.io/x/feegrant";

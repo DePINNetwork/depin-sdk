@@ -54,7 +54,7 @@ The `AppModule` interface defines a module. Modules can declare their functional
 `AppModule`s are managed by the [module manager](#manager), which checks which extension interfaces are implemented by the module.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L10-L20
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L10-L20
 ```
 
 ### `HasPreBlocker`
@@ -62,7 +62,7 @@ https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/
 The `HasPreBlocker` is an extension interface from `appmodule.AppModule`. All modules that have an `PreBlock` method implement this interface.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L22-L28
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L22-L28
 ```
 
 ### `HasBeginBlocker`
@@ -71,7 +71,7 @@ The `HasBeginBlocker` is an extension interface from `appmodule.AppModule`. All 
 It gives module developers the option to implement logic that is automatically triggered at the beginning of each block.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L30-L38
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L30-L38
 ```
 
 ### `HasEndBlocker`
@@ -79,20 +79,20 @@ https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/
 The `HasEndBlocker` is an extension interface from `appmodule.AppModule`. All modules that have an `EndBlock` method implement this interface. It gives module developers the option to implement logic that is automatically triggered at the end of each block.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L40-L48
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L40-L48
 ```
 
 If a module needs to return validator set updates (staking), they can use `HasABCIEndBlock` (in v1).
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/module/module.go#L115-L119
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/types/module/module.go#L115-L119
 ```
 
 Or, alternatively, `HasUpdateValidators` in v2:
 
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L87-L94
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L87-L94
 ```
 
 ### `HasRegisterInterfaces`
@@ -100,7 +100,7 @@ https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/
 The `HasRegisterInterfaces` is an extension interface from `appmodule.AppModule`. All modules that have a `RegisterInterfaces` method implement this interface. It allows modules to register their message types with their concrete implementations as `proto.Message`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L103-L106
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/module.go#L103-L106
 ```
 
 ### `HasServices`
@@ -109,7 +109,7 @@ This interface defines one method. It allows to register and let module expose g
 This interface is not part of the `core` package to avoid a gRPC dependency, but is recognized by the module manager and [runtime](../building-apps/00-runtime.md).
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/module.go#L34-L53
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/module.go#L34-L53
 ```
 
 ### `HasAminoCodec`
@@ -117,15 +117,15 @@ https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/mod
 The `HasAminoCodec` allows to register the `amino` codec for the module, which is used to marshal and unmarshal structs to/from `[]byte` in order to persist them in the module's `KVStore`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/module.go#L68-L72
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/module.go#L68-L72
 ```
 
 ### `module.HasGRPCGateway`
 
-This interface is not part of the `core` package to avoid a gRPC dependency. It is used to register gRPC routes gateway routes for the module. [In v2, this will be done differently, and totally abstracted from modules and module manager](https://github.com/cosmos/cosmos-sdk/issues/22715)
+This interface is not part of the `core` package to avoid a gRPC dependency. It is used to register gRPC routes gateway routes for the module. [In v2, this will be done differently, and totally abstracted from modules and module manager](https://github.com/depinnetwork/depin-sdk/issues/22715)
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/module/module.go#L74-L77
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/types/module/module.go#L74-L77
 ```
 
 ### `HasMigrations`
@@ -133,7 +133,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/module/module.go#
 The `HasMigrations` interface is used to register module migrations. Learn more about [module migrations](./13-upgrade.md).
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/migrations.go#L14-L21
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/migrations.go#L14-L21
 ```
 
 ### `HasConsensusVersion`
@@ -141,7 +141,7 @@ https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/
 This interface defines one method for checking a module consensus version. It is mainly used in conjunction with `HasMigrations`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/migrations.go#L5-L12
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/migrations.go#L5-L12
 ```
 
 ### Genesis
@@ -151,7 +151,7 @@ https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/
 `HasGenesis` is an extension interface for allowing modules to implement genesis functionalities.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/genesis.go#L8-L19
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/genesis.go#L8-L19
 ```
 
 Let us go through some of the methods:
@@ -166,7 +166,7 @@ In the same vein than `HasABCIEndBlock`, `HasABCIGenesis` is used to return vali
 `HasABCIGenesis` is an extension interface for allowing modules to implement genesis functionalities and returns validator set updates.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/genesis.go#L21-L31
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/genesis.go#L21-L31
 ```
 
 ### Implementing the Application Module Interfaces
@@ -194,7 +194,7 @@ The module manager is used to manage collections of `AppModule` and all the exte
 The `Manager` is a structure that holds all the `AppModule` of an application, and defines the order of execution between several key components of these modules:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/module/module.go#L121-L133
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/types/module/module.go#L121-L133
 ```
 
 :::tip
@@ -229,5 +229,5 @@ The module manager is used throughout the application whenever an action on a co
 Here's an example of a concrete integration within [`runtime`](../building-apps/00-runtime.md)
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/runtime/module.go#L242-L244
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/runtime/module.go#L242-L244
 ```

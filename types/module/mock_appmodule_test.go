@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	appmodulev2 "cosmossdk.io/core/appmodule/v2"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/types/module"
 )
 
 // AppModuleWithAllExtensions is solely here for the purpose of generating

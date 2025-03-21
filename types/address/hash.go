@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/cometbft/cometbft/crypto"
+	"github.com/depinnetwork/por-consensus/crypto"
 
 	"cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/internal/conv"
+	"github.com/depinnetwork/depin-sdk/internal/conv"
 )
 
 // Len is the length of base addresses

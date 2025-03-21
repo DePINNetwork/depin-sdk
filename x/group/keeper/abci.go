@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/group"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
+	"github.com/depinnetwork/depin-sdk/telemetry"
 )
 
 // EndBlocker called at every block, updates proposal's `FinalTallyResult` and

@@ -4,14 +4,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cometbft/cometbft/crypto"
+	"github.com/depinnetwork/por-consensus/crypto"
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/simapp/v2"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func TestSimGenesisAccountValidate(t *testing.T) {

@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	cmttypes "github.com/cometbft/cometbft/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 	"github.com/spf13/viper"
 	"github.com/stretchr/testify/require"
 
@@ -34,15 +34,15 @@ import (
 	storev2 "cosmossdk.io/store/v2"
 	consensustypes "cosmossdk.io/x/consensus/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/simsx"
-	simsxv2 "github.com/cosmos/cosmos-sdk/simsx/v2"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation/client/cli"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/simsx"
+	simsxv2 "github.com/depinnetwork/depin-sdk/simsx/v2"
+	simtestutil "github.com/depinnetwork/depin-sdk/testutil/sims"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/x/simulation"
+	"github.com/depinnetwork/depin-sdk/x/simulation/client/cli"
 )
 
 type Tx = transaction.Tx

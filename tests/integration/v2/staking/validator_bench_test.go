@@ -11,7 +11,7 @@ import (
 	banktestutil "cosmossdk.io/x/bank/testutil"
 	"cosmossdk.io/x/staking/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func BenchmarkGetValidator(b *testing.B) {

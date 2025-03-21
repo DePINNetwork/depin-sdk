@@ -12,7 +12,7 @@ import (
 
 	"cosmossdk.io/core/router"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/baseapp"
 )
 
 // NewMsgRouterService return new implementation of router.Service.

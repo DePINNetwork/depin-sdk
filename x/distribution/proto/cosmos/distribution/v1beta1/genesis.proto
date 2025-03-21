@@ -5,8 +5,8 @@ option go_package            = "cosmossdk.io/x/distribution/types";
 option (gogoproto.equal_all) = true;
 
 import "gogoproto/gogo.proto";
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/distribution/v1beta1/distribution.proto";
+import "depin/base/v1beta1/coin.proto";
+import "depin/distribution/v1beta1/distribution.proto";
 import "cosmos_proto/cosmos.proto";
 import "amino/amino.proto";
 
@@ -34,7 +34,7 @@ message ValidatorOutstandingRewardsRecord {
 
   // outstanding_rewards represents the outstanding rewards of a validator.
   repeated cosmos.base.v1beta1.DecCoin outstanding_rewards = 2 [
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.DecCoins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];

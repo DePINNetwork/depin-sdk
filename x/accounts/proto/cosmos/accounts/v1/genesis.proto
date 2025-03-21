@@ -4,7 +4,7 @@ package cosmos.accounts.v1;
 
 option go_package = "cosmossdk.io/x/accounts/v1";
 
-import "cosmos/accounts/v1/tx.proto";
+import "depin/accounts/v1/tx.proto";
 
 // GenesisState defines the accounts' module's genesis state.
 message GenesisState {

@@ -6,7 +6,7 @@ import (
 
 	"cosmossdk.io/x/gov/types/v1beta1"
 
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // SimulateLegacyTextProposalContent returns a random text proposal content.

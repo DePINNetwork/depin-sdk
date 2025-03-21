@@ -3,8 +3,8 @@ package orm
 import (
 	"cosmossdk.io/core/codec"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
 )
 
 type TestKeeper struct {

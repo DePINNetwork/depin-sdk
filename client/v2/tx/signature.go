@@ -8,7 +8,7 @@ import (
 	apitxsigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	apitx "cosmossdk.io/api/cosmos/tx/v1beta1"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // Signature holds the necessary components to verify transaction signatures.

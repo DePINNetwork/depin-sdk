@@ -7,7 +7,7 @@ import (
 	_ "cosmossdk.io/api/cosmos/crypto/ed25519" // register to that it shows up in protoregistry.GlobalTypes
 	stakingv1beta "cosmossdk.io/api/cosmos/staking/v1beta1"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 func (am AppModule) AutoCLIOptions() *autocliv1.ModuleOptions {

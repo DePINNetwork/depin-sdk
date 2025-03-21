@@ -7,7 +7,7 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // NewGenesisState creates a new genesis state with default values.

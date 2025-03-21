@@ -15,8 +15,8 @@ import (
 	"cosmossdk.io/math"
 	systest "cosmossdk.io/systemtests"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestSubmitProposal(t *testing.T) {

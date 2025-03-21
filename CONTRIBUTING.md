@@ -32,12 +32,12 @@ Contributing to this repo can mean many things, such as participating in
 discussion or proposing code changes. To ensure a smooth workflow for all
 contributors, the general procedure for contributing has been established:
 
-1. Start by browsing [new issues](https://github.com/cosmos/cosmos-sdk/issues) and [discussions](https://github.com/cosmos/cosmos-sdk/discussions). If you are looking for something interesting or if you have something in your mind, there is a chance it had been discussed.
-   * Looking for a good place to start contributing? How about checking out some [good first issues](https://github.com/cosmos/cosmos-sdk/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) or [bugs](https://github.com/cosmos/cosmos-sdk/issues?q=is%3Aopen+is%3Aissue+label%3A%22T%3A+Bug%22)?
+1. Start by browsing [new issues](https://github.com/depinnetwork/depin-sdk/issues) and [discussions](https://github.com/depinnetwork/depin-sdk/discussions). If you are looking for something interesting or if you have something in your mind, there is a chance it had been discussed.
+   * Looking for a good place to start contributing? How about checking out some [good first issues](https://github.com/depinnetwork/depin-sdk/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) or [bugs](https://github.com/depinnetwork/depin-sdk/issues?q=is%3Aopen+is%3Aissue+label%3A%22T%3A+Bug%22)?
 2. Determine whether a GitHub issue or discussion is more appropriate for your needs:
-   1. If want to propose something new that requires specification or an additional design, or you would like to change a process, start with a [new discussion](https://github.com/cosmos/cosmos-sdk/discussions/new). With discussions, we can better handle the design process using discussion threads. A discussion usually leads to one or more issues.
-   2. If the issue you want addressed is a specific proposal or a bug, then open a [new issue](https://github.com/cosmos/cosmos-sdk/issues/new/choose).
-   3. Review existing [issues](https://github.com/cosmos/cosmos-sdk/issues) to find an issue you'd like to help with.
+   1. If want to propose something new that requires specification or an additional design, or you would like to change a process, start with a [new discussion](https://github.com/depinnetwork/depin-sdk/discussions/new). With discussions, we can better handle the design process using discussion threads. A discussion usually leads to one or more issues.
+   2. If the issue you want addressed is a specific proposal or a bug, then open a [new issue](https://github.com/depinnetwork/depin-sdk/issues/new/choose).
+   3. Review existing [issues](https://github.com/depinnetwork/depin-sdk/issues) to find an issue you'd like to help with.
 3. Participate in thoughtful discussion on that issue.
 4. If you would like to contribute:
    1. Ensure that the proposal has been accepted.
@@ -61,7 +61,7 @@ spell checks all files and will automatically open PRs for any spelling errors.
 
 The Cosmos SDK has many stakeholders contributing and shaping the project. The Core SDK team is composed of Binary Builders & Zondax. Any long-term contributors and additional maintainers from other projects are welcome. We use self-organizing principles to coordinate and collaborate across organizations in structured "EPIC" that focus on specific problem domains or architectural components of the Cosmos SDK.
 
-The developers work in sprints, which are available in a [GitHub Project](https://github.com/orgs/cosmos/projects/26/views/22). The current EPICs are pinned at the top of the [issues list](https://github.com/cosmos/cosmos-sdk/issues).
+The developers work in sprints, which are available in a [GitHub Project](https://github.com/orgs/cosmos/projects/26/views/22). The current EPICs are pinned at the top of the [issues list](https://github.com/depinnetwork/depin-sdk/issues).
 
 The important development announcements are shared on [Discord](https://discord.gg/interchain) in the `#dev-announcements` channel.
 
@@ -74,7 +74,7 @@ If you would like to join one of the community call, then please request to join
 
 ## Architecture Decision Records (ADR)
 
-When proposing an architecture decision for the Cosmos SDK, please start by opening an [issue](https://github.com/cosmos/cosmos-sdk/issues/new/choose). Once the proposal has been discussed and there is rough alignment on a high-level approach to the design, the [ADR creation process](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/PROCESS.md) can begin. We are following this process to ensure all involved parties are in agreement before any party begins coding the proposed implementation. If you would like to see examples of how these are written, please refer to the current [ADRs](https://github.com/cosmos/cosmos-sdk/tree/main/docs/architecture).
+When proposing an architecture decision for the Cosmos SDK, please start by opening an [issue](https://github.com/depinnetwork/depin-sdk/issues/new/choose). Once the proposal has been discussed and there is rough alignment on a high-level approach to the design, the [ADR creation process](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/PROCESS.md) can begin. We are following this process to ensure all involved parties are in agreement before any party begins coding the proposed implementation. If you would like to see examples of how these are written, please refer to the current [ADRs](https://github.com/depinnetwork/depin-sdk/tree/main/docs/architecture).
 
 ## Development Procedure
 
@@ -364,7 +364,7 @@ is broken up into three distinct stages: **Strategy Discovery**, **Concept Appro
 
 * Architecture Decision Records (ADRs) may be proposed by any contributors or maintainers of the Cosmos SDK,
     and should follow the guidelines outlined in the
-    [ADR Creation Process](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/PROCESS.md)
+    [ADR Creation Process](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/PROCESS.md)
 * After proposal, a time bound period for Request for Comment (RFC) on ADRs commences
 * ADRs are intended to be iterative, and may be merged into `main` while still in a `Proposed` status
 

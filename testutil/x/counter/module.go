@@ -6,8 +6,8 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/registry"
 
-	"github.com/cosmos/cosmos-sdk/testutil/x/counter/keeper"
-	"github.com/cosmos/cosmos-sdk/testutil/x/counter/types"
+	"github.com/depinnetwork/depin-sdk/testutil/x/counter/keeper"
+	"github.com/depinnetwork/depin-sdk/testutil/x/counter/types"
 )
 
 var (

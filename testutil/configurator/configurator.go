@@ -30,11 +30,11 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/depinject/appconfig"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	_ "github.com/cosmos/cosmos-sdk/x/auth"           // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/genutil"        // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/validate"       // import as blank for app wiring
+	"github.com/depinnetwork/depin-sdk/testutil"
+	_ "github.com/depinnetwork/depin-sdk/x/auth"           // import as blank for app wiring
+	_ "github.com/depinnetwork/depin-sdk/x/auth/tx/config" // import as blank for app wiring
+	_ "github.com/depinnetwork/depin-sdk/x/genutil"        // import as blank for app wiring
+	_ "github.com/depinnetwork/depin-sdk/x/validate"       // import as blank for app wiring
 )
 
 // Config should never need to be instantiated manually and is solely used for ModuleOption.

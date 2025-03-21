@@ -12,7 +12,7 @@ package mock
 import (
 	reflect "reflect"
 
-	types "github.com/cosmos/cosmos-sdk/types"
+	types "github.com/depinnetwork/depin-sdk/types"
 	gomock "go.uber.org/mock/gomock"
 )
 

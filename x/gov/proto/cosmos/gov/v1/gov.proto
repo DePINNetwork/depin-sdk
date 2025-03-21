@@ -2,7 +2,7 @@
 syntax = "proto3";
 package cosmos.gov.v1;
 
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/base/v1beta1/coin.proto";
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/any.proto";

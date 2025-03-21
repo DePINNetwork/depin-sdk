@@ -1,8 +1,8 @@
 # ABCI and State Streaming Plugin (gRPC)
 
-The `BaseApp` package contains the interface for a [ABCIListener](https://github.com/cosmos/cosmos-sdk/blob/main/baseapp/streaming.go)
+The `BaseApp` package contains the interface for a [ABCIListener](https://github.com/depinnetwork/depin-sdk/blob/main/baseapp/streaming.go)
 service used to write state changes out from individual KVStores to external systems,
-as described in [ADR-038](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-038-state-listening.md).
+as described in [ADR-038](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-038-state-listening.md).
 
 Specific `ABCIListener` service implementations are written and loaded as [hashicorp/go-plugin](https://github.com/hashicorp/go-plugin).
 
@@ -13,10 +13,10 @@ In this section we describe the implementation of the `ABCIListener` interface a
 ### Service Protocol
 
 The companion service protocol for the `ABCIListener` interface is described below.
-See [proto/cosmos/store/streaming/abci/grpc.proto](https://github.com/cosmos/cosmos-sdk/blob/main/proto/cosmos/store/streaming/abci/grpc.proto) for full details.
+See [proto/cosmos/store/streaming/abci/grpc.proto](https://github.com/depinnetwork/depin-sdk/blob/main/proto/cosmos/store/streaming/abci/grpc.proto) for full details.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/6cee22df52eb0cbb30e351fbb41f66d26c1f8300/proto/cosmos/store/streaming/abci/grpc.proto#L1-L36
+https://github.com/depinnetwork/depin-sdk/blob/6cee22df52eb0cbb30e351fbb41f66d26c1f8300/proto/cosmos/store/streaming/abci/grpc.proto#L1-L36
 ```
 
 ### Generating the Code
@@ -27,7 +27,7 @@ To generate the stubs the local client implementation can call, run the followin
 make proto-gen
 ```
 
-For other languages you'll need to [download](https://github.com/cosmos/cosmos-sdk/blob/main/proto/README.md#generate)
+For other languages you'll need to [download](https://github.com/depinnetwork/depin-sdk/blob/main/proto/README.md#generate)
 the CosmosSDK protos into your project and compile. For language specific compilation instructions visit
 [https://github.com/grpc](https://github.com/grpc) and look in the `examples` folder of your
 language of choice `https://github.com/grpc/grpc-{language}/tree/master/examples` and [https://grpc.io](https://grpc.io)
@@ -45,16 +45,16 @@ of the `ABCIListener` plugin written in Go.
 
 The `BaseApp` `ABCIListener` interface will be what will define the plugins capabilities.
 
-Boilerplate RPC implementation example of the `ABCIListener` interface. ([store/streaming/abci/grpc.go](https://github.com/cosmos/cosmos-sdk/blob/main/store/streaming/abci/grpc.go))
+Boilerplate RPC implementation example of the `ABCIListener` interface. ([store/streaming/abci/grpc.go](https://github.com/depinnetwork/depin-sdk/blob/main/store/streaming/abci/grpc.go))
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/f851e188b3b9d46e7c63fa514ad137e6d558fdd9/store/streaming/abci/grpc.go#L13-L79
+https://github.com/depinnetwork/depin-sdk/blob/f851e188b3b9d46e7c63fa514ad137e6d558fdd9/store/streaming/abci/grpc.go#L13-L79
 ```
 
 Our `ABCIlistener` service plugin. ([store/streaming/plugins/abci/v1/interface.go](interface.go))
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/f851e188b3b9d46e7c63fa514ad137e6d558fdd9/store/streaming/abci/interface.go#L13-L45
+https://github.com/depinnetwork/depin-sdk/blob/f851e188b3b9d46e7c63fa514ad137e6d558fdd9/store/streaming/abci/interface.go#L13-L45
 ```
 
 #### Plugin Implementation
@@ -104,7 +104,7 @@ func main() {
 
 A general purpose plugin loading system has been provided by the SDK to be able to load not just
 the `ABCIListener` service plugin but other protocol services as well. You can take a look
-at how plugins are loaded by the SDK in [store/streaming/streaming.go](https://github.com/cosmos/cosmos-sdk/blob/main/store/streaming/streaming.go)
+at how plugins are loaded by the SDK in [store/streaming/streaming.go](https://github.com/depinnetwork/depin-sdk/blob/main/store/streaming/streaming.go)
 
 You'll need to add this in your `app.go`
 

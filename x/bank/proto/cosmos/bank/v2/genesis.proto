@@ -2,9 +2,9 @@ syntax = "proto3";
 package cosmos.bank.v2;
 
 import "gogoproto/gogo.proto";
-import "cosmos/bank/v2/bank.proto";
+import "depin/bank/v2/bank.proto";
 import "amino/amino.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/base/v1beta1/coin.proto";
 import "cosmos_proto/cosmos.proto";
 
 option go_package = "cosmossdk.io/x/bank/v2/types";
@@ -21,7 +21,7 @@ message GenesisState {
   // balances. Otherwise, it will be used to validate that the sum of the balances equals this amount.
   repeated cosmos.base.v1beta1.Coin supply = 3 [
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];
@@ -39,7 +39,7 @@ message Balance {
   // coins defines the different coins this balance holds.
   repeated cosmos.base.v1beta1.Coin coins = 2 [
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins",
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true
   ];

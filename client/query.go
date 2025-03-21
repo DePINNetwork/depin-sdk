@@ -6,15 +6,15 @@ import (
 	"fmt"
 	"strings"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	rpcclient "github.com/cometbft/cometbft/rpc/client"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	rpcclient "github.com/depinnetwork/por-consensus/rpc/client"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
 	"cosmossdk.io/store/rootmulti"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // GetNode returns an RPC client. If the context's client is not defined, an

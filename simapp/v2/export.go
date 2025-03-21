@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/runtime/v2/services"
 	"cosmossdk.io/x/staking"
 
-	v2 "github.com/cosmos/cosmos-sdk/x/genutil/v2"
+	v2 "github.com/depinnetwork/depin-sdk/x/genutil/v2"
 )
 
 // ExportAppStateAndValidators exports the state of the application for a genesis

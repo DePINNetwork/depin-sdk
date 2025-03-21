@@ -7,7 +7,7 @@ import (
 	banktypes "cosmossdk.io/x/bank/types"
 	"cosmossdk.io/x/group"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func (s *TestSuite) TestTally() {

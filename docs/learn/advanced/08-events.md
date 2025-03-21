@@ -20,7 +20,7 @@ Events are implemented in the Cosmos SDK as an alias of the ABCI `Event` type an
 take the form of: `{eventType}.{attributeKey}={attributeValue}`.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/proto/cosmos/streaming/v1/grpc.proto#L49-L53
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/proto/cosmos/streaming/v1/grpc.proto#L49-L53
 ```
 
 An Event contains:
@@ -65,7 +65,7 @@ Internally, the `EventManager` tracks a list of Events for the entire execution 
 (i.e. transaction execution, `BeginBlock`, `EndBlock`).
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/events.go#L18-L25
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/types/events.go#L18-L25
 ```
 
 The `EventManager` comes with a set of useful methods to manage Events. The method
@@ -73,7 +73,7 @@ that is used most by module and application developers is `EmitTypedEvent` or `E
 an Event in the `EventManager`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/events.go#L62-L86
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/types/events.go#L62-L86
 ```
 
 Module developers should handle Event emission via the `EventManager#EmitTypedEvent` or `EventManager#EmitEvent` in each
@@ -86,13 +86,13 @@ Events can be emitted like this using the `EventService`:
 **Typed events:**
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/x/group/keeper/msg_server.go#L94-L96
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/x/group/keeper/msg_server.go#L94-L96
 ```
 
 **Legacy events:**
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/x/gov/keeper/vote.go#L91-L95
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/x/gov/keeper/vote.go#L91-L95
 ```
 
 See the [`Msg` services](../../build/building-modules/03-msg-services.md) concept doc for a more detailed
@@ -134,9 +134,9 @@ The main `eventCategory` you can subscribe to are:
 * `ValidatorSetUpdates`: Contains validator set updates for the block.
 
 These Events are triggered from the `state` package after a block is committed. You can get the
-full list of Event categories [on the CometBFT Go documentation](https://pkg.go.dev/github.com/cometbft/cometbft/types#pkg-constants).
+full list of Event categories [on the CometBFT Go documentation](https://pkg.go.dev/github.com/depinnetwork/por-consensus/types#pkg-constants).
 
-The `type` and `attribute` value of the `query` allow you to filter the specific Event you are looking for. For example, a `Mint` transaction triggers an Event of type `EventMint` and has an `Id` and an `Owner` as `attributes` (as defined in the [`events.proto` file of the `NFT` module](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/proto/cosmos/nft/v1beta1/event.proto#L21-L31)).
+The `type` and `attribute` value of the `query` allow you to filter the specific Event you are looking for. For example, a `Mint` transaction triggers an Event of type `EventMint` and has an `Id` and an `Owner` as `attributes` (as defined in the [`events.proto` file of the `NFT` module](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/proto/cosmos/nft/v1beta1/event.proto#L21-L31)).
 
 Subscribing to this Event would be done like so:
 
@@ -153,4 +153,4 @@ Subscribing to this Event would be done like so:
 
 where `ownerAddress` is an address following the [`AccAddress`](../beginner/03-accounts.md#addresses) format.
 
-The same way can be used to subscribe to [legacy events](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/bank/types/events.go).
+The same way can be used to subscribe to [legacy events](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/bank/types/events.go).

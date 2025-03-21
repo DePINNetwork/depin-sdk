@@ -8,11 +8,11 @@ import (
 	"cosmossdk.io/core/address"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	authvesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	authvesting "github.com/depinnetwork/depin-sdk/x/auth/vesting/types"
+	genutiltypes "github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 type GenesisAccount struct {

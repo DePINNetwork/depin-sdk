@@ -5,11 +5,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/cometbft/cometbft/privval"
+	"github.com/depinnetwork/por-consensus/privval"
 	"github.com/stretchr/testify/require"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // LoadValidatorPubKeyForNode load validator nodes consensus pub key for given node number

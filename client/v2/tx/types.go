@@ -16,7 +16,7 @@ import (
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/x/tx/signing"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // HasValidateBasic is a copy of types.HasValidateBasic to avoid sdk import.

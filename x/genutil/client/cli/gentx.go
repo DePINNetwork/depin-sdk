@@ -14,15 +14,15 @@ import (
 	"cosmossdk.io/errors"
 	"cosmossdk.io/x/staking/client/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/client/tx"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/version"
+	authclient "github.com/depinnetwork/depin-sdk/x/auth/client"
+	"github.com/depinnetwork/depin-sdk/x/genutil"
+	"github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 type genesisMM interface {

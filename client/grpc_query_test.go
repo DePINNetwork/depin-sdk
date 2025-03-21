@@ -11,16 +11,16 @@ import (
 	"cosmossdk.io/log"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/testutil/x/counter"
-	counterkeeper "github.com/cosmos/cosmos-sdk/testutil/x/counter/keeper"
-	countertypes "github.com/cosmos/cosmos-sdk/testutil/x/counter/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	"github.com/depinnetwork/depin-sdk/testutil/x/counter"
+	counterkeeper "github.com/depinnetwork/depin-sdk/testutil/x/counter/keeper"
+	countertypes "github.com/depinnetwork/depin-sdk/testutil/x/counter/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
 )
 
 type IntegrationTestSuite struct {

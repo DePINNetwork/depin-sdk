@@ -15,8 +15,8 @@ import (
 
 	address "cosmossdk.io/core/address"
 	appmodule "cosmossdk.io/core/appmodule"
-	types "github.com/cosmos/cosmos-sdk/types"
-	types0 "github.com/cosmos/cosmos-sdk/x/auth/types"
+	types "github.com/depinnetwork/depin-sdk/types"
+	types0 "github.com/depinnetwork/depin-sdk/x/auth/types"
 	gomock "go.uber.org/mock/gomock"
 )
 

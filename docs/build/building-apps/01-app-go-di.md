@@ -29,13 +29,13 @@ The `app_config.go` file is the single place to configure all modules parameters
 1. Create the `AppConfig` variable:
 
     ```go reference
-    https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L93-L99
+    https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L93-L99
     ```
 
     Where the `appConfig`, combine the [runtime](./00-runtime.md) and the modules configuration.
 
     ```go reference
-    https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L107-L111
+    https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L107-L111
     ```
 
 2. Configure the `runtime` module:
@@ -44,7 +44,7 @@ The `app_config.go` file is the single place to configure all modules parameters
     They are named in the order they should be executed by the module manager.
 
     ```go reference
-    https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L110-L187
+    https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L110-L187
     ```
 
 3. Wire the other modules:
@@ -52,16 +52,16 @@ The `app_config.go` file is the single place to configure all modules parameters
     Next to runtime, the other (depinject-enabled) modules are wired in the `AppConfig`:
 
     ```go reference
-    https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L196-L215
+    https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L196-L215
     ```
 
     Note: the `tx` isn't a module, but a configuration. It should be wired in the `AppConfig` as well.
 
     ```go reference
-    https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L188-L195
+    https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_config.go#L188-L195
     ```
 
-See the complete `app_config.go` file for `SimApp` [here](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_config.go).
+See the complete `app_config.go` file for `SimApp` [here](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_config.go).
 
 ### Alternative formats
 
@@ -111,7 +111,7 @@ A more complete example of `app.yaml` can be found [here](https://github.com/cos
 In short `depinject` and the [`runtime` package](./00-runtime.md) abstract the wiring of the app, and the `AppBuilder` is the place where the app is constructed. [`runtime`](./00-runtime.md) takes care of registering the codecs, KV store, subspaces and instantiating `baseapp`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L101-L290
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L101-L290
 ```
 
 :::warning
@@ -125,7 +125,7 @@ In this case, use `depinject.Configs` for combining the extra configuration and 
 More information on how work `depinject.Configs` and `depinject.Supply` can be found in the [`depinject` documentation](https://pkg.go.dev/cosmossdk.io/depinject).
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L117-L161
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L117-L161
 ```
 
 ### Registering non app wiring modules
@@ -160,5 +160,5 @@ Note that in the complete `SimApp` `app_di.go` file, testing utilities are also 
 :::
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app.go
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app.go
 ```

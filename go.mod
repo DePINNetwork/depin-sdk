@@ -1,6 +1,6 @@
 go 1.23.5
 
-module github.com/cosmos/cosmos-sdk
+module github.com/depinnetwork/depin-sdk
 
 require (
 	cosmossdk.io/api v0.8.2

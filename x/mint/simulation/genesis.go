@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/x/mint/types"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/types/module"
 )
 
 // Simulation parameter constants

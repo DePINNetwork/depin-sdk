@@ -13,7 +13,7 @@ import (
 	"github.com/creachadair/tomledit/transform"
 	"github.com/spf13/viper"
 
-	clientcfg "github.com/cosmos/cosmos-sdk/client/config"
+	clientcfg "github.com/depinnetwork/depin-sdk/client/config"
 )
 
 // Upgrade reads the configuration file at configPath and applies any

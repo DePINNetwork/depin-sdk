@@ -28,20 +28,20 @@ import (
 	stakingkeeper "cosmossdk.io/x/staking/keeper"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codecaddress "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	_ "github.com/cosmos/cosmos-sdk/x/auth" // import as blank for app wiring
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import as blank for app wiring
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	_ "github.com/cosmos/cosmos-sdk/x/genutil" // import as blank for app wiring
+	"github.com/depinnetwork/depin-sdk/client"
+	codecaddress "github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/ed25519"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	"github.com/depinnetwork/depin-sdk/testutil/configurator"
+	simtestutil "github.com/depinnetwork/depin-sdk/testutil/sims"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	_ "github.com/depinnetwork/depin-sdk/x/auth" // import as blank for app wiring
+	authkeeper "github.com/depinnetwork/depin-sdk/x/auth/keeper"
+	_ "github.com/depinnetwork/depin-sdk/x/auth/tx/config" // import as blank for app wiring
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	_ "github.com/depinnetwork/depin-sdk/x/genutil" // import as blank for app wiring
 )
 
 var (

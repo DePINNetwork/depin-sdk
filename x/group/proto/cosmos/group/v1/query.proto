@@ -5,8 +5,8 @@ package cosmos.group.v1;
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "cosmos/group/v1/types.proto";
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "depin/group/v1/types.proto";
+import "depin/base/query/v1beta1/pagination.proto";
 import "cosmos_proto/cosmos.proto";
 import "amino/amino.proto";
 
@@ -17,62 +17,62 @@ service Query {
 
   // GroupInfo queries group info based on group id.
   rpc GroupInfo(QueryGroupInfoRequest) returns (QueryGroupInfoResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/group_info/{group_id}";
+    option (google.api.http).get = "/depin/group/v1/group_info/{group_id}";
   };
 
   // GroupPolicyInfo queries group policy info based on account address of group policy.
   rpc GroupPolicyInfo(QueryGroupPolicyInfoRequest) returns (QueryGroupPolicyInfoResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/group_policy_info/{address}";
+    option (google.api.http).get = "/depin/group/v1/group_policy_info/{address}";
   };
 
   // GroupMembers queries members of a group by group id.
   rpc GroupMembers(QueryGroupMembersRequest) returns (QueryGroupMembersResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/group_members/{group_id}";
+    option (google.api.http).get = "/depin/group/v1/group_members/{group_id}";
   };
 
   // GroupsByAdmin queries groups by admin address.
   rpc GroupsByAdmin(QueryGroupsByAdminRequest) returns (QueryGroupsByAdminResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/groups_by_admin/{admin}";
+    option (google.api.http).get = "/depin/group/v1/groups_by_admin/{admin}";
   };
 
   // GroupPoliciesByGroup queries group policies by group id.
   rpc GroupPoliciesByGroup(QueryGroupPoliciesByGroupRequest) returns (QueryGroupPoliciesByGroupResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/group_policies_by_group/{group_id}";
+    option (google.api.http).get = "/depin/group/v1/group_policies_by_group/{group_id}";
   };
 
   // GroupPoliciesByAdmin queries group policies by admin address.
   rpc GroupPoliciesByAdmin(QueryGroupPoliciesByAdminRequest) returns (QueryGroupPoliciesByAdminResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/group_policies_by_admin/{admin}";
+    option (google.api.http).get = "/depin/group/v1/group_policies_by_admin/{admin}";
   };
 
   // Proposal queries a proposal based on proposal id.
   rpc Proposal(QueryProposalRequest) returns (QueryProposalResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/proposal/{proposal_id}";
+    option (google.api.http).get = "/depin/group/v1/proposal/{proposal_id}";
   };
 
   // ProposalsByGroupPolicy queries proposals based on account address of group policy.
   rpc ProposalsByGroupPolicy(QueryProposalsByGroupPolicyRequest) returns (QueryProposalsByGroupPolicyResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/proposals_by_group_policy/{address}";
+    option (google.api.http).get = "/depin/group/v1/proposals_by_group_policy/{address}";
   };
 
   // VoteByProposalVoter queries a vote by proposal id and voter.
   rpc VoteByProposalVoter(QueryVoteByProposalVoterRequest) returns (QueryVoteByProposalVoterResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/vote_by_proposal_voter/{proposal_id}/{voter}";
+    option (google.api.http).get = "/depin/group/v1/vote_by_proposal_voter/{proposal_id}/{voter}";
   };
 
   // VotesByProposal queries a vote by proposal id.
   rpc VotesByProposal(QueryVotesByProposalRequest) returns (QueryVotesByProposalResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/votes_by_proposal/{proposal_id}";
+    option (google.api.http).get = "/depin/group/v1/votes_by_proposal/{proposal_id}";
   };
 
   // VotesByVoter queries a vote by voter.
   rpc VotesByVoter(QueryVotesByVoterRequest) returns (QueryVotesByVoterResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/votes_by_voter/{voter}";
+    option (google.api.http).get = "/depin/group/v1/votes_by_voter/{voter}";
   };
 
   // GroupsByMember queries groups by member address.
   rpc GroupsByMember(QueryGroupsByMemberRequest) returns (QueryGroupsByMemberResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/groups_by_member/{address}";
+    option (google.api.http).get = "/depin/group/v1/groups_by_member/{address}";
   };
 
   // TallyResult returns the tally result of a proposal. If the proposal is
@@ -81,13 +81,13 @@ service Query {
   // then it simply returns the `final_tally_result` state stored in the
   // proposal itself.
   rpc TallyResult(QueryTallyResultRequest) returns (QueryTallyResultResponse) {
-    option (google.api.http).get = "/cosmos/group/v1/proposals/{proposal_id}/tally";
+    option (google.api.http).get = "/depin/group/v1/proposals/{proposal_id}/tally";
   };
 
   // Groups queries all groups in state.
   rpc Groups(QueryGroupsRequest) returns (QueryGroupsResponse) {
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.47.1";
-    option (google.api.http).get          = "/cosmos/group/v1/groups";
+    option (google.api.http).get          = "/depin/group/v1/groups";
   };
 }
 

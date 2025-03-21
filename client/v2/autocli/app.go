@@ -10,9 +10,9 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/depinject"
 
-	sdkflags "github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/codec"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	sdkflags "github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/codec"
+	authtx "github.com/depinnetwork/depin-sdk/x/auth/tx"
 )
 
 // AppOptions are input options for an autocli enabled app. These options can be built via depinject based on an app config.

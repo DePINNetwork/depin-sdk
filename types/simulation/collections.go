@@ -7,7 +7,7 @@ import (
 	"cosmossdk.io/collections"
 	collcodec "cosmossdk.io/collections/codec"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/depinnetwork/depin-sdk/types/kv"
 )
 
 // NewStoreDecoderFuncFromCollectionsSchema returns a function that decodes two kv pairs when the module fully uses collections

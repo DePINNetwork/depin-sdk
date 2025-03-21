@@ -1,9 +1,9 @@
 syntax = "proto3";
 package cosmos.nft.v1beta1;
 
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "depin/base/query/v1beta1/pagination.proto";
 import "google/api/annotations.proto";
-import "cosmos/nft/v1beta1/nft.proto";
+import "depin/nft/v1beta1/nft.proto";
 import "cosmos_proto/cosmos.proto";
 
 option go_package = "cosmossdk.io/x/nft";
@@ -12,68 +12,68 @@ option go_package = "cosmossdk.io/x/nft";
 service Query {
   // Balance queries the number of NFTs of a given class owned by the owner, same as balanceOf in ERC721
   rpc Balance(QueryBalanceRequest) returns (QueryBalanceResponse) {
-    option (google.api.http).get = "/cosmos/nft/v1beta1/balance/{owner}/{class_id}";
+    option (google.api.http).get = "/depin/nft/v1beta1/balance/{owner}/{class_id}";
   }
 
   // BalanceByQueryString queries the number of NFTs of a given class owned by the owner, same as balanceOf in ERC721
   rpc BalanceByQueryString(QueryBalanceByQueryStringRequest) returns (QueryBalanceByQueryStringResponse) {
-    option (google.api.http).get          = "/cosmos/nft/v1beta1/balance";
+    option (google.api.http).get          = "/depin/nft/v1beta1/balance";
     option (cosmos_proto.method_added_in) = "nft v0.1.1";
   }
 
   // Owner queries the owner of the NFT based on its class and id, same as ownerOf in ERC721
   rpc Owner(QueryOwnerRequest) returns (QueryOwnerResponse) {
-    option (google.api.http).get = "/cosmos/nft/v1beta1/owner/{class_id}/{id}";
+    option (google.api.http).get = "/depin/nft/v1beta1/owner/{class_id}/{id}";
   }
 
   // OwnerByQueryString queries the owner of the NFT based on its class and id, same as ownerOf in ERC721
   rpc OwnerByQueryString(QueryOwnerByQueryStringRequest) returns (QueryOwnerByQueryStringResponse) {
-    option (google.api.http).get          = "/cosmos/nft/v1beta1/owner";
+    option (google.api.http).get          = "/depin/nft/v1beta1/owner";
     option (cosmos_proto.method_added_in) = "nft v0.1.1";
   }
 
   // Supply queries the number of NFTs from the given class, same as totalSupply of ERC721.
   rpc Supply(QuerySupplyRequest) returns (QuerySupplyResponse) {
-    option (google.api.http).get = "/cosmos/nft/v1beta1/supply/{class_id}";
+    option (google.api.http).get = "/depin/nft/v1beta1/supply/{class_id}";
   }
 
   // SupplyByQueryString queries the number of NFTs from the given class, same as totalSupply of ERC721.
   rpc SupplyByQueryString(QuerySupplyByQueryStringRequest) returns (QuerySupplyByQueryStringResponse) {
-    option (google.api.http).get          = "/cosmos/nft/v1beta1/supply";
+    option (google.api.http).get          = "/depin/nft/v1beta1/supply";
     option (cosmos_proto.method_added_in) = "nft v0.1.1";
   }
 
   // NFTs queries all NFTs of a given class or owner,choose at least one of the two, similar to tokenByIndex in
   // ERC721Enumerable
   rpc NFTs(QueryNFTsRequest) returns (QueryNFTsResponse) {
-    option (google.api.http).get = "/cosmos/nft/v1beta1/nfts";
+    option (google.api.http).get = "/depin/nft/v1beta1/nfts";
   }
 
   // NFT queries an NFT based on its class and id.
   rpc NFT(QueryNFTRequest) returns (QueryNFTResponse) {
-    option (google.api.http).get = "/cosmos/nft/v1beta1/nfts/{class_id}/{id}";
+    option (google.api.http).get = "/depin/nft/v1beta1/nfts/{class_id}/{id}";
   }
 
   // NFTByQueryString queries an NFT based on its class and id.
   rpc NFTByQueryString(QueryNFTByQueryStringRequest) returns (QueryNFTByQueryStringResponse) {
-    option (google.api.http).get          = "/cosmos/nft/v1beta1/nft";
+    option (google.api.http).get          = "/depin/nft/v1beta1/nft";
     option (cosmos_proto.method_added_in) = "nft v0.1.1";
   }
 
   // Class queries an NFT class based on its id
   rpc Class(QueryClassRequest) returns (QueryClassResponse) {
-    option (google.api.http).get = "/cosmos/nft/v1beta1/classes/{class_id}";
+    option (google.api.http).get = "/depin/nft/v1beta1/classes/{class_id}";
   }
 
   // Class queries an NFT class based on its id
   rpc ClassByQueryString(QueryClassByQueryStringRequest) returns (QueryClassByQueryStringResponse) {
-    option (google.api.http).get          = "/cosmos/nft/v1beta1/class";
+    option (google.api.http).get          = "/depin/nft/v1beta1/class";
     option (cosmos_proto.method_added_in) = "nft v0.1.1";
   }
 
   // Classes queries all NFT classes
   rpc Classes(QueryClassesRequest) returns (QueryClassesResponse) {
-    option (google.api.http).get = "/cosmos/nft/v1beta1/classes";
+    option (google.api.http).get = "/depin/nft/v1beta1/classes";
   }
 }
 

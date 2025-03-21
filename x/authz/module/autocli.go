@@ -7,7 +7,7 @@ import (
 	autocliv1 "cosmossdk.io/api/cosmos/autocli/v1"
 	bank "cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 // AutoCLIOptions implements the autocli.HasAutoCLIConfig interface.

@@ -3,9 +3,9 @@ package cosmos.mint.v1beta1;
 
 option go_package = "cosmossdk.io/x/mint/types";
 
-import "cosmos/msg/v1/msg.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
-import "cosmos/mint/v1beta1/mint.proto";
+import "depin/mint/v1beta1/mint.proto";
 import "gogoproto/gogo.proto";
 import "cosmos_proto/cosmos.proto";
 

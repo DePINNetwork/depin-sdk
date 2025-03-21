@@ -5,9 +5,9 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	cmttypes "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	cmttypes "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // GetChainHeight returns the current blockchain height.

@@ -10,7 +10,7 @@ import (
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	"cosmossdk.io/core/transaction"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
 )
 
 func getWrappedTx(t *testing.T) *wrappedTx {

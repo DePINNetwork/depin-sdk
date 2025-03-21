@@ -3,7 +3,7 @@ package handlers
 import (
 	"context"
 
-	cmttypes "github.com/cometbft/cometbft/types"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 
 	"cosmossdk.io/core/transaction"
 )

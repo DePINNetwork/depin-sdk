@@ -10,9 +10,9 @@ import (
 	"cosmossdk.io/x/distribution/keeper"
 	"cosmossdk.io/x/distribution/types"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func TestMsgSetWithdrawAddress(t *testing.T) {

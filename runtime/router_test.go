@@ -9,12 +9,12 @@ import (
 	coretesting "cosmossdk.io/core/testing"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	counterkeeper "github.com/cosmos/cosmos-sdk/testutil/x/counter/keeper"
-	countertypes "github.com/cosmos/cosmos-sdk/testutil/x/counter/types"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	counterkeeper "github.com/depinnetwork/depin-sdk/testutil/x/counter/keeper"
+	countertypes "github.com/depinnetwork/depin-sdk/testutil/x/counter/types"
 )
 
 func TestRouterService(t *testing.T) {

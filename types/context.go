@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 
 	"cosmossdk.io/core/comet"
 	"cosmossdk.io/core/header"

@@ -2,12 +2,12 @@ syntax = "proto3";
 
 package cosmos.app.runtime.v1alpha1;
 
-import "cosmos/app/v1alpha1/module.proto";
+import "depin/app/v1alpha1/module.proto";
 
 // Module is the config object for the runtime module.
 message Module {
   option (cosmos.app.v1alpha1.module) = {
-    go_import: "github.com/cosmos/cosmos-sdk/runtime"
+    go_import: "github.com/depin/cosmos-sdk/runtime"
     use_package: {name: "cosmos.app.v1alpha1"}
   };
 
@@ -45,7 +45,7 @@ message Module {
 
   // order_migrations defines the order in which module migrations are performed.
   // If this is left empty, it uses the default migration order.
-  // https://pkg.go.dev/github.com/cosmos/cosmos-sdk@v0.47.0-alpha2/types/module#DefaultMigrationsOrder
+  // https://pkg.go.dev/github.com/depin/cosmos-sdk@v0.47.0-alpha2/types/module#DefaultMigrationsOrder
   repeated string order_migrations = 7;
 
   // precommiters specifies the module names of the precommiters

@@ -4,7 +4,7 @@ import (
 	"flag"
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 const DefaultSeedValue = 42

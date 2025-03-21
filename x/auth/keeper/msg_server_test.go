@@ -8,9 +8,9 @@ import (
 	"go.uber.org/mock/gomock"
 	"google.golang.org/protobuf/runtime/protoiface"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	"github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func (s *KeeperTestSuite) TestUpdateParams() {

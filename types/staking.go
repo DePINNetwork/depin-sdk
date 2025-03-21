@@ -3,8 +3,8 @@ package types
 import (
 	"cosmossdk.io/math"
 
-	cryptokeys "github.com/cosmos/cosmos-sdk/crypto/keys"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptokeys "github.com/depinnetwork/depin-sdk/crypto/keys"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // Delay, in blocks, between when validator updates are returned to the

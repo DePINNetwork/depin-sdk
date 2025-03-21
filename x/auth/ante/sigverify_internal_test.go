@@ -9,11 +9,11 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/transaction"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	authcodec "github.com/cosmos/cosmos-sdk/x/auth/codec"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante"
+	authcodec "github.com/depinnetwork/depin-sdk/x/auth/codec"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 type mockAccount struct {

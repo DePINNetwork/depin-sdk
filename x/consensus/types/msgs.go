@@ -3,8 +3,8 @@ package types
 import (
 	"errors"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	cmttypes "github.com/cometbft/cometbft/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 	"github.com/cosmos/gogoproto/types"
 )
 

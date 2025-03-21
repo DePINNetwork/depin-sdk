@@ -14,7 +14,7 @@ import (
 
 	systest "cosmossdk.io/systemtests"
 
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
+	genutiltypes "github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 func TestChainInit(t *testing.T) {

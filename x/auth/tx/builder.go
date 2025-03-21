@@ -17,13 +17,13 @@ import (
 	"cosmossdk.io/core/codec"
 	"cosmossdk.io/x/tx/decode"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsign "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/depinnetwork/depin-sdk/client"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/tx"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
+	authsign "github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 var (

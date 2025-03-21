@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/core/address"
 
-	address2 "github.com/cosmos/cosmos-sdk/codec/address"
+	address2 "github.com/depinnetwork/depin-sdk/codec/address"
 )
 
 func TestValidatePromptNotEmpty(t *testing.T) {

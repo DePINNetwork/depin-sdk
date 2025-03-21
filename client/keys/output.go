@@ -3,10 +3,10 @@ package keys
 import (
 	"cosmossdk.io/core/address"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // Use protobuf interface marshaler rather then generic JSON

@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/store/prefix"
 	"cosmossdk.io/x/feegrant"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/runtime"
 )
 
 func addAllowancesByExpTimeQueue(ctx context.Context, env appmodule.Environment, store store.KVStore, cdc codec.BinaryCodec) error {

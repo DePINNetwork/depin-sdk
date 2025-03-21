@@ -27,7 +27,7 @@ Transaction commands typically have their own `tx.go` file that lives within the
 Here is an example from the `x/bank` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/bank/client/cli/tx.go#L37-L76
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/bank/client/cli/tx.go#L37-L76
 ```
 
 In the example, `NewSendTxCmd()` creates and returns the transaction command for a transaction that wraps and delivers `MsgSend`. `MsgSend` is the message used to send tokens from one account to another.
@@ -49,13 +49,13 @@ In general, the getter function does the following:
 Each module can implement `NewTxCmd()`, which aggregates all of the transaction commands of the module. Here is an example from the `x/bank` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/bank/client/cli/tx.go#L20-L35
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/bank/client/cli/tx.go#L20-L35
 ```
 
 Each module then can also implement a `GetTxCmd()` method that simply returns `NewTxCmd()`. This allows the root command to easily aggregate all of the transaction commands for each module. Here is an example:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/bank/module.go#L84-L86
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/bank/module.go#L84-L86
 ```
 
 ### Query Commands
@@ -75,7 +75,7 @@ In order to do that, modules must implement the `module.HasGRPCGateway` interfac
 Here's an example from the `x/auth` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/auth/module.go#L71-L76
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/auth/module.go#L71-L76
 ```
 
 ## gRPC-gateway REST
@@ -85,7 +85,7 @@ Applications need to support web services that use HTTP requests (e.g. a web wal
 Modules that want to expose REST queries should add `google.api.http` annotations to their `rpc` methods, such as in the example below from the `x/auth` module:
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/proto/cosmos/auth/v1beta1/query.proto#L14-L89
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/proto/cosmos/auth/v1beta1/query.proto#L14-L89
 ```
 
 <!-- markdown-link-check-disable -->

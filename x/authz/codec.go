@@ -6,8 +6,8 @@ import (
 	bank "cosmossdk.io/x/bank/types"
 	staking "cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	"github.com/depinnetwork/depin-sdk/codec/legacy"
+	"github.com/depinnetwork/depin-sdk/types/msgservice"
 )
 
 // RegisterLegacyAminoCodec registers the necessary x/authz interfaces and concrete types

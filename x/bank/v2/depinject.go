@@ -14,8 +14,8 @@ import (
 	"cosmossdk.io/x/bank/v2/types"
 	moduletypes "cosmossdk.io/x/bank/v2/types/module"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkaddress "github.com/cosmos/cosmos-sdk/types/address"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdkaddress "github.com/depinnetwork/depin-sdk/types/address"
 )
 
 var _ depinject.OnePerModuleType = AppModule{}

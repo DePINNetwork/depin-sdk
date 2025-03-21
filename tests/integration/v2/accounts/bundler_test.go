@@ -11,10 +11,10 @@ import (
 	account_abstractionv1 "cosmossdk.io/x/accounts/interfaces/account_abstraction/v1"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	txtypes "github.com/depinnetwork/depin-sdk/types/tx"
+	signingtypes "github.com/depinnetwork/depin-sdk/types/tx/signing"
 )
 
 func TestMsgServer_ExecuteBundle(t *testing.T) {

@@ -8,7 +8,7 @@ import (
 	"slices"
 	"strings"
 
-	cmtcfg "github.com/cometbft/cometbft/config"
+	cmtcfg "github.com/depinnetwork/por-consensus/config"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
@@ -20,9 +20,9 @@ import (
 	corectx "cosmossdk.io/core/context"
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // ClientContextKey defines the context key used to retrieve a client.Context from

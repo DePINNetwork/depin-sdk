@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cometbft/cometbft/crypto/tmhash"
-	"github.com/cometbft/cometbft/mempool"
-	"github.com/cometbft/cometbft/rpc/client/mock"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
-	cmttypes "github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
+	"github.com/depinnetwork/por-consensus/mempool"
+	"github.com/depinnetwork/por-consensus/rpc/client/mock"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 type MockClient struct {

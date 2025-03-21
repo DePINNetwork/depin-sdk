@@ -9,9 +9,9 @@ import (
 	"cosmossdk.io/math"
 	bank "cosmossdk.io/x/bank/types"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/ed25519"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestBalanceValidate(t *testing.T) {

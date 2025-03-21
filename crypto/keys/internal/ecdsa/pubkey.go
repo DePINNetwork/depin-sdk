@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"math/big"
 
-	cmtcrypto "github.com/cometbft/cometbft/crypto"
+	cmtcrypto "github.com/depinnetwork/por-consensus/crypto"
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/types/address"
+	"github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // signatureFromBytes function roughly copied from secp256k1_nocgo.go

@@ -5,15 +5,15 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cometbft/cometbft/mempool"
-	cmttypes "github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/mempool"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 // BroadcastTx broadcasts a transactions either synchronously or asynchronously

@@ -7,8 +7,8 @@ import (
 
 	"cosmossdk.io/x/gov/types/v1beta1"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // NewLegacyContent creates a new MsgExecLegacyContent from a legacy Content

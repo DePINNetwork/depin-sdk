@@ -6,7 +6,7 @@ import (
 
 	"cosmossdk.io/core/transaction"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // CircuitBreaker is an interface that defines the methods for a circuit breaker.

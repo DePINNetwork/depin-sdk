@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/client/v2/autocli/keyring"
 	"cosmossdk.io/core/address"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec"
 )
 
 // ContextKey is a key used to store and retrieve Context from a Go context.Context.

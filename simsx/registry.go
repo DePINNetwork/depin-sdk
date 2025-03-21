@@ -13,10 +13,10 @@ import (
 	"cosmossdk.io/core/address"
 	"cosmossdk.io/core/log"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/depinnetwork/depin-sdk/client"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/x/simulation"
 )
 
 type (

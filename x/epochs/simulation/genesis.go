@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/x/epochs/types"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/types/module"
 )
 
 // GenCommunityTax randomized CommunityTax

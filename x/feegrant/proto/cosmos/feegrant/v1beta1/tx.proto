@@ -4,7 +4,7 @@ package cosmos.feegrant.v1beta1;
 
 import "google/protobuf/any.proto";
 import "cosmos_proto/cosmos.proto";
-import "cosmos/msg/v1/msg.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
 
 option go_package = "cosmossdk.io/x/feegrant";

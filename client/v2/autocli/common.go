@@ -21,7 +21,7 @@ import (
 	"cosmossdk.io/client/v2/internal/print"
 	"cosmossdk.io/client/v2/internal/util"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec"
 )
 
 type cmdType int

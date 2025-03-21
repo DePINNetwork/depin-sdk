@@ -4,14 +4,14 @@ import (
 	"strings"
 	"time"
 
-	cmtcfg "github.com/cometbft/cometbft/config"
+	cmtcfg "github.com/depinnetwork/por-consensus/config"
 
 	"cosmossdk.io/core/transaction"
 	serverv2 "cosmossdk.io/server/v2"
 	"cosmossdk.io/server/v2/cometbft"
 
-	clientconfig "github.com/cosmos/cosmos-sdk/client/config"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	clientconfig "github.com/depinnetwork/depin-sdk/client/config"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
 )
 
 // initClientConfig helps to override default client config template and configs.

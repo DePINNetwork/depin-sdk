@@ -9,9 +9,9 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/x/tx/decode"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 // DefaultTxDecoder returns a default protobuf TxDecoder.

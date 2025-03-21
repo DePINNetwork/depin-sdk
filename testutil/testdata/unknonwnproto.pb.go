@@ -6,7 +6,7 @@ package testdata
 import (
 	encoding_binary "encoding/binary"
 	fmt "fmt"
-	tx "github.com/cosmos/cosmos-sdk/types/tx"
+	tx "github.com/depinnetwork/depin-sdk/types/tx"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	any "github.com/cosmos/gogoproto/types/any"

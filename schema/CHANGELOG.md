@@ -36,6 +36,6 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## [Unreleased]
 
-## [v1.0.0](https://github.com/cosmos/cosmos-sdk/releases/tag/schema%2Fv1.0.0)
+## [v1.0.0](https://github.com/depinnetwork/depin-sdk/releases/tag/schema%2Fv1.0.0)
 
 Introduce `cosmossdk.io/schema` module.

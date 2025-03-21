@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/x/group"
 	"cosmossdk.io/x/group/keeper"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 const unsetGroupID = 100000000000000

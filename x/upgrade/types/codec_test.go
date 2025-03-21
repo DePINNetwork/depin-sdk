@@ -10,8 +10,8 @@ import (
 	"cosmossdk.io/x/gov/types/v1beta1"
 	"cosmossdk.io/x/tx/signing"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 func TestInterfaceRegistrationOfContent(t *testing.T) {

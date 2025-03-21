@@ -10,8 +10,8 @@ import (
 	"cosmossdk.io/errors"
 	"cosmossdk.io/x/distribution/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 var _ types.QueryServer = Querier{}

@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmttypes "github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 
 	"cosmossdk.io/core/server"
 	corestore "cosmossdk.io/core/store"
@@ -19,14 +19,14 @@ import (
 	banktypes "cosmossdk.io/x/bank/types"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/testutil/mock"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/testutil/mock"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 const DefaultGenTxGas = 10000000

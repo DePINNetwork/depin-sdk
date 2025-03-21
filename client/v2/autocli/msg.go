@@ -20,11 +20,11 @@ import (
 	addresscodec "cosmossdk.io/core/address"
 	"cosmossdk.io/core/transaction"
 
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/input"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/input"
+	clienttx "github.com/depinnetwork/depin-sdk/client/tx"
 )
 
 // BuildMsgCommand builds the msg commands for all the provided modules. If a custom command is provided for a

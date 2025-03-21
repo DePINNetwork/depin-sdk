@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/core/gas"
 	storetypes "cosmossdk.io/store/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var _ gas.Service = GasService{}

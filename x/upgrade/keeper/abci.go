@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/x/upgrade/types"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
+	"github.com/depinnetwork/depin-sdk/telemetry"
 )
 
 // PreBlocker will check if there is a scheduled plan and if it is ready to be executed.

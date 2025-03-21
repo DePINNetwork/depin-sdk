@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/core/codec"
 	"cosmossdk.io/core/store"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var OldProposerKey = []byte{0x01}

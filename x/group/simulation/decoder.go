@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/x/group"
 	"cosmossdk.io/x/group/keeper"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/depinnetwork/depin-sdk/types/kv"
 )
 
 // NewDecodeStore returns a decoder function closure that unmarshals the KVPair's

@@ -13,11 +13,11 @@ import (
 
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/crypto/ledger"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/crypto/hd"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/crypto/ledger"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestInMemoryCreateLedger(t *testing.T) {

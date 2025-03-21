@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/bank/v2/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // sendRestriction is a struct that houses a SendRestrictionFn.

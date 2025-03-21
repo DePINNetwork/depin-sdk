@@ -13,8 +13,8 @@ import (
 	context "context"
 	reflect "reflect"
 
-	types "github.com/cosmos/cosmos-sdk/crypto/types"
-	types0 "github.com/cosmos/cosmos-sdk/types"
+	types "github.com/depinnetwork/depin-sdk/crypto/types"
+	types0 "github.com/depinnetwork/depin-sdk/types"
 	gomock "go.uber.org/mock/gomock"
 )
 

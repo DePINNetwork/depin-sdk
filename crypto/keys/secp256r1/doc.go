@@ -8,7 +8,7 @@ import (
 
 	"cosmossdk.io/core/registry"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 const (

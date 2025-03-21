@@ -9,14 +9,14 @@ import (
 	"path/filepath"
 	"time"
 
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	cmttypes "github.com/cometbft/cometbft/types"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/version"
+	"github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 type legacyAppGenesis struct {

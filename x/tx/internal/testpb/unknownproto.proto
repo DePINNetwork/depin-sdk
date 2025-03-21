@@ -2,7 +2,7 @@ syntax = "proto3";
 package testpb;
 
 import "google/protobuf/any.proto";
-import "cosmos/tx/v1beta1/tx.proto";
+import "depin/tx/v1beta1/tx.proto";
 
 message Customer1 {
   int32  id               = 1;

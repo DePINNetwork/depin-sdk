@@ -12,8 +12,8 @@ import (
 	"cosmossdk.io/x/tx/decode"
 	"cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 var (

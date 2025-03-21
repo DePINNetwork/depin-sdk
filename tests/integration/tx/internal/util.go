@@ -17,16 +17,16 @@ import (
 	"cosmossdk.io/x/tx/signing"
 	"cosmossdk.io/x/tx/signing/aminojson"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/std"
-	"github.com/cosmos/cosmos-sdk/tests/integration/tx/internal/pulsar/testpb"
-	"github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/std"
+	"github.com/depinnetwork/depin-sdk/tests/integration/tx/internal/pulsar/testpb"
+	"github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/x/auth/migrations/legacytx"
+	authsigning "github.com/depinnetwork/depin-sdk/x/auth/signing"
+	"github.com/depinnetwork/depin-sdk/x/auth/tx"
 )
 
 var TestRepeatedFieldsSigner = signing.CustomGetSigner{

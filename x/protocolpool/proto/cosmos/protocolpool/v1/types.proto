@@ -5,7 +5,7 @@ option go_package = "cosmossdk.io/x/protocolpool/types";
 
 import "gogoproto/gogo.proto";
 import "cosmos_proto/cosmos.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/base/v1beta1/coin.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
 import "amino/amino.proto";
@@ -47,7 +47,7 @@ message ContinuousFund {
 message DistributionAmount {
   repeated cosmos.base.v1beta1.Coin amount = 1 [
     (gogoproto.nullable)     = false,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins",
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins"
   ];

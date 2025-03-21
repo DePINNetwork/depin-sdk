@@ -1,10 +1,10 @@
 syntax = "proto3";
 package cosmos.slashing.v1beta1;
 
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "depin/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "cosmos/slashing/v1beta1/slashing.proto";
+import "depin/slashing/v1beta1/slashing.proto";
 import "cosmos_proto/cosmos.proto";
 import "amino/amino.proto";
 
@@ -14,17 +14,17 @@ option go_package = "cosmossdk.io/x/slashing/types";
 service Query {
   // Params queries the parameters of slashing module
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
-    option (google.api.http).get = "/cosmos/slashing/v1beta1/params";
+    option (google.api.http).get = "/depin/slashing/v1beta1/params";
   }
 
   // SigningInfo queries the signing info of given cons address
   rpc SigningInfo(QuerySigningInfoRequest) returns (QuerySigningInfoResponse) {
-    option (google.api.http).get = "/cosmos/slashing/v1beta1/signing_infos/{cons_address}";
+    option (google.api.http).get = "/depin/slashing/v1beta1/signing_infos/{cons_address}";
   }
 
   // SigningInfos queries signing info of all validators
   rpc SigningInfos(QuerySigningInfosRequest) returns (QuerySigningInfosResponse) {
-    option (google.api.http).get = "/cosmos/slashing/v1beta1/signing_infos";
+    option (google.api.http).get = "/depin/slashing/v1beta1/signing_infos";
   }
 }
 

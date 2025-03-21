@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/core/address"
 	bank "cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // AccountKeeper extends `AccountKeeper` from expected_keepers.

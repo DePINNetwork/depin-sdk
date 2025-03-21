@@ -16,12 +16,12 @@ import (
 	"cosmossdk.io/x/group/internal/math"
 	"cosmossdk.io/x/group/keeper"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	simtestutil "github.com/depinnetwork/depin-sdk/testutil/sims"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 var EventProposalPruned = "cosmos.group.v1.EventProposalPruned"

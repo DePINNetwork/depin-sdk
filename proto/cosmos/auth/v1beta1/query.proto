@@ -1,15 +1,15 @@
 syntax = "proto3";
 package cosmos.auth.v1beta1;
 
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "depin/base/query/v1beta1/pagination.proto";
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
 import "google/api/annotations.proto";
-import "cosmos/auth/v1beta1/auth.proto";
+import "depin/auth/v1beta1/auth.proto";
 import "cosmos_proto/cosmos.proto";
-import "cosmos/query/v1/query.proto";
+import "depin/query/v1/query.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/x/auth/types";
+option go_package = "github.com/depin/cosmos-sdk/x/auth/types";
 
 // Query defines the gRPC querier service.
 service Query {
@@ -19,68 +19,68 @@ service Query {
   rpc Accounts(QueryAccountsRequest) returns (QueryAccountsResponse) {
     option (cosmos_proto.method_added_in)      = "cosmos-sdk 0.43";
     option (cosmos.query.v1.module_query_safe) = true;
-    option (google.api.http).get               = "/cosmos/auth/v1beta1/accounts";
+    option (google.api.http).get               = "/depin/auth/v1beta1/accounts";
   }
 
   // Account returns account details based on address.
   rpc Account(QueryAccountRequest) returns (QueryAccountResponse) {
     option (cosmos.query.v1.module_query_safe) = true;
-    option (google.api.http).get               = "/cosmos/auth/v1beta1/accounts/{address}";
+    option (google.api.http).get               = "/depin/auth/v1beta1/accounts/{address}";
   }
 
   // AccountAddressByID returns account address based on account number.
   rpc AccountAddressByID(QueryAccountAddressByIDRequest) returns (QueryAccountAddressByIDResponse) {
     option (cosmos_proto.method_added_in)      = "cosmos-sdk 0.46.2";
     option (cosmos.query.v1.module_query_safe) = true;
-    option (google.api.http).get               = "/cosmos/auth/v1beta1/address_by_id/{account_id}";
+    option (google.api.http).get               = "/depin/auth/v1beta1/address_by_id/{account_id}";
   }
 
   // Params queries all parameters.
   rpc Params(QueryParamsRequest) returns (QueryParamsResponse) {
     option (cosmos.query.v1.module_query_safe) = true;
-    option (google.api.http).get               = "/cosmos/auth/v1beta1/params";
+    option (google.api.http).get               = "/depin/auth/v1beta1/params";
   }
 
   // ModuleAccounts returns all the existing module accounts.
   rpc ModuleAccounts(QueryModuleAccountsRequest) returns (QueryModuleAccountsResponse) {
     option (cosmos_proto.method_added_in)      = "cosmos-sdk 0.46.2";
     option (cosmos.query.v1.module_query_safe) = true;
-    option (google.api.http).get               = "/cosmos/auth/v1beta1/module_accounts";
+    option (google.api.http).get               = "/depin/auth/v1beta1/module_accounts";
   }
 
   // ModuleAccountByName returns the module account info by module name
   rpc ModuleAccountByName(QueryModuleAccountByNameRequest) returns (QueryModuleAccountByNameResponse) {
     option (cosmos.query.v1.module_query_safe) = true;
-    option (google.api.http).get               = "/cosmos/auth/v1beta1/module_accounts/{name}";
+    option (google.api.http).get               = "/depin/auth/v1beta1/module_accounts/{name}";
   }
 
   // Bech32Prefix queries bech32Prefix
   rpc Bech32Prefix(Bech32PrefixRequest) returns (Bech32PrefixResponse) {
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.46";
-    option (google.api.http).get          = "/cosmos/auth/v1beta1/bech32";
+    option (google.api.http).get          = "/depin/auth/v1beta1/bech32";
   }
 
   // AddressBytesToString converts Account Address bytes to string
   rpc AddressBytesToString(AddressBytesToStringRequest) returns (AddressBytesToStringResponse) {
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.46";
     option (google.api.http)              = {
-      get: "/cosmos/auth/v1beta1/bech32/{address_bytes}";
+      get: "/depin/auth/v1beta1/bech32/{address_bytes}";
   additional_bindings:
-    [{get: "/cosmos/auth/v1beta1/bech32/decode/{address_bytes}"}]
+    [{get: "/depin/auth/v1beta1/bech32/decode/{address_bytes}"}]
   };
 }
 
 // AddressStringToBytes converts Address string to bytes
 rpc AddressStringToBytes(AddressStringToBytesRequest) returns (AddressStringToBytesResponse) {
   option (cosmos_proto.method_added_in) = "cosmos-sdk 0.46";
-  option (google.api.http).get          = "/cosmos/auth/v1beta1/bech32/encode/{address_string}";
+  option (google.api.http).get          = "/depin/auth/v1beta1/bech32/encode/{address_string}";
 }
 
 // AccountInfo queries account info which is common to all account types.
 rpc AccountInfo(QueryAccountInfoRequest) returns (QueryAccountInfoResponse) {
   option (cosmos_proto.method_added_in)      = "cosmos-sdk 0.47";
   option (cosmos.query.v1.module_query_safe) = true;
-  option (google.api.http).get               = "/cosmos/auth/v1beta1/account_info/{address}";
+  option (google.api.http).get               = "/depin/auth/v1beta1/account_info/{address}";
 }
 }
 

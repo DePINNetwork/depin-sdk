@@ -15,8 +15,8 @@ import (
 	"cosmossdk.io/x/accounts/cli"
 	v1 "cosmossdk.io/x/accounts/v1"
 
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	"github.com/depinnetwork/depin-sdk/types/address"
+	"github.com/depinnetwork/depin-sdk/types/msgservice"
 )
 
 const (

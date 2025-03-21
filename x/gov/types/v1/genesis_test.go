@@ -8,8 +8,8 @@ import (
 	sdkmath "cosmossdk.io/math"
 	v1 "cosmossdk.io/x/gov/types/v1"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestEmptyGenesis(t *testing.T) {

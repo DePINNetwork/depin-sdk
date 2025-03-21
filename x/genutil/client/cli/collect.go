@@ -9,9 +9,9 @@ import (
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/x/genutil"
+	"github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 const flagGenTxDir = "gentx-dir"

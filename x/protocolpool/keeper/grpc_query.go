@@ -11,7 +11,7 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/x/protocolpool/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var _ types.QueryServer = Querier{}

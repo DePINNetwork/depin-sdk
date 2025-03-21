@@ -13,8 +13,8 @@ import (
 	"cosmossdk.io/core/store"
 	storev2 "cosmossdk.io/store/v2"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/types/kv"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 func AssertEqualStores(tb testing.TB, srcRootStore, otherRootStore storev2.RootStore, storeKeys []string, storeDecoders simulation.StoreDecoderRegistry, skipPrefixes map[string][][]byte) {

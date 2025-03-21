@@ -457,7 +457,7 @@ module API that runtime modules are required to support, this version should be 
 
 ### Runtime Modules
 
-The initial `runtime` module will simply be created within the existing `github.com/cosmos/cosmos-sdk` go module
+The initial `runtime` module will simply be created within the existing `github.com/depinnetwork/depin-sdk` go module
 under the `runtime` package. This module will be a small wrapper around the existing `BaseApp`, `sdk.Context` and
 module manager and follow the Cosmos SDK's existing [0-based versioning](https://0ver.org). To move to semantic
 versioning as well as runtime modularity, new officially supported runtime modules will be created under the
@@ -475,7 +475,7 @@ A new semantically versioned module config type should be created for each of th
 1:1 correspondence between the go module and module config type. This is the same practice should be followed for every 
 semantically versioned Cosmos SDK module as described in [ADR 057: App Wiring](./adr-057-app-wiring.md).
 
-Currently, `github.com/cosmos/cosmos-sdk/runtime` uses the protobuf config type `cosmos.app.runtime.v1alpha1.Module`.
+Currently, `github.com/depinnetwork/depin-sdk/runtime` uses the protobuf config type `cosmos.app.runtime.v1alpha1.Module`.
 When we have a standalone v1 comet runtime, we should use a dedicated protobuf module config type such as
 `cosmos.runtime.comet.v1.Module1`. When we release v2 of the comet runtime (`cosmossdk.io/runtime/comet/v2`) we should
 have a corresponding `cosmos.runtime.comet.v2.Module` protobuf type.
@@ -491,7 +491,7 @@ that it does not explicitly depend on consensus engine specific functionality su
 app developer would then be able to choose which consensus engine they want to use by importing the corresponding
 runtime module. The current `BaseApp` would be refactored into the `cosmossdk.io/runtime/comet` module, the router
 infrastructure in `baseapp/` would be refactored into `cosmossdk.io/runtime/common` and support ADR 033, and eventually
-a dependency on `github.com/cosmos/cosmos-sdk` would no longer be required.
+a dependency on `github.com/depinnetwork/depin-sdk` would no longer be required.
 
 In short, modules would depend primarily on `cosmossdk.io/core`, and each `cosmossdk.io/runtime/{consensus-engine}`
 would implement the `cosmossdk.io/core` functionality for that consensus engine.

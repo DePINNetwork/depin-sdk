@@ -5,7 +5,7 @@ import (
 	"io"
 	"slices"
 
-	crypto "github.com/cometbft/cometbft/api/cometbft/crypto/v1"
+	crypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
 
 	corestore "cosmossdk.io/core/store"
 	"cosmossdk.io/store/metrics"

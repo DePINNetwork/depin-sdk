@@ -1,7 +1,7 @@
 package testutil
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // InitTokens is the default power validators are initialized to have within tests

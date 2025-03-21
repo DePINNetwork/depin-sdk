@@ -26,18 +26,18 @@ Ref: https://keepachangelog.com/en/1.0.0/
 ## [Unreleased]
 
 ### Improvements
-* [#23568](https://github.com/cosmos/cosmos-sdk/pull/23568) Remove auto migration and fix restore cmd
-* [#23013](https://github.com/cosmos/cosmos-sdk/pull/23013) Support memDB for sims
+* [#23568](https://github.com/depinnetwork/depin-sdk/pull/23568) Remove auto migration and fix restore cmd
+* [#23013](https://github.com/depinnetwork/depin-sdk/pull/23013) Support memDB for sims
 
 ### Bug Fixes
 
-* [#23552](https://github.com/cosmos/cosmos-sdk/pull/23552) Fix pebbleDB integration
+* [#23552](https://github.com/depinnetwork/depin-sdk/pull/23552) Fix pebbleDB integration
 
-## [v2.0.0-beta.2](https://github.com/cosmos/cosmos-sdk/releases/tag/store/v2.0.0-beta.2)
+## [v2.0.0-beta.2](https://github.com/depinnetwork/depin-sdk/releases/tag/store/v2.0.0-beta.2)
 
-* [#22336](https://github.com/cosmos/cosmos-sdk/pull/22336) Finish migration manager.
-* [#23157](https://github.com/cosmos/cosmos-sdk/pull/23157) Remove support for RocksDB.
+* [#22336](https://github.com/depinnetwork/depin-sdk/pull/22336) Finish migration manager.
+* [#23157](https://github.com/depinnetwork/depin-sdk/pull/23157) Remove support for RocksDB.
 
-## [v2.0.0-beta.1](https://github.com/cosmos/cosmos-sdk/releases/tag/store/v2.0.0-beta.1)
+## [v2.0.0-beta.1](https://github.com/depinnetwork/depin-sdk/releases/tag/store/v2.0.0-beta.1)
 
 Initial tag of `cosmossdk.io/store/v2`.

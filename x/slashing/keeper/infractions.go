@@ -9,8 +9,8 @@ import (
 	"cosmossdk.io/core/event"
 	"cosmossdk.io/x/slashing/types"
 
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // HandleValidatorSignature handles a validator signature, must be called once per validator for each block.

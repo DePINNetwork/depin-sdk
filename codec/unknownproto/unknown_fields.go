@@ -16,7 +16,7 @@ import (
 	protov2 "google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/types/descriptorpb"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 const bit11NonCritical = 1 << 10

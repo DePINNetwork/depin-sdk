@@ -8,10 +8,10 @@ import (
 	"cosmossdk.io/core/transaction"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	v2 "github.com/cosmos/cosmos-sdk/x/genutil/v2"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/x/genutil/client/cli"
+	genutiltypes "github.com/depinnetwork/depin-sdk/x/genutil/types"
+	v2 "github.com/depinnetwork/depin-sdk/x/genutil/v2"
 )
 
 type genesisMM interface {

@@ -8,8 +8,8 @@ import (
 	"cosmossdk.io/depinject/appconfig"
 	"cosmossdk.io/x/authz/keeper"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	cdctypes "github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 var _ depinject.OnePerModuleType = AppModule{}

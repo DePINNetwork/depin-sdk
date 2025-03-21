@@ -4,9 +4,9 @@ package cosmos.crypto.keyring.v1;
 
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
-import "cosmos/crypto/hd/v1/hd.proto";
+import "depin/crypto/hd/v1/hd.proto";
 
-option go_package                      = "github.com/cosmos/cosmos-sdk/crypto/keyring";
+option go_package                      = "github.com/depin/cosmos-sdk/crypto/keyring";
 option (gogoproto.goproto_getters_all) = false;
 option (gogoproto.gogoproto_import)    = false;
 

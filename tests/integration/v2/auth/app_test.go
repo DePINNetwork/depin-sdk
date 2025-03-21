@@ -5,8 +5,8 @@ import (
 	"io"
 	"testing"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	rpcclientmock "github.com/cometbft/cometbft/rpc/client/mock"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	rpcclientmock "github.com/depinnetwork/por-consensus/rpc/client/mock"
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/core/router"
@@ -27,23 +27,23 @@ import (
 	"cosmossdk.io/x/gov"
 	_ "cosmossdk.io/x/staking" // import as blank for app wirings
 
-	"github.com/cosmos/cosmos-sdk/client"
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	testutilmod "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	"github.com/cosmos/cosmos-sdk/x/auth"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import as blank for app wiring``
-	_ "github.com/cosmos/cosmos-sdk/x/auth/vesting"   // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/genutil"        // import as blank for app wiring
+	"github.com/depinnetwork/depin-sdk/client"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/crypto/hd"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	kmultisig "github.com/depinnetwork/depin-sdk/crypto/keys/multisig"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	clitestutil "github.com/depinnetwork/depin-sdk/testutil/cli"
+	"github.com/depinnetwork/depin-sdk/testutil/configurator"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	testutilmod "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	"github.com/depinnetwork/depin-sdk/x/auth"
+	authkeeper "github.com/depinnetwork/depin-sdk/x/auth/keeper"
+	_ "github.com/depinnetwork/depin-sdk/x/auth/tx/config" // import as blank for app wiring``
+	_ "github.com/depinnetwork/depin-sdk/x/auth/vesting"   // import as blank for app wiring
+	_ "github.com/depinnetwork/depin-sdk/x/genutil"        // import as blank for app wiring
 )
 
 type suite struct {

@@ -31,24 +31,24 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## [Unreleased]
 
-## [v0.2.0-rc.2](https://github.com/cosmos/cosmos-sdk/releases/tag/tools/confix/v0.2.0-rc.2) - 2025-01-16
+## [v0.2.0-rc.2](https://github.com/depinnetwork/depin-sdk/releases/tag/tools/confix/v0.2.0-rc.2) - 2025-01-16
 
-* [#23238](https://github.com/cosmos/cosmos-sdk/pull/23238) Loosen `app.toml` validation for consistency between baseapp chains and v2 chains.
+* [#23238](https://github.com/depinnetwork/depin-sdk/pull/23238) Loosen `app.toml` validation for consistency between baseapp chains and v2 chains.
 
-## [v0.2.0-rc.1](https://github.com/cosmos/cosmos-sdk/releases/tag/tools/confix/v0.2.0-rc.1) - 2024-12-18
+## [v0.2.0-rc.1](https://github.com/depinnetwork/depin-sdk/releases/tag/tools/confix/v0.2.0-rc.1) - 2024-12-18
 
-* [#21052](https://github.com/cosmos/cosmos-sdk/pull/21052) Add a migration to v2 config.
+* [#21052](https://github.com/depinnetwork/depin-sdk/pull/21052) Add a migration to v2 config.
 
-## [v0.1.2](https://github.com/cosmos/cosmos-sdk/releases/tag/tools/confix/v0.1.2) - 2024-08-13
+## [v0.1.2](https://github.com/depinnetwork/depin-sdk/releases/tag/tools/confix/v0.1.2) - 2024-08-13
 
-* [#21202](https://github.com/cosmos/cosmos-sdk/pull/21202) Allow customization of migration `PlanBuilder`.
+* [#21202](https://github.com/depinnetwork/depin-sdk/pull/21202) Allow customization of migration `PlanBuilder`.
 
-## [v0.1.1](https://github.com/cosmos/cosmos-sdk/releases/tag/tools/confix/v0.1.1) - 2023-12-11
+## [v0.1.1](https://github.com/depinnetwork/depin-sdk/releases/tag/tools/confix/v0.1.1) - 2023-12-11
 
-* [#18496](https://github.com/cosmos/cosmos-sdk/pull/18496) Remove invalid non SDK config from app.toml migration templates.
+* [#18496](https://github.com/depinnetwork/depin-sdk/pull/18496) Remove invalid non SDK config from app.toml migration templates.
  
-## [v0.1.0](https://github.com/cosmos/cosmos-sdk/releases/tag/tools/confix/v0.1.0) - 2023-11-07
+## [v0.1.0](https://github.com/depinnetwork/depin-sdk/releases/tag/tools/confix/v0.1.0) - 2023-11-07
 
-* [#17904](https://github.com/cosmos/cosmos-sdk/pull/17904) Add `view` command.
-* [#14568](https://github.com/cosmos/cosmos-sdk/pull/14568) Add `diff` and `home` commands.
-* [#14342](https://github.com/cosmos/cosmos-sdk/pull/14342) Add `confix` tool to manage configuration files.
+* [#17904](https://github.com/depinnetwork/depin-sdk/pull/17904) Add `view` command.
+* [#14568](https://github.com/depinnetwork/depin-sdk/pull/14568) Add `diff` and `home` commands.
+* [#14342](https://github.com/depinnetwork/depin-sdk/pull/14342) Add `confix` tool to manage configuration files.

@@ -43,12 +43,12 @@ Now when logging into the server, the non `root` user can be used.
 1. Install the [Go](https://go.dev/doc/install) version preconized by the application.
 
 :::warning
-In the past, validators [have had issues](https://github.com/cosmos/cosmos-sdk/issues/13976) when using different versions of Go. It is recommended that the whole validator set uses the version of Go that is preconized by the application.
+In the past, validators [have had issues](https://github.com/depinnetwork/depin-sdk/issues/13976) when using different versions of Go. It is recommended that the whole validator set uses the version of Go that is preconized by the application.
 :::
 
 ### Firewall
 
-Nodes should not have all ports open to the public, this is a simple way to get DDOS'd. Secondly it is recommended by [CometBFT](https://github.com/cometbft/cometbft) to never expose ports that are not required to operate a node. 
+Nodes should not have all ports open to the public, this is a simple way to get DDOS'd. Secondly it is recommended by [CometBFT](https://github.com/depinnetwork/por-consensus) to never expose ports that are not required to operate a node. 
 
 When setting up a firewall there are a few ports that can be open when operating a Cosmos SDK node. There is the CometBFT json-RPC, prometheus, p2p, remote signer and Cosmos SDK GRPC and REST. If the node is being operated as a node that does not offer endpoints to be used for submission or querying then a max of three endpoints are needed.
 

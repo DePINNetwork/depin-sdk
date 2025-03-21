@@ -7,8 +7,8 @@ import (
 	"cosmossdk.io/core/header"
 	"cosmossdk.io/x/feegrant"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/types"
 )
 
 func (suite *KeeperTestSuite) TestGrantAllowance() {

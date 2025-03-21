@@ -1,4 +1,4 @@
-# Upgrading Cosmos SDK v2 [DRAFT, see #22531](https://github.com/cosmos/cosmos-sdk/issues/22531)
+# Upgrading Cosmos SDK v2 [DRAFT, see #22531](https://github.com/depinnetwork/depin-sdk/issues/22531)
 
 This guide provides instructions for upgrading to specific versions of Cosmos SDK.
 Note, always read the **SimApp** section for more information on application wiring updates.

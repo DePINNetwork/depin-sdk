@@ -14,17 +14,17 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/version"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/client/tx"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	kmultisig "github.com/depinnetwork/depin-sdk/crypto/keys/multisig"
+	"github.com/depinnetwork/depin-sdk/crypto/types/multisig"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	signingtypes "github.com/depinnetwork/depin-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/version"
+	authclient "github.com/depinnetwork/depin-sdk/x/auth/client"
+	"github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 // GetMultiSignCommand returns the multi-sign command

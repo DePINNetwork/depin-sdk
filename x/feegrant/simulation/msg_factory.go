@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/x/feegrant"
 	"cosmossdk.io/x/feegrant/keeper"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 func MsgGrantAllowanceFactory(k keeper.Keeper) simsx.SimMsgFactoryFn[*feegrant.MsgGrantAllowance] {

@@ -8,9 +8,9 @@ import (
 
 	"cosmossdk.io/x/bank/v2/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 const (

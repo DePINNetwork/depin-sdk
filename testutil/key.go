@@ -3,9 +3,9 @@ package testutil
 import (
 	"errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // GenerateCoinKey generates a new key mnemonic along with its address.

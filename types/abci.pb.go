@@ -5,8 +5,8 @@ package types
 
 import (
 	fmt "fmt"
-	v1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	v11 "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	v11 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	_ "github.com/cosmos/cosmos-proto"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"

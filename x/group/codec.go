@@ -4,8 +4,8 @@ import (
 	"cosmossdk.io/core/registry"
 	coretransaction "cosmossdk.io/core/transaction"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	"github.com/depinnetwork/depin-sdk/codec/legacy"
+	"github.com/depinnetwork/depin-sdk/types/msgservice"
 )
 
 // RegisterLegacyAminoCodec registers all the necessary group module concrete

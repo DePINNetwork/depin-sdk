@@ -140,7 +140,7 @@ By default, `autocli` generates a command for each method in your gRPC service. 
 This example shows how to use the `autocliv1.ServiceCommandDescriptor` struct to group related commands together and specify subcommands in your gRPC service by defining an instance of `autocliv1.ModuleOptions` in your `autocli.go`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-beta.0/x/gov/autocli.go#L94-L97
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-beta.0/x/gov/autocli.go#L94-L97
 ```
 
 #### Positional Arguments
@@ -152,7 +152,7 @@ To add positional arguments to a command, use the `autocliv1.PositionalArgDescri
 Here's an example of how to define a positional argument for the `Account` method of the `auth` service:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-beta.0/x/auth/autocli.go#L25-L30
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-beta.0/x/auth/autocli.go#L25-L30
 ```
 
 Then the command can be used as follows, instead of having to specify the `--address` flag:
@@ -227,7 +227,7 @@ AutoCLI can be used alongside other commands within a module. For example, the `
 In order to enable this behavior, set in `AutoCLIOptions()` the `EnhanceCustomCommand` field to `true`, for the command type (queries and/or transactions) you want to enhance.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/fa4d87ef7e6d87aaccc94c337ffd2fe90fcb7a9d/x/gov/autocli.go#L98
+https://github.com/depinnetwork/depin-sdk/blob/fa4d87ef7e6d87aaccc94c337ffd2fe90fcb7a9d/x/gov/autocli.go#L98
 ```
 
 If not set to true, `AutoCLI` will not generate commands for the module if there are already commands registered for the module (when `GetTxCmd()` or `GetQueryCmd()` are defined).
@@ -252,7 +252,7 @@ It is possible to use `AutoCLI` for non module commands. The trick is still to i
 For example, here is how the SDK does it for `cometbft` gRPC commands:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/release/v0.52.x/client/grpc/cmtservice/autocli.go#L52-L71
+https://github.com/depinnetwork/depin-sdk/blob/release/v0.52.x/client/grpc/cmtservice/autocli.go#L52-L71
 ```
 
 #### Conventions for the `Use` field in Cobra

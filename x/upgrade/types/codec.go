@@ -5,8 +5,8 @@ import (
 	coretransaction "cosmossdk.io/core/transaction"
 	"cosmossdk.io/x/gov/types/v1beta1"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	"github.com/depinnetwork/depin-sdk/codec/legacy"
+	"github.com/depinnetwork/depin-sdk/types/msgservice"
 )
 
 // RegisterLegacyAminoCodec registers concrete types on the LegacyAmino codec

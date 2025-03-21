@@ -27,11 +27,11 @@ Genesis Sync has zero trust assumptions, but it's the most resource heavy. It al
 >
 > To enable the Prometheus metrics, set `instrumentation.prometheus=true` in your config file. Metrics will be served under `/metrics` on `26660` port by default. Listen address can be changed in the config file (see `instrumentation.prometheus_listen_addr`).
 >
-> More [here](https://github.com/cometbft/cometbft/blob/main/docs/explanation/core/metrics.md).
+> More [here](https://github.com/depinnetwork/por-consensus/blob/main/docs/explanation/core/metrics.md).
 
 ### Block Sync Metrics
 
-They are defined [here](https://github.com/cometbft/cometbft/blob/main/internal/blocksync/metrics.go) and are accessible from the node's metrics endpoint.
+They are defined [here](https://github.com/depinnetwork/por-consensus/blob/main/internal/blocksync/metrics.go) and are accessible from the node's metrics endpoint.
 
 - `blocksync_syncing`: Indicates whether a node is currently block syncing.
 - `blocksync_num_txs`: Number of transactions in the latest block.
@@ -48,7 +48,7 @@ version = "v0" # version of the block sync protocol to use
 
 ### State Sync Metrics
 
-They are defined [here](https://github.com/cometbft/cometbft/blob/main/statesync/metrics.go) and are accessible from the node's metrics endpoint.
+They are defined [here](https://github.com/depinnetwork/por-consensus/blob/main/statesync/metrics.go) and are accessible from the node's metrics endpoint.
 
 - `statesync_syncing`: Indicates whether a node is currently state syncing.
 

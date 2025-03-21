@@ -7,13 +7,13 @@ import (
 	"testing"
 	"time"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	cmtt "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
-	cmt "github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtt "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	cmt "github.com/depinnetwork/por-consensus/types"
 	"github.com/stretchr/testify/suite"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 type resultTestSuite struct {

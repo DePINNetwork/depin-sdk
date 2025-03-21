@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 func TestSimulationReporterToLegacy(t *testing.T) {

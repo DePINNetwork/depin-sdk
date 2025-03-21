@@ -21,7 +21,7 @@ For in-depth details of the `CryptoProviders` and their design please refer to A
 The introduction of multi-curve support in the cosmos-sdk cryptographic package offers significant advantages. By not being restricted to a single cryptographic curve, developers can choose the most appropriate curve based on security, performance, and compatibility requirements. This flexibility enhances the application's ability to adapt to evolving security standards and optimizes performance for specific use cases, helping to future-proofing the sdk's cryptographic capabilities.
 
 
-The enhancements in this proposal not only render the ["Keyring ADR"](https://github.com/cosmos/cosmos-sdk/issues/14940) obsolete, but also encompass its key aspects, replacing it with a more flexible and comprehensive approach. Furthermore, the gRPC service proposed in the mentioned ADR can be easily implemented as a specialized `CryptoProvider`. 
+The enhancements in this proposal not only render the ["Keyring ADR"](https://github.com/depinnetwork/depin-sdk/issues/14940) obsolete, but also encompass its key aspects, replacing it with a more flexible and comprehensive approach. Furthermore, the gRPC service proposed in the mentioned ADR can be easily implemented as a specialized `CryptoProvider`. 
 
 
 ### Glossary
@@ -88,7 +88,7 @@ The storage and persistence layer is tasked with storing a `CryptoProvider`s. Sp
 
 The purpose of this layer is to ensure that upon retrieval of the persisted data, we can access the provider's type, version, and specific configuration (which varies based on the provider type). This information will subsequently be utilized to initialize the appropriate factory, as detailed in the following section on the factory pattern.
 
-The storage proposal involves using a modified version of the [Record](https://github.com/cosmos/cosmos-sdk/blob/main/proto/cosmos/crypto/keyring/v1/record.proto) struct, which is already defined in **Keyring/v1**. Additionally, we propose utilizing the existing keyring backends (keychain, filesystem, memory, etc.) to store these `Record`s in the same manner as the current **Keyring/v1**.
+The storage proposal involves using a modified version of the [Record](https://github.com/depinnetwork/depin-sdk/blob/main/proto/cosmos/crypto/keyring/v1/record.proto) struct, which is already defined in **Keyring/v1**. Additionally, we propose utilizing the existing keyring backends (keychain, filesystem, memory, etc.) to store these `Record`s in the same manner as the current **Keyring/v1**.
 
 *Note: This approach will facilitate a smoother migration path from the current Keyring/v1 to the proposed architecture.*
 
@@ -97,7 +97,7 @@ Below is the proposed protobuf message to be included in the modified `Record.pr
 ##### Protobuf message structure
 
 
-The [record.proto](https://github.com/cosmos/cosmos-sdk/blob/main/proto/cosmos/crypto/keyring/v1/record.proto) file will be modified to include the `CryptoProvider` message as an optional field as follows.
+The [record.proto](https://github.com/depinnetwork/depin-sdk/blob/main/proto/cosmos/crypto/keyring/v1/record.proto) file will be modified to include the `CryptoProvider` message as an optional field as follows.
 
 ```protobuf
 

@@ -9,8 +9,8 @@ import (
 	"cosmossdk.io/core/address"
 	"cosmossdk.io/x/bank/exported"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var _ exported.GenesisBalance = (*Balance)(nil)

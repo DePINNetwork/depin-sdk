@@ -8,7 +8,7 @@ This documentation refers to the `app.toml`, if you'd like to learn more about C
 
 <!-- the following is not a python reference, however syntax coloring makes the file more readable in the docs -->
 ```python reference
-https://github.com/cosmos/cosmos-sdk/blob/main/tools/confix/data/v0.47-app.toml 
+https://github.com/depinnetwork/depin-sdk/blob/main/tools/confix/data/v0.47-app.toml 
 ```
 
 ## inter-block-cache

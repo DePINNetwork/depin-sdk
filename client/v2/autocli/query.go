@@ -18,7 +18,7 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/x/tx/signing/aminojson"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // BuildQueryCommand builds the query commands for all the provided modules. If a custom command is provided for a

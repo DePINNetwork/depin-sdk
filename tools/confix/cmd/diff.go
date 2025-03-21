@@ -12,7 +12,7 @@ import (
 
 	"cosmossdk.io/tools/confix"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client"
 )
 
 // DiffCommand creates a new command for comparing configuration files

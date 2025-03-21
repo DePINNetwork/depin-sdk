@@ -25,6 +25,6 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## [Unreleased]
 
-## [v0.2.0-rc.1](https://github.com/cosmos/cosmos-sdk/releases/tag/x/protocolpool/v0.2.0-rc.1) - 2024-12-18
+## [v0.2.0-rc.1](https://github.com/depinnetwork/depin-sdk/releases/tag/x/protocolpool/v0.2.0-rc.1) - 2024-12-18
 
 Introduce the `x/protocolpool` module.

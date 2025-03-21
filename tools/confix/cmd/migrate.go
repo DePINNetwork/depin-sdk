@@ -13,7 +13,7 @@ import (
 
 	"cosmossdk.io/tools/confix"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client"
 )
 
 var (

@@ -4,7 +4,7 @@ package cosmos.bank.v1beta1;
 import "amino/amino.proto";
 import "gogoproto/gogo.proto";
 import "cosmos_proto/cosmos.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/base/v1beta1/coin.proto";
 
 option go_package = "cosmossdk.io/x/bank/types";
 
@@ -19,7 +19,7 @@ message SendAuthorization {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"
   ];
 
   // allow_list specifies an optional list of addresses to whom the grantee can send tokens on behalf of the

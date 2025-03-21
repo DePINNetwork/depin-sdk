@@ -8,7 +8,7 @@ import (
 	"cosmossdk.io/math"
 	v1 "cosmossdk.io/x/gov/types/v1"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // Tally iterates over the votes and updates the tally of a proposal based on the voting power of the voters

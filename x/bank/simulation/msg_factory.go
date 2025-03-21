@@ -6,8 +6,8 @@ import (
 
 	"cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/simsx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func MsgSendFactory() simsx.SimMsgFactoryFn[*types.MsgSend] {

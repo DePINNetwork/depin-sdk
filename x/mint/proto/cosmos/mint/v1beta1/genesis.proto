@@ -2,7 +2,7 @@ syntax = "proto3";
 package cosmos.mint.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "cosmos/mint/v1beta1/mint.proto";
+import "depin/mint/v1beta1/mint.proto";
 import "amino/amino.proto";
 
 option go_package = "cosmossdk.io/x/mint/types";

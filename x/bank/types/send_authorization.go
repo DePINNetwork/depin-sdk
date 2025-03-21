@@ -7,9 +7,9 @@ import (
 	appmodulev2 "cosmossdk.io/core/appmodule/v2"
 	corecontext "cosmossdk.io/core/context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/authz"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/authz"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // TODO: Revisit this once we have proper gas fee framework.

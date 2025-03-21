@@ -5,16 +5,16 @@ import (
 	"fmt"
 	"testing"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	tmproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	tmproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/schema/appdata"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	baseapptestutil "github.com/cosmos/cosmos-sdk/baseapp/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	baseapptestutil "github.com/depinnetwork/depin-sdk/baseapp/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var _ storetypes.ABCIListener = (*MockABCIListener)(nil)

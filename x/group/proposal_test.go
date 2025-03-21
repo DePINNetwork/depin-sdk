@@ -8,8 +8,8 @@ import (
 	"cosmossdk.io/x/group"
 	"cosmossdk.io/x/group/module"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
 )
 
 // TestGogoUnmarshalProposal tests some weird behavior in gogoproto

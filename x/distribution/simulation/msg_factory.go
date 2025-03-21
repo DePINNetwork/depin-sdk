@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/x/distribution/keeper"
 	"cosmossdk.io/x/distribution/types"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 func MsgSetWithdrawAddressFactory(k keeper.Keeper) simsx.SimMsgFactoryFn[*types.MsgSetWithdrawAddress] {

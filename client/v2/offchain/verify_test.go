@@ -9,9 +9,9 @@ import (
 	clientcontext "cosmossdk.io/client/v2/context"
 	clitx "cosmossdk.io/client/v2/tx"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/crypto/hd"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
 )
 
 func Test_Verify(t *testing.T) {

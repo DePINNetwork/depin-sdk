@@ -10,9 +10,9 @@ import (
 	"cosmossdk.io/core/appmodule"
 	sdkmath "cosmossdk.io/math"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // AppModuleSimulation defines the standard functions that every module should expose

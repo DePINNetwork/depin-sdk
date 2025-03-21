@@ -6,7 +6,7 @@ import (
 	sdkmath "cosmossdk.io/math"
 	"cosmossdk.io/x/mint/types"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 // MsgUpdateParamsFactory creates a gov proposal for param updates

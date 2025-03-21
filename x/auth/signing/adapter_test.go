@@ -9,10 +9,10 @@ import (
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	moduletestutil "github.com/cosmos/cosmos-sdk/types/module/testutil"
-	authsign "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	moduletestutil "github.com/depinnetwork/depin-sdk/types/module/testutil"
+	authsign "github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 func TestGetSignBytesAdapterNoPublicKey(t *testing.T) {

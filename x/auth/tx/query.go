@@ -7,12 +7,12 @@ import (
 	"fmt"
 	"time"
 
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	querytypes "github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/client"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	querytypes "github.com/depinnetwork/depin-sdk/types/query"
 )
 
 // QueryTxsByEvents retrieves a list of paginated transactions from CometBFT's

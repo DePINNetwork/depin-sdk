@@ -3,7 +3,7 @@ package baseapp
 import (
 	"errors"
 
-	"github.com/cometbft/cometbft/abci/types"
+	"github.com/depinnetwork/por-consensus/abci/types"
 )
 
 // ExecuteGenesisTx implements a genesis TxHandler used to execute a genTxs (from genutil).

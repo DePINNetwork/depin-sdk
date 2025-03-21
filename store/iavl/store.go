@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	cmtprotocrypto "github.com/cometbft/cometbft/api/cometbft/crypto/v1"
+	cmtprotocrypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
 	"github.com/cosmos/iavl"
 	ics23 "github.com/cosmos/ics23/go"
 

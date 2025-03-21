@@ -3,8 +3,8 @@ package rpc
 import (
 	"fmt"
 
-	cmttypes "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
+	cmttypes "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
 	gogoproto "github.com/cosmos/gogoproto/proto"
 )
 

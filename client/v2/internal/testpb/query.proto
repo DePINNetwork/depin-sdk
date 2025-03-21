@@ -5,8 +5,8 @@ package testpb;
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
 import "cosmos_proto/cosmos.proto";
-import "cosmos/base/query/v1beta1/pagination.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/base/query/v1beta1/pagination.proto";
+import "depin/base/v1beta1/coin.proto";
 
 service Query {
   // Echo returns the request in the response

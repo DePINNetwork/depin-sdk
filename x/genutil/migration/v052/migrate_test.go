@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	"github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 var oldGenFilePath = "./testdata/old_app_genesis.json"

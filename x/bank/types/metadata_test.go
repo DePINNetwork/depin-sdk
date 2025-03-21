@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec"
 )
 
 func TestMetadataValidate(t *testing.T) {

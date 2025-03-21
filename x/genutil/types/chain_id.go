@@ -7,7 +7,7 @@ import (
 	"io"
 	"strings"
 
-	"github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/types"
 )
 
 const ChainIDFieldName = "chain_id"

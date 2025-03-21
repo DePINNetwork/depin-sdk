@@ -6,7 +6,7 @@ import (
 	base "cosmossdk.io/api/cosmos/base/v1beta1"
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var (

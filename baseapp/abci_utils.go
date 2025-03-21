@@ -7,20 +7,20 @@ import (
 	"fmt"
 	"slices"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	cryptoenc "github.com/cometbft/cometbft/crypto/encoding"
-	cmttypes "github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	cryptoenc "github.com/depinnetwork/por-consensus/crypto/encoding"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 	protoio "github.com/cosmos/gogoproto/io"
 	"github.com/cosmos/gogoproto/proto"
 
 	"cosmossdk.io/core/comet"
 	"cosmossdk.io/core/header"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/mempool"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/mempool"
 )
 
 type (

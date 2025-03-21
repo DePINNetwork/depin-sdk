@@ -58559,7 +58559,7 @@ definitions:
 
               but should be called `note` instead (see
 
-              https://github.com/cosmos/cosmos-sdk/issues/9122).
+              https://github.com/depinnetwork/depin-sdk/issues/9122).
           timeout_height:
             type: string
             format: uint64
@@ -59181,7 +59181,7 @@ definitions:
 
           but should be called `note` instead (see
 
-          https://github.com/cosmos/cosmos-sdk/issues/9122).
+          https://github.com/depinnetwork/depin-sdk/issues/9122).
       timeout_height:
         type: string
         format: uint64

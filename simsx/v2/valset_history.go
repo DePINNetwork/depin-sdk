@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/core/comet"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
+	"github.com/depinnetwork/depin-sdk/simsx"
 )
 
 type historicValSet struct {

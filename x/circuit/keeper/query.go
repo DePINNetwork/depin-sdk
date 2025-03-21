@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/circuit/types"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 var _ types.QueryServer = QueryServer{}

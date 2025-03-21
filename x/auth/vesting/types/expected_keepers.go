@@ -3,7 +3,7 @@ package types
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // BankKeeper defines the expected interface contract the vesting module requires

@@ -7,7 +7,7 @@ import (
 	"cosmossdk.io/x/slashing/keeper"
 	"cosmossdk.io/x/slashing/types"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
+	"github.com/depinnetwork/depin-sdk/telemetry"
 )
 
 // BeginBlocker check for infraction evidence or downtime of validators

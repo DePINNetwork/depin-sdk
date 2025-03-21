@@ -1,8 +1,8 @@
 syntax = "proto3";
 package cosmos.accounts.defaults.lockup.v1;
 
-import "cosmos/accounts/defaults/lockup/v1/lockup.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/accounts/defaults/lockup/v1/lockup.proto";
+import "depin/base/v1beta1/coin.proto";
 import "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 import "cosmos_proto/cosmos.proto";
@@ -16,15 +16,15 @@ message QueryLockupAccountInfoRequest {}
 message QueryLockupAccountInfoResponse {
   // original_locking defines the value of the account original locking coins.
   repeated cosmos.base.v1beta1.Coin original_locking = 1
-      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"];
 
   // delegated_free defines the value of the account free delegated amount.
   repeated cosmos.base.v1beta1.Coin delegated_free = 2
-      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"];
 
   // delegated_locking defines the value of the account locking delegated amount.
   repeated cosmos.base.v1beta1.Coin delegated_locking = 3
-      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"];
 
   // end_time defines the value of the account lockup start time.
   google.protobuf.Timestamp start_time = 4 [(gogoproto.stdtime) = true];
@@ -34,11 +34,11 @@ message QueryLockupAccountInfoResponse {
 
   // locked_coins defines the value of the account locking coins.
   repeated cosmos.base.v1beta1.Coin locked_coins = 6
-      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"];
 
   // unlocked_coins defines the value of the account released coins from lockup.
   repeated cosmos.base.v1beta1.Coin unlocked_coins = 7
-      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"];
 
   // owner defines the value of the owner of the lockup account.
   string owner = 8;
@@ -70,5 +70,5 @@ message QuerySpendableAmountRequest {}
 // QuerySpendableAmountResponse returns lockup account total spendable tokens.
 message QuerySpendableAmountResponse {
   repeated cosmos.base.v1beta1.Coin spendable_tokens = 1
-      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"];
+      [(gogoproto.nullable) = false, (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"];
 }

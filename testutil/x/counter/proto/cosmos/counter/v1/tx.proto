@@ -3,10 +3,10 @@ syntax = "proto3";
 package cosmos.counter.v1;
 
 import "cosmos_proto/cosmos.proto";
-import "cosmos/msg/v1/msg.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/testutil/x/counter/types";
+option go_package = "github.com/depin/cosmos-sdk/testutil/x/counter/types";
 
 // Msg defines the counter Msg service.
 service Msg {

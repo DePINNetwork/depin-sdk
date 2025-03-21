@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/core/codec"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // Validate performs basic validation of supply genesis data returning an

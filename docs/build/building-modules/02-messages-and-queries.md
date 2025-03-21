@@ -33,7 +33,7 @@ rpc Send(MsgSend) returns (MsgSendResponse);
 See an example of a `Msg` service definition from `x/bank` module:
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/28fa3b8/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L13-L41
+https://github.com/depinnetwork/depin-sdk/blob/28fa3b8/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L13-L41
 ```
 
 ### `transaction.Msg` Interface
@@ -41,14 +41,14 @@ https://github.com/cosmos/cosmos-sdk/blob/28fa3b8/x/bank/proto/cosmos/bank/v1bet
 `transaction.Msg` uses structural types to define the interface for a message. 
 
 ```go reference 
-https://github.com/cosmos/cosmos-sdk/blob/main/core/transaction/transaction.go#L4-L9
+https://github.com/depinnetwork/depin-sdk/blob/main/core/transaction/transaction.go#L4-L9
 ```
 
 Signers from the `GetSigners()` call is automated via a protobuf annotation. 
 Read more about the signer field [here](./05-protobuf-annotations.md).
 
 ```protobuf reference 
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L45
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L45
 ```
 
 If there is a need for custom signers then there is an alternative path which can be taken. A function which returns `signing.CustomGetSigner` for a specific message can be defined. 
@@ -103,7 +103,7 @@ Queries should be defined using [Protobuf services](https://protobuf.dev/program
 Here's an example of such a `Query` service definition:
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/proto/cosmos/auth/v1beta1/query.proto#L15-L81
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/proto/cosmos/auth/v1beta1/query.proto#L15-L81
 ```
 
 As `proto.Message`s, generated `Response` types implement by default `String()` method of [`fmt.Stringer`](https://pkg.go.dev/fmt#Stringer).
@@ -118,5 +118,5 @@ Store queries query directly for store keys. They use `clientCtx.QueryABCI(req a
 See following examples:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/baseapp/abci.go#L864-L894
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/baseapp/abci.go#L864-L894
 ```

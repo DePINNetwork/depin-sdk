@@ -7,24 +7,24 @@ import (
 	"strconv"
 	"strings"
 
-	cmtcfg "github.com/cometbft/cometbft/config"
-	cmtjson "github.com/cometbft/cometbft/libs/json"
-	"github.com/cometbft/cometbft/node"
-	"github.com/cometbft/cometbft/p2p"
-	pvm "github.com/cometbft/cometbft/privval"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	cmtversion "github.com/cometbft/cometbft/version"
+	cmtcfg "github.com/depinnetwork/por-consensus/config"
+	cmtjson "github.com/depinnetwork/por-consensus/libs/json"
+	"github.com/depinnetwork/por-consensus/node"
+	"github.com/depinnetwork/por-consensus/p2p"
+	pvm "github.com/depinnetwork/por-consensus/privval"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	cmtversion "github.com/depinnetwork/por-consensus/version"
 	gogoproto "github.com/cosmos/gogoproto/proto"
 	"github.com/spf13/cobra"
 	"sigs.k8s.io/yaml"
 
 	"cosmossdk.io/server/v2/cometbft/client/rpc"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/version"
+	"github.com/depinnetwork/depin-sdk/client"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/version"
 )
 
 func rpcClient(cmd *cobra.Command) (rpc.CometRPC, error) {

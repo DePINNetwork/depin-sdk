@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 func TestChainDataSourceAnyAccount(t *testing.T) {

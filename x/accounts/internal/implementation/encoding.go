@@ -9,7 +9,7 @@ import (
 
 	"cosmossdk.io/core/transaction"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 // ProtoMsgG is a generic interface for protobuf messages.

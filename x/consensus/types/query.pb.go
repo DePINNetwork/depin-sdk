@@ -6,7 +6,7 @@ package types
 import (
 	context "context"
 	fmt "fmt"
-	v1 "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
 	proto "github.com/cosmos/gogoproto/proto"
 	_ "google.golang.org/genproto/googleapis/api/annotations"

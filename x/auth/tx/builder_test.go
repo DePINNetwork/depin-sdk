@@ -6,11 +6,11 @@ import (
 	any "github.com/cosmos/gogoproto/types/any"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
+	"github.com/depinnetwork/depin-sdk/client"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	"github.com/depinnetwork/depin-sdk/types/tx"
+	authclient "github.com/depinnetwork/depin-sdk/x/auth/client"
 )
 
 func TestIntoV2SignerInfo(t *testing.T) {

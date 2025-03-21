@@ -16,7 +16,7 @@ Except stated otherwise, all participants in the testnet must follow through wit
 Download the Cosmos SDK and unzip it. You can do this manually (via the GitHub UI) or with the git clone command.
 
 ```sh
-git clone github.com/cosmos/cosmos-sdk.git
+git clone github.com/depinnetwork/depin-sdk.git
 ```
 
 Next, run this command to build the `simdv2` binary in the `build` directory.

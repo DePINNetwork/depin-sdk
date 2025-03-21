@@ -7,12 +7,12 @@ import (
 
 	basev1 "cosmossdk.io/x/accounts/defaults/base/v1"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	authkeeper "github.com/depinnetwork/depin-sdk/x/auth/keeper"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func TestMigrateToAccounts(t *testing.T) {

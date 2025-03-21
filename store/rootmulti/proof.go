@@ -1,7 +1,7 @@
 package rootmulti
 
 import (
-	"github.com/cometbft/cometbft/crypto/merkle"
+	"github.com/depinnetwork/por-consensus/crypto/merkle"
 
 	storetypes "cosmossdk.io/store/types"
 )

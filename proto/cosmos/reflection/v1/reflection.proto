@@ -3,7 +3,7 @@ syntax = "proto3";
 package cosmos.reflection.v1;
 
 import "google/protobuf/descriptor.proto";
-import "cosmos/query/v1/query.proto";
+import "depin/query/v1/query.proto";
 
 // Package cosmos.reflection.v1 provides support for inspecting protobuf
 // file descriptors.

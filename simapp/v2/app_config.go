@@ -67,13 +67,13 @@ import (
 	_ "cosmossdk.io/x/upgrade" // import for side-effects
 	upgradetypes "cosmossdk.io/x/upgrade/types"
 
-	_ "github.com/cosmos/cosmos-sdk/x/auth" // import for side-effects
-	authtxconfig "github.com/cosmos/cosmos-sdk/x/auth/tx/config"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/vesting" // import for side-effects
-	vestingtypes "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
-	genutiltypes "github.com/cosmos/cosmos-sdk/x/genutil/types"
-	"github.com/cosmos/cosmos-sdk/x/validate"
+	_ "github.com/depinnetwork/depin-sdk/x/auth" // import for side-effects
+	authtxconfig "github.com/depinnetwork/depin-sdk/x/auth/tx/config"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
+	_ "github.com/depinnetwork/depin-sdk/x/auth/vesting" // import for side-effects
+	vestingtypes "github.com/depinnetwork/depin-sdk/x/auth/vesting/types"
+	genutiltypes "github.com/depinnetwork/depin-sdk/x/genutil/types"
+	"github.com/depinnetwork/depin-sdk/x/validate"
 )
 
 var (

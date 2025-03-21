@@ -25,7 +25,7 @@ func Test_getSDKBuildInfo(t *testing.T) {
 			debugBuildInfo: &debug.BuildInfo{
 				Deps: []*debug.Module{
 					{
-						Path:    "github.com/cosmos/cosmos-sdk",
+						Path:    "github.com/depinnetwork/depin-sdk",
 						Version: "v2.0.0",
 					},
 				},
@@ -39,7 +39,7 @@ func Test_getSDKBuildInfo(t *testing.T) {
 			debugBuildInfo: &debug.BuildInfo{
 				Deps: []*debug.Module{
 					{
-						Path:    "github.com/cosmos/cosmos-sdk",
+						Path:    "github.com/depinnetwork/depin-sdk",
 						Version: "v2.0.0",
 					},
 					{
@@ -80,7 +80,7 @@ func Test_extractVersionFromBuildInfo(t *testing.T) {
 		{
 			name: "no replace",
 			dep: &debug.Module{
-				Path:    "github.com/cosmos/cosmos-sdk",
+				Path:    "github.com/depinnetwork/depin-sdk",
 				Version: "v2.0.0",
 			},
 			want: "v2.0.0",
@@ -88,7 +88,7 @@ func Test_extractVersionFromBuildInfo(t *testing.T) {
 		{
 			name: "devel replace ",
 			dep: &debug.Module{
-				Path:    "github.com/cosmos/cosmos-sdk",
+				Path:    "github.com/depinnetwork/depin-sdk",
 				Version: "v2.0.0",
 				Replace: &debug.Module{
 					Version: "(devel)",
@@ -99,7 +99,7 @@ func Test_extractVersionFromBuildInfo(t *testing.T) {
 		{
 			name: "non-devel replace ",
 			dep: &debug.Module{
-				Path:    "github.com/cosmos/cosmos-sdk",
+				Path:    "github.com/depinnetwork/depin-sdk",
 				Version: "v2.0.0",
 				Replace: &debug.Module{
 					Version: "v1.0.3",
@@ -118,7 +118,7 @@ func Test_extractVersionFromBuildInfo(t *testing.T) {
 func Test_depsFromBuildInfo(t *testing.T) {
 	modules := []*debug.Module{
 		{
-			Path:    "github.com/cosmos/cosmos-sdk",
+			Path:    "github.com/depinnetwork/depin-sdk",
 			Version: "v2.0.0",
 		},
 		{

@@ -2,8 +2,8 @@
 syntax = "proto3";
 package cosmos.feegrant.v1beta1;
 
-import "cosmos/feegrant/v1beta1/feegrant.proto";
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "depin/feegrant/v1beta1/feegrant.proto";
+import "depin/base/query/v1beta1/pagination.proto";
 import "google/api/annotations.proto";
 import "cosmos_proto/cosmos.proto";
 
@@ -14,18 +14,18 @@ service Query {
 
   // Allowance returns granted allowance to the grantee by the granter.
   rpc Allowance(QueryAllowanceRequest) returns (QueryAllowanceResponse) {
-    option (google.api.http).get = "/cosmos/feegrant/v1beta1/allowance/{granter}/{grantee}";
+    option (google.api.http).get = "/depin/feegrant/v1beta1/allowance/{granter}/{grantee}";
   }
 
   // Allowances returns all the grants for the given grantee address.
   rpc Allowances(QueryAllowancesRequest) returns (QueryAllowancesResponse) {
-    option (google.api.http).get = "/cosmos/feegrant/v1beta1/allowances/{grantee}";
+    option (google.api.http).get = "/depin/feegrant/v1beta1/allowances/{grantee}";
   }
 
   // AllowancesByGranter returns all the grants given by an address
   rpc AllowancesByGranter(QueryAllowancesByGranterRequest) returns (QueryAllowancesByGranterResponse) {
     option (cosmos_proto.method_added_in) = "cosmos-sdk 0.46";
-    option (google.api.http).get          = "/cosmos/feegrant/v1beta1/issued/{granter}";
+    option (google.api.http).get          = "/depin/feegrant/v1beta1/issued/{granter}";
   }
 }
 

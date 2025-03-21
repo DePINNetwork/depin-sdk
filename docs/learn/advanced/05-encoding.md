@@ -75,15 +75,15 @@ the consensus engine accepts only transactions in the form of raw bytes.
 * The `TxDecoder` object performs the decoding.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/types/tx_msg.go#L117-L121
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/types/tx_msg.go#L117-L121
 ```
 
 A standard implementation of both these objects can be found in the [`auth/tx` module](https://docs.cosmos.network/main/build/modules/auth#transactions):
 
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/auth/tx/decoder.go
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/auth/tx/decoder.go
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/auth/tx/encoder.go
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/auth/tx/encoder.go
 ```
 
 See [ADR-020](../../architecture/adr-020-protobuf-transaction-encoding.md) for details of how a transaction is encoded.
@@ -104,7 +104,7 @@ message Profile {
 In this `Profile` example, we hardcoded `account` as a `BaseAccount`. However, there are several other types of [user accounts related to vesting](https://docs.cosmos.network/main/build/modules/auth/vesting), such as `BaseVestingAccount` or `ContinuousVestingAccount`. All of these accounts are different, but they all implement the `AccountI` interface. How would you create a `Profile` that allows all these types of accounts with an `account` field that accepts an `AccountI` interface?
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/types/account.go#L15-L32
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/types/account.go#L15-L32
 ```
 
 In [ADR-019](../../architecture/adr-019-protobuf-state-encoding.md), it has been decided to use [`Any`](https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/any.proto)s to encode interfaces in protobuf. An `Any` contains an arbitrary serialized message as bytes, along with a URL that acts as a globally unique identifier for and resolves to that message's type. This strategy allows us to pack arbitrary Go types inside protobuf messages. Our new `Profile` then looks like:
@@ -143,7 +143,7 @@ bz, err := cdc.Marshal(profile)
 jsonBz, err := cdc.MarshalJSON(profile)
 ```
 
-To summarize, to encode an interface, you must 1/ pack the interface into an `Any` and 2/ marshal the `Any`. For convenience, the Cosmos SDK provides a `MarshalInterface` method to bundle these two steps. Have a look at [a real-life example in the x/auth module](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/x/auth/keeper/keeper.go#L262-L264).
+To summarize, to encode an interface, you must 1/ pack the interface into an `Any` and 2/ marshal the `Any`. For convenience, the Cosmos SDK provides a `MarshalInterface` method to bundle these two steps. Have a look at [a real-life example in the x/auth module](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/x/auth/keeper/keeper.go#L262-L264).
 
 The reverse operation of retrieving the concrete Go type from inside an `Any`, called "unpacking", is done with the `GetCachedValue()` on `Any`.
 
@@ -187,17 +187,17 @@ The above `Profile` example is a fictive example used for educational purposes. 
 * the `AccountI` interface for encoding different types of accounts (similar to the above example) in the x/auth query responses,
 * the `EvidenceI` interface for encoding different types of evidences in the x/evidence module,
 * the `AuthorizationI` interface for encoding different types of x/authz authorizations,
-* the [`Validator`](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/staking/types/staking.pb.go#L340-L377) struct that contains information about a validator.
+* the [`Validator`](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/staking/types/staking.pb.go#L340-L377) struct that contains information about a validator.
 
 A real-life example of encoding the pubkey as `Any` inside the Validator struct in x/staking is shown in the following example:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/x/staking/types/validator.go#L43-L63
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/x/staking/types/validator.go#L43-L63
 ```
 
 #### `Any`'s TypeURL
 
-When packing a protobuf message inside an `Any`, the message's type is uniquely defined by its type URL, which is the message's fully qualified name prefixed by a `/` (slash) character. In some implementations of `Any`, like the gogoproto one, there's generally [a resolvable prefix, e.g. `type.googleapis.com`](https://github.com/gogo/protobuf/blob/b03c65ea87cdc3521ede29f62fe3ce239267c1bc/protobuf/google/protobuf/any.proto#L87-L91). However, in the Cosmos SDK, we made the decision to not include such prefix, to have shorter type URLs. The Cosmos SDK's own `Any` implementation can be found in `github.com/cosmos/cosmos-sdk/codec/types`.
+When packing a protobuf message inside an `Any`, the message's type is uniquely defined by its type URL, which is the message's fully qualified name prefixed by a `/` (slash) character. In some implementations of `Any`, like the gogoproto one, there's generally [a resolvable prefix, e.g. `type.googleapis.com`](https://github.com/gogo/protobuf/blob/b03c65ea87cdc3521ede29f62fe3ce239267c1bc/protobuf/google/protobuf/any.proto#L87-L91). However, in the Cosmos SDK, we made the decision to not include such prefix, to have shorter type URLs. The Cosmos SDK's own `Any` implementation can be found in `github.com/depinnetwork/depin-sdk/codec/types`.
 
 The Cosmos SDK is also switching away from gogoproto to the official `google.golang.org/protobuf` (known as the Protobuf API v2). Its default `Any` implementation also contains the [`type.googleapis.com`](https://github.com/protocolbuffers/protobuf-go/blob/v1.28.1/types/known/anypb/any.pb.go#L266) prefix. To maintain compatibility with the SDK, the following methods from `"google.golang.org/protobuf/types/known/anypb"` should not be used:
 

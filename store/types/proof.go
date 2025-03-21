@@ -3,8 +3,8 @@ package types
 import (
 	"fmt"
 
-	cmtprotocrypto "github.com/cometbft/cometbft/api/cometbft/crypto/v1"
-	"github.com/cometbft/cometbft/crypto/merkle"
+	cmtprotocrypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
+	"github.com/depinnetwork/por-consensus/crypto/merkle"
 	ics23 "github.com/cosmos/ics23/go"
 
 	errorsmod "cosmossdk.io/errors"

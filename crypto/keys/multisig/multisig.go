@@ -3,13 +3,13 @@ package multisig
 import (
 	"fmt"
 
-	cmtcrypto "github.com/cometbft/cometbft/crypto"
+	cmtcrypto "github.com/depinnetwork/por-consensus/crypto"
 	gogoprotoany "github.com/cosmos/gogoproto/types/any"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	multisigtypes "github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	multisigtypes "github.com/depinnetwork/depin-sdk/crypto/types/multisig"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
 )
 
 var (

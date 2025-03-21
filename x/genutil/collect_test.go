@@ -5,10 +5,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/x/genutil"
+	"github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 // Ensures that CollectTx correctly traverses directories and won't error out on encountering

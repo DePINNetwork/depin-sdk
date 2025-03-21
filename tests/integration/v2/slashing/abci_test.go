@@ -13,9 +13,9 @@ import (
 	"cosmossdk.io/x/slashing/testutil"
 	stakingtestutil "cosmossdk.io/x/staking/testutil"
 
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	simtestutil "github.com/cosmos/cosmos-sdk/testutil/sims"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	simtestutil "github.com/depinnetwork/depin-sdk/testutil/sims"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // TestBeginBlocker is a unit test function that tests the behavior of the BeginBlocker function.

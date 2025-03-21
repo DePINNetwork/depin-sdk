@@ -6,9 +6,9 @@ import (
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	"cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	signingtypes "github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/crypto/types/multisig"
+	signingtypes "github.com/depinnetwork/depin-sdk/types/tx/signing"
 )
 
 // SignatureDataToAminoSignature converts a SignatureData to amino-encoded signature bytes.

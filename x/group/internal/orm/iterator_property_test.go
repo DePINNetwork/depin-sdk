@@ -10,8 +10,8 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/x/group/errors"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 func TestPaginationProperty(t *testing.T) {

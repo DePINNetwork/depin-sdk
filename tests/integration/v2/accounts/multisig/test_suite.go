@@ -27,15 +27,15 @@ import (
 	_ "cosmossdk.io/x/staking" // import as blank for app wiring
 	stakingkeeper "cosmossdk.io/x/staking/keeper"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	"github.com/cosmos/cosmos-sdk/testutil/configurator"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	_ "github.com/cosmos/cosmos-sdk/x/auth/tx/config" // import as blank for app wiring``
-	_ "github.com/cosmos/cosmos-sdk/x/auth/vesting"   // import as blank for app wiring
-	_ "github.com/cosmos/cosmos-sdk/x/genutil"        // import as blank for app wiring
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	"github.com/depinnetwork/depin-sdk/testutil/configurator"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authkeeper "github.com/depinnetwork/depin-sdk/x/auth/keeper"
+	_ "github.com/depinnetwork/depin-sdk/x/auth/tx/config" // import as blank for app wiring``
+	_ "github.com/depinnetwork/depin-sdk/x/auth/vesting"   // import as blank for app wiring
+	_ "github.com/depinnetwork/depin-sdk/x/genutil"        // import as blank for app wiring
 )
 
 type IntegrationTestSuite struct {

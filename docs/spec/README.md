@@ -22,4 +22,4 @@ Go the [module directory](https://docs.cosmos.network/main/modules)
 ## CometBFT
 
 For details on the underlying blockchain and p2p protocols, see
-the [CometBFT specification](https://github.com/cometbft/cometbft/tree/main/spec).
+the [CometBFT specification](https://github.com/depinnetwork/por-consensus/tree/main/spec).

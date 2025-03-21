@@ -3,8 +3,8 @@
 package simapp
 
 import (
-	simsxv2 "github.com/cosmos/cosmos-sdk/simsx/v2"
-	simcli "github.com/cosmos/cosmos-sdk/x/simulation/client/cli"
+	simsxv2 "github.com/depinnetwork/depin-sdk/simsx/v2"
+	simcli "github.com/depinnetwork/depin-sdk/x/simulation/client/cli"
 	"testing"
 )
 

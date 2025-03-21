@@ -125,7 +125,7 @@ func (enc Encoder) DefineMessageEncoding(name string, encoder MessageEncoder) En
 //	message Balance {
 //	  repeated cosmos.base.v1beta1.Coin coins = 2 [
 //	    (amino.encoding)         = "legacy_coins",
-//	    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+//	    (gogoproto.castrepeated) = "github.com/depinnetwork/depin-sdk/types.Coins",
 //	    (gogoproto.nullable)     = false,
 //	    (amino.dont_omitempty)   = true
 //	  ];

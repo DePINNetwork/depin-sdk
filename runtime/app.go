@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"slices"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	cmtcrypto "github.com/cometbft/cometbft/crypto"
-	cmted25519 "github.com/cometbft/cometbft/crypto/ed25519"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtcrypto "github.com/depinnetwork/por-consensus/crypto"
+	cmted25519 "github.com/depinnetwork/por-consensus/crypto/ed25519"
 
 	runtimev1alpha1 "cosmossdk.io/api/cosmos/app/runtime/v1alpha1"
 	"cosmossdk.io/core/appmodule"
@@ -15,14 +15,14 @@ import (
 	"cosmossdk.io/log"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante/unorderedtx"
-	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
+	"github.com/depinnetwork/depin-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante/unorderedtx"
+	authtx "github.com/depinnetwork/depin-sdk/x/auth/tx"
 )
 
 // KeyGenF is a function that generates a private key for use by comet.

@@ -10,7 +10,7 @@ import (
 
 	"cosmossdk.io/client/v2/internal/testpb"
 
-	address2 "github.com/cosmos/cosmos-sdk/codec/address"
+	address2 "github.com/depinnetwork/depin-sdk/codec/address"
 )
 
 func getReader(inputs []string) io.ReadCloser {

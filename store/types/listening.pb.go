@@ -5,7 +5,7 @@ package types
 
 import (
 	fmt "fmt"
-	v1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	_ "github.com/cosmos/cosmos-proto"
 	proto "github.com/cosmos/gogoproto/proto"
 	io "io"

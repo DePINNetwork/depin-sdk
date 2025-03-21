@@ -3,7 +3,7 @@ package simsx
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // SimMsgFactoryX is an interface for creating and handling fuzz test-like simulation messages in the system.

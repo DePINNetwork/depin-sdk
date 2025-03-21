@@ -3,9 +3,9 @@ package multisig
 import (
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // tmMultisig implements a K of N threshold multisig. It is used for

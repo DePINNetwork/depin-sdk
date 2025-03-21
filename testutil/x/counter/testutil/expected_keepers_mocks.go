@@ -7,9 +7,9 @@ package testutil
 import (
 	reflect "reflect"
 
-	types0 "github.com/cosmos/cosmos-sdk/x/auth/types"
+	types0 "github.com/depinnetwork/depin-sdk/x/auth/types"
 
-	types "github.com/cosmos/cosmos-sdk/types"
+	types "github.com/depinnetwork/depin-sdk/types"
 	gomock "go.uber.org/mock/gomock"
 )
 

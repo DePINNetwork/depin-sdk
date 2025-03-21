@@ -6,9 +6,9 @@ import (
 	coreaddress "cosmossdk.io/core/address"
 	"cosmossdk.io/x/tx/signing"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 // CodecOptions are options for creating a test codec. If set, provided address codecs will be prioritized when

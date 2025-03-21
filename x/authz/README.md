@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Abstract
 
-`x/authz` is an implementation of a Cosmos SDK module, per [ADR 30](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-030-authz-module.md), that allows
+`x/authz` is an implementation of a Cosmos SDK module, per [ADR 30](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-030-authz-module.md), that allows
 granting arbitrary privileges from one account (the granter) to another account (the grantee). Authorizations must be granted for a particular Msg service method one by one using an implementation of the `Authorization` interface.
 
 ## Contents
@@ -35,7 +35,7 @@ granting arbitrary privileges from one account (the granter) to another account 
 ### Authorization and Grant
 
 The `x/authz` module defines interfaces and messages grant authorizations to perform actions
-on behalf of one account to other accounts. The design is defined in the [ADR 030](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-030-authz-module.md).
+on behalf of one account to other accounts. The design is defined in the [ADR 030](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-030-authz-module.md).
 
 A *grant* is an allowance to execute a Msg by the grantee on behalf of the granter.
 Authorization is an interface that must be implemented by a concrete authorization logic to validate and execute grants. Authorizations are extensible and can be defined for any Msg service method, even if the Msg method is defined outside of the module. See the `SendAuthorization` example in the next section for more details.
@@ -43,7 +43,7 @@ Authorization is an interface that must be implemented by a concrete authorizati
 **Note:** The authz module is different from the [auth (authentication)](../modules/auth/) module, which is responsible for specifying the base transaction and account types.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/authorizations.go#L14-L28
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/authorizations.go#L14-L28
 ```
 
 ### Built-in Authorizations
@@ -55,11 +55,11 @@ The Cosmos SDK `x/authz` module comes with following authorization types:
 `GenericAuthorization` implements the `Authorization` interface that gives unrestricted permission to execute the provided Msg on behalf of granter's account.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/authz.proto#L14-L22
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/authz.proto#L14-L22
 ```
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/generic_authorization.go#L18-L34
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/generic_authorization.go#L18-L34
 ```
 
 * `msg` stores Msg type URL.
@@ -72,11 +72,11 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/generic_authori
 * It takes an (optional) `AllowList` that specifies to which addresses a grantee can send token.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/authz.proto#L11-L29
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/authz.proto#L11-L29
 ```
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/types/send_authorization.go#L33-L73
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/types/send_authorization.go#L33-L73
 ```
 
 * `spend_limit` keeps track of how many coins are left in the authorization.
@@ -87,11 +87,11 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/types/send_autho
 `StakeAuthorization` implements the `Authorization` interface for messages in the [staking module](https://docs.cosmos.network/main/build/modules/staking). It takes an `AuthorizationType` to specify whether you want to authorize delegation, undelegation, redelegation or cancel unbonding delegation, each of which must be authorized separately. It also takes an optional `MaxTokens` that keeps track of a limit to the amount of tokens that can be delegated/undelegated/redelegated. If left empty, the amount is unlimited. Additionally, this Msg takes an `AllowList` or a `DenyList`, enabling you to specify which validators the grantee can or cannot stake with.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/staking/proto/cosmos/staking/v1beta1/authz.proto#L11-L34
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/staking/proto/cosmos/staking/v1beta1/authz.proto#L11-L34
 ```
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/staking/types/authz.go#L78-L166
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/staking/types/authz.go#L78-L166
 ```
 
 ### Gas
@@ -111,7 +111,7 @@ Grants are identified by combining granter address (the address bytes of the gra
 The grant object encapsulates an `Authorization` type and an expiration timestamp:
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/authz.proto#L24-L32
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/authz.proto#L24-L32
 ```
 
 ### GrantQueue
@@ -121,7 +121,7 @@ We are maintaining a queue for authz pruning. Whenever a grant is created, an it
 In `EndBlock` (which runs for every block) we continuously check and prune the expired grants by forming a prefix key with current blocktime that passed the stored expiration in `GrantQueue`, we iterate through all the matched records from `GrantQueue` and delete maximum of 200 grants from the `GrantQueue` & `Grant`s store for each run.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/keeper/keeper.go#L479-L520
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/keeper/keeper.go#L479-L520
 ```
 
 * GrantQueue: `0x02 | expiration_bytes | granter_address_len (1 byte) | granter_address_bytes | grantee_address_len (1 byte) | grantee_address_bytes -> ProtocolBuffer(GrantQueueItem)`
@@ -129,7 +129,7 @@ https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/keeper/keeper.g
 The `expiration_bytes` are the expiration date in UTC with the format `"2006-01-02T15:04:05.000000000"`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/keeper/keys.go#L84-L100
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/keeper/keys.go#L84-L100
 ```
 
 The `GrantQueueItem` object contains the list of type urls between granter and grantee that expire at the time indicated in the key.
@@ -146,7 +146,7 @@ If there is already a grant for the `(granter, grantee, Authorization)` triple, 
 An authorization grant for authz `MsgGrant` is not allowed and will return an error. This is for preventing user from accidentally authorizing their entire account to a different account.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L45-L55
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L45-L55
 ```
 
 The message handling should fail if:
@@ -161,7 +161,7 @@ The message handling should fail if:
 A grant can be removed with the `MsgRevoke` message.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L79-L88
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L79-L88
 ```
 
 The message handling should fail if:
@@ -176,7 +176,7 @@ NOTE: The `MsgExec` message removes a grant if the grant has expired.
 The `MsgRevokeAll` message revokes all grants issued by the specified granter. This is useful for quickly removing all authorizations granted by a single granter without specifying individual message types or grantees.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L93-L100
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L93-L100
 ```
 
 The message handling should fail if:
@@ -189,7 +189,7 @@ The message handling should fail if:
 When a grantee wants to execute a transaction on behalf of a granter, they must send `MsgExec`.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L60-L72
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/authz/proto/cosmos/authz/v1beta1/tx.proto#L60-L72
 ```
 
 The message handling should fail if:

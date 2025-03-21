@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/stretchr/testify/assert"
 
 	"cosmossdk.io/core/server"

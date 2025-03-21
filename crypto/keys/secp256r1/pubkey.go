@@ -3,11 +3,11 @@ package secp256r1
 import (
 	"encoding/base64"
 
-	cmtcrypto "github.com/cometbft/cometbft/crypto"
+	cmtcrypto "github.com/depinnetwork/por-consensus/crypto"
 	"github.com/cosmos/gogoproto/proto"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/internal/ecdsa"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/internal/ecdsa"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // customProtobufType is here to make sure that ecdsaPK and ecdsaSK implement the

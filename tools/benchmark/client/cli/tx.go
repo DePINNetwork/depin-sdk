@@ -14,9 +14,9 @@ import (
 	"cosmossdk.io/tools/benchmark"
 	gen "cosmossdk.io/tools/benchmark/generator"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clienttx "github.com/cosmos/cosmos-sdk/client/tx"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	clienttx "github.com/depinnetwork/depin-sdk/client/tx"
 )
 
 func NewTxCmd(params *modulev1.GeneratorParams) *cobra.Command {

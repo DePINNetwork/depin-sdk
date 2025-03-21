@@ -7,12 +7,12 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/depinject/appconfig"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante"
-	"github.com/cosmos/cosmos-sdk/x/auth/keeper"
-	"github.com/cosmos/cosmos-sdk/x/auth/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante"
+	"github.com/depinnetwork/depin-sdk/x/auth/keeper"
+	"github.com/depinnetwork/depin-sdk/x/auth/simulation"
+	"github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 var _ depinject.OnePerModuleType = AppModule{}

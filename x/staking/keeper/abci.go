@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
+	"github.com/depinnetwork/depin-sdk/telemetry"
 )
 
 // EndBlocker called at every block, update validator set

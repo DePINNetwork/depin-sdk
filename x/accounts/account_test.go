@@ -13,7 +13,7 @@ import (
 	"cosmossdk.io/x/accounts/internal/implementation"
 	banktypes "cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var _ implementation.Account = (*TestAccount)(nil)

@@ -2,10 +2,10 @@ syntax = "proto3";
 package cosmos.bank.v1beta1;
 
 import "gogoproto/gogo.proto";
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/bank/v1beta1/bank.proto";
+import "depin/base/v1beta1/coin.proto";
+import "depin/bank/v1beta1/bank.proto";
 import "cosmos_proto/cosmos.proto";
-import "cosmos/msg/v1/msg.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
 
 option go_package = "cosmossdk.io/x/bank/types";
@@ -54,7 +54,7 @@ message MsgSend {
     (gogoproto.nullable)     = false,
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins",
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins"
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins"
   ];
 }
 

@@ -12,9 +12,9 @@ import (
 
 	"cosmossdk.io/log"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 func TestSimsMsgRegistryAdapter(t *testing.T) {

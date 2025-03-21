@@ -7,7 +7,7 @@ sidebar_position: 1
 The Cosmos SDK offers a full fledged simulation framework to [fuzz test](https://en.wikipedia.org/wiki/Fuzzing) every
 message defined by a module.
 
-On the Cosmos SDK, this functionality is provided by [`SimApp`](https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_di.go), which is a `Baseapp` application that is used for running the [`simulation`](https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/simsx/README.md#L1) package. This package defines all the simulation logic as well as the operations for randomized parameters like accounts, balances etc.
+On the Cosmos SDK, this functionality is provided by [`SimApp`](https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_di.go), which is a `Baseapp` application that is used for running the [`simulation`](https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/simsx/README.md#L1) package. This package defines all the simulation logic as well as the operations for randomized parameters like accounts, balances etc.
 
 ## Goals
 
@@ -29,7 +29,7 @@ failure type:
 
 Each simulation must receive a set of inputs (_i.e_ flags) such as the number of
 blocks that the simulation is run, seed, block size, etc.
-Check the full list of flags [here](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/simulation/client/cli/flags.go#L35-L59).
+Check the full list of flags [here](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/simulation/client/cli/flags.go#L35-L59).
 
 ## Simulator Modes
 
@@ -37,7 +37,7 @@ In addition to the various inputs and commands, the simulator runs in three mode
 
 1. Completely random where the initial state, module parameters and simulation parameters are **pseudo-randomly generated**.
 2. From a `genesis.json` file where the initial state and the module parameters are defined. This mode is helpful for running simulations on a known state such as a live network export where a new (mostly likely breaking) version of the application needs to be tested.
-3. From a `params.json` file where the initial state is pseudo-randomly generated but the module and simulation parameters can be provided manually. This allows for a more controlled and deterministic simulation setup while allowing the state space to still be pseudo-randomly simulated. All available parameters are listed [here](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/simulation/client/cli/flags.go#L59-L78).
+3. From a `params.json` file where the initial state is pseudo-randomly generated but the module and simulation parameters can be provided manually. This allows for a more controlled and deterministic simulation setup while allowing the state space to still be pseudo-randomly simulated. All available parameters are listed [here](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/simulation/client/cli/flags.go#L59-L78).
 
 :::tip
 These modes are not mutually exclusive. So you can for example run a randomly generated genesis state (`1`) with manually generated simulation params (`3`).
@@ -46,10 +46,10 @@ These modes are not mutually exclusive. So you can for example run a randomly ge
 ## Usage
 
 This is a general example of how simulations are run. For more specific examples
-check the Cosmos SDK [Makefile](https://github.com/cosmos/cosmos-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/scripts/build/simulations.mk#L1-L104).
+check the Cosmos SDK [Makefile](https://github.com/depinnetwork/depin-sdk/blob/23cf89cce1882ba9c8280e64735ae200504bfdce/scripts/build/simulations.mk#L1-L104).
 
 ```bash
- $ go test -mod=readonly github.com/cosmos/cosmos-sdk/simapp \
+ $ go test -mod=readonly github.com/depinnetwork/depin-sdk/simapp \
   -run=TestApp<simulation_command> \
   ...<flags>
   -v -timeout 24h
@@ -70,7 +70,7 @@ Here are some suggestions when encountering a simulation failure:
 * Reduce the `-NumBlocks` . How's the app state at the height previous to the
   failure?
 * Try adding logs to operations that are not logged. You will have to define a
-  [Logger](https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/staking/keeper/keeper.go#L65-L68) on your `Keeper`.
+  [Logger](https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/staking/keeper/keeper.go#L65-L68) on your `Keeper`.
 
 ## Use simulation in your Cosmos SDK-based application
 

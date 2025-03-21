@@ -13,8 +13,8 @@ import (
 	"cosmossdk.io/x/staking/testutil"
 	"cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestUnbondingDelegationsMaxEntries(t *testing.T) {

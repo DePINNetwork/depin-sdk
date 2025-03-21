@@ -4,7 +4,7 @@ syntax = "proto3";
 package cosmos.group.v1;
 
 import "cosmos_proto/cosmos.proto";
-import "cosmos/group/v1/types.proto";
+import "depin/group/v1/types.proto";
 
 option go_package = "cosmossdk.io/x/group";
 

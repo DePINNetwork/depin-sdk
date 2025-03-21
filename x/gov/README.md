@@ -164,18 +164,18 @@ proposal but accept the result of the vote.
 
 #### Weighted Votes
 
-[ADR-037](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-037-gov-split-vote.md) introduces the weighted vote feature which allows a staker to split their votes into several voting options. For example, it could use 70% of its voting power to vote Yes and 30% of its voting power to vote No.
+[ADR-037](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-037-gov-split-vote.md) introduces the weighted vote feature which allows a staker to split their votes into several voting options. For example, it could use 70% of its voting power to vote Yes and 30% of its voting power to vote No.
 
 Often times the entity owning that address might not be a single individual. For example, a company might have different stakeholders who want to vote differently, and so it makes sense to allow them to split their voting power. Currently, it is not possible for them to do "passthrough voting" and giving their users voting rights over their tokens. However, with this system, exchanges can poll their users for voting preferences, and then vote on-chain proportionally to the results of the poll.
 
 To represent weighted vote on chain, we use the following Protobuf message.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L56-L63
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L56-L63
 ```
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L202-L219
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L202-L219
 ```
 
 For a weighted vote to be valid, the `options` field must not contain duplicate vote options, and the sum of weights of all options must be equal to 1.
@@ -201,7 +201,7 @@ By default, `YesQuorum` is set to 0, which means no minimum.
 
 ### Proposal Types
 
-Proposal types have been introduced in [ADR-069](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-069-gov-improvements.md).
+Proposal types have been introduced in [ADR-069](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-069-gov-improvements.md).
 
 #### Standard proposal
 
@@ -257,7 +257,7 @@ If a delegator does not vote, by default, it will inherit its validator vote.
 This behavior can be changed by passing a custom tally calculation function to the governance module.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/keeper/config.go#L33-L35
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/keeper/config.go#L33-L35
 ```
 
 #### Validator’s punishment for non-voting
@@ -318,7 +318,7 @@ unique id and contains a series of timestamps: `submit_time`, `deposit_end_time`
 `voting_start_time`, `voting_end_time` which track the lifecycle of a proposal
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L78-L134
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L78-L134
 ```
 
 A proposal will generally require more than just a set of messages to explain its
@@ -349,7 +349,7 @@ passed into the gov keeper as a config (`x/gov/keeper/config`).
 The default maximum length are:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/keeper/config.go#L38-L47
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/keeper/config.go#L38-L47
 ```
 
 #### Writing a module that uses governance
@@ -372,7 +372,7 @@ Note, any message can be executed by governance if embedded in `MsgSudoExec`.
 parameter it can do so by submitting a gov `MsgUpdateParams` governance proposal.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L259-L348
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L259-L348
 ```
 
 Parameters are stored in the `gov` store under the key `ParamsKey`.
@@ -395,7 +395,7 @@ const (
 ### Deposit
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L65-L76
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/gov.proto#L65-L76
 ```
 
 ### ValidatorGovInfo
@@ -422,11 +422,11 @@ Legacy proposals (`gov/v1beta1`) are deprecated. Use the new proposal flow by gr
 Proposals can be submitted by any account via a `MsgSubmitProposal` or a `MsgSubmitMultipleChoiceProposal` transaction.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L64-L102
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L64-L102
 ```
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L229-L256
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L229-L256
 ```
 
 :::tip
@@ -453,7 +453,7 @@ A deposit is accepted iff:
 * The deposited coins are conform to the accepted denom from the `MinDeposit` param
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L167-L180
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L167-L180
 ```
 
 ### Vote
@@ -463,7 +463,7 @@ bonded Atom holders are able to send `MsgVote` transactions to cast their
 vote on the proposal.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L125-L141
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/gov/proto/cosmos/gov/v1/tx.proto#L125-L141
 ```
 
 ## Events

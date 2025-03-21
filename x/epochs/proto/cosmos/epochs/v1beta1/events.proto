@@ -4,7 +4,7 @@ syntax = "proto3";
 package cosmos.epochs.v1beta1;
 
 import "cosmos_proto/cosmos.proto";
-import "cosmos/epochs/v1beta1/genesis.proto";
+import "depin/epochs/v1beta1/genesis.proto";
 
 option go_package = "cosmossdk.io/x/epochs/types";
 

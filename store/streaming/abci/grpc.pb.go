@@ -7,7 +7,7 @@ import (
 	context "context"
 	types "cosmossdk.io/store/types"
 	fmt "fmt"
-	v1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	grpc1 "github.com/cosmos/gogoproto/grpc"
 	proto "github.com/cosmos/gogoproto/proto"
 	grpc "google.golang.org/grpc"

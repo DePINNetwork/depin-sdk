@@ -7,7 +7,7 @@ import (
 	"cosmossdk.io/tools/benchmark"
 	gen "cosmossdk.io/tools/benchmark/generator"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
+	"github.com/depinnetwork/depin-sdk/telemetry"
 )
 
 var (

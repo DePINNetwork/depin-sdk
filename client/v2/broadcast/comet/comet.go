@@ -7,17 +7,17 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cometbft/cometbft/mempool"
-	rpcclient "github.com/cometbft/cometbft/rpc/client"
-	rpchttp "github.com/cometbft/cometbft/rpc/client/http"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
-	cmttypes "github.com/cometbft/cometbft/types"
+	"github.com/depinnetwork/por-consensus/mempool"
+	rpcclient "github.com/depinnetwork/por-consensus/rpc/client"
+	rpchttp "github.com/depinnetwork/por-consensus/rpc/client/http"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 
 	apiacbci "cosmossdk.io/api/cosmos/base/abci/v1beta1"
 	"cosmossdk.io/client/v2/broadcast"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/codec"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 const (

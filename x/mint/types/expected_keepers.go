@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/core/address"
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // StakingKeeper defines the expected staking keeper

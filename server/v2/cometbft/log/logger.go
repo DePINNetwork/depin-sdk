@@ -1,7 +1,7 @@
 package log
 
 import (
-	cmtlog "github.com/cometbft/cometbft/libs/log"
+	cmtlog "github.com/depinnetwork/por-consensus/libs/log"
 
 	"cosmossdk.io/log"
 )

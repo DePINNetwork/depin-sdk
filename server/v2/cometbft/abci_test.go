@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	abciproto "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	v1 "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	abciproto "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	gogoproto "github.com/cosmos/gogoproto/proto"
 	gogotypes "github.com/cosmos/gogoproto/types"
 	"github.com/stretchr/testify/require"
@@ -35,8 +35,8 @@ import (
 	"cosmossdk.io/server/v2/stf/mock"
 	consensustypes "cosmossdk.io/x/consensus/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var (

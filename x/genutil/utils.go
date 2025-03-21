@@ -8,18 +8,18 @@ import (
 	"path/filepath"
 	"time"
 
-	cfg "github.com/cometbft/cometbft/config"
-	cmtcrypto "github.com/cometbft/cometbft/crypto"
-	cmtbls12381 "github.com/cometbft/cometbft/crypto/bls12381"
-	tmed25519 "github.com/cometbft/cometbft/crypto/ed25519"
-	"github.com/cometbft/cometbft/p2p"
-	"github.com/cometbft/cometbft/privval"
+	cfg "github.com/depinnetwork/por-consensus/config"
+	cmtcrypto "github.com/depinnetwork/por-consensus/crypto"
+	cmtbls12381 "github.com/depinnetwork/por-consensus/crypto/bls12381"
+	tmed25519 "github.com/depinnetwork/por-consensus/crypto/ed25519"
+	"github.com/depinnetwork/por-consensus/p2p"
+	"github.com/depinnetwork/por-consensus/privval"
 	"github.com/cosmos/go-bip39"
 
-	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
+	cryptocodec "github.com/depinnetwork/depin-sdk/crypto/codec"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/x/genutil/types"
 )
 
 // ExportGenesisFile creates and writes the genesis configuration to disk. An

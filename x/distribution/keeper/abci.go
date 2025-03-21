@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/distribution/types"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
+	"github.com/depinnetwork/depin-sdk/telemetry"
 )
 
 // BeginBlocker sets the proposer for determining distribution during endblock

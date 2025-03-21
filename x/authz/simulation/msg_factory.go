@@ -8,8 +8,8 @@ import (
 	"cosmossdk.io/x/authz/keeper"
 	banktype "cosmossdk.io/x/bank/types"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/simsx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func MsgGrantFactory() simsx.SimMsgFactoryFn[*authz.MsgGrant] {

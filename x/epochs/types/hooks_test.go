@@ -10,8 +10,8 @@ import (
 	storetypes "cosmossdk.io/store/types"
 	"cosmossdk.io/x/epochs/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 type KeeperTestSuite struct {

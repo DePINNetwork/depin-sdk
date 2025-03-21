@@ -11,9 +11,9 @@ import (
 
 	"cosmossdk.io/core/codec"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/module"
 )
 
 var _ gogoprotoany.UnpackInterfacesMessage = GenesisState{}

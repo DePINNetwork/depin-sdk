@@ -3,14 +3,14 @@ package cli
 import (
 	"context"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	cmtbytes "github.com/cometbft/cometbft/libs/bytes"
-	rpcclient "github.com/cometbft/cometbft/rpc/client"
-	rpcclientmock "github.com/cometbft/cometbft/rpc/client/mock"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
-	cmttypes "github.com/cometbft/cometbft/types"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtbytes "github.com/depinnetwork/por-consensus/libs/bytes"
+	rpcclient "github.com/depinnetwork/por-consensus/rpc/client"
+	rpcclientmock "github.com/depinnetwork/por-consensus/rpc/client/mock"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
+	cmttypes "github.com/depinnetwork/por-consensus/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client"
 )
 
 var _ client.CometRPC = (*MockCometRPC)(nil)

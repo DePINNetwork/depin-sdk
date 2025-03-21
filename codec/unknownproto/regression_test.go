@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	"github.com/cosmos/cosmos-sdk/types/module/testutil"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	"github.com/depinnetwork/depin-sdk/types/module/testutil"
 )
 
 // Issue #7739: Catch parse errors resulting from unexpected EOF in

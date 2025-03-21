@@ -5,7 +5,7 @@ import (
 	"math/rand"
 	"net/url"
 
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // RandURIOfHostLength returns a random valid uri with hostname length n. If n = 0, returns an empty string.

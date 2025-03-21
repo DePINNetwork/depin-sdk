@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/x/authz"
 	"cosmossdk.io/x/authz/internal/conv"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/runtime"
 )
 
 // MigrateStore performs in-place store migrations from v0.45 to v0.46. The

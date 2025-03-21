@@ -2,7 +2,7 @@ syntax = "proto3";
 package cosmos.evidence.v1beta1;
 import "cosmos_proto/cosmos.proto";
 
-import "cosmos/base/query/v1beta1/pagination.proto";
+import "depin/base/query/v1beta1/pagination.proto";
 import "google/protobuf/any.proto";
 import "google/api/annotations.proto";
 
@@ -12,12 +12,12 @@ option go_package = "cosmossdk.io/x/evidence/types";
 service Query {
   // Evidence queries evidence based on evidence hash.
   rpc Evidence(QueryEvidenceRequest) returns (QueryEvidenceResponse) {
-    option (google.api.http).get = "/cosmos/evidence/v1beta1/evidence/{hash}";
+    option (google.api.http).get = "/depin/evidence/v1beta1/evidence/{hash}";
   }
 
   // AllEvidence queries all evidence.
   rpc AllEvidence(QueryAllEvidenceRequest) returns (QueryAllEvidenceResponse) {
-    option (google.api.http).get = "/cosmos/evidence/v1beta1/evidence";
+    option (google.api.http).get = "/depin/evidence/v1beta1/evidence";
   }
 }
 

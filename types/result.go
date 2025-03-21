@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"strings"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
 	gogoprotoany "github.com/cosmos/gogoproto/types/any"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 func (gi GasInfo) String() string {

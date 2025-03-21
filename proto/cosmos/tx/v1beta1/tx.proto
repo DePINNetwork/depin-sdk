@@ -4,13 +4,13 @@ package cosmos.tx.v1beta1;
 import "cosmos_proto/cosmos.proto";
 import "amino/amino.proto";
 import "gogoproto/gogo.proto";
-import "cosmos/crypto/multisig/v1beta1/multisig.proto";
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/tx/signing/v1beta1/signing.proto";
+import "depin/crypto/multisig/v1beta1/multisig.proto";
+import "depin/base/v1beta1/coin.proto";
+import "depin/tx/signing/v1beta1/signing.proto";
 import "google/protobuf/any.proto";
 import "google/protobuf/timestamp.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/types/tx";
+option go_package = "github.com/depin/cosmos-sdk/types/tx";
 
 // Tx is the standard type used for broadcasting transactions.
 message Tx {
@@ -106,7 +106,7 @@ message TxBody {
   // memo is any arbitrary note/comment to be added to the transaction.
   // WARNING: in clients, any publicly exposed text should not be called memo,
   // but should be called `note` instead (see
-  // https://github.com/cosmos/cosmos-sdk/issues/9122).
+  // https://github.com/depin/cosmos-sdk/issues/9122).
   string memo = 2;
 
   // timeout_height is the block height after which this transaction will not
@@ -160,7 +160,7 @@ message TxBodyCompat {
   // memo is any arbitrary note/comment to be added to the transaction.
   // WARNING: in clients, any publicly exposed text should not be called memo,
   // but should be called `note` instead (see
-  // https://github.com/cosmos/cosmos-sdk/issues/9122).
+  // https://github.com/depin/cosmos-sdk/issues/9122).
   string memo = 2;
 
   // timeout_height is the block height after which this transaction will not
@@ -255,7 +255,7 @@ message Fee {
   // amount is the amount of coins to be paid as a fee
   repeated cosmos.base.v1beta1.Coin amount = 1 [
     (gogoproto.nullable)     = false,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins",
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins"
   ];
@@ -284,7 +284,7 @@ message Tip {
   // amount is the amount of the tip
   repeated cosmos.base.v1beta1.Coin amount = 1 [
     (gogoproto.nullable)     = false,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins",
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins"
   ];

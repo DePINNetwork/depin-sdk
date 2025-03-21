@@ -334,4 +334,4 @@ Alternatively, we can write all the transactions to consensus state.
 
 ## References
 
-* https://github.com/cosmos/cosmos-sdk/issues/13009
+* https://github.com/depinnetwork/depin-sdk/issues/13009

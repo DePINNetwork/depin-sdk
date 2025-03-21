@@ -21,11 +21,11 @@ import (
 	"cosmossdk.io/x/staking/testutil"
 	"cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	authkeeper "github.com/cosmos/cosmos-sdk/x/auth/keeper"
+	"github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	authkeeper "github.com/depinnetwork/depin-sdk/x/auth/keeper"
 )
 
 // bootstrapSlashTest creates 3 validators and bootstrap the app.

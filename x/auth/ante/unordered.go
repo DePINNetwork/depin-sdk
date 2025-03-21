@@ -15,11 +15,11 @@ import (
 	"cosmossdk.io/core/transaction"
 	errorsmod "cosmossdk.io/errors"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/ante/unorderedtx"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/x/auth/ante/unorderedtx"
+	authsigning "github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 // bufPool is a pool of bytes.Buffer objects to reduce memory allocations.

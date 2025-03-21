@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/internal/testutil"
+	"github.com/depinnetwork/depin-sdk/internal/testutil"
 )
 
 // TestSetArgsWithOriginalMethod is used to illustrate cobra.Command.SetArgs won't reset args as expected

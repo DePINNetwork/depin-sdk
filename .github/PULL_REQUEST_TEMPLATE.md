@@ -27,10 +27,10 @@ I have...
     * `chore`: Other changes that don't modify src or test files
     * `revert`: Reverts a previous commit -->
 * [ ] confirmed `!` in the type prefix if API or client breaking change
-* [ ] targeted the correct branch (see [PR Targeting](https://github.com/cosmos/cosmos-sdk/blob/main/CONTRIBUTING.md#pr-targeting))
+* [ ] targeted the correct branch (see [PR Targeting](https://github.com/depinnetwork/depin-sdk/blob/main/CONTRIBUTING.md#pr-targeting))
 * [ ] provided a link to the relevant issue or specification
 * [ ] reviewed "Files changed" and left comments if necessary
-* [ ] included the necessary unit and integration [tests](https://github.com/cosmos/cosmos-sdk/blob/main/CONTRIBUTING.md#testing)
+* [ ] included the necessary unit and integration [tests](https://github.com/depinnetwork/depin-sdk/blob/main/CONTRIBUTING.md#testing)
 * [ ] added a changelog entry to `CHANGELOG.md`
 * [ ] updated the relevant documentation or specification, including comments for [documenting Go code](https://blog.golang.org/godoc)
 * [ ] confirmed all CI checks have passed

@@ -19,8 +19,8 @@ import (
 	stakingtestutil "cosmossdk.io/x/staking/testutil"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestMsgWithdrawDelegatorReward(t *testing.T) {

@@ -3,8 +3,8 @@ package group
 import (
 	gogoprotoany "github.com/cosmos/gogoproto/types/any"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 // GetMsgs unpacks p.Messages Any's into sdk.Msg's

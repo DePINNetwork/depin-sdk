@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	abci "github.com/cometbft/cometbft/abci/types"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
 	"github.com/stretchr/testify/require"
 
 	corestore "cosmossdk.io/core/store"
@@ -17,7 +17,7 @@ import (
 	"cosmossdk.io/store/rootmulti"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
+	"github.com/depinnetwork/depin-sdk/baseapp"
 )
 
 func initStore(t *testing.T, db corestore.KVStoreWithBatch, storeKey string, k, v []byte) {

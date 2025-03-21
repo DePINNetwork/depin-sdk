@@ -4,7 +4,7 @@ package cosmos.staking.v1beta1;
 import "amino/amino.proto";
 import "cometbft/abci/v1/types.proto";
 import "cometbft/types/v1/types.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/base/v1beta1/coin.proto";
 import "cosmos_proto/cosmos.proto";
 import "gogoproto/gogo.proto";
 import "google/protobuf/any.proto";
@@ -407,7 +407,7 @@ enum Infraction {
 }
 
 // ValidatorUpdates defines an array of abci.ValidatorUpdate objects.
-// TODO: explore moving this to proto/cosmos/base to separate modules from tendermint dependence
+// TODO: explore moving this to proto/depin/base to separate modules from tendermint dependence
 message ValidatorUpdates {
   option deprecated = true;
 

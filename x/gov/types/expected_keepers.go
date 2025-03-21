@@ -6,7 +6,7 @@ import (
 	addresscodec "cosmossdk.io/core/address"
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // StakingKeeper expected staking keeper (Validator and Delegator sets) (noalias)

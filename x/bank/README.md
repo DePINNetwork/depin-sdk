@@ -129,7 +129,7 @@ it can be updated with governance or the address with authority.
 * Params: `0x05 | ProtocolBuffer(Params)`
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/bank.proto#L12-L23
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/bank.proto#L12-L23
 ```
 
 ## Keepers
@@ -372,7 +372,7 @@ type ViewKeeper interface {
 Send coins from one address to another.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L44-L59
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L44-L59
 ```
 
 The message will fail under the following conditions:
@@ -385,7 +385,7 @@ The message will fail under the following conditions:
 Send coins from one sender and to a series of different address.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L65-L75
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L65-L75
 ```
 
 The message will fail under the following conditions:
@@ -400,7 +400,7 @@ The message will fail under the following conditions:
 The `bank` module params can be updated through `MsgUpdateParams`, which can be done using governance proposal. The signer will always be the `gov` module account address. 
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L81-L93
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L81-L93
 ```
 
 The message handling can fail if:
@@ -412,7 +412,7 @@ The message handling can fail if:
 Used with the x/gov module to create or edit SendEnabled entries.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L106-L122
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L106-L122
 ```
 
 The message will fail under the following conditions:
@@ -427,7 +427,7 @@ The message will fail under the following conditions:
 Used to burn coins from an account. The coins are removed from the account and the total supply is reduced.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L130-L139
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/bank/proto/cosmos/bank/v1beta1/tx.proto#L130-L139
 ```
 
 This message will fail under the following conditions:

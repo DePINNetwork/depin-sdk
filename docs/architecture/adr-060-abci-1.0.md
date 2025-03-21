@@ -4,7 +4,7 @@
 
 * 2022-08-10: Initial Draft (@alexanderbez, @tac0turtle)
 * Nov 12, 2022: Update `PrepareProposal` and `ProcessProposal` semantics per the
-  initial implementation [PR](https://github.com/cosmos/cosmos-sdk/pull/13453) (@alexanderbez)
+  initial implementation [PR](https://github.com/depinnetwork/depin-sdk/pull/13453) (@alexanderbez)
 
 ## Status
 

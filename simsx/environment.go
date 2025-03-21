@@ -10,8 +10,8 @@ import (
 	"cosmossdk.io/core/address"
 	"cosmossdk.io/math"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
 )
 
 // helper type for simple bank access

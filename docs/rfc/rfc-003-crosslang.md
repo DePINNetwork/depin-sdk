@@ -2,7 +2,7 @@
 
 ## Changelog
 
-* 2024-08-09: Reworked initial draft (previous work was in https://github.com/cosmos/cosmos-sdk/pull/15410)
+* 2024-08-09: Reworked initial draft (previous work was in https://github.com/depinnetwork/depin-sdk/pull/15410)
 
 ## Background
 
@@ -21,7 +21,7 @@ However, in doing so, it also intends to address the needs of the first group as
 Those needs of the first group which are not satisfactorily addressed by the cross-language framework should be addressed in separate RFCs.
 
 Prior work on cross-language support in the SDK includes:
-- [RFC 003: Language-independent Module Semantics & ABI](https://github.com/cosmos/cosmos-sdk/pull/15410): an earlier, significantly different and unmerged version of this RFC.
+- [RFC 003: Language-independent Module Semantics & ABI](https://github.com/depinnetwork/depin-sdk/pull/15410): an earlier, significantly different and unmerged version of this RFC.
 - [RFC 002: Zero Copy Encoding](./rfc-002-zero-copy-encoding.md): a zero-copy encoding specification for ProtoBuf messages, which was partly implemented and may or may not still be relevant to the current work.
 
 Also, this design largely builds on the existing `x/accounts` module and extends that paradigm to environments beyond just Golang.
@@ -276,7 +276,7 @@ In addition, a cross-language, cross-VM is simply not possible without some over
 
 ### References
 
-- [Abandoned RFC 003: Language-independent Module Semantics & ABI](https://github.com/cosmos/cosmos-sdk/pull/15410)
+- [Abandoned RFC 003: Language-independent Module Semantics & ABI](https://github.com/depinnetwork/depin-sdk/pull/15410)
 - [RFC 002: Zero Copy Encoding](./rfc-002-zero-copy-encoding.md) 
 - [RFC 004: Accounts](./rfc-004-accounts.md)
 

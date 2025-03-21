@@ -25,7 +25,7 @@ v1.0.0-beta1 → v1.0.0-beta2 → ... → v1.0.0-rc1 → v1.0.0-rc2 → ... → 
     * update the GitHub mergify integration by adding instructions for automatically backporting commits from `main` to the `release/vY` using the `backport/Y` label.
 * In the release branch prepare a new version section in the `CHANGELOG.md`
     * All links must point to their respective pull request.
-    * The `CHANGELOG.md` must contain only the changes of that specific released version. All other changelog entries must be deleted and linked to the `main` branch changelog ([example](https://github.com/cosmos/cosmos-sdk/blob/release/v0.46.x/CHANGELOG.md#previous-versions)).
+    * The `CHANGELOG.md` must contain only the changes of that specific released version. All other changelog entries must be deleted and linked to the `main` branch changelog ([example](https://github.com/depinnetwork/depin-sdk/blob/release/v0.46.x/CHANGELOG.md#previous-versions)).
     * Create release notes, in `RELEASE_NOTES.md`, highlighting the new features and changes in the version. This is needed so the bot knows which entries to add to the release page on GitHub.
     * Additionally verify that the `UPGRADING.md` file is up-to-date and contains all the necessary information for upgrading to the new version.
 * Remove GitHub workflows that should not be in the release branch
@@ -140,7 +140,7 @@ See the SDK's policy on migrations [here](https://docs.cosmos.network/main/migra
 ### What does not qualify as SRU
 
 * State machine changes.
-* Breaking changes in Protobuf definitions, as specified in [ADR-044](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-044-protobuf-updates-guidelines.md).
+* Breaking changes in Protobuf definitions, as specified in [ADR-044](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-044-protobuf-updates-guidelines.md).
 * Changes that introduce API breakages (e.g. public functions and interfaces removal/renaming).
 * Client-breaking changes in gRPC and HTTP request and response types.
 * CLI-breaking changes.
@@ -162,7 +162,7 @@ Pull requests that fix bugs and add features that fall in the following categori
 As rule of thumb, the following changes will **NOT** be automatically accepted into stable point-releases:
 
 * **State machine changes**.
-* **Protobug-breaking changes**, as specified in [ADR-044](https://github.com/cosmos/cosmos-sdk/blob/main/docs/architecture/adr-044-protobuf-updates-guidelines.md).
+* **Protobug-breaking changes**, as specified in [ADR-044](https://github.com/depinnetwork/depin-sdk/blob/main/docs/architecture/adr-044-protobuf-updates-guidelines.md).
 * **Client-breaking changes**, i.e. changes that prevent gRPC, HTTP and RPC clients to continue interacting with the node without any change.
 * **API-breaking changes**, i.e. changes that prevent client applications to _build without modifications_ to the client application's source code.
 * **CLI-breaking changes**, i.e. changes that require usage changes for CLI users.
@@ -171,7 +171,7 @@ As rule of thumb, the following changes will **NOT** be automatically accepted i
 
 ### Stable Release Exception - Procedure
 
-1. Check that the bug is either fixed or not reproducible in `main`. It is, in general, not appropriate to release bug fixes for stable releases without first testing them in `main`. Please apply the label [v0.43](https://github.com/cosmos/cosmos-sdk/milestone/26) to the issue.
+1. Check that the bug is either fixed or not reproducible in `main`. It is, in general, not appropriate to release bug fixes for stable releases without first testing them in `main`. Please apply the label [v0.43](https://github.com/depinnetwork/depin-sdk/milestone/26) to the issue.
 2. Add a comment to the issue and ensure it contains the following information (see the bug template below):
 
    * **[Impact]** An explanation of the bug on users and justification for backporting the fix to the stable release.
@@ -237,8 +237,8 @@ Those modules can be considered as part of the Cosmos SDK, but features and impr
 * Modules that import the SDK but do not need to be imported in an app (`e.g. cosmovisor`) must be released from the `main` branch and follow the process defined below.
 
 > [!IMPORTANT]  
-> A module depending on a non stabilized version of `github.com/cosmos/cosmos-sdk` (any version prior to the removal of baseapp, runtime, server) SHOULD NOT be tagged following semver.
-> For instance, modules are still using 0ver until the main `github.com/cosmos/cosmos-sdk` has stabilized.
+> A module depending on a non stabilized version of `github.com/depinnetwork/depin-sdk` (any version prior to the removal of baseapp, runtime, server) SHOULD NOT be tagged following semver.
+> For instance, modules are still using 0ver until the main `github.com/depinnetwork/depin-sdk` has stabilized.
 
 ### Modules that do not depend on the Cosmos SDK
 

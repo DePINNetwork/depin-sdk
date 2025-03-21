@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/core/header"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var _ header.Service = (*HeaderService)(nil)

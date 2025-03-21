@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/core/registry"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // RegisterAminoMsg first checks that the msgName is <40 chars

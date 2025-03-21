@@ -9,7 +9,7 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	grouperrors "cosmossdk.io/x/group/errors"
 
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 // defaultPageLimit is the default limit value for pagination requests.

@@ -13,7 +13,7 @@ Signer specifies which field should be used to determine the signer of a message
 Read more about the signer field [here](./02-messages-and-queries.md).
 
 ```protobuf reference 
-https://github.com/cosmos/cosmos-sdk/blob/e6848d99b55a65d014375b295bdd7f9641aac95e/proto/cosmos/bank/v1beta1/tx.proto#L40
+https://github.com/depinnetwork/depin-sdk/blob/e6848d99b55a65d014375b295bdd7f9641aac95e/proto/cosmos/bank/v1beta1/tx.proto#L40
 ```
 
 ```proto
@@ -31,31 +31,31 @@ The scalar type defines a way for clients to understand how to construct protobu
 Example of account address string scalar:
 
 ```proto reference 
-https://github.com/cosmos/cosmos-sdk/blob/e6848d99b55a65d014375b295bdd7f9641aac95e/proto/cosmos/bank/v1beta1/tx.proto#L46
+https://github.com/depinnetwork/depin-sdk/blob/e6848d99b55a65d014375b295bdd7f9641aac95e/proto/cosmos/bank/v1beta1/tx.proto#L46
 ```
 
 Example of validator address string scalar: 
 
 ```proto reference 
-https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/distribution/v1beta1/query.proto#L87
+https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/distribution/v1beta1/query.proto#L87
 ```
 
 Example of pubkey scalar: 
 
 ```proto reference 
-https://github.com/cosmos/cosmos-sdk/blob/11068bfbcd44a7db8af63b6a8aa079b1718f6040/proto/cosmos/staking/v1beta1/tx.proto#L94
+https://github.com/depinnetwork/depin-sdk/blob/11068bfbcd44a7db8af63b6a8aa079b1718f6040/proto/cosmos/staking/v1beta1/tx.proto#L94
 ```
 
 Example of Decimals scalar: 
 
 ```proto reference
-https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/distribution/v1beta1/distribution.proto#L26
+https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/distribution/v1beta1/distribution.proto#L26
 ```
 
 Example of Int scalar: 
 
 ```proto reference
-https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/gov/v1/gov.proto#L137
+https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/gov/v1/gov.proto#L137
 ```
 
 There are a few options for what can be provided as a scalar: `cosmos.AddressString`, `cosmos.ValidatorAddressString`, `cosmos.ConsensusAddressString`, `cosmos.Int`, `cosmos.Dec`. 
@@ -99,7 +99,7 @@ option (amino.name) = "cosmos-sdk/BaseAccount";
 ```
 
 ```proto reference
-https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/bank/v1beta1/tx.proto#L41
+https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/bank/v1beta1/tx.proto#L41
 ```
 
 ### Field_Name
@@ -111,7 +111,7 @@ uint64 height = 1 [(amino.field_name) = "public_key"];
 ```
 
 ```proto reference
-https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/distribution/v1beta1/distribution.proto#L166
+https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/distribution/v1beta1/distribution.proto#L166
 ```
 
 ### Dont_OmitEmpty 
@@ -123,19 +123,19 @@ repeated cosmos.base.v1beta1.Coin amount = 3 [(amino.dont_omitempty)   = true];
 ```
 
 ```proto reference
-https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/bank/v1beta1/bank.proto#L56
+https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/bank/v1beta1/bank.proto#L56
 ```
 
 ### Encoding 
 
-Encoding instructs the amino json marshaler how to encode certain fields that may differ from the standard encoding behaviour. The most common example of this is how `repeated cosmos.base.v1beta1.Coin` is encoded when using the amino json encoding format. The `legacy_coins` option tells the json marshaler [how to encode a null slice](https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/x/tx/signing/aminojson/json_marshal.go#L65) of `cosmos.base.v1beta1.Coin`.
+Encoding instructs the amino json marshaler how to encode certain fields that may differ from the standard encoding behaviour. The most common example of this is how `repeated cosmos.base.v1beta1.Coin` is encoded when using the amino json encoding format. The `legacy_coins` option tells the json marshaler [how to encode a null slice](https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/x/tx/signing/aminojson/json_marshal.go#L65) of `cosmos.base.v1beta1.Coin`.
 
 ```proto
 (amino.encoding)         = "legacy_coins",
 ```
 
 ```proto reference
-https://github.com/cosmos/cosmos-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/bank/v1beta1/genesis.proto#L23
+https://github.com/depinnetwork/depin-sdk/blob/e8f28bf5db18b8d6b7e0d94b542ce4cf48fed9d6/proto/cosmos/bank/v1beta1/genesis.proto#L23
 ```
 
 Another example is a protobuf `bytes` that contains a valid JSON document.

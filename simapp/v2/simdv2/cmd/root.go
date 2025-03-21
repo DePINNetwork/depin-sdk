@@ -14,7 +14,7 @@ import (
 	serverv2 "cosmossdk.io/server/v2"
 	"cosmossdk.io/simapp/v2"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client"
 )
 
 func NewRootCmd[T transaction.Tx](

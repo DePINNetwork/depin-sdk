@@ -5,17 +5,17 @@ import "google/api/annotations.proto";
 import "google/protobuf/timestamp.proto";
 import "gogoproto/gogo.proto";
 
-option go_package = "github.com/cosmos/cosmos-sdk/client/grpc/node";
+option go_package = "github.com/depin/cosmos-sdk/client/grpc/node";
 
 // Service defines the gRPC querier service for node related queries.
 service Service {
   // Config queries for the operator configuration.
   rpc Config(ConfigRequest) returns (ConfigResponse) {
-    option (google.api.http).get = "/cosmos/base/node/v1beta1/config";
+    option (google.api.http).get = "/depin/base/node/v1beta1/config";
   }
   // Status queries for the node status.
   rpc Status(StatusRequest) returns (StatusResponse) {
-    option (google.api.http).get = "/cosmos/base/node/v1beta1/status";
+    option (google.api.http).get = "/depin/base/node/v1beta1/status";
   }
 }
 

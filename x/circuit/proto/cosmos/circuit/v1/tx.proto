@@ -3,8 +3,8 @@ package cosmos.circuit.v1;
 
 option go_package = "cosmossdk.io/x/circuit/types";
 
-import "cosmos/msg/v1/msg.proto";
-import "cosmos/circuit/v1/types.proto";
+import "depin/msg/v1/msg.proto";
+import "depin/circuit/v1/types.proto";
 
 // Msg defines the circuit Msg service.
 service Msg {

@@ -10,9 +10,9 @@ import (
 	"cosmossdk.io/math"
 	"cosmossdk.io/x/mint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/telemetry"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // Keeper of the mint store

@@ -13,10 +13,10 @@ import (
 	v1 "cosmossdk.io/x/accounts/defaults/multisig/v1"
 	accountsv1 "cosmossdk.io/x/accounts/v1"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func TestIntegrationTestSuite(t *testing.T) {

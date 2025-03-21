@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-import "cosmos/msg/v1/msg.proto";
+import "depin/msg/v1/msg.proto";
 import "cosmos_proto/cosmos.proto";
 
 option go_package = "cosmossdk.io/x/tx/internal/testpb";

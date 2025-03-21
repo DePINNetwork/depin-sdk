@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	protoio "github.com/cosmos/gogoproto/io"
 	gogotypes "github.com/cosmos/gogoproto/types"
 	iavltree "github.com/cosmos/iavl"

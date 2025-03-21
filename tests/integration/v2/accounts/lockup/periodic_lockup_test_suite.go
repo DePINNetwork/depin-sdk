@@ -12,9 +12,9 @@ import (
 	lockupaccount "cosmossdk.io/x/accounts/defaults/lockup"
 	types "cosmossdk.io/x/accounts/defaults/lockup/v1"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func (s *IntegrationTestSuite) TestPeriodicLockingAccount() {

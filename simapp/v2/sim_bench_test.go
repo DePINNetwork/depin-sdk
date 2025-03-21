@@ -3,7 +3,7 @@
 package simapp
 
 import (
-	"github.com/cosmos/cosmos-sdk/x/simulation/client/cli"
+	"github.com/depinnetwork/depin-sdk/x/simulation/client/cli"
 	"testing"
 )
 

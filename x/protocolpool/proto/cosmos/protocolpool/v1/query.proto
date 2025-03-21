@@ -5,7 +5,7 @@ option go_package = "cosmossdk.io/x/protocolpool/types";
 
 import "gogoproto/gogo.proto";
 import "google/api/annotations.proto";
-import "cosmos/base/v1beta1/coin.proto";
+import "depin/base/v1beta1/coin.proto";
 import "cosmos_proto/cosmos.proto";
 import "google/protobuf/timestamp.proto";
 import "google/protobuf/duration.proto";
@@ -14,12 +14,12 @@ import "google/protobuf/duration.proto";
 service Query {
   // CommunityPool queries the community pool coins.
   rpc CommunityPool(QueryCommunityPoolRequest) returns (QueryCommunityPoolResponse) {
-    option (google.api.http).get = "/cosmos/protocolpool/v1/community_pool";
+    option (google.api.http).get = "/depin/protocolpool/v1/community_pool";
   }
 
   // UnclaimedBudget queries the remaining budget left to be claimed and it gives overall budget allocation view.
   rpc UnclaimedBudget(QueryUnclaimedBudgetRequest) returns (QueryUnclaimedBudgetResponse) {
-    option (google.api.http).get = "/cosmos/protocolpool/v1/unclaimed_budget/{address}";
+    option (google.api.http).get = "/depin/protocolpool/v1/unclaimed_budget/{address}";
   }
 }
 
@@ -32,7 +32,7 @@ message QueryCommunityPoolRequest {}
 message QueryCommunityPoolResponse {
   // pool defines community pool's coins.
   repeated cosmos.base.v1beta1.DecCoin pool = 1
-      [(gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.DecCoins", (gogoproto.nullable) = false];
+      [(gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.DecCoins", (gogoproto.nullable) = false];
 }
 
 // QueryUnclaimedBudgetRequest is the request type for the Query/UnclaimedBudgetRequest

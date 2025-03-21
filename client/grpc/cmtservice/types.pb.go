@@ -5,9 +5,9 @@ package cmtservice
 
 import (
 	fmt "fmt"
-	v1 "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	v11 "github.com/cometbft/cometbft/api/cometbft/version/v1"
-	_ "github.com/cosmos/cosmos-sdk/types/tx/amino"
+	v1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	v11 "github.com/depinnetwork/por-consensus/api/cometbft/version/v1"
+	_ "github.com/depinnetwork/depin-sdk/types/tx/amino"
 	_ "github.com/cosmos/gogoproto/gogoproto"
 	proto "github.com/cosmos/gogoproto/proto"
 	github_com_cosmos_gogoproto_types "github.com/cosmos/gogoproto/types"

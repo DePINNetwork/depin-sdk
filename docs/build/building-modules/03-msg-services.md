@@ -24,13 +24,13 @@ As further described in [ADR 031](../architecture/adr-031-msg-service.md), this 
 Protobuf generates a `MsgServer` interface based on the definition of `Msg` service. It is the role of the module developer to implement this interface, by implementing the state transition logic that should happen upon receival of each `transaction.Msg`. As an example, here is the generated `MsgServer` interface for `x/bank`, which exposes two `transaction.Msg`s:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/28fa3b8/x/bank/types/tx.pb.go#L564-L579
+https://github.com/depinnetwork/depin-sdk/blob/28fa3b8/x/bank/types/tx.pb.go#L564-L579
 ```
 
 When possible, the existing module's [`Keeper`](./06-keeper.md) should implement `MsgServer`, otherwise a `msgServer` struct that embeds the `Keeper` can be created, typically in `./keeper/msg_server.go`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/x/bank/keeper/msg_server.go#L13-L15
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/x/bank/keeper/msg_server.go#L13-L15
 ```
 
 `msgServer` methods can retrieve the auxiliary information or services using the environment variable, it is should always be located in the [keeper](./06-keeper.md).
@@ -100,7 +100,7 @@ New [telemetry metrics](../../learn/advanced/09-telemetry.md) can be created fro
 This is an example from the `x/auth/vesting` module:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/auth/vesting/msg_server.go#L76-L88
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/auth/vesting/msg_server.go#L76-L88
 ```
 
 ## How it works
@@ -112,13 +112,13 @@ This flow concerns only a Cosmos SDK *baseapp*, and not Cosmos SDK v2.
 The invoked `msgServer` method returns a `proto.Message` response and an `error`. These return values are then wrapped into an `*sdk.Result` or an `error`:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/baseapp/msg_service_router.go#L160
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/baseapp/msg_service_router.go#L160
 ```
 
 This method takes care of marshaling the `res` parameter to protobuf and attaching any events on the `EventManager()` to the `sdk.Result`.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/proto/cosmos/base/abci/v1beta1/abci.proto#L93-L113
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/proto/cosmos/base/abci/v1beta1/abci.proto#L93-L113
 ```
 
 This diagram shows a typical structure of a Protobuf `Msg` service, and how the message propagates through the module.

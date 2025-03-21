@@ -2,17 +2,17 @@
   <h1> Cosmos SDK </h1>
 </div>
 
-![banner](https://github.com/cosmos/cosmos-sdk-docs/blob/main/static/img/banner.jpg)
+![banner](https://github.com/depinnetwork/depin-sdk-docs/blob/main/static/img/banner.jpg)
 
 <div align="center">
-  <a href="https://github.com/cosmos/cosmos-sdk/blob/main/LICENSE">
+  <a href="https://github.com/depinnetwork/depin-sdk/blob/main/LICENSE">
     <img alt="License: Apache-2.0" src="https://img.shields.io/github/license/cosmos/cosmos-sdk.svg" />
   </a>
-  <a href="https://pkg.go.dev/github.com/cosmos/cosmos-sdk">
-    <img src="https://pkg.go.dev/badge/github.com/cosmos/cosmos-sdk.svg" alt="Go Reference">
+  <a href="https://pkg.go.dev/github.com/depinnetwork/depin-sdk">
+    <img src="https://pkg.go.dev/badge/github.com/depinnetwork/depin-sdk.svg" alt="Go Reference">
   </a>
-  <a href="https://goreportcard.com/report/github.com/cosmos/cosmos-sdk">
-    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/cosmos/cosmos-sdk" />
+  <a href="https://goreportcard.com/report/github.com/depinnetwork/depin-sdk">
+    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/depinnetwork/depin-sdk" />
   </a>
   <a href="https://sonarcloud.io/summary/overall?id=cosmos_cosmos-sdk">
     <img alt="Code Coverage" src="https://sonarcloud.io/api/project_badges/measure?project=cosmos_cosmos-sdk&metric=coverage" />
@@ -25,14 +25,14 @@
   <a href="https://discord.gg/interchain">
     <img alt="Discord" src="https://img.shields.io/discord/669268347736686612.svg" />
   </a>
-  <a href="https://sourcegraph.com/github.com/cosmos/cosmos-sdk?badge">
-    <img alt="Imported by" src="https://sourcegraph.com/github.com/cosmos/cosmos-sdk/-/badge.svg" />
+  <a href="https://sourcegraph.com/github.com/depinnetwork/depin-sdk?badge">
+    <img alt="Imported by" src="https://sourcegraph.com/github.com/depinnetwork/depin-sdk/-/badge.svg" />
   </a>
-    <img alt="Sims" src="https://github.com/cosmos/cosmos-sdk/workflows/Sims/badge.svg" />
-    <img alt="Lint Status" src="https://github.com/cosmos/cosmos-sdk/workflows/Lint/badge.svg" />
+    <img alt="Sims" src="https://github.com/depinnetwork/depin-sdk/workflows/Sims/badge.svg" />
+    <img alt="Lint Status" src="https://github.com/depinnetwork/depin-sdk/workflows/Lint/badge.svg" />
 </div>
 
-The Cosmos SDK is a framework for building blockchain applications. [CometBFT (BFT Consensus)](https://github.com/cometbft/cometbft) and the Cosmos SDK are written in the Go programming language. Cosmos SDK is used to build [Gaia](https://github.com/cosmos/gaia), the implementation of the Cosmos Hub.
+The Cosmos SDK is a framework for building blockchain applications. [CometBFT (BFT Consensus)](https://github.com/depinnetwork/por-consensus) and the Cosmos SDK are written in the Go programming language. Cosmos SDK is used to build [Gaia](https://github.com/cosmos/gaia), the implementation of the Cosmos Hub.
 
 **Note**: Always use the latest maintained [Go](https://go.dev/dl) version for building Cosmos SDK applications.
 
@@ -63,7 +63,7 @@ The IBC module for the Cosmos SDK has its own [cosmos/ibc-go repository](https:/
 The version matrix below shows which versions of the Cosmos SDK, modules and libraries are compatible with each other.
 
 > [!IMPORTANT]
-> Cosmos SDK `v2` corresponds to a chain using the `runtime/v2`, `server/v2/**`, and `store/v2` packages. The `github.com/cosmos/cosmos-sdk` module has a less important role in a `v2` chain.
+> Cosmos SDK `v2` corresponds to a chain using the `runtime/v2`, `server/v2/**`, and `store/v2` packages. The `github.com/depinnetwork/depin-sdk` module has a less important role in a `v2` chain.
 
 #### Core Dependencies
 

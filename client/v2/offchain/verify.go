@@ -13,8 +13,8 @@ import (
 	"cosmossdk.io/core/address"
 	txsigning "cosmossdk.io/x/tx/signing"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 )
 
 // Verify verifies a digest after unmarshalling it.

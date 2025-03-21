@@ -208,17 +208,17 @@ Further internal improvements of `x/gov` will happen soon after, in order to sim
 
 Those improvements may change the tallying api.
 
-* https://github.com/cosmos/cosmos-sdk/issues/16270
+* https://github.com/depinnetwork/depin-sdk/issues/16270
 
 ## References
 
-* [https://github.com/cosmos/cosmos-sdk/issues/16270][1]
-* [https://github.com/cosmos/cosmos-sdk/issues/17781][2]
-* [https://github.com/cosmos/cosmos-sdk/issues/14403][3]
+* [https://github.com/depinnetwork/depin-sdk/issues/16270][1]
+* [https://github.com/depinnetwork/depin-sdk/issues/17781][2]
+* [https://github.com/depinnetwork/depin-sdk/issues/14403][3]
 * [https://github.com/decentralists/DAO/issues/28][4]
 
 [1]: https://grants.osmosis.zone/blog/rfp-cosmos-sdk-governance-module-improvements
-[2]: https://github.com/cosmos/cosmos-sdk/issues/17781
-[3]: https://github.com/cosmos/cosmos-sdk/issues/14403
+[2]: https://github.com/depinnetwork/depin-sdk/issues/17781
+[3]: https://github.com/depinnetwork/depin-sdk/issues/14403
 [4]: https://github.com/decentralists/DAO/issues/28
 [5]: https://buf.build/cosmos/cosmos-sdk/docs/main:cosmos.gov.v1

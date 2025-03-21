@@ -3,7 +3,7 @@ package keeper
 import (
 	v1 "cosmossdk.io/x/gov/types/v1"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // ValidateInitialDeposit is a helper function used only in deposit tests which returns the same

@@ -11,10 +11,10 @@ import (
 	"cosmossdk.io/x/gov/keeper"
 	v1 "cosmossdk.io/x/gov/types/v1"
 
-	"github.com/cosmos/cosmos-sdk/simsx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	"github.com/depinnetwork/depin-sdk/simsx"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	simtypes "github.com/depinnetwork/depin-sdk/types/simulation"
+	"github.com/depinnetwork/depin-sdk/x/simulation"
 )
 
 func MsgDepositFactory(k *keeper.Keeper, sharedState *SharedState) simsx.SimMsgFactoryFn[*v1.MsgDeposit] {

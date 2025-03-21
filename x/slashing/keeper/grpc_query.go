@@ -9,8 +9,8 @@ import (
 	"cosmossdk.io/store/prefix"
 	"cosmossdk.io/x/slashing/types"
 
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 var _ types.QueryServer = Querier{}

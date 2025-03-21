@@ -9,8 +9,8 @@ import (
 	"cosmossdk.io/x/group"
 	v2 "cosmossdk.io/x/group/migrations/v2"
 
-	codectestutil "github.com/cosmos/cosmos-sdk/codec/testutil"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func TestMigrateGenState(t *testing.T) {

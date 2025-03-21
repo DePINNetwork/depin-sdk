@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
-	crypto "github.com/cometbft/cometbft/api/cometbft/crypto/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	crypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
 
 	errorsmod "cosmossdk.io/errors/v2"
 	cometerrors "cosmossdk.io/server/v2/cometbft/types/errors"

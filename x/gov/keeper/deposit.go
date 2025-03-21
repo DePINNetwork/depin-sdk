@@ -13,8 +13,8 @@ import (
 	v1 "cosmossdk.io/x/gov/types/v1"
 	pooltypes "cosmossdk.io/x/protocolpool/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // SetDeposit sets a Deposit to the gov store

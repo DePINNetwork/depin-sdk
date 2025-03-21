@@ -12,8 +12,8 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/x/tx/signing"
 
-	addresscodec "github.com/cosmos/cosmos-sdk/codec/address"
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	addresscodec "github.com/depinnetwork/depin-sdk/codec/address"
+	"github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 var DefaultProviders = depinject.Provide(

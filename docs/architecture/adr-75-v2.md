@@ -218,7 +218,7 @@ V2 only works with `Store/v2`, `IAVL V1` can be used with `Store/v2`. This allow
 * Reduced maintenance cost burden. 
 * State machine is more performant.
 * Isolated components allow for easier testing.
-* Allow the team to delete a lot of code in `github.com/cosmos/cosmos-sdk`.
+* Allow the team to delete a lot of code in `github.com/depinnetwork/depin-sdk`.
 
 ### Negative
 

@@ -12,9 +12,9 @@ package mock
 import (
 	reflect "reflect"
 
-	client "github.com/cosmos/cosmos-sdk/client"
-	types "github.com/cosmos/cosmos-sdk/crypto/types"
-	types0 "github.com/cosmos/cosmos-sdk/types"
+	client "github.com/depinnetwork/depin-sdk/client"
+	types "github.com/depinnetwork/depin-sdk/crypto/types"
+	types0 "github.com/depinnetwork/depin-sdk/types"
 	gomock "go.uber.org/mock/gomock"
 )
 

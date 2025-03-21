@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"strings"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/spf13/cast"
 
 	"cosmossdk.io/core/server"
@@ -21,8 +21,8 @@ import (
 	"cosmossdk.io/store/streaming"
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 const (

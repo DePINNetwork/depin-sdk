@@ -5,16 +5,16 @@ import (
 	"strconv"
 	"testing"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/stretchr/testify/require"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	"github.com/cosmos/cosmos-sdk/types/address"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
+	"github.com/depinnetwork/depin-sdk/client"
+	clitestutil "github.com/depinnetwork/depin-sdk/testutil/cli"
+	"github.com/depinnetwork/depin-sdk/testutil/testdata"
+	"github.com/depinnetwork/depin-sdk/types/address"
+	grpctypes "github.com/depinnetwork/depin-sdk/types/grpc"
 )
 
 func TestCLIQueryConn(t *testing.T) {

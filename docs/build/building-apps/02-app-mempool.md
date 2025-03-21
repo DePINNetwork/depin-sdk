@@ -69,7 +69,7 @@ Set the seed for the random number generator used to select transactions from th
 
 ### Priority Nonce Mempool
 
-The [priority nonce mempool](https://github.com/cosmos/cosmos-sdk/blob/main/types/mempool/priority_nonce_spec.md) is a mempool implementation that stores txs in a partially ordered set by 2 dimensions:
+The [priority nonce mempool](https://github.com/depinnetwork/depin-sdk/blob/main/types/mempool/priority_nonce_spec.md) is a mempool implementation that stores txs in a partially ordered set by 2 dimensions:
 
 * priority
 * sender-nonce (sequence number)
@@ -93,4 +93,4 @@ The priority nonce mempool provides mempool options allowing the application set
 * **OnRead**: Set a callback to be called when a transaction is read from the mempool.
 * **TxReplacement**: Sets a callback to be called when duplicated transaction nonce detected during mempool insert. Application can define a transaction replacement rule based on tx priority or certain transaction fields.
 
-More information on the SDK mempool implementation can be found in the [godocs](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/types/mempool).
+More information on the SDK mempool implementation can be found in the [godocs](https://pkg.go.dev/github.com/depinnetwork/depin-sdk/types/mempool).

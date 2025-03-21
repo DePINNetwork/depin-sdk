@@ -7,7 +7,7 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 func UnpackAnyRaw(m *codectypes.Any) (proto.Message, error) {

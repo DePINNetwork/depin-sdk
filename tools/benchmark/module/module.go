@@ -18,9 +18,9 @@ import (
 	"cosmossdk.io/tools/benchmark/client/cli"
 	gen "cosmossdk.io/tools/benchmark/generator"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/types/msgservice"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/types/module"
+	"github.com/depinnetwork/depin-sdk/types/msgservice"
 )
 
 var (

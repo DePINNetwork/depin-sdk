@@ -8,8 +8,8 @@ import (
 	"strings"
 	"sync/atomic"
 
-	abci "github.com/cometbft/cometbft/abci/types"
-	abciproto "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/abci/types"
+	abciproto "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	gogoproto "github.com/cosmos/gogoproto/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"

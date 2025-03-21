@@ -91,7 +91,7 @@ For example, let's say a chain adds a feature that involves checking the spot pr
 
 If a chain supports custom token transfer logic (e.g. blacklists for USDC), it needs to make sure all token transfers in `Begin/EndBlock` properly catch panics. While this is generally quite straightforward to do, it is commonly missed in one context: bulk coin sends.
 
-Specifically, the Cosmos SDK allows for multiple coins to be transferred in one function call through its `[SendCoins](https://github.com/cosmos/cosmos-sdk/blob/d55985637e1484309b09e76d29f04f2c7258c3de/x/bank/keeper/send.go#L202)` function. This is a black-box function that does not allow for individual validation of each token transfer, which often leads to it being overlooked. A single panic trigger in a call to `SendCoins` in `Begin/EndBlock` can trigger a chain halt.
+Specifically, the Cosmos SDK allows for multiple coins to be transferred in one function call through its `[SendCoins](https://github.com/depinnetwork/depin-sdk/blob/d55985637e1484309b09e76d29f04f2c7258c3de/x/bank/keeper/send.go#L202)` function. This is a black-box function that does not allow for individual validation of each token transfer, which often leads to it being overlooked. A single panic trigger in a call to `SendCoins` in `Begin/EndBlock` can trigger a chain halt.
 
 While one can catch the panic on the entire `SendCoins` call, this would mean that an attacker can DoS all transfers in the batch. Thus, **the solution for these situations is to transfer coins one by one with `SendCoin` and verify each transfer so that problematic ones can be skipped.**
 
@@ -199,7 +199,7 @@ However, the superior long-term solution is to integrate the fee market directly
 
 Before submitting a transaction on-chain, clients attempt to simulate its execution to determine how much gas to provide. There is a separate execution mode for simulation that does not commit state but attempts to estimate gas.
 
-Due to [challenges with how Cosmos SDK gas estimation works](https://github.com/cosmos/cosmos-sdk/issues/18834), the gas estimate often ends up being inconsistent with the actual execution. Many clients get around this today by multiplying their gas estimates by a constant multiplier.
+Due to [challenges with how Cosmos SDK gas estimation works](https://github.com/depinnetwork/depin-sdk/issues/18834), the gas estimate often ends up being inconsistent with the actual execution. Many clients get around this today by multiplying their gas estimates by a constant multiplier.
 
 If the chain increases gas usage in ways that are not included in simulation logic, this could break many clients at chain upgrade time until they increase their gas multipliers.
 

@@ -14,8 +14,8 @@ import (
 	"cosmossdk.io/x/gov/types"
 	v1 "cosmossdk.io/x/gov/types/v1"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/telemetry"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // EndBlocker is called every block.

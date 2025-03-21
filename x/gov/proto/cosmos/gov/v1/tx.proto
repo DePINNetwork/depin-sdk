@@ -2,12 +2,12 @@
 syntax = "proto3";
 package cosmos.gov.v1;
 
-import "cosmos/base/v1beta1/coin.proto";
-import "cosmos/gov/v1/gov.proto";
+import "depin/base/v1beta1/coin.proto";
+import "depin/gov/v1/gov.proto";
 import "gogoproto/gogo.proto";
 import "cosmos_proto/cosmos.proto";
 import "google/protobuf/any.proto";
-import "cosmos/msg/v1/msg.proto";
+import "depin/msg/v1/msg.proto";
 import "amino/amino.proto";
 import "google/protobuf/timestamp.proto";
 
@@ -73,7 +73,7 @@ message MsgSubmitProposal {
   // initial_deposit is the deposit value that must be paid at proposal submission.
   repeated cosmos.base.v1beta1.Coin initial_deposit = 2 [
     (gogoproto.nullable)     = false,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins",
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins"
   ];
@@ -234,7 +234,7 @@ message MsgSubmitMultipleChoiceProposal {
   // initial_deposit is the deposit value that must be paid at proposal submission.
   repeated cosmos.base.v1beta1.Coin initial_deposit = 1 [
     (gogoproto.nullable)     = false,
-    (gogoproto.castrepeated) = "github.com/cosmos/cosmos-sdk/types.Coins",
+    (gogoproto.castrepeated) = "github.com/depin/cosmos-sdk/types.Coins",
     (amino.dont_omitempty)   = true,
     (amino.encoding)         = "legacy_coins"
   ];

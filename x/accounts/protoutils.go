@@ -9,8 +9,8 @@ import (
 	txv1beta1 "cosmossdk.io/api/cosmos/tx/v1beta1"
 	"cosmossdk.io/x/accounts/internal/implementation"
 
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
+	"github.com/depinnetwork/depin-sdk/types/tx"
+	"github.com/depinnetwork/depin-sdk/types/tx/signing"
 )
 
 func protoV2TxToProtoV1(t *txv1beta1.Tx) *tx.Tx {

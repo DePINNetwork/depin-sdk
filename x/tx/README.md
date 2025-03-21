@@ -44,10 +44,10 @@ but doesn't handle the actual signing process (i.e., applying a cryptographic si
 
 1. SignModeHandler Interface: this is the core interface that defines how different signing modes should be implemented.
 2. SignModeHandler Implementations:
-   * [aminojson](https://github.com/cosmos/cosmos-sdk/blob/v0.50.7/docs/architecture/adr-020-protobuf-transaction-encoding.md#sign_mode_legacy_amino)
-   * [direct](https://github.com/cosmos/cosmos-sdk/blob/v0.50.7/docs/architecture/adr-020-protobuf-transaction-encoding.md#sign_mode_direct)
-   * [direct aux](https://github.com/cosmos/cosmos-sdk/blob/v0.50.7/docs/architecture/adr-020-protobuf-transaction-encoding.md#sign_mode_direct_aux)
-   * [textual](https://github.com/cosmos/cosmos-sdk/blob/v0.50.7/docs/architecture/adr-050-sign-mode-textual-annex1.md#adr-050-sign_mode_textual-annex-1-value-renderers)
+   * [aminojson](https://github.com/depinnetwork/depin-sdk/blob/v0.50.7/docs/architecture/adr-020-protobuf-transaction-encoding.md#sign_mode_legacy_amino)
+   * [direct](https://github.com/depinnetwork/depin-sdk/blob/v0.50.7/docs/architecture/adr-020-protobuf-transaction-encoding.md#sign_mode_direct)
+   * [direct aux](https://github.com/depinnetwork/depin-sdk/blob/v0.50.7/docs/architecture/adr-020-protobuf-transaction-encoding.md#sign_mode_direct_aux)
+   * [textual](https://github.com/depinnetwork/depin-sdk/blob/v0.50.7/docs/architecture/adr-050-sign-mode-textual-annex1.md#adr-050-sign_mode_textual-annex-1-value-renderers)
 3. Context: the signing Context provides necessary information for retrieving signers from messages and resolving protobuf types.
 4. TxData and SignerData: these structures contain the necessary data for generating sign bytes. TxData includes transaction details, while SignerData contains information about the signer.
 5. HandlerMap: a collection of SignModeHandlers, allowing the system to support multiple signing modes.
@@ -56,7 +56,7 @@ but doesn't handle the actual signing process (i.e., applying a cryptographic si
 ## Decode
 
 The decode package provides functionality for decoding raw transaction bytes into structured transaction data. It's
-designed to work with transactions that follow the [ADR-027](https://github.com/cosmos/cosmos-sdk/blob/v0.50.7/docs/architecture/adr-027-deterministic-protobuf-serialization.md#adr-027-deterministic-protobuf-serialization)
+designed to work with transactions that follow the [ADR-027](https://github.com/depinnetwork/depin-sdk/blob/v0.50.7/docs/architecture/adr-027-deterministic-protobuf-serialization.md#adr-027-deterministic-protobuf-serialization)
 specification for application-defined raw transaction serialization.
 
 ### Key Features

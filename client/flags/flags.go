@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
+	"github.com/depinnetwork/depin-sdk/crypto/keyring"
 )
 
 const (

@@ -10,8 +10,8 @@ import (
 
 	"github.com/huandu/skiplist"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/signing"
+	sdk "github.com/depinnetwork/depin-sdk/types"
+	"github.com/depinnetwork/depin-sdk/x/auth/signing"
 )
 
 var (

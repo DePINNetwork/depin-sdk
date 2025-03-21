@@ -28,7 +28,7 @@ By using `depinject`, developers can achieve:
 
 The `depinject` framework, based on dependency injection concepts, streamlines the management of dependencies within your blockchain application using its Configuration API. This API offers a set of functions and methods to create easy to use configurations, making it simple to define, modify, and access dependencies and their relationships.
 
-A core component of the [Configuration API](https://pkg.go.dev/github.com/cosmos/cosmos-sdk/depinject#Config) is the `Provide` function, which allows you to register provider functions that supply dependencies. Inspired by constructor injection, these provider functions form the basis of the dependency tree, enabling the management and resolution of dependencies in a structured and maintainable manner. Additionally, `depinject` supports interface types as inputs to provider functions, offering flexibility and decoupling between components, similar to interface injection concepts.
+A core component of the [Configuration API](https://pkg.go.dev/github.com/depinnetwork/depin-sdk/depinject#Config) is the `Provide` function, which allows you to register provider functions that supply dependencies. Inspired by constructor injection, these provider functions form the basis of the dependency tree, enabling the management and resolution of dependencies in a structured and maintainable manner. Additionally, `depinject` supports interface types as inputs to provider functions, offering flexibility and decoupling between components, similar to interface injection concepts.
 
 By leveraging `depinject` and its Configuration API, you can efficiently handle dependencies in your blockchain application, ensuring a clean, modular, and well-organised codebase.
 
@@ -75,7 +75,7 @@ Provider functions serve as the basis for the dependency tree. They are analysed
 
 `depinject` supports the use of interface types as inputs to provider functions, which helps decouple dependencies between modules. This approach is particularly useful for managing complex systems with multiple modules, such as the Cosmos SDK, where dependencies need to be flexible and maintainable.
 
-For example, `x/bank` expects an [AccountKeeper](https://pkg.go.dev/cosmossdk.io/x/bank/types#AccountKeeper) interface as [input to ProvideModule](https://github.com/cosmos/cosmos-sdk/tree/release/v0.50.x/x/bank/module.go#L208-L260). `SimApp` uses the implementation in `x/auth`, but the modular design allows for easy changes to the implementation if needed.
+For example, `x/bank` expects an [AccountKeeper](https://pkg.go.dev/cosmossdk.io/x/bank/types#AccountKeeper) interface as [input to ProvideModule](https://github.com/depinnetwork/depin-sdk/tree/release/v0.50.x/x/bank/module.go#L208-L260). `SimApp` uses the implementation in `x/auth`, but the modular design allows for easy changes to the implementation if needed.
 
 Consider the following example:
 
@@ -177,7 +177,7 @@ When using `depinject.Inject`, the injected types must be pointers.
 :::
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L187-L206
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/simapp/app_di.go#L187-L206
 ```
 
 ## Debugging

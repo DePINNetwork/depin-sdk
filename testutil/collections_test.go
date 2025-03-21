@@ -7,7 +7,7 @@ import (
 
 	storetypes "cosmossdk.io/store/types"
 
-	"github.com/cosmos/cosmos-sdk/testutil"
+	"github.com/depinnetwork/depin-sdk/testutil"
 )
 
 func TestDiffCollectionsMigration(t *testing.T) {

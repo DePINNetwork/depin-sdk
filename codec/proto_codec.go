@@ -18,7 +18,7 @@ import (
 
 	"cosmossdk.io/x/tx/signing/aminojson"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/codec/types"
 )
 
 // ProtoCodec defines a codec that utilizes Protobuf for both binary and JSON

@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/distribution/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client"
 )
 
 // QueryDelegationRewards queries a delegation rewards between a delegator and a

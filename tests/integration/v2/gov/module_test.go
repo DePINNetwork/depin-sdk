@@ -10,8 +10,8 @@ import (
 	_ "cosmossdk.io/x/mint"
 	_ "cosmossdk.io/x/protocolpool"
 
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	authtypes "github.com/depinnetwork/depin-sdk/x/auth/types"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {

@@ -3,8 +3,8 @@ package cmtservice
 import (
 	"context"
 
-	cmtproto "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
+	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
 )
 
 func getBlockHeight(ctx context.Context, rpc CometRPC) (int64, error) {

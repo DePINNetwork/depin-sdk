@@ -5,7 +5,7 @@ import (
 
 	bankkeeper "cosmossdk.io/x/bank/v2/keeper"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // FundAccount is a utility function that funds an account by minting and

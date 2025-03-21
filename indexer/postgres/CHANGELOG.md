@@ -36,6 +36,6 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## [Unreleased]
 
-## [v0.1.0](https://github.com/cosmos/cosmos-sdk/releases/tag/indexer/postgres/v0.1.0)
+## [v0.1.0](https://github.com/depinnetwork/depin-sdk/releases/tag/indexer/postgres/v0.1.0)
 
 Initial tag.

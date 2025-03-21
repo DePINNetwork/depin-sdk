@@ -6,11 +6,11 @@ import (
 	sdkmath "cosmossdk.io/math"
 	govcli "cosmossdk.io/x/gov/client/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	"github.com/depinnetwork/depin-sdk/client/flags"
+	"github.com/depinnetwork/depin-sdk/testutil"
+	clitestutil "github.com/depinnetwork/depin-sdk/testutil/cli"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var commonArgs = []string{

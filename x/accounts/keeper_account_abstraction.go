@@ -16,8 +16,8 @@ import (
 	v1 "cosmossdk.io/x/accounts/v1"
 	txdecode "cosmossdk.io/x/tx/decode"
 
-	"github.com/cosmos/cosmos-sdk/types/address"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/depinnetwork/depin-sdk/types/address"
+	"github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 // IsAbstractedAccount returns if the provided address is an abstracted account or not.

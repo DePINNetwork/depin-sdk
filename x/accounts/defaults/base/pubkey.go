@@ -9,7 +9,7 @@ import (
 
 	"cosmossdk.io/core/transaction"
 
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
 )
 
 // this file implements a general mechanism to plugin public keys to a baseaccount

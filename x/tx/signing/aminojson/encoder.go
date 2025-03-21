@@ -18,7 +18,7 @@ import (
 // cosmosIntEncoder provides legacy compatible encoding for cosmos.Int types. In gogo messages these are sometimes
 // represented by a `cosmos-sdk/types.Int` through the usage of the option:
 //
-//	(gogoproto.customtype) = "github.com/cosmos/cosmos-sdk/types.Int"
+//	(gogoproto.customtype) = "github.com/depinnetwork/depin-sdk/types.Int"
 //
 // In pulsar message they represented as strings, which is the only format this encoder supports.
 func cosmosIntEncoder(_ *Encoder, v protoreflect.Value, w io.Writer) error {

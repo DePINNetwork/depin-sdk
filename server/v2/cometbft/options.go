@@ -1,8 +1,8 @@
 package cometbft
 
 import (
-	cmtcrypto "github.com/cometbft/cometbft/crypto"
-	cmted22519 "github.com/cometbft/cometbft/crypto/ed25519"
+	cmtcrypto "github.com/depinnetwork/por-consensus/crypto"
+	cmted22519 "github.com/depinnetwork/por-consensus/crypto/ed25519"
 
 	"cosmossdk.io/core/transaction"
 	"cosmossdk.io/server/v2/cometbft/handlers"

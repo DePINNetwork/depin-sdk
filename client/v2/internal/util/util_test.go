@@ -14,7 +14,7 @@ func TestIsSupportedVersion(t *testing.T) {
 	mockBuildInfo := &debug.BuildInfo{
 		Deps: []*debug.Module{
 			{
-				Path:    "github.com/cosmos/cosmos-sdk",
+				Path:    "github.com/depinnetwork/depin-sdk",
 				Version: "v0.50.0",
 			},
 			{

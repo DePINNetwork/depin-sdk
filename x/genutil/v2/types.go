@@ -3,7 +3,7 @@ package v2
 import (
 	"encoding/json"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // ExportedApp represents an exported app state, along with

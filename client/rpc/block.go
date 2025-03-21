@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"time"
 
-	cmt "github.com/cometbft/cometbft/api/cometbft/types/v1"
-	coretypes "github.com/cometbft/cometbft/rpc/core/types"
+	cmt "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
+	coretypes "github.com/depinnetwork/por-consensus/rpc/core/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/client"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // GetChainHeight returns the current blockchain height.

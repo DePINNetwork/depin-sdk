@@ -8,15 +8,15 @@ import (
 	"io"
 
 	"filippo.io/edwards25519"
-	"github.com/cometbft/cometbft/crypto"
-	"github.com/cometbft/cometbft/crypto/tmhash"
+	"github.com/depinnetwork/por-consensus/crypto"
+	"github.com/depinnetwork/por-consensus/crypto/tmhash"
 	"github.com/hdevalence/ed25519consensus"
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/depinnetwork/depin-sdk/codec"
+	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
 )
 
 // -------------------------------------

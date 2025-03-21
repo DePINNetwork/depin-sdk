@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strconv"
 
-	abci "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	gogogrpc "github.com/cosmos/gogoproto/grpc"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding"
@@ -14,11 +14,11 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/codec/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
-	"github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/depinnetwork/depin-sdk/codec"
+	"github.com/depinnetwork/depin-sdk/codec/types"
+	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"
+	grpctypes "github.com/depinnetwork/depin-sdk/types/grpc"
+	"github.com/depinnetwork/depin-sdk/types/tx"
 )
 
 var _ gogogrpc.ClientConn = Context{}

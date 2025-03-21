@@ -15,7 +15,7 @@ services of the SDK, such as the KVStore, EventManager, and Logger.  The `Enviro
 passed to modules and other components of the SDK to provide access to these services.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/environment.go#L16-L29
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.6/core/appmodule/v2/environment.go#L16-L29
 ```
 
 Historically the SDK has used an [sdk.Context](https://docs.cosmos.network/v0.50/learn/advanced/context) to pass around services and data.
@@ -28,7 +28,7 @@ The [Logger](https://pkg.go.dev/cosmossdk.io/log) provides a structured logging 
 When used via environment, the logger is scoped to the module that is using it.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.2/runtime/module.go#L274
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.2/runtime/module.go#L274
 ```
 
 ## Branch Service
@@ -70,7 +70,7 @@ latter will be deprecated and removed in the future.  Roughly speaking legacy `E
 maps to `Emit` and legacy `EmitEvent` maps to `EmitKV`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.4/core/event/service.go#L18-L29
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.4/core/event/service.go#L18-L29
 ```
 
 ## Gas Service
@@ -80,7 +80,7 @@ handled at the framework level for transaction processing and state access but m
 choose to use the gas service directly if needed.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.4/core/gas/service.go#L26-L54
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.4/core/gas/service.go#L26-L54
 ```
 
 ## Header Service
@@ -89,7 +89,7 @@ The header service provides access to the current block header.  This is useful 
 need to access the block header fields like `Time` and `Height` during transaction processing.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/a3729c1ad6ba2fb46f879ec7ea67c3afc02e9859/core/header/service.go#L11-L23
+https://github.com/depinnetwork/depin-sdk/blob/a3729c1ad6ba2fb46f879ec7ea67c3afc02e9859/core/header/service.go#L11-L23
 ```
 
 ### Custom Header Service
@@ -102,13 +102,13 @@ could easily be adapted to `runtime/v1` (the default runtime 0.52).  This same p
 replicated for any core service.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/489aaae40234f1015a7bbcfa9384a89dc8de8153/runtime/v2/module.go#L262-L288
+https://github.com/depinnetwork/depin-sdk/blob/489aaae40234f1015a7bbcfa9384a89dc8de8153/runtime/v2/module.go#L262-L288
 ```
 
 These bindings are applied to the `depinject` container in simapp/v2 as shown below.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/489aaae40234f1015a7bbcfa9384a89dc8de8153/simapp/v2/app_di.go#L72-L74
+https://github.com/depinnetwork/depin-sdk/blob/489aaae40234f1015a7bbcfa9384a89dc8de8153/simapp/v2/app_di.go#L72-L74
 ```
 
 ## Query and Message Router Service
@@ -116,7 +116,7 @@ https://github.com/cosmos/cosmos-sdk/blob/489aaae40234f1015a7bbcfa9384a89dc8de81
 Both the query and message router services are implementation of the same interface, `router.Service`.
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.4/core/router/service.go#L11-L16
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.4/core/router/service.go#L11-L16
 ```
 
 Both are exposed to modules so that arbitrary messages and queries can be routed to the
@@ -128,7 +128,7 @@ function.
 ## TransactionService
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.4/core/transaction/service.go#L21-L25
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.4/core/transaction/service.go#L21-L25
 ```
 
 The transaction service provides access to the execution mode a state machine transaction is
@@ -139,7 +139,7 @@ but module developers may find uses for them as well.
 ## KVStore Service
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/core/v1.0.0-alpha.4/core/store/service.go#L5-L11
+https://github.com/depinnetwork/depin-sdk/blob/core/v1.0.0-alpha.4/core/store/service.go#L5-L11
 ```
 
 The KVStore service abstracts access to, and creation of, key-value stores.  Most use cases will

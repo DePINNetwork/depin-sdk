@@ -25,12 +25,12 @@ If errors are registered they are part of consensus and cannot be changed in a m
 ## Registration
 
 Modules should define and register their custom errors in `x/{module}/errors.go`.
-Registration of errors is handled via the [`errors` package](https://github.com/cosmos/cosmos-sdk/blob/main/errors/errors.go).
+Registration of errors is handled via the [`errors` package](https://github.com/depinnetwork/depin-sdk/blob/main/errors/errors.go).
 
 Example:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/distribution/types/errors.go
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/distribution/types/errors.go
 ```
 
 Each custom module error must provide the codespace, which is typically the module name
@@ -49,7 +49,7 @@ interface. However, module errors can be wrapped to provide further context and 
 Example:
 
 ```go reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.50.0-alpha.0/x/bank/keeper/keeper.go#L141-L182
+https://github.com/depinnetwork/depin-sdk/blob/v0.50.0-alpha.0/x/bank/keeper/keeper.go#L141-L182
 ```
 
 ## ABCI

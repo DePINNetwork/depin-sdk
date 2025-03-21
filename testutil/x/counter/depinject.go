@@ -9,8 +9,8 @@ import (
 	"cosmossdk.io/depinject"
 	"cosmossdk.io/depinject/appconfig"
 
-	"github.com/cosmos/cosmos-sdk/testutil/x/counter/keeper"
-	"github.com/cosmos/cosmos-sdk/testutil/x/counter/types"
+	"github.com/depinnetwork/depin-sdk/testutil/x/counter/keeper"
+	"github.com/depinnetwork/depin-sdk/testutil/x/counter/types"
 )
 
 var _ depinject.OnePerModuleType = AppModule{}

@@ -9,7 +9,7 @@ import (
 
 	"github.com/huandu/skiplist"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 var (

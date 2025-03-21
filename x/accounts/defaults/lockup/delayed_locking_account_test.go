@@ -13,7 +13,7 @@ import (
 	"cosmossdk.io/math"
 	lockuptypes "cosmossdk.io/x/accounts/defaults/lockup/v1"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 func setupDelayedAccount(t *testing.T, ctx context.Context, ss store.KVStoreService) *DelayedLockingAccount {

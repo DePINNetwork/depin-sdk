@@ -10,8 +10,8 @@ import (
 	counterv1 "cosmossdk.io/x/accounts/testing/counter/v1"
 	"cosmossdk.io/x/bank/testutil"
 
-	"github.com/cosmos/cosmos-sdk/tests/integration/v2"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/depinnetwork/depin-sdk/tests/integration/v2"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // TestDependencies aims to test wiring between different account components,

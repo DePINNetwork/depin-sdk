@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/x/bank/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	sdk "github.com/depinnetwork/depin-sdk/types"
 )
 
 // minimalBankKeeper is a subset of the bankkeeper.Keeper interface that is used

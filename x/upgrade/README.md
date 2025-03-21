@@ -53,7 +53,7 @@ type Plan struct {
 
 If an operator running the application binary also runs a sidecar process to assist
 in the automatic download and upgrade of a binary, the `Info` allows this process to
-be seamless. This tool is [Cosmovisor](https://github.com/cosmos/cosmos-sdk/tree/main/tools/cosmovisor#readme).
+be seamless. This tool is [Cosmovisor](https://github.com/depinnetwork/depin-sdk/tree/main/tools/cosmovisor#readme).
 
 ### Handler
 
@@ -106,7 +106,7 @@ the `Plan`, which targets a specific `Handler`, is persisted and scheduled. The
 upgrade can be delayed or hastened by updating the `Plan.Height` in a new proposal.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/upgrade/proto/cosmos/upgrade/v1beta1/tx.proto#L29-L40
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/upgrade/proto/cosmos/upgrade/v1beta1/tx.proto#L29-L40
 ```
 
 #### Cancelling Upgrade Proposals
@@ -118,7 +118,7 @@ Of course this requires that the upgrade was known to be a bad idea well before 
 upgrade itself, to allow time for a vote.
 
 ```protobuf reference
-https://github.com/cosmos/cosmos-sdk/blob/v0.52.0-beta.1/x/upgrade/proto/cosmos/upgrade/v1beta1/tx.proto#L47-L55
+https://github.com/depinnetwork/depin-sdk/blob/v0.52.0-beta.1/x/upgrade/proto/cosmos/upgrade/v1beta1/tx.proto#L47-L55
 ```
 
 If such a possibility is desired, the upgrade height is to be

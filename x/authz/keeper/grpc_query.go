@@ -11,9 +11,9 @@ import (
 	"cosmossdk.io/store/prefix"
 	"cosmossdk.io/x/authz"
 
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/runtime"
-	"github.com/cosmos/cosmos-sdk/types/query"
+	codectypes "github.com/depinnetwork/depin-sdk/codec/types"
+	"github.com/depinnetwork/depin-sdk/runtime"
+	"github.com/depinnetwork/depin-sdk/types/query"
 )
 
 var _ authz.QueryServer = Keeper{}
