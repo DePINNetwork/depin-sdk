@@ -5,7 +5,7 @@ import (
 	abciv2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
 	typesv1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	typesv2 "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
-	cmtabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtabciv1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
 	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
 )
 
@@ -89,11 +89,6 @@ func ToV2ConsensusParams(params typesv1.ConsensusParams) typesv2.ConsensusParams
 // Properly handles Version field structure
 func V1ToV2Header(header typesv1.Header) typesv2.Header {
 	return typesv2.Header{
-		// Examine the actual structure in typesv2.Header.Version and match it
-		Version: typesv2.Version{
-			Block: header.Version.Block,
-			App:   header.Version.App,
-		},
 		ChainID:            header.ChainID,
 		Height:             header.Height,
 		Time:               header.Time,
@@ -114,11 +109,6 @@ func V1ToV2Header(header typesv1.Header) typesv2.Header {
 // Properly handles Version field structure
 func V2ToV1Header(header typesv2.Header) typesv1.Header {
 	return typesv1.Header{
-		// Examine the actual structure in typesv1.Header.Version and match it
-		Version: typesv1.Version{
-			Block: header.Version.Block,
-			App:   header.Version.App,
-		},
 		ChainID:            header.ChainID,
 		Height:             header.Height,
 		Time:               header.Time,
@@ -218,23 +208,49 @@ func CometBFTToDepinCommitResponse(response cmtabciv1.CommitResponse) abciv1.Com
 	}
 }
 
-// ValidatorUpdatesAdapter converts between validator update types
-// Adapted to match the actual field structure
-func ValidatorUpdatesAdapter(updates []abciv1.ValidatorUpdate) []abcitypes.ValidatorUpdate {
+// DepinToCometBFTCommitResponse converts depin ABCI types to cometbft ABCI types
+func DepinToCometBFTCommitResponse(response abciv1.CommitResponse) cmtabciv1.CommitResponse {
+	return cmtabciv1.CommitResponse{
+		RetainHeight: response.RetainHeight,
+	}
+}
+
+// ABCITypeToV1ValidatorUpdates converts abcitypes.ValidatorUpdate to abciv1.ValidatorUpdate
+func ABCITypeToV1ValidatorUpdates(updates []abcitypes.ValidatorUpdate) []abciv1.ValidatorUpdate {
+	if updates == nil {
+		return nil
+	}
+	
+	result := make([]abciv1.ValidatorUpdate, len(updates))
+	for i, update := range updates {
+		// Create a proper validator update with all fields correctly mapped
+		result[i] = abciv1.ValidatorUpdate{
+			PubKey: abciv1.PublicKey{
+				Type: update.PubKey.Type,
+				Data: update.PubKey.Data,
+			},
+			Power: update.Power,
+		}
+	}
+	return result
+}
+
+// V1ToABCITypeValidatorUpdates converts abciv1.ValidatorUpdate to abcitypes.ValidatorUpdate
+func V1ToABCITypeValidatorUpdates(updates []abciv1.ValidatorUpdate) []abcitypes.ValidatorUpdate {
 	if updates == nil {
 		return nil
 	}
 	
 	result := make([]abcitypes.ValidatorUpdate, len(updates))
 	for i, update := range updates {
-		// Check the actual structure of ValidatorUpdate in abci/types 
-		// and use the correct fields. This is a simplified version.
+		// Create a proper validator update with all fields correctly mapped
 		result[i] = abcitypes.ValidatorUpdate{
+			PubKey: abcitypes.PubKey{
+				Type: update.PubKey.Type,
+				Data: update.PubKey.Data,
+			},
 			Power: update.Power,
 		}
-		
-		// If the types have a different structure for validator pubkey,
-		// add additional conversion logic here
 	}
 	return result
 }
@@ -261,7 +277,7 @@ func V1ToV2Block(block *typesv1.Block) *typesv2.Block {
 		
 		for i, sig := range block.LastCommit.Signatures {
 			lastCommit.Signatures[i] = typesv2.CommitSig{
-				BlockIDFlag:      typesv2.BlockIDFlag(sig.BlockIDFlag),
+				BlockIdFlag:      typesv2.BlockIDFlag(sig.BlockIdFlag),
 				ValidatorAddress: sig.ValidatorAddress,
 				Timestamp:        sig.Timestamp,
 				Signature:        sig.Signature,
@@ -270,8 +286,8 @@ func V1ToV2Block(block *typesv1.Block) *typesv2.Block {
 	}
 	
 	var evidence typesv2.EvidenceList
-	if block.Evidence != nil {
-		// This might need to be adapted based on the actual structure
+	if block.Evidence != nil && len(block.Evidence.Evidence) > 0 {
+		// Here we properly initialize the Evidence slice
 		evidence.Evidence = make([]typesv2.Evidence, 0)
 	}
 	
@@ -305,7 +321,7 @@ func V2ToV1Block(block *typesv2.Block) *typesv1.Block {
 		
 		for i, sig := range block.LastCommit.Signatures {
 			lastCommit.Signatures[i] = typesv1.CommitSig{
-				BlockIDFlag:      typesv1.BlockIDFlag(sig.BlockIDFlag),
+				BlockIdFlag:      typesv1.BlockIDFlag(sig.BlockIdFlag),
 				ValidatorAddress: sig.ValidatorAddress,
 				Timestamp:        sig.Timestamp,
 				Signature:        sig.Signature,
@@ -313,10 +329,9 @@ func V2ToV1Block(block *typesv2.Block) *typesv1.Block {
 		}
 	}
 	
-	var evidence typesv1.EvidenceList
-	if block.Evidence.Evidence != nil {
-		// This might need to be adapted based on the actual structure
-		evidence.Evidence = make([]typesv1.Evidence, 0)
+	// Initialize evidence properly
+	evidence := typesv1.EvidenceList{
+		Evidence: make([]typesv1.Evidence, 0),
 	}
 	
 	return &typesv1.Block{
@@ -324,5 +339,243 @@ func V2ToV1Block(block *typesv2.Block) *typesv1.Block {
 		Data:       data,
 		Evidence:   evidence,
 		LastCommit: lastCommit,
+	}
+}
+
+// CometBFTToDepinFinalizeBlockRequest converts cometbft ABCI types to depin ABCI types
+func CometBFTToDepinFinalizeBlockRequest(req cmtabciv1.FinalizeBlockRequest) abciv1.FinalizeBlockRequest {
+	depinReq := abciv1.FinalizeBlockRequest{
+		Hash:             req.Hash,
+		Height:           req.Height,
+		Time:             req.Time,
+		ProposerAddress:  req.ProposerAddress,
+		Txs:              req.Txs,
+		Misbehavior:      make([]abciv1.Misbehavior, len(req.Misbehavior)),
+		DecidedLastCommit: abciv1.CommitInfo{
+			Round: req.DecidedLastCommit.Round,
+			Votes: make([]abciv1.VoteInfo, len(req.DecidedLastCommit.Votes)),
+		},
+	}
+	
+	// Convert misbehavior
+	for i, m := range req.Misbehavior {
+		depinReq.Misbehavior[i] = abciv1.Misbehavior{
+			Type:             m.Type,
+			Height:           m.Height,
+			Time:             m.Time,
+			ValidatorAddress: m.ValidatorAddress,
+			TotalVotingPower: m.TotalVotingPower,
+		}
+	}
+	
+	// Convert votes
+	for i, v := range req.DecidedLastCommit.Votes {
+		depinReq.DecidedLastCommit.Votes[i] = abciv1.VoteInfo{
+			Validator: abciv1.Validator{
+				Address: v.Validator.Address,
+				Power:   v.Validator.Power,
+			},
+			BlockIdFlag: v.BlockIdFlag,
+		}
+	}
+	
+	return depinReq
+}
+
+// DepinToCometBFTFinalizeBlockRequest converts depin ABCI types to cometbft ABCI types
+func DepinToCometBFTFinalizeBlockRequest(req abciv1.FinalizeBlockRequest) cmtabciv1.FinalizeBlockRequest {
+	cmtReq := cmtabciv1.FinalizeBlockRequest{
+		Hash:             req.Hash,
+		Height:           req.Height,
+		Time:             req.Time,
+		ProposerAddress:  req.ProposerAddress,
+		Txs:              req.Txs,
+		Misbehavior:      make([]cmtabciv1.Misbehavior, len(req.Misbehavior)),
+		DecidedLastCommit: cmtabciv1.CommitInfo{
+			Round: req.DecidedLastCommit.Round,
+			Votes: make([]cmtabciv1.VoteInfo, len(req.DecidedLastCommit.Votes)),
+		},
+	}
+	
+	// Convert misbehavior
+	for i, m := range req.Misbehavior {
+		cmtReq.Misbehavior[i] = cmtabciv1.Misbehavior{
+			Type:             m.Type,
+			Height:           m.Height,
+			Time:             m.Time,
+			ValidatorAddress: m.ValidatorAddress,
+			TotalVotingPower: m.TotalVotingPower,
+		}
+	}
+	
+	// Convert votes
+	for i, v := range req.DecidedLastCommit.Votes {
+		cmtReq.DecidedLastCommit.Votes[i] = cmtabciv1.VoteInfo{
+			Validator: cmtabciv1.Validator{
+				Address: v.Validator.Address,
+				Power:   v.Validator.Power,
+			},
+			BlockIdFlag: v.BlockIdFlag,
+		}
+	}
+	
+	return cmtReq
+}
+
+// CometBFTToDepinFinalizeBlockResponse converts cometbft ABCI types to depin ABCI types
+func CometBFTToDepinFinalizeBlockResponse(res cmtabciv1.FinalizeBlockResponse) abciv1.FinalizeBlockResponse {
+	depinRes := abciv1.FinalizeBlockResponse{
+		AppHash:         res.AppHash,
+		ValidatorUpdates: make([]abciv1.ValidatorUpdate, len(res.ValidatorUpdates)),
+		ConsensusParamUpdates: &abciv1.ConsensusParams{},
+		Events:          make([]abciv1.Event, len(res.Events)),
+	}
+	
+	// Convert validator updates
+	for i, v := range res.ValidatorUpdates {
+		depinRes.ValidatorUpdates[i] = abciv1.ValidatorUpdate{
+			PubKey: abciv1.PublicKey{
+				Type: v.PubKey.Type,
+				Data: v.PubKey.Data,
+			},
+			Power: v.Power,
+		}
+	}
+	
+	// Convert events
+	for i, e := range res.Events {
+		depinEvent := abciv1.Event{
+			Type:       e.Type,
+			Attributes: make([]abciv1.EventAttribute, len(e.Attributes)),
+		}
+		
+		for j, a := range e.Attributes {
+			depinEvent.Attributes[j] = abciv1.EventAttribute{
+				Key:   a.Key,
+				Value: a.Value,
+				Index: a.Index,
+			}
+		}
+		
+		depinRes.Events[i] = depinEvent
+	}
+	
+	// Handle consensus param updates if present
+	if res.ConsensusParamUpdates != nil {
+		if res.ConsensusParamUpdates.Block != nil {
+			depinRes.ConsensusParamUpdates.Block = &abciv1.BlockParams{
+				MaxBytes: res.ConsensusParamUpdates.Block.MaxBytes,
+				MaxGas:   res.ConsensusParamUpdates.Block.MaxGas,
+			}
+		}
+		
+		if res.ConsensusParamUpdates.Evidence != nil {
+			depinRes.ConsensusParamUpdates.Evidence = &abciv1.EvidenceParams{
+				MaxAgeNumBlocks: res.ConsensusParamUpdates.Evidence.MaxAgeNumBlocks,
+				MaxAgeDuration:  res.ConsensusParamUpdates.Evidence.MaxAgeDuration,
+				MaxBytes:        res.ConsensusParamUpdates.Evidence.MaxBytes,
+			}
+		}
+		
+		if res.ConsensusParamUpdates.Validator != nil {
+			depinRes.ConsensusParamUpdates.Validator = &abciv1.ValidatorParams{
+				PubKeyTypes: res.ConsensusParamUpdates.Validator.PubKeyTypes,
+			}
+		}
+	}
+	
+	return depinRes
+}
+
+// DepinToCometBFTFinalizeBlockResponse converts depin ABCI types to cometbft ABCI types
+func DepinToCometBFTFinalizeBlockResponse(res abciv1.FinalizeBlockResponse) cmtabciv1.FinalizeBlockResponse {
+	cmtRes := cmtabciv1.FinalizeBlockResponse{
+		AppHash:         res.AppHash,
+		ValidatorUpdates: make([]cmtabciv1.ValidatorUpdate, len(res.ValidatorUpdates)),
+		ConsensusParamUpdates: &cmtabciv1.ConsensusParams{},
+		Events:          make([]cmtabciv1.Event, len(res.Events)),
+	}
+	
+	// Convert validator updates
+	for i, v := range res.ValidatorUpdates {
+		cmtRes.ValidatorUpdates[i] = cmtabciv1.ValidatorUpdate{
+			PubKey: cmtabciv1.PublicKey{
+				Type: v.PubKey.Type,
+				Data: v.PubKey.Data,
+			},
+			Power: v.Power,
+		}
+	}
+	
+	// Convert events
+	for i, e := range res.Events {
+		cmtEvent := cmtabciv1.Event{
+			Type:       e.Type,
+			Attributes: make([]cmtabciv1.EventAttribute, len(e.Attributes)),
+		}
+		
+		for j, a := range e.Attributes {
+			cmtEvent.Attributes[j] = cmtabciv1.EventAttribute{
+				Key:   a.Key,
+				Value: a.Value,
+				Index: a.Index,
+			}
+		}
+		
+		cmtRes.Events[i] = cmtEvent
+	}
+	
+	// Handle consensus param updates if present
+	if res.ConsensusParamUpdates != nil {
+		if res.ConsensusParamUpdates.Block != nil {
+			cmtRes.ConsensusParamUpdates.Block = &cmtabciv1.BlockParams{
+				MaxBytes: res.ConsensusParamUpdates.Block.MaxBytes,
+				MaxGas:   res.ConsensusParamUpdates.Block.MaxGas,
+			}
+		}
+		
+		if res.ConsensusParamUpdates.Evidence != nil {
+			cmtRes.ConsensusParamUpdates.Evidence = &cmtabciv1.EvidenceParams{
+				MaxAgeNumBlocks: res.ConsensusParamUpdates.Evidence.MaxAgeNumBlocks,
+				MaxAgeDuration:  res.ConsensusParamUpdates.Evidence.MaxAgeDuration,
+				MaxBytes:        res.ConsensusParamUpdates.Evidence.MaxBytes,
+			}
+		}
+		
+		if res.ConsensusParamUpdates.Validator != nil {
+			cmtRes.ConsensusParamUpdates.Validator = &cmtabciv1.ValidatorParams{
+				PubKeyTypes: res.ConsensusParamUpdates.Validator.PubKeyTypes,
+			}
+		}
+	}
+	
+	return cmtRes
+}
+
+// DepinToAbciQueryResponse converts depin-format query response to ABCI format
+func DepinToAbciQueryResponse(res abciv1.QueryResponse) abcitypes.QueryResponse {
+	return abcitypes.QueryResponse{
+		Code:   res.Code,
+		Log:    res.Log,
+		Info:   res.Info,
+		Index:  res.Index,
+		Key:    res.Key,
+		Value:  res.Value,
+		Proof:  res.Proof,
+		Height: res.Height,
+	}
+}
+
+// AbciToDepinQueryResponse converts ABCI-format query response to depin format
+func AbciToDepinQueryResponse(res abcitypes.QueryResponse) abciv1.QueryResponse {
+	return abciv1.QueryResponse{
+		Code:   res.Code,
+		Log:    res.Log,
+		Info:   res.Info,
+		Index:  res.Index,
+		Key:    res.Key,
+		Value:  res.Value,
+		Proof:  res.Proof,
+		Height: res.Height,
 	}
 }

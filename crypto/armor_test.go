@@ -1,6 +1,7 @@
 package crypto_test
 
 import (
+	"github.com/depinnetwork/depin-sdk/crypto/compat"
 	"bytes"
 	"errors"
 	"fmt"
@@ -58,7 +59,7 @@ func TestArmorUnarmorPrivKey(t *testing.T) {
 		saltBytes = cmtcrypto.CRandBytes(16)
 		key, err := bcrypt.GenerateFromPassword(saltBytes, []byte(passphrase), crypto.BcryptSecurityParameter)
 		require.NoError(t, err)
-		key = cmtcrypto.Sha256(key) // get 32 bytes
+		key = cmtcompat.Sha256(key) // get 32 bytes
 		privKeyBytes := legacy.Cdc.Amino.MustMarshalBinaryBare(privKey)
 		return saltBytes, xsalsa20symmetric.EncryptSymmetric(privKeyBytes, key)
 	}
@@ -219,7 +220,7 @@ func TestBcryptLegacyEncryption(t *testing.T) {
 		"salt": fmt.Sprintf("%X", saltBytes),
 	}
 	keyBcrypt, _ := bcrypt.GenerateFromPassword(saltBytes, []byte(passphrase), 12) // Legacy key generation
-	keyBcrypt = cmtcrypto.Sha256(keyBcrypt)
+	keyBcrypt = cmtcompat.Sha256(keyBcrypt)
 
 	// bcrypt + xsalsa20symmetric
 	encBytesBcryptXsalsa20symetric := xsalsa20symmetric.EncryptSymmetric(privKeyBytes, keyBcrypt)
