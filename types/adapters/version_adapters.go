@@ -2,6 +2,7 @@ package adapters
 
 import (
 	abciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
 	abciv2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
 	typesv1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	typesv2 "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
@@ -224,7 +225,7 @@ func ABCITypeToV1ValidatorUpdates(updates []abcitypes.ValidatorUpdate) []abciv1.
 	for i, update := range updates {
 		// Create a proper validator update with all fields correctly mapped
 		result[i] = abciv1.ValidatorUpdate{
-			Power: update.Power,
+			Power: update.GetPower(),
 		}
 	}
 	return result
@@ -240,7 +241,7 @@ func V1ToABCITypeValidatorUpdates(updates []abciv1.ValidatorUpdate) []abcitypes.
 	for i, update := range updates {
 		// Create a proper validator update with all fields correctly mapped
 		result[i] = abcitypes.ValidatorUpdate{
-			Power: update.Power,
+			Power: update.GetPower(),
 		}
 	}
 	return result
@@ -269,7 +270,7 @@ func V1ToV2Block(block *typesv1.Block) *typesv2.Block {
 		for i, sig := range block.LastCommit.Signatures {
 			lastCommit.Signatures[i] = typesv2.CommitSig{
 				BlockIDFlag:      typesv2.BlockIDFlag(sig.BlockIDFlag),
-				ValidatorAddress: sig.ValidatorAddress,
+				Address: sig.ValidatorAddress,
 				Timestamp:        sig.Timestamp,
 				Signature:        sig.Signature,
 			}
@@ -277,7 +278,7 @@ func V1ToV2Block(block *typesv1.Block) *typesv2.Block {
 	}
 	
 	var evidence typesv2.EvidenceList
-	if block.Evidence != nil && block.Evidence.Evidence != nil && len(block.Evidence.Evidence) > 0 {
+	if block.Evidence.Evidence != nil && len(block.Evidence.Evidence) > 0 && block.Evidence.Evidence != nil && len(block.Evidence.Evidence) > 0 {
 		// Here we properly initialize the Evidence slice
 		evidence.Evidence = make([]typesv2.Evidence, 0)
 	}
@@ -313,7 +314,7 @@ func V2ToV1Block(block *typesv2.Block) *typesv1.Block {
 		for i, sig := range block.LastCommit.Signatures {
 			lastCommit.Signatures[i] = typesv1.CommitSig{
 				BlockIDFlag:      typesv1.BlockIDFlag(sig.BlockIDFlag),
-				ValidatorAddress: sig.ValidatorAddress,
+				Address: sig.ValidatorAddress,
 				Timestamp:        sig.Timestamp,
 				Signature:        sig.Signature,
 			}
@@ -559,6 +560,184 @@ func AbciToDepinQueryResponse(res abcitypes.QueryResponse) abciv1.QueryResponse 
 		Value:  res.Value,
 		Height: res.Height,
 	}
+}
+
+// V2ToV1Data converts typesv2.Data to typesv1.Data
+func V2ToV1Data(data typesv2.Data) typesv1.Data {
+	return typesv1.Data{
+		Txs: data.Txs,
+	}
+}
+
+// V1ToV2Data converts typesv1.Data to typesv2.Data
+func V1ToV2Data(data typesv1.Data) typesv2.Data {
+	return typesv2.Data{
+		Txs: data.Txs,
+	}
+}
+
+// V2ToV1EvidenceList converts typesv2.EvidenceList to typesv1.EvidenceList
+func V2ToV1EvidenceList(evidenceList typesv2.EvidenceList) typesv1.EvidenceList {
+	// Initialize an empty EvidenceList
+	v1Evidence := typesv1.EvidenceList{
+		Evidence: make([]typesv1.Evidence, 0),
+	}
+	
+	return v1Evidence
+}
+
+// V1ToV2EvidenceList converts typesv1.EvidenceList to typesv2.EvidenceList
+func V1ToV2EvidenceList(evidenceList typesv1.EvidenceList) typesv2.EvidenceList {
+	// Initialize an empty EvidenceList
+	v2Evidence := typesv2.EvidenceList{
+		Evidence: make([]typesv2.Evidence, 0),
+	}
+	
+	return v2Evidence
+}
+
+// V2ToV1Commit converts typesv2.Commit to typesv1.Commit
+func V2ToV1Commit(commit *typesv2.Commit) *typesv1.Commit {
+	if commit == nil {
+		return nil
+	}
+	
+	v1Commit := &typesv1.Commit{
+		Height:     commit.Height,
+		Round:      commit.Round,
+		BlockID:    V2ToV1BlockID(commit.BlockID),
+		Signatures: make([]typesv1.CommitSig, len(commit.Signatures)),
+	}
+	
+	for i, sig := range commit.Signatures {
+		v1Commit.Signatures[i] = typesv1.CommitSig{
+			BlockIDFlag:      typesv1.BlockIDFlag(sig.BlockIDFlag),
+			Address: sig.ValidatorAddress,
+			Timestamp:        sig.Timestamp,
+			Signature:        sig.Signature,
+		}
+	}
+	
+	return v1Commit
+}
+
+// V1ToV2Commit converts typesv1.Commit to typesv2.Commit
+func V1ToV2Commit(commit *typesv1.Commit) *typesv2.Commit {
+	if commit == nil {
+		return nil
+	}
+	
+	v2Commit := &typesv2.Commit{
+		Height:     commit.Height,
+		Round:      commit.Round,
+		BlockID:    V1ToV2BlockID(commit.BlockID),
+		Signatures: make([]typesv2.CommitSig, len(commit.Signatures)),
+	}
+	
+	for i, sig := range commit.Signatures {
+		v2Commit.Signatures[i] = typesv2.CommitSig{
+			BlockIDFlag:      typesv2.BlockIDFlag(sig.BlockIDFlag),
+			Address: sig.ValidatorAddress,
+			Timestamp:        sig.Timestamp,
+			Signature:        sig.Signature,
+		}
+	}
+	
+	return v2Commit
+}
+
+// V1ToV2Proposal converts typesv1.Proposal to typesv2.Proposal
+func V1ToV2Proposal(proposal *typesv1.Proposal) *typesv2.Proposal {
+	if proposal == nil {
+		return nil
+	}
+	
+	return &typesv2.Proposal{
+		Type:      proposal.Type,
+		Height:    proposal.Height, 
+		Round:     proposal.Round,
+		PolRound:  proposal.PolRound,
+		BlockID:   V1ToV2BlockID(proposal.BlockID),
+		Timestamp: proposal.Timestamp,
+		Signature: proposal.Signature,
+	}
+}
+
+// V2ToV1Proposal converts typesv2.Proposal to typesv1.Proposal
+func V2ToV1Proposal(proposal *typesv2.Proposal) *typesv1.Proposal {
+	if proposal == nil {
+		return nil
+	}
+	
+	return &typesv1.Proposal{
+		Type:      proposal.Type,
+		Height:    proposal.Height,
+		Round:     proposal.Round,
+		PolRound:  proposal.PolRound,
+		BlockID:   V2ToV1BlockID(proposal.BlockID),
+		Timestamp: proposal.Timestamp,
+		Signature: proposal.Signature,
+	}
+}
+
+// ABCITypeToV1InitChainRequest converts abcitypes.InitChainRequest to abciv1.InitChainRequest
+func ABCITypeToV1InitChainRequest(req *abcitypes.InitChainRequest) *abciv1.InitChainRequest {
+	if req == nil {
+		return nil
+	}
+	
+	return &abciv1.InitChainRequest{
+		Time:             req.Time,
+		ChainId:          req.ChainId,
+		ConsensusParams:  nil, // Would need conversion if used
+		Validators:       ABCITypeToV1ValidatorUpdates(req.Validators),
+		AppStateBytes:    req.AppStateBytes,
+		InitialHeight:    req.InitialHeight,
+	}
+}
+
+// ABCITypeToV1FinalizeBlockRequest converts abcitypes.FinalizeBlockRequest to abciv1.FinalizeBlockRequest
+func ABCITypeToV1FinalizeBlockRequest(req *abcitypes.FinalizeBlockRequest) *abciv1.FinalizeBlockRequest {
+	if req == nil {
+		return nil
+	}
+	
+	result := &abciv1.FinalizeBlockRequest{
+		Hash:             req.Hash,
+		Height:           req.Height,
+		Time:             req.Time,
+		ProposerAddress:  req.ProposerAddress,
+		Txs:              req.Txs,
+		Misbehavior:      make([]abciv1.Misbehavior, len(req.Misbehavior)),
+		DecidedLastCommit: abciv1.CommitInfo{
+			Round: req.DecidedLastCommit.Round,
+			Votes: make([]abciv1.VoteInfo, len(req.DecidedLastCommit.Votes)),
+		},
+	}
+	
+	// Convert misbehavior
+	for i, m := range req.Misbehavior {
+		result.Misbehavior[i] = abciv1.Misbehavior{
+			Type:             m.Type,
+			Height:           m.Height,
+			Time:             m.Time,
+			Address:          m.Address,
+			TotalVotingPower: m.TotalVotingPower,
+		}
+	}
+	
+	// Convert votes
+	for i, v := range req.DecidedLastCommit.Votes {
+		result.DecidedLastCommit.Votes[i] = abciv1.VoteInfo{
+			Validator: abciv1.Validator{
+				Address: v.Validator.Address,
+				Power:   v.Validator.Power,
+			},
+			BlockIDFlag: v.BlockIDFlag,
+		}
+	}
+	
+	return result
 }
 
 // V2ToV1Data converts typesv2.Data to typesv1.Data
