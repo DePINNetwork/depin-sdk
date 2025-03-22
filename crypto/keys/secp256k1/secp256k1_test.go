@@ -1,6 +1,7 @@
 package secp256k1_test
 
 import (
+	"github.com/depinnetwork/depin-sdk/crypto/compat"
 	"crypto/ecdsa"
 	"encoding/base64"
 	"encoding/hex"
@@ -189,7 +190,7 @@ func TestSignAndValidateSecp256k1(t *testing.T) {
 
 	// ----
 	// Test cross packages verification
-	msgHash := crypto.Sha256(msg)
+	msgHash := compat.Sha256(msg)
 	btcPrivKey := secp.PrivKeyFromBytes(privKey.Key)
 	btcPubKey := btcPrivKey.PubKey()
 	// This fails: malformed signature: no header magic

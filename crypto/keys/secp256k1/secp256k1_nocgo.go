@@ -4,6 +4,7 @@
 package secp256k1
 
 import (
+	"github.com/depinnetwork/depin-sdk/crypto/compat"
 	"errors"
 
 	"github.com/depinnetwork/por-consensus/crypto"
@@ -15,7 +16,7 @@ import (
 // The returned signature will be of the form R || S (in lower-S form).
 func (privKey *PrivKey) Sign(msg []byte) ([]byte, error) {
 	priv := secp256k1.PrivKeyFromBytes(privKey.Key)
-	sig := ecdsa.SignCompact(priv, crypto.Sha256(msg), false)
+	sig := ecdsa.SignCompact(priv, compat.Sha256(msg), false)
 
 	// remove the first byte which is compactSigRecoveryCode
 	return sig[1:], nil
@@ -36,7 +37,7 @@ func (pubKey *PubKey) VerifySignature(msg, sigStr []byte) bool {
 	if err != nil {
 		return false
 	}
-	return signature.Verify(crypto.Sha256(msg), pub)
+	return signature.Verify(compat.Sha256(msg), pub)
 }
 
 // Read Signature struct from R || S. Caller needs to ensure

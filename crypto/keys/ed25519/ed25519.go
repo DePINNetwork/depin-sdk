@@ -1,6 +1,7 @@
 package ed25519
 
 import (
+	"github.com/depinnetwork/depin-sdk/crypto/compat"
 	"crypto/ed25519"
 	"crypto/subtle"
 	"errors"
@@ -149,7 +150,7 @@ func genPrivKey(rand io.Reader) *PrivKey {
 // NOTE: secret should be the output of a KDF like bcrypt,
 // if it's derived from user input.
 func GenPrivKeyFromSecret(secret []byte) *PrivKey {
-	seed := crypto.Sha256(secret) // Not Ripemd160 because we want 32 bytes.
+	seed := compat.Sha256(secret) // Not Ripemd160 because we want 32 bytes.
 
 	return &PrivKey{Key: ed25519.NewKeyFromSeed(seed)}
 }

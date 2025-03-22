@@ -1,6 +1,7 @@
 package crypto
 
 import (
+	"github.com/depinnetwork/depin-sdk/crypto/compat"
 	"bytes"
 	"encoding/hex"
 	"errors"
@@ -238,7 +239,7 @@ func decryptPrivKey(saltBytes, encBytes []byte, passphrase, kdf string) (privKey
 		if err != nil {
 			return privKey, errorsmod.Wrap(err, "Error generating bcrypt cypher for key.")
 		}
-		key = crypto.Sha256(key) // Get 32 bytes
+		key = compat.Sha256(key) // Get 32 bytes
 		privKeyBytes, err = xsalsa20symmetric.DecryptSymmetric(encBytes, key)
 
 		if errors.Is(err, xsalsa20symmetric.ErrCiphertextDecrypt) {
