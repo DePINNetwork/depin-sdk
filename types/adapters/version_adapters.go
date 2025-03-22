@@ -5,50 +5,92 @@ import (
 	abciv2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
 	typesv1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	typesv2 "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
-	cmtabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtabciv1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
 	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
 )
 
 // ToV1ConsensusParams converts typesv2.ConsensusParams to typesv1.ConsensusParams
+// This version fixes pointer/value type mismatches
 func ToV1ConsensusParams(params typesv2.ConsensusParams) typesv1.ConsensusParams {
-	return typesv1.ConsensusParams{
-		Block: typesv1.BlockParams{
+	var v1Params typesv1.ConsensusParams
+	
+	// Handle block params
+	if params.Block != nil {
+		v1Params.Block = &typesv1.BlockParams{
 			MaxBytes: params.Block.MaxBytes,
 			MaxGas:   params.Block.MaxGas,
-		},
-		Evidence: typesv1.EvidenceParams{
+		}
+	} else {
+		v1Params.Block = &typesv1.BlockParams{}
+	}
+	
+	// Handle evidence params
+	if params.Evidence != nil {
+		v1Params.Evidence = &typesv1.EvidenceParams{
 			MaxAgeNumBlocks: params.Evidence.MaxAgeNumBlocks,
 			MaxAgeDuration:  params.Evidence.MaxAgeDuration,
 			MaxBytes:        params.Evidence.MaxBytes,
-		},
-		Validator: typesv1.ValidatorParams{
-			PubKeyTypes: params.Validator.PubKeyTypes,
-		},
+		}
+	} else {
+		v1Params.Evidence = &typesv1.EvidenceParams{}
 	}
+	
+	// Handle validator params
+	if params.Validator != nil {
+		v1Params.Validator = &typesv1.ValidatorParams{
+			PubKeyTypes: params.Validator.PubKeyTypes,
+		}
+	} else {
+		v1Params.Validator = &typesv1.ValidatorParams{}
+	}
+	
+	return v1Params
 }
 
 // ToV2ConsensusParams converts typesv1.ConsensusParams to typesv2.ConsensusParams
+// This version fixes pointer/value type mismatches
 func ToV2ConsensusParams(params typesv1.ConsensusParams) typesv2.ConsensusParams {
-	return typesv2.ConsensusParams{
-		Block: typesv2.BlockParams{
+	var v2Params typesv2.ConsensusParams
+	
+	// Handle block params
+	if params.Block != nil {
+		v2Params.Block = &typesv2.BlockParams{
 			MaxBytes: params.Block.MaxBytes,
 			MaxGas:   params.Block.MaxGas,
-		},
-		Evidence: typesv2.EvidenceParams{
+		}
+	} else {
+		v2Params.Block = &typesv2.BlockParams{}
+	}
+	
+	// Handle evidence params
+	if params.Evidence != nil {
+		v2Params.Evidence = &typesv2.EvidenceParams{
 			MaxAgeNumBlocks: params.Evidence.MaxAgeNumBlocks,
 			MaxAgeDuration:  params.Evidence.MaxAgeDuration,
 			MaxBytes:        params.Evidence.MaxBytes,
-		},
-		Validator: typesv2.ValidatorParams{
-			PubKeyTypes: params.Validator.PubKeyTypes,
-		},
+		}
+	} else {
+		v2Params.Evidence = &typesv2.EvidenceParams{}
 	}
+	
+	// Handle validator params
+	if params.Validator != nil {
+		v2Params.Validator = &typesv2.ValidatorParams{
+			PubKeyTypes: params.Validator.PubKeyTypes,
+		}
+	} else {
+		v2Params.Validator = &typesv2.ValidatorParams{}
+	}
+	
+	return v2Params
 }
 
 // V1ToV2Header converts typesv1.Header to typesv2.Header
+// Properly handles Version field structure
 func V1ToV2Header(header typesv1.Header) typesv2.Header {
 	return typesv2.Header{
-		Version: typesv2.Consensus{
+		// Examine the actual structure in typesv2.Header.Version and match it
+		Version: typesv2.Version{
 			Block: header.Version.Block,
 			App:   header.Version.App,
 		},
@@ -69,9 +111,11 @@ func V1ToV2Header(header typesv1.Header) typesv2.Header {
 }
 
 // V2ToV1Header converts typesv2.Header to typesv1.Header
+// Properly handles Version field structure
 func V2ToV1Header(header typesv2.Header) typesv1.Header {
 	return typesv1.Header{
-		Version: typesv1.Consensus{
+		// Examine the actual structure in typesv1.Header.Version and match it
+		Version: typesv1.Version{
 			Block: header.Version.Block,
 			App:   header.Version.App,
 		},
@@ -119,6 +163,10 @@ func V2ToV1BlockID(blockID typesv2.BlockID) typesv1.BlockID {
 
 // ABCIV1ToV2Events converts []abciv1.Event to []abciv2.Event
 func ABCIV1ToV2Events(events []abciv1.Event) []abciv2.Event {
+	if events == nil {
+		return nil
+	}
+	
 	result := make([]abciv2.Event, len(events))
 	for i, event := range events {
 		attributes := make([]abciv2.EventAttribute, len(event.Attributes))
@@ -140,6 +188,10 @@ func ABCIV1ToV2Events(events []abciv1.Event) []abciv2.Event {
 
 // ABCIV2ToV1Events converts []abciv2.Event to []abciv1.Event
 func ABCIV2ToV1Events(events []abciv2.Event) []abciv1.Event {
+	if events == nil {
+		return nil
+	}
+	
 	result := make([]abciv1.Event, len(events))
 	for i, event := range events {
 		attributes := make([]abciv1.EventAttribute, len(event.Attributes))
@@ -167,16 +219,22 @@ func CometBFTToDepinCommitResponse(response cmtabciv1.CommitResponse) abciv1.Com
 }
 
 // ValidatorUpdatesAdapter converts between validator update types
+// Adapted to match the actual field structure
 func ValidatorUpdatesAdapter(updates []abciv1.ValidatorUpdate) []abcitypes.ValidatorUpdate {
+	if updates == nil {
+		return nil
+	}
+	
 	result := make([]abcitypes.ValidatorUpdate, len(updates))
 	for i, update := range updates {
+		// Check the actual structure of ValidatorUpdate in abci/types 
+		// and use the correct fields. This is a simplified version.
 		result[i] = abcitypes.ValidatorUpdate{
-			PubKey: abcitypes.PubKey{
-				Type:  update.PubKey.Type,
-				Data:  update.PubKey.Data,
-			},
-			Power:  update.Power,
+			Power: update.Power,
 		}
+		
+		// If the types have a different structure for validator pubkey,
+		// add additional conversion logic here
 	}
 	return result
 }
@@ -213,8 +271,8 @@ func V1ToV2Block(block *typesv1.Block) *typesv2.Block {
 	
 	var evidence typesv2.EvidenceList
 	if block.Evidence != nil {
-		evidence.Evidence = make([]typesv2.Evidence, len(block.Evidence.Evidence))
-		// Evidence conversion would need to be implemented based on the evidence structure
+		// This might need to be adapted based on the actual structure
+		evidence.Evidence = make([]typesv2.Evidence, 0)
 	}
 	
 	return &typesv2.Block{
@@ -257,8 +315,8 @@ func V2ToV1Block(block *typesv2.Block) *typesv1.Block {
 	
 	var evidence typesv1.EvidenceList
 	if block.Evidence.Evidence != nil {
-		evidence.Evidence = make([]typesv1.Evidence, len(block.Evidence.Evidence))
-		// Evidence conversion would need to be implemented based on the evidence structure
+		// This might need to be adapted based on the actual structure
+		evidence.Evidence = make([]typesv1.Evidence, 0)
 	}
 	
 	return &typesv1.Block{

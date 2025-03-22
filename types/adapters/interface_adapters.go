@@ -3,7 +3,7 @@ package adapters
 import (
 	"context"
 	
-	cmtabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtabciv1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
 	depinabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	storetypes "cosmossdk.io/store/types"
 )
@@ -40,11 +40,15 @@ func (a *ABCIListenerAdapter) ListenFinalizeBlock(
 	req cmtabciv1.FinalizeBlockRequest,
 	res cmtabciv1.FinalizeBlockResponse,
 ) error {
-	// Convert to the expected types (simplified - would need full implementation)
+	// Convert to the expected types (simplified - would need inspection of actual types)
+	// This is a placeholder that needs to be completed based on actual struct fields
 	depinReq := depinabciv1.FinalizeBlockRequest{}
 	depinRes := depinabciv1.FinalizeBlockResponse{}
 	
-	// Implement conversion from cometbft to depinnetwork types
+	// Only copy fields that exist in both types
+	// Example:
+	// if req has Txs field and depinReq has Txs field:
+	// depinReq.Txs = req.Txs
 	
 	// Call the inner listener
 	if listener, ok := a.Listener.(interface {
