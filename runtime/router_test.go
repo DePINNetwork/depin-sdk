@@ -7,7 +7,7 @@ import (
 
 	bankv1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/baseapp"
 	codectypes "github.com/depinnetwork/depin-sdk/codec/types"

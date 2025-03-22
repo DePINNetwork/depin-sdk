@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/pruning/types"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/pruning/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // Manager is an abstraction to handle the logic needed for

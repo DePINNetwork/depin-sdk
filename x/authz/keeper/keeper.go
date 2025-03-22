@@ -13,7 +13,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	corecontext "cosmossdk.io/core/context"
 	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/authz"
 
 	"github.com/depinnetwork/depin-sdk/codec"

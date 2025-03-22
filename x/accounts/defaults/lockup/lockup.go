@@ -168,7 +168,7 @@ func (bva *BaseLockup) Delegate(
 
 	msgDelegate := &stakingtypes.MsgDelegate{
 		DelegatorAddress: delegatorAddress,
-		ValidatorAddress: msg.ValidatorAddress,
+		Address: msg.ValidatorAddress,
 		Amount:           msg.Amount,
 	}
 	resp, err := sendMessage(ctx, msgDelegate)
@@ -197,7 +197,7 @@ func (bva *BaseLockup) Undelegate(
 
 	msgUndelegate := &stakingtypes.MsgUndelegate{
 		DelegatorAddress: delegatorAddress,
-		ValidatorAddress: msg.ValidatorAddress,
+		Address: msg.ValidatorAddress,
 		Amount:           msg.Amount,
 	}
 	resp, err := sendMessage(ctx, msgUndelegate)
@@ -239,7 +239,7 @@ func (bva *BaseLockup) Undelegate(
 		entries.Entries = append(entries.Entries, &lockuptypes.UnbondingEntry{
 			EndTime:          msgUndelegateResp.CompletionTime,
 			Amount:           msgUndelegateResp.Amount,
-			ValidatorAddress: msg.ValidatorAddress,
+			Address: msg.ValidatorAddress,
 			CreationHeight:   header.Height,
 		})
 	}
@@ -270,7 +270,7 @@ func (bva *BaseLockup) WithdrawReward(
 
 	msgWithdraw := &distrtypes.MsgWithdrawDelegatorReward{
 		DelegatorAddress: delegatorAddress,
-		ValidatorAddress: msg.ValidatorAddress,
+		Address: msg.ValidatorAddress,
 	}
 	responses, err := sendMessage(ctx, msgWithdraw)
 	if err != nil {

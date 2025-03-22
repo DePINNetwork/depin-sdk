@@ -11,7 +11,7 @@ import (
 	"go.uber.org/mock/gomock"
 
 	"cosmossdk.io/core/comet"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"
 	"github.com/depinnetwork/depin-sdk/testutil"
@@ -294,7 +294,7 @@ func (s *contextTestSuite) TestToSDKCommitInfo() {
 					Address: []byte("address1"),
 					Power:   5,
 				},
-				BlockIdFlag: cmtproto.BlockIDFlagCommit,
+				BlockIDFlag: cmtproto.BlockIDFlagCommit,
 			},
 		},
 	}
@@ -326,7 +326,7 @@ func (s *contextTestSuite) TestToSDKExtendedCommitInfo() {
 					Address: []byte("address1"),
 					Power:   5,
 				},
-				BlockIdFlag: cmtproto.BlockIDFlagCommit,
+				BlockIDFlag: cmtproto.BlockIDFlagCommit,
 			},
 		},
 	}

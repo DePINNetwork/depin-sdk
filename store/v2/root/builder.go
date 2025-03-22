@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/db"
+	"github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/db"
 )
 
 // Builder is the interface for a store/v2 RootStore builder.

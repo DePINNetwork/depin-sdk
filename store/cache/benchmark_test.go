@@ -3,7 +3,7 @@ package cache
 import (
 	"testing"
 
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func freshMgr() *CommitKVStoreCacheManager {

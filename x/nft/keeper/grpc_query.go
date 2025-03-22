@@ -3,7 +3,7 @@ package keeper
 import (
 	"context"
 
-	"cosmossdk.io/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
 	"cosmossdk.io/x/nft"
 
 	"github.com/depinnetwork/depin-sdk/runtime"

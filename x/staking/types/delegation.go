@@ -19,7 +19,7 @@ var _ sdk.DelegationI = Delegation{}
 func NewDelegation(delegatorAddr, validatorAddr string, shares math.LegacyDec) Delegation {
 	return Delegation{
 		DelegatorAddress: delegatorAddr,
-		ValidatorAddress: validatorAddr,
+		Address: validatorAddr,
 		Shares:           shares,
 	}
 }
@@ -107,7 +107,7 @@ func NewUnbondingDelegation(
 	}
 	return UnbondingDelegation{
 		DelegatorAddress: delAddr,
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 		Entries: []UnbondingDelegationEntry{
 			NewUnbondingDelegationEntry(creationHeight, minTime, balance),
 		},

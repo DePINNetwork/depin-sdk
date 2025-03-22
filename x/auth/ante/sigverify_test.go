@@ -13,7 +13,7 @@ import (
 	"cosmossdk.io/core/gas"
 	"cosmossdk.io/core/header"
 	gastestutil "cosmossdk.io/core/testing/gas"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	txsigning "cosmossdk.io/x/tx/signing"
 
 	"github.com/depinnetwork/depin-sdk/codec"

@@ -5,7 +5,7 @@ import (
 	"context"
 
 	appmodulev2 "cosmossdk.io/core/appmodule/v2"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/staking/types"
 
 	sdk "github.com/depinnetwork/depin-sdk/types"

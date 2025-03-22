@@ -2,7 +2,7 @@ package root
 
 import (
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2"
 )
 
 var (

@@ -6,7 +6,7 @@ import (
 
 	ics23 "github.com/cosmos/ics23/go"
 
-	sdkmaps "cosmossdk.io/store/internal/maps"
+	sdkmaps "github.com/depinnetwork/depin-sdk/store/internal/maps"
 )
 
 var (
@@ -27,7 +27,7 @@ func CreateMembershipProof(data map[string][]byte, key []byte) (*ics23.Commitmen
 		return nil, err
 	}
 	proof := &ics23.CommitmentProof{
-		Proof: &ics23.CommitmentProof_Exist{
+		ProofOps: &ics23.CommitmentProof_Exist{
 			Exist: exist,
 		},
 	}
@@ -75,7 +75,7 @@ func CreateNonMembershipProof(data map[string][]byte, key []byte) (*ics23.Commit
 	}
 
 	proof := &ics23.CommitmentProof{
-		Proof: &ics23.CommitmentProof_Nonexist{
+		ProofOps: &ics23.CommitmentProof_Nonexist{
 			Nonexist: nonexist,
 		},
 	}

@@ -16,8 +16,8 @@ import (
 
 	corestore "cosmossdk.io/core/store"
 	"cosmossdk.io/errors"
-	"cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/snapshots/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 const (

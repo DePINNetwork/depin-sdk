@@ -6,7 +6,7 @@ import (
 	ics23 "github.com/cosmos/ics23/go"
 
 	"cosmossdk.io/errors/v2"
-	storeerrors "cosmossdk.io/store/v2/errors"
+	storeerrors "github.com/depinnetwork/depin-sdk/store/v2/errors"
 )
 
 // Proof operation types
@@ -58,7 +58,7 @@ func NewIAVLCommitmentOp(key []byte, proof *ics23.CommitmentProof) CommitmentOp 
 		Type:  ProofOpIAVLCommitment,
 		Spec:  ics23.IavlSpec,
 		Key:   key,
-		Proof: proof,
+		ProofOps: proof,
 	}
 }
 
@@ -67,7 +67,7 @@ func NewSimpleMerkleCommitmentOp(key []byte, proof *ics23.CommitmentProof) Commi
 		Type:  ProofOpSimpleMerkleCommitment,
 		Spec:  SimpleMerkleSpec,
 		Key:   key,
-		Proof: proof,
+		ProofOps: proof,
 	}
 }
 
@@ -76,7 +76,7 @@ func NewSMTCommitmentOp(key []byte, proof *ics23.CommitmentProof) CommitmentOp {
 		Type:  ProofOpSMTCommitment,
 		Spec:  ics23.SmtSpec,
 		Key:   key,
-		Proof: proof,
+		ProofOps: proof,
 	}
 }
 
@@ -197,7 +197,7 @@ func ProofFromByteSlices(leaves [][]byte, index int) (rootHash []byte, inners []
 // ConvertCommitmentOp converts the given merkle proof into an CommitmentOp.
 func ConvertCommitmentOp(inners []*ics23.InnerOp, key, value []byte) CommitmentOp {
 	return NewSimpleMerkleCommitmentOp(key, &ics23.CommitmentProof{
-		Proof: &ics23.CommitmentProof_Exist{
+		ProofOps: &ics23.CommitmentProof_Exist{
 			Exist: &ics23.ExistenceProof{
 				Key:   key,
 				Value: value,

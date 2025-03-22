@@ -10,7 +10,7 @@ import (
 
 	"cosmossdk.io/collections"
 	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
 	"cosmossdk.io/x/staking/types"
 
 	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"

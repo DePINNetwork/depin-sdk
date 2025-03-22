@@ -90,7 +90,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "empty delegator address",
 			msg: &distrtypes.MsgWithdrawDelegatorReward{
 				DelegatorAddress: emptyDelAddr.String(),
-				ValidatorAddress: f.valAddr.String(),
+				Address: f.valAddr.String(),
 			},
 			expErr:    true,
 			expErrMsg: "invalid delegator address",
@@ -99,7 +99,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "empty validator address",
 			msg: &distrtypes.MsgWithdrawDelegatorReward{
 				DelegatorAddress: delAddr.String(),
-				ValidatorAddress: emptyValAddr.String(),
+				Address: emptyValAddr.String(),
 			},
 			expErr:    true,
 			expErrMsg: "invalid validator address",
@@ -108,7 +108,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "both empty addresses",
 			msg: &distrtypes.MsgWithdrawDelegatorReward{
 				DelegatorAddress: emptyDelAddr.String(),
-				ValidatorAddress: emptyValAddr.String(),
+				Address: emptyValAddr.String(),
 			},
 			expErr:    true,
 			expErrMsg: "invalid validator address",
@@ -117,7 +117,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "delegator with no delegations",
 			msg: &distrtypes.MsgWithdrawDelegatorReward{
 				DelegatorAddress: sdk.AccAddress([]byte("invalid")).String(),
-				ValidatorAddress: f.valAddr.String(),
+				Address: f.valAddr.String(),
 			},
 			expErr:    true,
 			expErrMsg: "not found",
@@ -126,7 +126,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "validator with no delegations",
 			msg: &distrtypes.MsgWithdrawDelegatorReward{
 				DelegatorAddress: delAddr.String(),
-				ValidatorAddress: sdk.ValAddress(sdk.AccAddress(PKS[2].Address())).String(),
+				Address: sdk.ValAddress(sdk.AccAddress(PKS[2].Address())).String(),
 			},
 			expErr:    true,
 			expErrMsg: "validator does not exist",
@@ -135,7 +135,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "valid msg",
 			msg: &distrtypes.MsgWithdrawDelegatorReward{
 				DelegatorAddress: delAddr.String(),
-				ValidatorAddress: f.valAddr.String(),
+				Address: f.valAddr.String(),
 			},
 			expErr: false,
 		},
@@ -364,7 +364,7 @@ func TestMsgWithdrawValidatorCommission(t *testing.T) {
 		{
 			name: "empty validator address",
 			msg: &distrtypes.MsgWithdrawValidatorCommission{
-				ValidatorAddress: emptyValAddr.String(),
+				Address: emptyValAddr.String(),
 			},
 			expErr:    true,
 			expErrMsg: "invalid validator address",
@@ -372,7 +372,7 @@ func TestMsgWithdrawValidatorCommission(t *testing.T) {
 		{
 			name: "validator with no commission",
 			msg: &distrtypes.MsgWithdrawValidatorCommission{
-				ValidatorAddress: sdk.ValAddress([]byte("addr1_______________")).String(),
+				Address: sdk.ValAddress([]byte("addr1_______________")).String(),
 			},
 			expErr:    true,
 			expErrMsg: "no validator commission to withdraw",
@@ -380,7 +380,7 @@ func TestMsgWithdrawValidatorCommission(t *testing.T) {
 		{
 			name: "valid msg",
 			msg: &distrtypes.MsgWithdrawValidatorCommission{
-				ValidatorAddress: f.valAddr.String(),
+				Address: f.valAddr.String(),
 			},
 			expErr: false,
 		},
@@ -806,7 +806,7 @@ func TestMsgDepositValidatorRewardsPool(t *testing.T) {
 			name: "happy path (staking token)",
 			msg: &distrtypes.MsgDepositValidatorRewardsPool{
 				Depositor:        addr.String(),
-				ValidatorAddress: valAddr1.String(),
+				Address: valAddr1.String(),
 				Amount:           sdk.NewCoins(sdk.NewCoin(bondDenom, math.NewInt(100))),
 			},
 		},
@@ -814,7 +814,7 @@ func TestMsgDepositValidatorRewardsPool(t *testing.T) {
 			name: "happy path (non-staking token)",
 			msg: &distrtypes.MsgDepositValidatorRewardsPool{
 				Depositor:        addr.String(),
-				ValidatorAddress: valAddr1.String(),
+				Address: valAddr1.String(),
 				Amount:           amt,
 			},
 		},
@@ -822,7 +822,7 @@ func TestMsgDepositValidatorRewardsPool(t *testing.T) {
 			name: "invalid validator",
 			msg: &distrtypes.MsgDepositValidatorRewardsPool{
 				Depositor:        addr.String(),
-				ValidatorAddress: sdk.ValAddress([]byte("addr1_______________")).String(),
+				Address: sdk.ValAddress([]byte("addr1_______________")).String(),
 				Amount:           sdk.NewCoins(sdk.NewCoin(bondDenom, math.NewInt(100))),
 			},
 			expErr:    true,

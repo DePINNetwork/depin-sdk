@@ -31,7 +31,7 @@ import (
 	"cosmossdk.io/server/v2/appmanager"
 	"cosmossdk.io/server/v2/cometbft"
 	"cosmossdk.io/server/v2/streaming"
-	storev2 "cosmossdk.io/store/v2"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
 	consensustypes "cosmossdk.io/x/consensus/types"
 
 	"github.com/depinnetwork/depin-sdk/client"

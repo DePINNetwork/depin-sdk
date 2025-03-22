@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	storetypes "cosmossdk.io/core/store"
-	"cosmossdk.io/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
 	"cosmossdk.io/x/upgrade/types"
 
 	"github.com/depinnetwork/depin-sdk/runtime"

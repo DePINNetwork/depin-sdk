@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/core/header"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/feegrant"
 	"cosmossdk.io/x/feegrant/module"
 

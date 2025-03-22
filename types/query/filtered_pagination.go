@@ -5,7 +5,7 @@ import (
 
 	"github.com/cosmos/gogoproto/proto"
 
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/codec"
 )

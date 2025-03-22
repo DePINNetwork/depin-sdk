@@ -13,12 +13,12 @@ import (
 
 	corelog "cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/internal"
-	"cosmossdk.io/store/v2/internal/conv"
-	"cosmossdk.io/store/v2/proof"
-	"cosmossdk.io/store/v2/snapshots"
-	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/internal"
+	"github.com/depinnetwork/depin-sdk/store/v2/internal/conv"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
+	snapshotstypes "github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 var (

@@ -94,7 +94,7 @@ func TestValidateVoteExtensions(t *testing.T) {
 			},
 			VoteExtension:      voteExt,
 			ExtensionSignature: sig,
-			BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+			BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 		}
 		votes = append(votes, ve)
 	}

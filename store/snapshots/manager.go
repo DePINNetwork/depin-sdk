@@ -12,8 +12,8 @@ import (
 	"sync"
 
 	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/snapshots/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // Manager manages snapshot and restore operations for an app, making sure only a single

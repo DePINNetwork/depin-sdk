@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
 )
 
 var sink interface{}

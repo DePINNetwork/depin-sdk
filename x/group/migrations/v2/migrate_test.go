@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/core/address"
 	corestore "cosmossdk.io/core/store"
 	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/group"
 	"cosmossdk.io/x/group/internal/orm"
 	groupkeeper "cosmossdk.io/x/group/keeper"

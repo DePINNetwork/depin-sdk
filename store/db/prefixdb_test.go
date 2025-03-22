@@ -6,8 +6,8 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"cosmossdk.io/store/db"
-	"cosmossdk.io/store/mock"
+	"github.com/depinnetwork/depin-sdk/store/db"
+	"github.com/depinnetwork/depin-sdk/store/mock"
 )
 
 func TestPrefixDB(t *testing.T) {

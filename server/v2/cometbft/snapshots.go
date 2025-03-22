@@ -10,8 +10,8 @@ import (
 	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/cosmos/gogoproto/proto"
 
-	"cosmossdk.io/store/v2/snapshots"
-	snapshottypes "cosmossdk.io/store/v2/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
+	snapshottypes "github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 // GetSnapshotStore returns a snapshot store for the given application options.

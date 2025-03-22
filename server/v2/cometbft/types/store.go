@@ -2,8 +2,8 @@ package types
 
 import (
 	"cosmossdk.io/core/store"
-	storev2 "cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/proof"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
 )
 
 type Store interface {

@@ -5,10 +5,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/mem"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	"github.com/depinnetwork/depin-sdk/store/mem"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func TestStore(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"cosmossdk.io/core/codec"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // MigrateStore performs in-place store migrations from v5 to v6.

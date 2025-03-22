@@ -6,7 +6,7 @@ import (
 
 	"cosmossdk.io/core/store"
 	"cosmossdk.io/server/v2/stf"
-	storev2 "cosmossdk.io/store/v2"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
 )
 
 // NewKVStoreService creates a new KVStoreService.

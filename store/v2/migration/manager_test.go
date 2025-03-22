@@ -9,10 +9,10 @@ import (
 
 	corestore "cosmossdk.io/core/store"
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/v2/commitment"
-	"cosmossdk.io/store/v2/commitment/iavl"
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment/iavl"
+	dbm "github.com/depinnetwork/depin-sdk/store/v2/db"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
 )
 
 var storeKeys = []string{"store1", "store2"}

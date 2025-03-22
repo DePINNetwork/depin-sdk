@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/schema/appdata"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/baseapp"
 	baseapptestutil "github.com/depinnetwork/depin-sdk/baseapp/testutil"

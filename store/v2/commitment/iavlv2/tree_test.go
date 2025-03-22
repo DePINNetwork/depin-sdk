@@ -10,7 +10,7 @@ import (
 
 	corelog "cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/commitment"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment"
 )
 
 func TestCommitterSuite(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/nft"
 
 	"github.com/depinnetwork/depin-sdk/runtime"

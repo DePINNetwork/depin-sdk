@@ -8,9 +8,9 @@ import (
 	crypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
 
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/metrics"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/metrics"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	snapshottypes "github.com/depinnetwork/depin-sdk/store/snapshots/types"
 )
 
 type Store interface {

@@ -8,10 +8,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.uber.org/mock/gomock"
 
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/mock"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
+	"github.com/depinnetwork/depin-sdk/store/mock"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 var errFoo = errors.New("dummy")

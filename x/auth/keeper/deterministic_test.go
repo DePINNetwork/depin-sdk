@@ -15,7 +15,7 @@ import (
 	"cosmossdk.io/core/header"
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/core/testing/queryclient"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/codec"
 	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"

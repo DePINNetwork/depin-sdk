@@ -22,7 +22,7 @@ import (
 	"cosmossdk.io/runtime/v2"
 	serverv2 "cosmossdk.io/server/v2"
 	serverv2store "cosmossdk.io/server/v2/store"
-	"cosmossdk.io/store/v2/db"
+	"github.com/depinnetwork/depin-sdk/store/v2/db"
 	banktypes "cosmossdk.io/x/bank/types"
 
 	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"

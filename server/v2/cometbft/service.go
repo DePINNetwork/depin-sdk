@@ -43,7 +43,7 @@ func toCoreCommitInfo(commit abci.CommitInfo) comet.CommitInfo {
 				Address: v.Validator.Address,
 				Power:   v.Validator.Power,
 			},
-			BlockIDFlag: comet.BlockIDFlag(v.BlockIdFlag),
+			BlockIDFlag: comet.BlockIDFlag(v.BlockIDFlag),
 		})
 	}
 	return ci
@@ -62,7 +62,7 @@ func toCoreExtendedCommitInfo(commit abci.ExtendedCommitInfo) comet.CommitInfo {
 				Address: v.Validator.Address,
 				Power:   v.Validator.Power,
 			},
-			BlockIDFlag: comet.BlockIDFlag(v.BlockIdFlag),
+			BlockIDFlag: comet.BlockIDFlag(v.BlockIDFlag),
 		}
 	}
 

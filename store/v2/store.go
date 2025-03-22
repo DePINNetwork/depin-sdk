@@ -4,8 +4,8 @@ import (
 	"io"
 
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/metrics"
-	"cosmossdk.io/store/v2/proof"
+	"github.com/depinnetwork/depin-sdk/store/v2/metrics"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
 )
 
 var MaxWriteParallelism = 8

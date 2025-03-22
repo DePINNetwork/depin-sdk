@@ -9,11 +9,11 @@ import (
 
 	"cosmossdk.io/core/server"
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/metrics"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/snapshots"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/metrics"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/snapshots"
+	snapshottypes "github.com/depinnetwork/depin-sdk/store/snapshots/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/baseapp/oe"
 	"github.com/depinnetwork/depin-sdk/codec"

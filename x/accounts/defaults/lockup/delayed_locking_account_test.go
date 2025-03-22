@@ -40,7 +40,7 @@ func TestDelayedAccountDelegate(t *testing.T) {
 
 	acc := setupDelayedAccount(t, sdkCtx, ss)
 	_, err := acc.Delegate(sdkCtx, &lockuptypes.MsgDelegate{
-		ValidatorAddress: valAddress,
+		Address: valAddress,
 		Amount:           sdk.NewCoin("test", math.NewInt(1)),
 	})
 	require.NoError(t, err)
@@ -58,7 +58,7 @@ func TestDelayedAccountDelegate(t *testing.T) {
 	})
 
 	_, err = acc.Delegate(sdkCtx, &lockuptypes.MsgDelegate{
-		ValidatorAddress: valAddress,
+		Address: valAddress,
 		Amount:           sdk.NewCoin("test", math.NewInt(5)),
 	})
 	require.NoError(t, err)
@@ -81,7 +81,7 @@ func TestDelayedAccountUndelegate(t *testing.T) {
 	acc := setupDelayedAccount(t, sdkCtx, ss)
 	// Delegate first
 	_, err := acc.Delegate(sdkCtx, &lockuptypes.MsgDelegate{
-		ValidatorAddress: valAddress,
+		Address: valAddress,
 		Amount:           sdk.NewCoin("test", math.NewInt(1)),
 	})
 	require.NoError(t, err)
@@ -92,7 +92,7 @@ func TestDelayedAccountUndelegate(t *testing.T) {
 
 	// Undelegate
 	_, err = acc.Undelegate(sdkCtx, &lockuptypes.MsgUndelegate{
-		ValidatorAddress: valAddress,
+		Address: valAddress,
 		Amount:           sdk.NewCoin("test", math.NewInt(1)),
 	})
 	require.NoError(t, err)

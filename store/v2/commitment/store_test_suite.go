@@ -10,11 +10,11 @@ import (
 	corelog "cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/v2"
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/proof"
-	"cosmossdk.io/store/v2/snapshots"
-	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/v2"
+	dbm "github.com/depinnetwork/depin-sdk/store/v2/db"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
+	snapshotstypes "github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 const (

@@ -7,8 +7,8 @@ import (
 
 	"cosmossdk.io/core/codec"
 	"cosmossdk.io/core/log"
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func migrateDelegationsByValidatorIndex(store storetypes.KVStore) error {

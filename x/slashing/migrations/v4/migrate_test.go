@@ -7,7 +7,7 @@ import (
 	gogotypes "github.com/cosmos/gogoproto/types"
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/slashing"
 	v4 "cosmossdk.io/x/slashing/migrations/v4"
 	slashingtypes "cosmossdk.io/x/slashing/types"

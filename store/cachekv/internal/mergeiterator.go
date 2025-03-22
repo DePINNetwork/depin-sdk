@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"errors"
 
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // cacheMergeIterator merges a parent Iterator and a cache Iterator.

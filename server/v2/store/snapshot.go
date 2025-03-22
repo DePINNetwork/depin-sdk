@@ -17,9 +17,9 @@ import (
 
 	"cosmossdk.io/log"
 	serverv2 "cosmossdk.io/server/v2"
-	storev2 "cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/snapshots"
-	"cosmossdk.io/store/v2/snapshots/types"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 const SnapshotFileName = "_snapshot"

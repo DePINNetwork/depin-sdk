@@ -88,7 +88,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "invalid delegator address",
 			msg: &types.MsgWithdrawDelegatorReward{
 				DelegatorAddress: "invalid",
-				ValidatorAddress: valAddr1Str,
+				Address: valAddr1Str,
 			},
 			errMsg: "invalid delegator address",
 		},
@@ -96,7 +96,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "invalid validator address",
 			msg: &types.MsgWithdrawDelegatorReward{
 				DelegatorAddress: addr0Str,
-				ValidatorAddress: "invalid",
+				Address: "invalid",
 			},
 			errMsg: "invalid validator address",
 		},
@@ -104,7 +104,7 @@ func TestMsgWithdrawDelegatorReward(t *testing.T) {
 			name: "no validator",
 			msg: &types.MsgWithdrawDelegatorReward{
 				DelegatorAddress: addr0Str,
-				ValidatorAddress: valAddr1Str,
+				Address: valAddr1Str,
 			},
 			errMsg: "no validator distribution info",
 		},
@@ -142,14 +142,14 @@ func TestMsgWithdrawValidatorCommission(t *testing.T) {
 		{
 			name: "invalid validator address",
 			msg: &types.MsgWithdrawValidatorCommission{
-				ValidatorAddress: "invalid",
+				Address: "invalid",
 			},
 			errMsg: "invalid validator address",
 		},
 		{
 			name: "no validator commission to withdraw",
 			msg: &types.MsgWithdrawValidatorCommission{
-				ValidatorAddress: valAddr1Str,
+				Address: valAddr1Str,
 			},
 			errMsg: "no validator commission to withdraw",
 		},

@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/collections"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/bank"
 	"cosmossdk.io/x/gov"
 	v5 "cosmossdk.io/x/gov/migrations/v5"

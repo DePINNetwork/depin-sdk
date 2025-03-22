@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"cosmossdk.io/core/branch"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	sdk "github.com/depinnetwork/depin-sdk/types"
 	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"

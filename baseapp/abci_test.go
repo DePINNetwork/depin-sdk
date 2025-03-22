@@ -30,10 +30,10 @@ import (
 	coretesting "cosmossdk.io/core/testing"
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/log"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/snapshots"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/snapshots"
+	snapshottypes "github.com/depinnetwork/depin-sdk/store/snapshots/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/baseapp"
 	baseapptestutil "github.com/depinnetwork/depin-sdk/baseapp/testutil"
@@ -2151,7 +2151,7 @@ func TestABCI_PrepareProposal_VoteExtensions(t *testing.T) {
 					},
 					VoteExtension:      ext,
 					ExtensionSignature: extSig,
-					BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+					BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 				},
 			},
 		},
@@ -2174,7 +2174,7 @@ func TestABCI_PrepareProposal_VoteExtensions(t *testing.T) {
 					},
 					VoteExtension:      ext,
 					ExtensionSignature: extSig,
-					BlockIdFlag:        cmtproto.BlockIDFlagNil, // This will ignore the vote extension
+					BlockIDFlag:        cmtproto.BlockIDFlagNil, // This will ignore the vote extension
 				},
 			},
 		},
@@ -2497,7 +2497,7 @@ func TestBaseApp_VoteExtensions(t *testing.T) {
 	for _, val := range vals {
 		extVotes = append(extVotes, abci.ExtendedVoteInfo{
 			VoteExtension:      allVEs[0],
-			BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+			BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			ExtensionSignature: []byte{},
 			Validator: abci.Validator{
 				Address: val.Bytes(),
@@ -2520,7 +2520,7 @@ func TestBaseApp_VoteExtensions(t *testing.T) {
 	for _, ve := range allVEs {
 		prepPropReq.LocalLastCommit.Votes = append(prepPropReq.LocalLastCommit.Votes, abci.ExtendedVoteInfo{
 			VoteExtension:      ve,
-			BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+			BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			ExtensionSignature: []byte{}, // doesn't matter, it's just to make the next PrepareProposal fail
 		})
 	}
@@ -2566,7 +2566,7 @@ func TestBaseApp_VoteExtensions(t *testing.T) {
 
 		prepPropReq.LocalLastCommit.Votes = append(prepPropReq.LocalLastCommit.Votes, abci.ExtendedVoteInfo{
 			VoteExtension:      ve,
-			BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+			BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			ExtensionSignature: extSig,
 			Validator: abci.Validator{
 				Address: vals[i].Bytes(),

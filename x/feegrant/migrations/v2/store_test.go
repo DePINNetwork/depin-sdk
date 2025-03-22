@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/core/header"
 	coretesting "cosmossdk.io/core/testing"
 	sdkmath "cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/feegrant"
 	v2 "cosmossdk.io/x/feegrant/migrations/v2"
 	"cosmossdk.io/x/feegrant/module"

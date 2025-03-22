@@ -9,7 +9,7 @@ import (
 	"google.golang.org/grpc/metadata"
 
 	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/baseapp"
 	"github.com/depinnetwork/depin-sdk/codec"

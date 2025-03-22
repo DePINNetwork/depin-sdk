@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/errors"
+	"github.com/depinnetwork/depin-sdk/store/v2/errors"
 )
 
 // PrefixDB wraps a namespace of another database as a logical database.

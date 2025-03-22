@@ -7,7 +7,7 @@ import (
 
 	"cosmossdk.io/collections"
 	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	banktestutil "cosmossdk.io/x/bank/testutil"
 	"cosmossdk.io/x/staking/types"
 

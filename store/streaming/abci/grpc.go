@@ -7,7 +7,7 @@ import (
 	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/hashicorp/go-plugin"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 var _ storetypes.ABCIListener = (*GRPCClient)(nil)

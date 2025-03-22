@@ -9,8 +9,8 @@ import (
 
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/snapshots"
-	"cosmossdk.io/store/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/snapshots/types"
 )
 
 var opts = types.NewSnapshotOptions(1500, 2)

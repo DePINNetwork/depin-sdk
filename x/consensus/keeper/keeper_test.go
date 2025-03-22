@@ -11,7 +11,7 @@ import (
 
 	"cosmossdk.io/core/header"
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	consensusparamkeeper "cosmossdk.io/x/consensus/keeper"
 	"cosmossdk.io/x/consensus/types"
 

@@ -6,7 +6,7 @@ import (
 	"io"
 	"time"
 
-	snapshot "cosmossdk.io/store/snapshots/types"
+	snapshot "github.com/depinnetwork/depin-sdk/store/snapshots/types"
 )
 
 const (

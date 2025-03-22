@@ -1,6 +1,7 @@
 package types_test
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	"encoding/hex"
 	"encoding/json"
 	"strings"

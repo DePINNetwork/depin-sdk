@@ -40,7 +40,7 @@ func NewMsgCreateValidator(
 	}
 	return &MsgCreateValidator{
 		Description:       description,
-		ValidatorAddress:  valAddr,
+		Address:  valAddr,
 		Pubkey:            pkAny,
 		Value:             selfDelegation,
 		Commission:        commission,
@@ -106,7 +106,7 @@ func NewMsgEditValidator(valAddr string, description Description, newRate *math.
 	return &MsgEditValidator{
 		Description:       description,
 		CommissionRate:    newRate,
-		ValidatorAddress:  valAddr,
+		Address:  valAddr,
 		MinSelfDelegation: newMinSelfDelegation,
 	}
 }
@@ -115,7 +115,7 @@ func NewMsgEditValidator(valAddr string, description Description, newRate *math.
 func NewMsgDelegate(delAddr, valAddr string, amount sdk.Coin) *MsgDelegate {
 	return &MsgDelegate{
 		DelegatorAddress: delAddr,
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 		Amount:           amount,
 	}
 }
@@ -136,7 +136,7 @@ func NewMsgBeginRedelegate(
 func NewMsgUndelegate(delAddr, valAddr string, amount sdk.Coin) *MsgUndelegate {
 	return &MsgUndelegate{
 		DelegatorAddress: delAddr,
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 		Amount:           amount,
 	}
 }
@@ -145,7 +145,7 @@ func NewMsgUndelegate(delAddr, valAddr string, amount sdk.Coin) *MsgUndelegate {
 func NewMsgCancelUnbondingDelegation(delAddr, valAddr string, creationHeight int64, amount sdk.Coin) *MsgCancelUnbondingDelegation {
 	return &MsgCancelUnbondingDelegation{
 		DelegatorAddress: delAddr,
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 		Amount:           amount,
 		CreationHeight:   creationHeight,
 	}
@@ -161,7 +161,7 @@ func NewMsgRotateConsPubKey(valAddr string, pubKey cryptotypes.PubKey) (*MsgRota
 		}
 	}
 	return &MsgRotateConsPubKey{
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 		NewPubkey:        pkAny,
 	}, nil
 }

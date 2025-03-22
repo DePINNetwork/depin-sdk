@@ -77,7 +77,7 @@ func TestQueryValidatorDistributionInfo(t *testing.T) {
 		{
 			name: "invalid validator address",
 			req: &types.QueryValidatorDistributionInfoRequest{
-				ValidatorAddress: "invalid address",
+				Address: "invalid address",
 			},
 			resp:   &types.QueryValidatorDistributionInfoResponse{},
 			errMsg: "decoding bech32 failed",
@@ -85,7 +85,7 @@ func TestQueryValidatorDistributionInfo(t *testing.T) {
 		{
 			name: "not a validator",
 			req: &types.QueryValidatorDistributionInfoRequest{
-				ValidatorAddress: addr0Str,
+				Address: addr0Str,
 			},
 			resp:   &types.QueryValidatorDistributionInfoResponse{},
 			errMsg: `expected 'cosmosvaloper' got 'cosmos'`,

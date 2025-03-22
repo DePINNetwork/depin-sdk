@@ -13,7 +13,7 @@ import (
 	coreaddress "cosmossdk.io/core/address"
 	"cosmossdk.io/core/header"
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/evidence"
 	"cosmossdk.io/x/evidence/exported"
 	"cosmossdk.io/x/evidence/keeper"

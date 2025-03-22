@@ -7,7 +7,7 @@ import (
 	cmtprotocrypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
 
 	"cosmossdk.io/math/unsafe"
-	sdkmaps "cosmossdk.io/store/internal/maps"
+	sdkmaps "github.com/depinnetwork/depin-sdk/store/internal/maps"
 )
 
 // SimpleResult contains a merkle.SimpleProof along with all data needed to build the confio/proof
@@ -31,7 +31,7 @@ func GenerateRangeProof(size int, loc Where) *SimpleResult {
 	res := &SimpleResult{
 		Key:      []byte(key),
 		Value:    toValue(key),
-		Proof:    proof,
+		ProofOps:    proof,
 		RootHash: root,
 	}
 	return res

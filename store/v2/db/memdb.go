@@ -9,7 +9,7 @@ import (
 	"github.com/google/btree"
 
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/errors"
+	"github.com/depinnetwork/depin-sdk/store/v2/errors"
 )
 
 const (

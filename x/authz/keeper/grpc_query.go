@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/status"
 
 	"cosmossdk.io/errors"
-	"cosmossdk.io/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
 	"cosmossdk.io/x/authz"
 
 	codectypes "github.com/depinnetwork/depin-sdk/codec/types"

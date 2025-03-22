@@ -98,7 +98,7 @@ func (s *IntegrationTestSuite) TestPeriodicLockingAccount() {
 
 	t.Run("ok - execute delegate message", func(t *testing.T) {
 		msg := &types.MsgDelegate{
-			ValidatorAddress: val.OperatorAddress,
+			Address: val.OperatorAddress,
 			Amount:           sdk.NewCoin("stake", math.NewInt(100)),
 		}
 		err = s.executeTx(ctx, msg, s.accountsKeeper, accountAddr, accOwner)
@@ -120,7 +120,7 @@ func (s *IntegrationTestSuite) TestPeriodicLockingAccount() {
 	})
 	t.Run("ok - execute withdraw reward message", func(t *testing.T) {
 		msg := &types.MsgWithdrawReward{
-			ValidatorAddress: val.OperatorAddress,
+			Address: val.OperatorAddress,
 		}
 		err = s.executeTx(ctx, msg, s.accountsKeeper, accountAddr, accOwner)
 		require.NoError(t, err)
@@ -130,7 +130,7 @@ func (s *IntegrationTestSuite) TestPeriodicLockingAccount() {
 		require.NoError(t, err)
 		val := vals[0]
 		msg := &types.MsgUndelegate{
-			ValidatorAddress: val.OperatorAddress,
+			Address: val.OperatorAddress,
 			Amount:           sdk.NewCoin("stake", math.NewInt(100)),
 		}
 		err = s.executeTx(ctx, msg, s.accountsKeeper, accountAddr, accOwner)
@@ -161,7 +161,7 @@ func (s *IntegrationTestSuite) TestPeriodicLockingAccount() {
 
 	t.Run("ok - execute delegate message", func(t *testing.T) {
 		msg := &types.MsgDelegate{
-			ValidatorAddress: val.OperatorAddress,
+			Address: val.OperatorAddress,
 			Amount:           sdk.NewCoin("stake", math.NewInt(100)),
 		}
 		err = s.executeTx(ctx, msg, s.accountsKeeper, accountAddr, accOwner)

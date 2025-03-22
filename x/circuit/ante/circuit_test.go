@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/circuit/ante"
 	cbtypes "cosmossdk.io/x/circuit/types"
 

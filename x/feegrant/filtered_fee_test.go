@@ -11,7 +11,7 @@ import (
 	appmodulev2 "cosmossdk.io/core/appmodule/v2"
 	corecontext "cosmossdk.io/core/context"
 	"cosmossdk.io/core/header"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	banktypes "cosmossdk.io/x/bank/types"
 	"cosmossdk.io/x/feegrant"
 	"cosmossdk.io/x/feegrant/module"

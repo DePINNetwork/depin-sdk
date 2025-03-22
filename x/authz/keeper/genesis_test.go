@@ -10,7 +10,7 @@ import (
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
 	sdkmath "cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/authz/keeper"
 	authzmodule "cosmossdk.io/x/authz/module"
 	bank "cosmossdk.io/x/bank/types"

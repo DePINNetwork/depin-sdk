@@ -6,7 +6,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func TestStoreGetKVStore(t *testing.T) {

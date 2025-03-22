@@ -158,7 +158,7 @@ var xxx_messageInfo_QueryValidatorDistributionInfoRequest proto.InternalMessageI
 
 func (m *QueryValidatorDistributionInfoRequest) GetValidatorAddress() string {
 	if m != nil {
-		return m.ValidatorAddress
+		return m.Address
 	}
 	return ""
 }
@@ -273,7 +273,7 @@ var xxx_messageInfo_QueryValidatorOutstandingRewardsRequest proto.InternalMessag
 
 func (m *QueryValidatorOutstandingRewardsRequest) GetValidatorAddress() string {
 	if m != nil {
-		return m.ValidatorAddress
+		return m.Address
 	}
 	return ""
 }
@@ -368,7 +368,7 @@ var xxx_messageInfo_QueryValidatorCommissionRequest proto.InternalMessageInfo
 
 func (m *QueryValidatorCommissionRequest) GetValidatorAddress() string {
 	if m != nil {
-		return m.ValidatorAddress
+		return m.Address
 	}
 	return ""
 }
@@ -1581,10 +1581,10 @@ func (m *QueryValidatorDistributionInfoRequest) MarshalToSizedBuffer(dAtA []byte
 	_ = i
 	var l int
 	_ = l
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintQuery(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintQuery(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -1669,10 +1669,10 @@ func (m *QueryValidatorOutstandingRewardsRequest) MarshalToSizedBuffer(dAtA []by
 	_ = i
 	var l int
 	_ = l
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintQuery(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintQuery(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -1732,10 +1732,10 @@ func (m *QueryValidatorCommissionRequest) MarshalToSizedBuffer(dAtA []byte) (int
 	_ = i
 	var l int
 	_ = l
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintQuery(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintQuery(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -1817,10 +1817,10 @@ func (m *QueryValidatorSlashesRequest) MarshalToSizedBuffer(dAtA []byte) (int, e
 		i--
 		dAtA[i] = 0x10
 	}
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintQuery(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintQuery(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -1896,10 +1896,10 @@ func (m *QueryDelegationRewardsRequest) MarshalToSizedBuffer(dAtA []byte) (int, 
 	_ = i
 	var l int
 	_ = l
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintQuery(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintQuery(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0x12
 	}
@@ -2250,7 +2250,7 @@ func (m *QueryValidatorDistributionInfoRequest) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovQuery(uint64(l))
 	}
@@ -2288,7 +2288,7 @@ func (m *QueryValidatorOutstandingRewardsRequest) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovQuery(uint64(l))
 	}
@@ -2312,7 +2312,7 @@ func (m *QueryValidatorCommissionRequest) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovQuery(uint64(l))
 	}
@@ -2336,7 +2336,7 @@ func (m *QueryValidatorSlashesRequest) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovQuery(uint64(l))
 	}
@@ -2382,7 +2382,7 @@ func (m *QueryDelegationRewardsRequest) Size() (n int) {
 	if l > 0 {
 		n += 1 + l + sovQuery(uint64(l))
 	}
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovQuery(uint64(l))
 	}
@@ -2714,7 +2714,7 @@ func (m *QueryValidatorDistributionInfoRequest) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex
@@ -2946,7 +2946,7 @@ func (m *QueryValidatorOutstandingRewardsRequest) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex
@@ -3111,7 +3111,7 @@ func (m *QueryValidatorCommissionRequest) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex
@@ -3276,7 +3276,7 @@ func (m *QueryValidatorSlashesRequest) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 2:
 			if wireType != 0 {
@@ -3584,7 +3584,7 @@ func (m *QueryDelegationRewardsRequest) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex

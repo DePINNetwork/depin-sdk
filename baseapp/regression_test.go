@@ -7,8 +7,8 @@ import (
 
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store"
-	storemetrics "cosmossdk.io/store/metrics"
+	"github.com/depinnetwork/depin-sdk/store"
+	storemetrics "github.com/depinnetwork/depin-sdk/store/metrics"
 )
 
 // Ensures that error checks are performed before sealing the app.

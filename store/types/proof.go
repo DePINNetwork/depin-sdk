@@ -8,8 +8,8 @@ import (
 	ics23 "github.com/cosmos/ics23/go"
 
 	errorsmod "cosmossdk.io/errors"
-	sdkmaps "cosmossdk.io/store/internal/maps"
-	sdkproofs "cosmossdk.io/store/internal/proofs"
+	sdkmaps "github.com/depinnetwork/depin-sdk/store/internal/maps"
+	sdkproofs "github.com/depinnetwork/depin-sdk/store/internal/proofs"
 )
 
 const (
@@ -38,7 +38,7 @@ func NewIavlCommitmentOp(key []byte, proof *ics23.CommitmentProof) CommitmentOp 
 		Type:  ProofOpIAVLCommitment,
 		Spec:  ics23.IavlSpec,
 		Key:   key,
-		Proof: proof,
+		ProofOps: proof,
 	}
 }
 
@@ -47,7 +47,7 @@ func NewSimpleMerkleCommitmentOp(key []byte, proof *ics23.CommitmentProof) Commi
 		Type:  ProofOpSimpleMerkleCommitment,
 		Spec:  ics23.TendermintSpec,
 		Key:   key,
-		Proof: proof,
+		ProofOps: proof,
 	}
 }
 
@@ -56,7 +56,7 @@ func NewSmtCommitmentOp(key []byte, proof *ics23.CommitmentProof) CommitmentOp {
 		Type:  ProofOpSMTCommitment,
 		Spec:  ics23.SmtSpec,
 		Key:   key,
-		Proof: proof,
+		ProofOps: proof,
 	}
 }
 
@@ -86,7 +86,7 @@ func CommitmentOpDecoder(pop cmtprotocrypto.ProofOp) (merkle.ProofOperator, erro
 		Type:  pop.Type,
 		Key:   pop.Key,
 		Spec:  spec,
-		Proof: proof,
+		ProofOps: proof,
 	}
 	return op, nil
 }
@@ -164,7 +164,7 @@ func ProofOpFromMap(cmap map[string][]byte, storeName string) (ret cmtprotocrypt
 	}
 
 	commitmentProof := &ics23.CommitmentProof{
-		Proof: &ics23.CommitmentProof_Exist{
+		ProofOps: &ics23.CommitmentProof_Exist{
 			Exist: existProof,
 		},
 	}

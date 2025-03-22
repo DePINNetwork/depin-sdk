@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/circuit"
 	"cosmossdk.io/x/circuit/keeper"
 	"cosmossdk.io/x/circuit/types"

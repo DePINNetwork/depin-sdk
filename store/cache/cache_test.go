@@ -9,10 +9,10 @@ import (
 
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/cache"
-	"cosmossdk.io/store/cachekv"
-	iavlstore "cosmossdk.io/store/iavl"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cache"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	iavlstore "github.com/depinnetwork/depin-sdk/store/iavl"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func TestGetOrSetStoreCache(t *testing.T) {

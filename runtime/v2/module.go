@@ -29,7 +29,7 @@ import (
 	"cosmossdk.io/log"
 	"cosmossdk.io/runtime/v2/services"
 	"cosmossdk.io/server/v2/stf"
-	"cosmossdk.io/store/v2/root"
+	"github.com/depinnetwork/depin-sdk/store/v2/root"
 )
 
 var (

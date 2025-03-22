@@ -5,7 +5,7 @@ import (
 
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/codec"
-	"cosmossdk.io/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
 	"cosmossdk.io/x/authz"
 	"cosmossdk.io/x/authz/internal/conv"
 

@@ -1,7 +1,7 @@
 package store
 
 import (
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // Import cosmos-sdk/types/store.go for convenience.

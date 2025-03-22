@@ -104,7 +104,7 @@ func ValidateVoteExtensionsWithParams(
 
 		// Only check + include power if the vote is a commit vote. There must be super-majority, otherwise the
 		// previous block (the block the vote is for) could not have been committed.
-		if vote.BlockIdFlag != cmtproto.BlockIDFlagCommit {
+		if vote.BlockIDFlag != cmtproto.BlockIDFlagCommit {
 			continue
 		}
 

@@ -417,7 +417,7 @@ func TestEverything(t *testing.T) {
 				Denom:  "foo",
 			},
 			AnAddress:         "cosmos1y74p8wyy4enfhfn342njve6cjmj5c8dtl6emdk",
-			AValidatorAddress: "cosmosvaloper1tnh2q55v8wyygtt9srz5safamzdengsn9dsd7z",
+			AAddress: "cosmosvaloper1tnh2q55v8wyygtt9srz5safamzdengsn9dsd7z",
 			AConsensusAddress: "cosmosvalcons16vm0nx49eam4q0xasdnwdzsdl6ymgyjt757sgr",
 			Bz:                []byte("sdgqwefwdgsdg"),
 			Page: &queryv1beta1.PageRequest{

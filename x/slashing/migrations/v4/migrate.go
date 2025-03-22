@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/core/address"
 	"cosmossdk.io/core/codec"
 	"cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/slashing/types"
 
 	sdk "github.com/depinnetwork/depin-sdk/types"

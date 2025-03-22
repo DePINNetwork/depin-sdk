@@ -14,10 +14,10 @@ import (
 	corestore "cosmossdk.io/core/store"
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/metrics"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	"github.com/depinnetwork/depin-sdk/store/internal/kv"
+	"github.com/depinnetwork/depin-sdk/store/metrics"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 var (

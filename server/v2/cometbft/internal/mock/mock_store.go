@@ -6,11 +6,11 @@ import (
 
 	"cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"
-	storev2 "cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/commitment"
-	"cosmossdk.io/store/v2/commitment/iavl"
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/proof"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment/iavl"
+	dbm "github.com/depinnetwork/depin-sdk/store/v2/db"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
 )
 
 type MockStore struct {

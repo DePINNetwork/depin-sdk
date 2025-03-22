@@ -8,8 +8,8 @@ import (
 	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/stretchr/testify/require"
 
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	snapshottypes "github.com/depinnetwork/depin-sdk/store/snapshots/types"
 )
 
 func TestABCI_ListSnapshots(t *testing.T) {

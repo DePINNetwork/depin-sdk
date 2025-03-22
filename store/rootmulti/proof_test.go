@@ -7,9 +7,9 @@ import (
 
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/iavl"
-	"cosmossdk.io/store/metrics"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/iavl"
+	"github.com/depinnetwork/depin-sdk/store/metrics"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func TestVerifyIAVLStoreQueryProof(t *testing.T) {

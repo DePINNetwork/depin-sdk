@@ -1,6 +1,7 @@
 package baseapp
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	"context"
 	"errors"
 	"fmt"
@@ -19,9 +20,9 @@ import (
 	corecomet "cosmossdk.io/core/comet"
 	coreheader "cosmossdk.io/core/header"
 	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/rootmulti"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/rootmulti"
+	snapshottypes "github.com/depinnetwork/depin-sdk/store/snapshots/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/codec"
 	"github.com/depinnetwork/depin-sdk/telemetry"
@@ -982,7 +983,7 @@ func (app *BaseApp) Commit() (*abci.CommitResponse, error) {
 
 	rms, ok := app.cms.(*rootmulti.Store)
 	if ok {
-		rms.SetCommitHeader(header)
+		rms.SetCommitHeader(adapters.V2ToV1Header(header))
 	}
 
 	resp := &abci.CommitResponse{
@@ -1438,7 +1439,7 @@ func toVoteInfo(votes []abci.ExtendedVoteInfo) []abci.VoteInfo {
 				Address: vote.Validator.Address,
 				Power:   vote.Validator.Power,
 			},
-			BlockIdFlag: vote.BlockIdFlag,
+			BlockIDFlag: vote.BlockIDFlag,
 		}
 	}
 

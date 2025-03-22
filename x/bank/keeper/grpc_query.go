@@ -9,7 +9,7 @@ import (
 	v1beta1 "cosmossdk.io/api/cosmos/bank/v1beta1"
 	"cosmossdk.io/collections"
 	"cosmossdk.io/math"
-	"cosmossdk.io/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
 	"cosmossdk.io/x/bank/types"
 
 	"github.com/depinnetwork/depin-sdk/runtime"

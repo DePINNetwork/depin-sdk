@@ -10,7 +10,7 @@ import (
 	serverv2 "cosmossdk.io/server/v2"
 	"cosmossdk.io/server/v2/api/grpc"
 	"cosmossdk.io/server/v2/store"
-	"cosmossdk.io/store/v2/root"
+	"github.com/depinnetwork/depin-sdk/store/v2/root"
 )
 
 func TestReadConfig(t *testing.T) {

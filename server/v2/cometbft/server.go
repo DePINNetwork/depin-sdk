@@ -38,7 +38,7 @@ import (
 	"cosmossdk.io/server/v2/cometbft/mempool"
 	"cosmossdk.io/server/v2/cometbft/oe"
 	"cosmossdk.io/server/v2/cometbft/types"
-	"cosmossdk.io/store/v2/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
 
 	"github.com/depinnetwork/depin-sdk/client"
 	"github.com/depinnetwork/depin-sdk/codec"

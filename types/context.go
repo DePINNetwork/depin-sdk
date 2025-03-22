@@ -11,8 +11,8 @@ import (
 	"cosmossdk.io/core/comet"
 	"cosmossdk.io/core/header"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/gaskv"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/gaskv"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // ExecMode defines the execution mode which can be set on a Context.
@@ -443,7 +443,7 @@ func ToSDKCommitInfo(commit abci.CommitInfo) comet.CommitInfo {
 				Address: v.Validator.Address,
 				Power:   v.Validator.Power,
 			},
-			BlockIDFlag: comet.BlockIDFlag(v.BlockIdFlag),
+			BlockIDFlag: comet.BlockIDFlag(v.BlockIDFlag),
 		})
 	}
 	return ci
@@ -462,7 +462,7 @@ func ToSDKExtendedCommitInfo(commit abci.ExtendedCommitInfo) comet.CommitInfo {
 				Address: v.Validator.Address,
 				Power:   v.Validator.Power,
 			},
-			BlockIDFlag: comet.BlockIDFlag(v.BlockIdFlag),
+			BlockIDFlag: comet.BlockIDFlag(v.BlockIDFlag),
 		}
 	}
 

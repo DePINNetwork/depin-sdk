@@ -4,7 +4,7 @@ import (
 	"context"
 
 	"cosmossdk.io/core/gas"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	sdk "github.com/depinnetwork/depin-sdk/types"
 )

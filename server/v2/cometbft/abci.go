@@ -31,7 +31,7 @@ import (
 	"cosmossdk.io/server/v2/cometbft/types"
 	cometerrors "cosmossdk.io/server/v2/cometbft/types/errors"
 	"cosmossdk.io/server/v2/streaming"
-	"cosmossdk.io/store/v2/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
 	consensustypes "cosmossdk.io/x/consensus/types"
 )
 

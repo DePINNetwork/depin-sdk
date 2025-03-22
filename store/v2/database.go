@@ -4,7 +4,7 @@ import (
 	"io"
 
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/proof"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
 )
 
 type VersionedReader interface {

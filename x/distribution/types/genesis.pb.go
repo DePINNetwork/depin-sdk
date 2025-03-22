@@ -529,10 +529,10 @@ func (m *ValidatorOutstandingRewardsRecord) MarshalToSizedBuffer(dAtA []byte) (i
 			dAtA[i] = 0x12
 		}
 	}
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintGenesis(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintGenesis(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -569,10 +569,10 @@ func (m *ValidatorAccumulatedCommissionRecord) MarshalToSizedBuffer(dAtA []byte)
 	}
 	i--
 	dAtA[i] = 0x12
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintGenesis(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintGenesis(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -614,10 +614,10 @@ func (m *ValidatorHistoricalRewardsRecord) MarshalToSizedBuffer(dAtA []byte) (in
 		i--
 		dAtA[i] = 0x10
 	}
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintGenesis(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintGenesis(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -654,10 +654,10 @@ func (m *ValidatorCurrentRewardsRecord) MarshalToSizedBuffer(dAtA []byte) (int, 
 	}
 	i--
 	dAtA[i] = 0x12
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintGenesis(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintGenesis(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -694,10 +694,10 @@ func (m *DelegatorStartingInfoRecord) MarshalToSizedBuffer(dAtA []byte) (int, er
 	}
 	i--
 	dAtA[i] = 0x1a
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintGenesis(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintGenesis(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0x12
 	}
@@ -751,10 +751,10 @@ func (m *ValidatorSlashEventRecord) MarshalToSizedBuffer(dAtA []byte) (int, erro
 		i--
 		dAtA[i] = 0x10
 	}
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintGenesis(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintGenesis(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -936,7 +936,7 @@ func (m *ValidatorOutstandingRewardsRecord) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovGenesis(uint64(l))
 	}
@@ -955,7 +955,7 @@ func (m *ValidatorAccumulatedCommissionRecord) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovGenesis(uint64(l))
 	}
@@ -970,7 +970,7 @@ func (m *ValidatorHistoricalRewardsRecord) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovGenesis(uint64(l))
 	}
@@ -988,7 +988,7 @@ func (m *ValidatorCurrentRewardsRecord) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovGenesis(uint64(l))
 	}
@@ -1007,7 +1007,7 @@ func (m *DelegatorStartingInfoRecord) Size() (n int) {
 	if l > 0 {
 		n += 1 + l + sovGenesis(uint64(l))
 	}
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovGenesis(uint64(l))
 	}
@@ -1022,7 +1022,7 @@ func (m *ValidatorSlashEventRecord) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovGenesis(uint64(l))
 	}
@@ -1271,7 +1271,7 @@ func (m *ValidatorOutstandingRewardsRecord) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 2:
 			if wireType != 2 {
@@ -1387,7 +1387,7 @@ func (m *ValidatorAccumulatedCommissionRecord) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 2:
 			if wireType != 2 {
@@ -1502,7 +1502,7 @@ func (m *ValidatorHistoricalRewardsRecord) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 2:
 			if wireType != 0 {
@@ -1636,7 +1636,7 @@ func (m *ValidatorCurrentRewardsRecord) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 2:
 			if wireType != 2 {
@@ -1783,7 +1783,7 @@ func (m *DelegatorStartingInfoRecord) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 3:
 			if wireType != 2 {
@@ -1898,7 +1898,7 @@ func (m *ValidatorSlashEventRecord) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 2:
 			if wireType != 0 {

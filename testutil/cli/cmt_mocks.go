@@ -1,6 +1,7 @@
 package cli
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	"context"
 
 	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"

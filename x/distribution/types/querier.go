@@ -25,7 +25,7 @@ type QueryValidatorOutstandingRewardsParams struct {
 // creates a new instance of QueryValidatorOutstandingRewardsParams
 func NewQueryValidatorOutstandingRewardsParams(validatorAddr sdk.ValAddress) QueryValidatorOutstandingRewardsParams {
 	return QueryValidatorOutstandingRewardsParams{
-		ValidatorAddress: validatorAddr,
+		Address: validatorAddr,
 	}
 }
 
@@ -37,7 +37,7 @@ type QueryValidatorCommissionParams struct {
 // creates a new instance of QueryValidatorCommissionParams
 func NewQueryValidatorCommissionParams(validatorAddr sdk.ValAddress) QueryValidatorCommissionParams {
 	return QueryValidatorCommissionParams{
-		ValidatorAddress: validatorAddr,
+		Address: validatorAddr,
 	}
 }
 
@@ -51,7 +51,7 @@ type QueryValidatorSlashesParams struct {
 // creates a new instance of QueryValidatorSlashesParams
 func NewQueryValidatorSlashesParams(validatorAddr sdk.ValAddress, startingHeight, endingHeight uint64) QueryValidatorSlashesParams {
 	return QueryValidatorSlashesParams{
-		ValidatorAddress: validatorAddr,
+		Address: validatorAddr,
 		StartingHeight:   startingHeight,
 		EndingHeight:     endingHeight,
 	}
@@ -67,7 +67,7 @@ type QueryDelegationRewardsParams struct {
 func NewQueryDelegationRewardsParams(delegatorAddr sdk.AccAddress, validatorAddr sdk.ValAddress) QueryDelegationRewardsParams {
 	return QueryDelegationRewardsParams{
 		DelegatorAddress: delegatorAddr,
-		ValidatorAddress: validatorAddr,
+		Address: validatorAddr,
 	}
 }
 

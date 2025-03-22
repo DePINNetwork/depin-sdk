@@ -151,7 +151,7 @@ func TestTally_Standard(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -180,7 +180,7 @@ func TestTally_Standard(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -210,7 +210,7 @@ func TestTally_Standard(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -248,12 +248,12 @@ func TestTally_Standard(t *testing.T) {
 				delegations := []stakingtypes.Delegation{
 					{
 						DelegatorAddress: del0Addr,
-						ValidatorAddress: val0Addr,
+						Address: val0Addr,
 						Shares:           sdkmath.LegacyNewDec(21),
 					},
 					{
 						DelegatorAddress: del0Addr,
-						ValidatorAddress: val1Addr,
+						Address: val1Addr,
 						Shares:           sdkmath.LegacyNewDec(21),
 					},
 				}
@@ -617,7 +617,7 @@ func TestTally_Expedited(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -646,7 +646,7 @@ func TestTally_Expedited(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -676,7 +676,7 @@ func TestTally_Expedited(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -714,12 +714,12 @@ func TestTally_Expedited(t *testing.T) {
 				delegations := []stakingtypes.Delegation{
 					{
 						DelegatorAddress: del0Addr,
-						ValidatorAddress: val0Addr,
+						Address: val0Addr,
 						Shares:           sdkmath.LegacyNewDec(21),
 					},
 					{
 						DelegatorAddress: del0Addr,
-						ValidatorAddress: val1Addr,
+						Address: val1Addr,
 						Shares:           sdkmath.LegacyNewDec(21),
 					},
 				}
@@ -1047,7 +1047,7 @@ func TestTally_Optimistic(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_THREE)
@@ -1251,7 +1251,7 @@ func TestTally_MultipleChoice(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -1280,7 +1280,7 @@ func TestTally_MultipleChoice(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -1310,7 +1310,7 @@ func TestTally_MultipleChoice(t *testing.T) {
 				require.NoError(t, err)
 				delegations := []stakingtypes.Delegation{{
 					DelegatorAddress: del0Addr,
-					ValidatorAddress: val0Addr,
+					Address: val0Addr,
 					Shares:           sdkmath.LegacyNewDec(42),
 				}}
 				delegatorVote(s, s.delAddrs[0], delegations, v1.VoteOption_VOTE_OPTION_ONE)
@@ -1348,12 +1348,12 @@ func TestTally_MultipleChoice(t *testing.T) {
 				delegations := []stakingtypes.Delegation{
 					{
 						DelegatorAddress: del0Addr,
-						ValidatorAddress: val0Addr,
+						Address: val0Addr,
 						Shares:           sdkmath.LegacyNewDec(21),
 					},
 					{
 						DelegatorAddress: del0Addr,
-						ValidatorAddress: val1Addr,
+						Address: val1Addr,
 						Shares:           sdkmath.LegacyNewDec(21),
 					},
 				}

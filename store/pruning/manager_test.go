@@ -10,9 +10,9 @@ import (
 
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/mock"
-	"cosmossdk.io/store/pruning"
-	"cosmossdk.io/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/mock"
+	"github.com/depinnetwork/depin-sdk/store/pruning"
+	"github.com/depinnetwork/depin-sdk/store/pruning/types"
 )
 
 const dbErr = "db error"

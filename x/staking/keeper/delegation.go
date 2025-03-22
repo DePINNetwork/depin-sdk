@@ -352,7 +352,7 @@ func (k Keeper) SetUBDQueueTimeSlice(ctx context.Context, timestamp time.Time, k
 // InsertUBDQueue inserts an unbonding delegation to the appropriate timeslice
 // in the unbonding queue.
 func (k Keeper) InsertUBDQueue(ctx context.Context, ubd types.UnbondingDelegation, completionTime time.Time) error {
-	dvPair := types.DVPair{DelegatorAddress: ubd.DelegatorAddress, ValidatorAddress: ubd.ValidatorAddress}
+	dvPair := types.DVPair{DelegatorAddress: ubd.DelegatorAddress, Address: ubd.ValidatorAddress}
 
 	timeSlice, err := k.GetUBDQueueTimeSlice(ctx, completionTime)
 	if err != nil {

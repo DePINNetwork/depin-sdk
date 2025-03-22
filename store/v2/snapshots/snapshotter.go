@@ -3,7 +3,7 @@ package snapshots
 import (
 	protoio "github.com/cosmos/gogoproto/io"
 
-	"cosmossdk.io/store/v2/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 // CommitSnapshotter defines an API for creating and restoring snapshots of the

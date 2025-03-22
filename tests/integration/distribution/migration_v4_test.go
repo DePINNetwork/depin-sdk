@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/core/comet"
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/bank"
 	bankkeeper "cosmossdk.io/x/bank/keeper"
 	banktypes "cosmossdk.io/x/bank/types"

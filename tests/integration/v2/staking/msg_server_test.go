@@ -80,7 +80,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: true,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: resUnbond.DelegatorAddress,
-				ValidatorAddress: resUnbond.ValidatorAddress,
+				Address: resUnbond.ValidatorAddress,
 				Amount:           sdk.NewCoin(bondDenom, math.NewInt(4)),
 				CreationHeight:   11,
 			},
@@ -91,7 +91,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: true,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: resUnbond.DelegatorAddress,
-				ValidatorAddress: resUnbond.ValidatorAddress,
+				Address: resUnbond.ValidatorAddress,
 				Amount:           sdk.NewCoin(bondDenom, math.NewInt(4)),
 				CreationHeight:   0,
 			},
@@ -102,7 +102,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: true,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: resUnbond.DelegatorAddress,
-				ValidatorAddress: resUnbond.ValidatorAddress,
+				Address: resUnbond.ValidatorAddress,
 				Amount:           sdk.NewCoin("dump_coin", math.NewInt(4)),
 				CreationHeight:   10,
 			},
@@ -113,7 +113,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: true,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: resUnbond.DelegatorAddress,
-				ValidatorAddress: sdk.ValAddress(sdk.AccAddress("asdsad")).String(),
+				Address: sdk.ValAddress(sdk.AccAddress("asdsad")).String(),
 				Amount:           unbondingAmount,
 				CreationHeight:   10,
 			},
@@ -124,7 +124,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: true,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: "invalid_delegator_addrtess",
-				ValidatorAddress: resUnbond.ValidatorAddress,
+				Address: resUnbond.ValidatorAddress,
 				Amount:           unbondingAmount,
 				CreationHeight:   0,
 			},
@@ -135,7 +135,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: true,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: resUnbond.DelegatorAddress,
-				ValidatorAddress: resUnbond.ValidatorAddress,
+				Address: resUnbond.ValidatorAddress,
 				Amount:           unbondingAmount.Add(sdk.NewInt64Coin(bondDenom, 10)),
 				CreationHeight:   10,
 			},
@@ -146,7 +146,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: false,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: resUnbond.DelegatorAddress,
-				ValidatorAddress: resUnbond.ValidatorAddress,
+				Address: resUnbond.ValidatorAddress,
 				Amount:           unbondingAmount.Sub(sdk.NewInt64Coin(bondDenom, 1)),
 				CreationHeight:   10,
 			},
@@ -156,7 +156,7 @@ func TestCancelUnbondingDelegation(t *testing.T) {
 			exceptErr: false,
 			req: types.MsgCancelUnbondingDelegation{
 				DelegatorAddress: resUnbond.DelegatorAddress,
-				ValidatorAddress: resUnbond.ValidatorAddress,
+				Address: resUnbond.ValidatorAddress,
 				Amount:           unbondingAmount.Sub(unbondingAmount.Sub(sdk.NewInt64Coin(bondDenom, 1))),
 				CreationHeight:   10,
 			},

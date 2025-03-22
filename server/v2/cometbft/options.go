@@ -9,7 +9,7 @@ import (
 	"cosmossdk.io/server/v2/cometbft/mempool"
 	"cosmossdk.io/server/v2/cometbft/types"
 	"cosmossdk.io/server/v2/streaming"
-	"cosmossdk.io/store/v2/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
 )
 
 type keyGenF = func() (cmtcrypto.PrivKey, error)

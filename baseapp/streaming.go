@@ -1,6 +1,7 @@
 package baseapp
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -18,8 +19,8 @@ import (
 	"cosmossdk.io/schema/appdata"
 	"cosmossdk.io/schema/decoding"
 	"cosmossdk.io/schema/indexer"
-	"cosmossdk.io/store/streaming"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/streaming"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/client/flags"
 	sdk "github.com/depinnetwork/depin-sdk/types"

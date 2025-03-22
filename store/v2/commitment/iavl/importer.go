@@ -3,7 +3,7 @@ package iavl
 import (
 	"github.com/depinnetwork/iavl"
 
-	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
+	snapshotstypes "github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 // Importer is a wrapper around iavl.Importer.

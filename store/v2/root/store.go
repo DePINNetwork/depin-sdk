@@ -9,10 +9,10 @@ import (
 
 	corelog "cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/metrics"
-	"cosmossdk.io/store/v2/proof"
-	"cosmossdk.io/store/v2/pruning"
+	"github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/metrics"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
+	"github.com/depinnetwork/depin-sdk/store/v2/pruning"
 )
 
 var (

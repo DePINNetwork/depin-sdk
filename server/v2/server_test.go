@@ -17,7 +17,7 @@ import (
 	serverv2 "cosmossdk.io/server/v2"
 	"cosmossdk.io/server/v2/api/grpc"
 	"cosmossdk.io/server/v2/store"
-	storev2 "cosmossdk.io/store/v2"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
 )
 
 type mockStore struct {

@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/testutil"
 )

@@ -9,7 +9,7 @@ import (
 	govtypes "cosmossdk.io/api/cosmos/gov/v1beta1"
 	"cosmossdk.io/core/header"
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/authz"
 	v2 "cosmossdk.io/x/authz/migrations/v2"
 	authzmodule "cosmossdk.io/x/authz/module"

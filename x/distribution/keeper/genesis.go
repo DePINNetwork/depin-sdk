@@ -170,7 +170,7 @@ func (k Keeper) ExportGenesis(ctx context.Context) (*types.GenesisState, error) 
 		}
 
 		outstanding = append(outstanding, types.ValidatorOutstandingRewardsRecord{
-			ValidatorAddress:   valAddr,
+			Address:   valAddr,
 			OutstandingRewards: rewards.Rewards,
 		})
 		return false, nil
@@ -188,7 +188,7 @@ func (k Keeper) ExportGenesis(ctx context.Context) (*types.GenesisState, error) 
 		}
 
 		acc = append(acc, types.ValidatorAccumulatedCommissionRecord{
-			ValidatorAddress: valAddr,
+			Address: valAddr,
 			Accumulated:      commission,
 		})
 		return false, nil
@@ -206,7 +206,7 @@ func (k Keeper) ExportGenesis(ctx context.Context) (*types.GenesisState, error) 
 			}
 
 			his = append(his, types.ValidatorHistoricalRewardsRecord{
-				ValidatorAddress: valAddr,
+				Address: valAddr,
 				Period:           key.K2(),
 				Rewards:          rewards,
 			})
@@ -226,7 +226,7 @@ func (k Keeper) ExportGenesis(ctx context.Context) (*types.GenesisState, error) 
 			}
 
 			cur = append(cur, types.ValidatorCurrentRewardsRecord{
-				ValidatorAddress: valAddr,
+				Address: valAddr,
 				Rewards:          rewards,
 			})
 			return false, nil
@@ -250,7 +250,7 @@ func (k Keeper) ExportGenesis(ctx context.Context) (*types.GenesisState, error) 
 
 		dels = append(dels, types.DelegatorStartingInfoRecord{
 			DelegatorAddress: delAddr,
-			ValidatorAddress: valAddr,
+			Address: valAddr,
 			StartingInfo:     value,
 		})
 		return false, nil
@@ -270,7 +270,7 @@ func (k Keeper) ExportGenesis(ctx context.Context) (*types.GenesisState, error) 
 			}
 
 			slashes = append(slashes, types.ValidatorSlashEventRecord{
-				ValidatorAddress:    valAddr,
+				Address:    valAddr,
 				Height:              key.K2(),
 				Period:              event.ValidatorPeriod,
 				ValidatorSlashEvent: event,

@@ -5,7 +5,7 @@ import (
 	"runtime/debug"
 
 	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	sdk "github.com/depinnetwork/depin-sdk/types"
 	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"

@@ -198,7 +198,7 @@ func (m *UnbondingEntry) GetAmount() types.Coin {
 
 func (m *UnbondingEntry) GetValidatorAddress() string {
 	if m != nil {
-		return m.ValidatorAddress
+		return m.Address
 	}
 	return ""
 }
@@ -352,10 +352,10 @@ func (m *UnbondingEntry) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	_ = i
 	var l int
 	_ = l
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintLockup(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintLockup(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0x22
 	}
@@ -441,7 +441,7 @@ func (m *UnbondingEntry) Size() (n int) {
 	n += 1 + l + sovLockup(uint64(l))
 	l = m.Amount.Size()
 	n += 1 + l + sovLockup(uint64(l))
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovLockup(uint64(l))
 	}
@@ -799,7 +799,7 @@ func (m *UnbondingEntry) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex

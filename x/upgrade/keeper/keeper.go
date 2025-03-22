@@ -17,8 +17,8 @@ import (
 	"cosmossdk.io/core/codec"
 	"cosmossdk.io/core/server"
 	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/prefix"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/upgrade/types"
 
 	"github.com/depinnetwork/depin-sdk/runtime"

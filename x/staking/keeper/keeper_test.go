@@ -13,7 +13,7 @@ import (
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
 	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	stakingkeeper "cosmossdk.io/x/staking/keeper"
 	stakingtestutil "cosmossdk.io/x/staking/testutil"
 	stakingtypes "cosmossdk.io/x/staking/types"
@@ -379,7 +379,7 @@ func (s *KeeperTestSuite) TestUnbondingDelegationsMigrationToColls() {
 		func(i int64) {
 			ubd := stakingtypes.UnbondingDelegation{
 				DelegatorAddress: s.addressToString(delAddrs[i]),
-				ValidatorAddress: s.valAddressToString(valAddrs[i]),
+				Address: s.valAddressToString(valAddrs[i]),
 				Entries: []stakingtypes.UnbondingDelegationEntry{
 					{
 						CreationHeight: i,
@@ -404,7 +404,7 @@ func (s *KeeperTestSuite) TestUnbondingDelegationsMigrationToColls() {
 		func(i int64) {
 			ubd := stakingtypes.UnbondingDelegation{
 				DelegatorAddress: s.addressToString(delAddrs[i]),
-				ValidatorAddress: s.valAddressToString(valAddrs[i]),
+				Address: s.valAddressToString(valAddrs[i]),
 				Entries: []stakingtypes.UnbondingDelegationEntry{
 					{
 						CreationHeight: i,

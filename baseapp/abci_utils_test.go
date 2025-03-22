@@ -148,19 +148,19 @@ func (s *ABCIUtilsTestSuite) TestValidateVoteExtensionsHappyPath() {
 				Validator:          s.vals[0].toValidator(333),
 				VoteExtension:      ext,
 				ExtensionSignature: extSig0,
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			},
 			{
 				Validator:          s.vals[1].toValidator(333),
 				VoteExtension:      ext,
 				ExtensionSignature: extSig1,
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			},
 			{
 				Validator:          s.vals[2].toValidator(334),
 				VoteExtension:      ext,
 				ExtensionSignature: extSig2,
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			},
 		},
 	}
@@ -201,18 +201,18 @@ func (s *ABCIUtilsTestSuite) TestValidateVoteExtensionsSingleVoteAbsent() {
 				Validator:          s.vals[0].toValidator(333),
 				VoteExtension:      ext,
 				ExtensionSignature: extSig0,
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			},
 			// validator of power <1/3 is missing, so commit-info shld still be valid
 			{
 				Validator:   s.vals[1].toValidator(333),
-				BlockIdFlag: cmtproto.BlockIDFlagAbsent,
+				BlockIDFlag: cmtproto.BlockIDFlagAbsent,
 			},
 			{
 				Validator:          s.vals[2].toValidator(334),
 				VoteExtension:      ext,
 				ExtensionSignature: extSig2,
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			},
 		},
 	}
@@ -244,14 +244,14 @@ func (s *ABCIUtilsTestSuite) TestValidateVoteExtensionsDuplicateVotes() {
 		Validator:          s.vals[0].toValidator(333),
 		VoteExtension:      ext,
 		ExtensionSignature: extSig0,
-		BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+		BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 	}
 
 	ve2 := abci.ExtendedVoteInfo{
 		Validator:          s.vals[0].toValidator(334), // use diff voting-power to dupe
 		VoteExtension:      ext,
 		ExtensionSignature: extSig0,
-		BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+		BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 	}
 
 	llc := abci.ExtendedCommitInfo{
@@ -296,18 +296,18 @@ func (s *ABCIUtilsTestSuite) TestValidateVoteExtensionsSingleVoteNil() {
 				Validator:          s.vals[0].toValidator(333),
 				VoteExtension:      ext,
 				ExtensionSignature: extSig0,
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			},
 			// validator of power <1/3 is missing, so commit-info should still be valid
 			{
 				Validator:   s.vals[1].toValidator(333),
-				BlockIdFlag: cmtproto.BlockIDFlagNil,
+				BlockIDFlag: cmtproto.BlockIDFlagNil,
 			},
 			{
 				Validator:          s.vals[2].toValidator(334),
 				VoteExtension:      ext,
 				ExtensionSignature: extSig2,
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 			},
 		},
 	}
@@ -344,18 +344,18 @@ func (s *ABCIUtilsTestSuite) TestValidateVoteExtensionsTwoVotesNilAbsent() {
 			// validator of power >2/3 is missing, so commit-info should not be valid
 			{
 				Validator:          s.vals[0].toValidator(333),
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 				VoteExtension:      ext,
 				ExtensionSignature: extSig0,
 			},
 			{
 				Validator:   s.vals[1].toValidator(333),
-				BlockIdFlag: cmtproto.BlockIDFlagNil,
+				BlockIDFlag: cmtproto.BlockIDFlagNil,
 			},
 			{
 				Validator:     s.vals[2].toValidator(334),
 				VoteExtension: ext,
-				BlockIdFlag:   cmtproto.BlockIDFlagAbsent,
+				BlockIDFlag:   cmtproto.BlockIDFlagAbsent,
 			},
 		},
 	}
@@ -391,18 +391,18 @@ func (s *ABCIUtilsTestSuite) TestValidateVoteExtensionsIncorrectVotingPower() {
 			// validator of power >2/3 is missing, so commit-info should not be valid
 			{
 				Validator:          s.vals[0].toValidator(333),
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 				VoteExtension:      ext,
 				ExtensionSignature: extSig0,
 			},
 			{
 				Validator:   s.vals[1].toValidator(333),
-				BlockIdFlag: cmtproto.BlockIDFlagNil,
+				BlockIDFlag: cmtproto.BlockIDFlagNil,
 			},
 			{
 				Validator:     s.vals[2].toValidator(334),
 				VoteExtension: ext,
-				BlockIdFlag:   cmtproto.BlockIDFlagAbsent,
+				BlockIDFlag:   cmtproto.BlockIDFlagAbsent,
 			},
 		},
 	}
@@ -442,18 +442,18 @@ func (s *ABCIUtilsTestSuite) TestValidateVoteExtensionsIncorrectOrder() {
 			// validator of power >2/3 is missing, so commit-info should not be valid
 			{
 				Validator:          s.vals[0].toValidator(333),
-				BlockIdFlag:        cmtproto.BlockIDFlagCommit,
+				BlockIDFlag:        cmtproto.BlockIDFlagCommit,
 				VoteExtension:      ext,
 				ExtensionSignature: extSig0,
 			},
 			{
 				Validator:   s.vals[1].toValidator(333),
-				BlockIdFlag: cmtproto.BlockIDFlagNil,
+				BlockIDFlag: cmtproto.BlockIDFlagNil,
 			},
 			{
 				Validator:     s.vals[2].toValidator(334),
 				VoteExtension: ext,
-				BlockIdFlag:   cmtproto.BlockIDFlagAbsent,
+				BlockIDFlag:   cmtproto.BlockIDFlagAbsent,
 			},
 		},
 	}

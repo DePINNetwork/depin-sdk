@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/gaskv"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
+	"github.com/depinnetwork/depin-sdk/store/gaskv"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func bz(s string) []byte { return []byte(s) }

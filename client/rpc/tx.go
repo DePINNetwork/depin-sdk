@@ -1,6 +1,7 @@
 package rpc
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	"context"
 	"encoding/hex"
 	"encoding/json"

@@ -13,7 +13,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/registry"
 	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/baseapp"
 	"github.com/depinnetwork/depin-sdk/client"

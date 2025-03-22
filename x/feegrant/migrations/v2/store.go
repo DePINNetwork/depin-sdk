@@ -6,7 +6,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/codec"
 	"cosmossdk.io/core/store"
-	"cosmossdk.io/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
 	"cosmossdk.io/x/feegrant"
 
 	"github.com/depinnetwork/depin-sdk/runtime"

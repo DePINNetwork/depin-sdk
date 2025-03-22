@@ -36,7 +36,7 @@ func TestCreateMembership(t *testing.T) {
 			val := data[key]
 			proof, err = CreateMembershipProof(data, []byte(key))
 			if err != nil {
-				t.Fatalf("Creating Proof: %+v", err)
+				t.Fatalf("Creating ProofOps: %+v", err)
 			}
 			if proof.GetExist() == nil {
 				t.Fatal("Unexpected proof format")
@@ -45,7 +45,7 @@ func TestCreateMembership(t *testing.T) {
 			root := CalcRoot(data)
 			err = proof.GetExist().Verify(ics23.TendermintSpec, root, []byte(key), val)
 			if err != nil {
-				t.Fatalf("Verifying Proof: %+v", err)
+				t.Fatalf("Verifying ProofOps: %+v", err)
 			}
 
 			valid := ics23.VerifyMembership(ics23.TendermintSpec, root, proof, []byte(key), val)
@@ -83,7 +83,7 @@ func TestCreateNonMembership(t *testing.T) {
 
 			proof, err = CreateNonMembershipProof(data, []byte(nonKey))
 			if err != nil {
-				t.Fatalf("Creating Proof: %+v", err)
+				t.Fatalf("Creating ProofOps: %+v", err)
 			}
 			if proof.GetNonexist() == nil {
 				t.Fatal("Unexpected proof format")
@@ -92,7 +92,7 @@ func TestCreateNonMembership(t *testing.T) {
 			root := CalcRoot(data)
 			err = proof.GetNonexist().Verify(ics23.TendermintSpec, root, []byte(nonKey))
 			if err != nil {
-				t.Fatalf("Verifying Proof: %+v", err)
+				t.Fatalf("Verifying ProofOps: %+v", err)
 			}
 
 			valid := ics23.VerifyNonMembership(ics23.TendermintSpec, root, proof, []byte(nonKey))

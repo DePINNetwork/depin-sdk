@@ -2,9 +2,9 @@ package transient
 
 import (
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/dbadapter"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 var (

@@ -102,13 +102,13 @@ func TestGRPCValidatorOutstandingRewards(t *testing.T) {
 		},
 		{
 			name:      "invalid address",
-			msg:       &types.QueryValidatorOutstandingRewardsRequest{ValidatorAddress: sdk.ValAddress("addr1_______________").String()},
+			msg:       &types.QueryValidatorOutstandingRewardsRequest{Address: sdk.ValAddress("addr1_______________").String()},
 			expPass:   false,
 			expErrMsg: "validator does not exist",
 		},
 		{
 			name:    "valid request",
-			msg:     &types.QueryValidatorOutstandingRewardsRequest{ValidatorAddress: f.valAddr.String()},
+			msg:     &types.QueryValidatorOutstandingRewardsRequest{Address: f.valAddr.String()},
 			expPass: true,
 		},
 	}
@@ -154,13 +154,13 @@ func TestGRPCValidatorCommission(t *testing.T) {
 		},
 		{
 			name:      "invalid validator",
-			msg:       &types.QueryValidatorCommissionRequest{ValidatorAddress: sdk.ValAddress("addr1_______________").String()},
+			msg:       &types.QueryValidatorCommissionRequest{Address: sdk.ValAddress("addr1_______________").String()},
 			expPass:   false,
 			expErrMsg: "validator does not exist",
 		},
 		{
 			name:    "valid request",
-			msg:     &types.QueryValidatorCommissionRequest{ValidatorAddress: f.valAddr.String()},
+			msg:     &types.QueryValidatorCommissionRequest{Address: f.valAddr.String()},
 			expPass: true,
 		},
 	}
@@ -229,7 +229,7 @@ func TestGRPCValidatorSlashes(t *testing.T) {
 			name: "Ending height lesser than start height request",
 			malleate: func() {
 				req = &types.QueryValidatorSlashesRequest{
-					ValidatorAddress: valAddr2.String(),
+					Address: valAddr2.String(),
 					StartingHeight:   10,
 					EndingHeight:     1,
 				}
@@ -242,7 +242,7 @@ func TestGRPCValidatorSlashes(t *testing.T) {
 			name: "no slash event validator request",
 			malleate: func() {
 				req = &types.QueryValidatorSlashesRequest{
-					ValidatorAddress: valAddr2.String(),
+					Address: valAddr2.String(),
 					StartingHeight:   1,
 					EndingHeight:     10,
 				}
@@ -259,7 +259,7 @@ func TestGRPCValidatorSlashes(t *testing.T) {
 				}
 
 				req = &types.QueryValidatorSlashesRequest{
-					ValidatorAddress: f.valAddr.String(),
+					Address: f.valAddr.String(),
 					StartingHeight:   1,
 					EndingHeight:     10,
 					Pagination:       pageReq,
@@ -280,7 +280,7 @@ func TestGRPCValidatorSlashes(t *testing.T) {
 				}
 
 				req = &types.QueryValidatorSlashesRequest{
-					ValidatorAddress: f.valAddr.String(),
+					Address: f.valAddr.String(),
 					StartingHeight:   1,
 					EndingHeight:     10,
 					Pagination:       pageReq,
@@ -301,7 +301,7 @@ func TestGRPCValidatorSlashes(t *testing.T) {
 				}
 
 				req = &types.QueryValidatorSlashesRequest{
-					ValidatorAddress: f.valAddr.String(),
+					Address: f.valAddr.String(),
 					StartingHeight:   1,
 					EndingHeight:     10,
 					Pagination:       pageReq,
@@ -488,7 +488,7 @@ func TestGRPCDelegationRewards(t *testing.T) {
 			name: "empty delegator address",
 			msg: &types.QueryDelegationRewardsRequest{
 				DelegatorAddress: "",
-				ValidatorAddress: f.valAddr.String(),
+				Address: f.valAddr.String(),
 			},
 			expPass:   false,
 			expErrMsg: "empty delegator address",
@@ -497,7 +497,7 @@ func TestGRPCDelegationRewards(t *testing.T) {
 			name: "empty validator address",
 			msg: &types.QueryDelegationRewardsRequest{
 				DelegatorAddress: addr2.String(),
-				ValidatorAddress: "",
+				Address: "",
 			},
 			expPass:   false,
 			expErrMsg: "empty validator address",
@@ -506,7 +506,7 @@ func TestGRPCDelegationRewards(t *testing.T) {
 			name: "request with wrong delegator and validator",
 			msg: &types.QueryDelegationRewardsRequest{
 				DelegatorAddress: addr2.String(),
-				ValidatorAddress: valAddr2.String(),
+				Address: valAddr2.String(),
 			},
 			expPass:   false,
 			expErrMsg: "validator does not exist",
@@ -515,7 +515,7 @@ func TestGRPCDelegationRewards(t *testing.T) {
 			name: "valid request",
 			msg: &types.QueryDelegationRewardsRequest{
 				DelegatorAddress: delAddr.String(),
-				ValidatorAddress: f.valAddr.String(),
+				Address: f.valAddr.String(),
 			},
 			expPass: true,
 		},

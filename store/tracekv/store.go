@@ -6,7 +6,7 @@ import (
 	"io"
 
 	"cosmossdk.io/errors"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 const (

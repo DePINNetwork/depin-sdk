@@ -7,8 +7,8 @@ import (
 	cmtprotocrypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
 	"github.com/depinnetwork/por-consensus/crypto/merkle"
 
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/internal/tree"
+	"github.com/depinnetwork/depin-sdk/store/internal/kv"
+	"github.com/depinnetwork/depin-sdk/store/internal/tree"
 )
 
 // merkleMap defines a merkle-ized tree from a map. Leave values are treated as

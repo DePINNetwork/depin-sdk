@@ -13,8 +13,8 @@ import (
 
 	corelog "cosmossdk.io/core/log"
 	errorsmod "cosmossdk.io/errors/v2"
-	storeerrors "cosmossdk.io/store/v2/errors"
-	"cosmossdk.io/store/v2/snapshots/types"
+	storeerrors "github.com/depinnetwork/depin-sdk/store/v2/errors"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 // Manager manages snapshot and restore operations for an app, making sure only a single

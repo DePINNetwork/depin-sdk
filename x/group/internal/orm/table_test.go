@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	grouperrors "cosmossdk.io/x/group/errors"
 
 	"github.com/depinnetwork/depin-sdk/codec"

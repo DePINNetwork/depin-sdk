@@ -13,7 +13,7 @@ import (
 
 	_ "cosmossdk.io/api/cosmos/crypto/secp256k1"
 	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	banktypes "cosmossdk.io/x/bank/types"
 	stakingtypes "cosmossdk.io/x/staking/types"
 

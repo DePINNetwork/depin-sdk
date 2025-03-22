@@ -10,7 +10,7 @@ import (
 
 	"cosmossdk.io/core/header"
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"
 	"github.com/depinnetwork/depin-sdk/crypto/keys/secp256k1"

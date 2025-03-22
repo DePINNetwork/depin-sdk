@@ -8,7 +8,7 @@ import (
 
 	corestore "cosmossdk.io/core/store"
 	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/group/errors"
 
 	"github.com/depinnetwork/depin-sdk/codec"

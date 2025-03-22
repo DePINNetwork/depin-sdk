@@ -13,9 +13,9 @@ import (
 
 	"cosmossdk.io/log"
 	serverv2 "cosmossdk.io/server/v2"
-	storev2 "cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/proof"
-	"cosmossdk.io/store/v2/root"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
+	"github.com/depinnetwork/depin-sdk/store/v2/root"
 )
 
 // PrunesCmd implements the default command for pruning app history states.

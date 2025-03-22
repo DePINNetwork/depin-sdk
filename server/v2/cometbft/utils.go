@@ -249,7 +249,7 @@ func ToSDKCommitInfo(commit abci.CommitInfo) *comet.CommitInfo {
 				Address: v.Validator.Address,
 				Power:   v.Validator.Power,
 			},
-			BlockIDFlag: comet.BlockIDFlag(v.BlockIdFlag),
+			BlockIDFlag: comet.BlockIDFlag(v.BlockIDFlag),
 		})
 	}
 	return &ci
@@ -267,7 +267,7 @@ func ToSDKExtendedCommitInfo(commit abci.ExtendedCommitInfo) comet.CommitInfo {
 				Address: v.Validator.Address,
 				Power:   v.Validator.Power,
 			},
-			BlockIDFlag: comet.BlockIDFlag(v.BlockIdFlag),
+			BlockIDFlag: comet.BlockIDFlag(v.BlockIDFlag),
 		})
 	}
 
@@ -536,7 +536,7 @@ func ValidateVoteExtensions[T transaction.Tx](
 
 		// Only check + include power if the vote is a commit vote. There must be super-majority, otherwise the
 		// previous block (the block the vote is for) could not have been committed.
-		if vote.BlockIdFlag != cmtproto.BlockIDFlagCommit {
+		if vote.BlockIDFlag != cmtproto.BlockIDFlagCommit {
 			continue
 		}
 

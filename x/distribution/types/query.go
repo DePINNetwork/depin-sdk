@@ -24,7 +24,7 @@ func (res QueryDelegatorTotalRewardsResponse) String() string {
 	out += "  Rewards:"
 	for _, reward := range res.Rewards {
 		out += fmt.Sprintf(`  
-	ValidatorAddress: %s
+	Address: %s
 	Reward: %s`, reward.ValidatorAddress, reward.Reward)
 	}
 	out += fmt.Sprintf("\n  Total: %s\n", res.Total)
@@ -33,5 +33,5 @@ func (res QueryDelegatorTotalRewardsResponse) String() string {
 
 // NewDelegationDelegatorReward constructs a DelegationDelegatorReward.
 func NewDelegationDelegatorReward(valAddr string, reward sdk.DecCoins) DelegationDelegatorReward {
-	return DelegationDelegatorReward{ValidatorAddress: valAddr, Reward: reward}
+	return DelegationDelegatorReward{Address: valAddr, Reward: reward}
 }

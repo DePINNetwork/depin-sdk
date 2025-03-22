@@ -5,11 +5,11 @@ import (
 
 	corestore "cosmossdk.io/core/store"
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/tracekv"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/tracekv"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 var (

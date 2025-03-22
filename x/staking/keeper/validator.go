@@ -13,7 +13,7 @@ import (
 	corestore "cosmossdk.io/core/store"
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/staking/types"
 
 	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"

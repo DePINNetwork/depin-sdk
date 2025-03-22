@@ -1,4 +1,4 @@
-module cosmossdk.io/store
+module github.com/depinnetwork/depin-sdk/store
 
 go 1.23.4
 

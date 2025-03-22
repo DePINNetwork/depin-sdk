@@ -38,7 +38,7 @@ import (
 	"cosmossdk.io/core/genesis"
 	"cosmossdk.io/core/registry"
 	errorsmod "cosmossdk.io/errors"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/client"
 	"github.com/depinnetwork/depin-sdk/codec"

@@ -9,8 +9,8 @@ import (
 	"github.com/stretchr/testify/require"
 
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/v2/snapshots"
-	"cosmossdk.io/store/v2/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 var opts = snapshots.NewSnapshotOptions(1500, 2)

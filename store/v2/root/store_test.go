@@ -10,12 +10,12 @@ import (
 
 	corestore "cosmossdk.io/core/store"
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/commitment"
-	"cosmossdk.io/store/v2/commitment/iavl"
-	dbm "cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/proof"
-	"cosmossdk.io/store/v2/pruning"
+	"github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment/iavl"
+	dbm "github.com/depinnetwork/depin-sdk/store/v2/db"
+	"github.com/depinnetwork/depin-sdk/store/v2/proof"
+	"github.com/depinnetwork/depin-sdk/store/v2/pruning"
 )
 
 const (

@@ -9,7 +9,7 @@ import (
 	"go.uber.org/mock/gomock"
 
 	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/group"
 	groupkeeper "cosmossdk.io/x/group/keeper"
 	"cosmossdk.io/x/group/module"

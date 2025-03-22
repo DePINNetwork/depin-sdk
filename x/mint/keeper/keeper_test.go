@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/math"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/mint"
 	"cosmossdk.io/x/mint/keeper"
 	minttestutil "cosmossdk.io/x/mint/testutil"

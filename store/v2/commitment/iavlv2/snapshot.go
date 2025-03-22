@@ -5,8 +5,8 @@ import (
 
 	"github.com/depinnetwork/iavl/v2"
 
-	"cosmossdk.io/store/v2/commitment"
-	snapshotstypes "cosmossdk.io/store/v2/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment"
+	snapshotstypes "github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 // Exporter is a wrapper around iavl.Exporter.

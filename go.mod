@@ -12,7 +12,6 @@ require (
 	cosmossdk.io/log v1.5.0
 	cosmossdk.io/math v1.5.0
 	cosmossdk.io/schema v1.0.0
-	cosmossdk.io/store v1.10.0-rc.1
 	cosmossdk.io/x/bank v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/staking v0.0.0-00010101000000-000000000000
 	cosmossdk.io/x/tx v1.1.0
@@ -27,6 +26,7 @@ require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.4.0
 	github.com/depinnetwork/bip39 v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/btcutil v0.0.0-00010101000000-000000000000
+	github.com/depinnetwork/depin-sdk/store v0.0.0-rc.1
 	github.com/depinnetwork/por-consensus v0.0.0-20250322023815-76d0ebe3db59-20250322020112-8b685c2363ae-20250321114042-ad1fc897e07e-20250321113431-d202622238c6-20250321112806-4b08bd2e2b2b-20250321112100-653b8b4dd1bc-20250321110407-c5e8a59ea541-20250321110407-c5e8a59ea541
 	github.com/depinnetwork/por-consensus/api/cometbft/abci v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/por-consensus/api/cometbft/crypto v0.0.0-00010101000000-000000000000
@@ -84,11 +84,10 @@ require (
 	github.com/cockroachdb/pebble v1.1.4 // indirect
 	github.com/cockroachdb/redact v1.1.5 // indirect
 	github.com/cockroachdb/tokenbucket v0.0.0-20230807174530-cc333fc44b06 // indirect
-	github.com/cometbft/cometbft v1.0.1 // indirect
-	github.com/cosmos/iavl v1.3.4 // indirect
 	github.com/cosmos/ics23/go v0.11.0 // indirect
 	github.com/danieljoos/wincred v1.2.1 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
+	github.com/depinnetwork/iavl v0.0.0-00010101000000-000000000000 // indirect
 	github.com/depinnetwork/por-consensus/api/cometbft/consensus v0.0.0-00010101000000-000000000000 // indirect
 	github.com/depinnetwork/por-consensus/api/cometbft/libs/bits v0.0.0-00010101000000-000000000000 // indirect
 	github.com/depinnetwork/por-consensus/api/cometbft/mempool v0.0.0-00010101000000-000000000000 // indirect
@@ -96,7 +95,7 @@ require (
 	github.com/depinnetwork/por-consensus/api/cometbft/state v0.0.0-00010101000000-000000000000 // indirect
 	github.com/depinnetwork/por-consensus/api/cometbft/store v0.0.0-00010101000000-000000000000 // indirect
 	github.com/dvsekhvalnov/jose2go v1.6.0 // indirect
-	github.com/emicklei/dot v1.6.2 // indirect
+	github.com/emicklei/dot v1.6.4 // indirect
 	github.com/ethereum/go-ethereum v1.15.5 // indirect
 	github.com/fatih/color v1.18.0 // indirect
 	github.com/fsnotify/fsnotify v1.8.0 // indirect
@@ -110,7 +109,7 @@ require (
 	github.com/gsterjov/go-libsecret v0.0.0-20161001094733-a6f4afe4910c // indirect
 	github.com/hashicorp/go-hclog v1.6.3 // indirect
 	github.com/hashicorp/go-immutable-radix v1.3.1 // indirect
-	github.com/hashicorp/go-plugin v1.6.2 // indirect
+	github.com/hashicorp/go-plugin v1.6.3 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/hashicorp/yamux v0.1.2 // indirect
@@ -249,3 +248,5 @@ replace github.com/depinnetwork/por-consensus/api/cometbft/store => ../por-conse
 replace github.com/depinnetwork/por-consensus/api/cometbft/types => ../por-consensus/api/cometbft/types
 
 replace github.com/depinnetwork/por-consensus/api/cometbft/version => ../por-consensus/api/cometbft/version
+
+replace github.com/depinnetwork/depin-sdk/store => ./store

@@ -1,6 +1,7 @@
 package cmtservice
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	"context"
 
 	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"

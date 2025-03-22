@@ -3103,10 +3103,10 @@ func (m *DVPair) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	_ = i
 	var l int
 	_ = l
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintStaking(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintStaking(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0x12
 	}
@@ -3268,10 +3268,10 @@ func (m *Delegation) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 	}
 	i--
 	dAtA[i] = 0x1a
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintStaking(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintStaking(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0x12
 	}
@@ -3319,10 +3319,10 @@ func (m *UnbondingDelegation) MarshalToSizedBuffer(dAtA []byte) (int, error) {
 			dAtA[i] = 0x1a
 		}
 	}
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintStaking(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintStaking(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0x12
 	}
@@ -4094,7 +4094,7 @@ func (m *DVPair) Size() (n int) {
 	if l > 0 {
 		n += 1 + l + sovStaking(uint64(l))
 	}
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovStaking(uint64(l))
 	}
@@ -4162,7 +4162,7 @@ func (m *Delegation) Size() (n int) {
 	if l > 0 {
 		n += 1 + l + sovStaking(uint64(l))
 	}
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovStaking(uint64(l))
 	}
@@ -4181,7 +4181,7 @@ func (m *UnbondingDelegation) Size() (n int) {
 	if l > 0 {
 		n += 1 + l + sovStaking(uint64(l))
 	}
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovStaking(uint64(l))
 	}
@@ -5805,7 +5805,7 @@ func (m *DVPair) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex
@@ -6233,7 +6233,7 @@ func (m *Delegation) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 3:
 			if wireType != 2 {
@@ -6381,7 +6381,7 @@ func (m *UnbondingDelegation) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 3:
 			if wireType != 2 {

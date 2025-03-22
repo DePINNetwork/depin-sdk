@@ -5,7 +5,7 @@ import (
 
 	cmtprotocrypto "github.com/depinnetwork/por-consensus/api/cometbft/crypto/v1"
 
-	"cosmossdk.io/store/internal/maps"
+	"github.com/depinnetwork/depin-sdk/store/internal/maps"
 )
 
 // GetHash returns the GetHash from the CommitID.

@@ -25,13 +25,13 @@ func NewMsgSetWithdrawAddress(delAddr, withdrawAddr string) *MsgSetWithdrawAddre
 func NewMsgWithdrawDelegatorReward(delAddr, valAddr string) *MsgWithdrawDelegatorReward {
 	return &MsgWithdrawDelegatorReward{
 		DelegatorAddress: delAddr,
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 	}
 }
 
 func NewMsgWithdrawValidatorCommission(valAddr string) *MsgWithdrawValidatorCommission {
 	return &MsgWithdrawValidatorCommission{
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 	}
 }
 
@@ -50,6 +50,6 @@ func NewMsgDepositValidatorRewardsPool(depositor, valAddr string, amount sdk.Coi
 	return &MsgDepositValidatorRewardsPool{
 		Amount:           amount,
 		Depositor:        depositor,
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 	}
 }

@@ -11,9 +11,9 @@ import (
 
 	"cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2/commitment"
-	"cosmossdk.io/store/v2/internal/encoding"
-	"cosmossdk.io/store/v2/snapshots"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment"
+	"github.com/depinnetwork/depin-sdk/store/v2/internal/encoding"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots"
 )
 
 const (

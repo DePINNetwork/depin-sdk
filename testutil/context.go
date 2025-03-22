@@ -10,9 +10,9 @@ import (
 	corestore "cosmossdk.io/core/store"
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store"
-	"cosmossdk.io/store/metrics"
-	storetypes "cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store"
+	"github.com/depinnetwork/depin-sdk/store/metrics"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	sdk "github.com/depinnetwork/depin-sdk/types"
 )

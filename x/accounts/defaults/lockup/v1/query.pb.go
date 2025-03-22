@@ -216,7 +216,7 @@ var xxx_messageInfo_QueryUnbondingEntriesRequest proto.InternalMessageInfo
 
 func (m *QueryUnbondingEntriesRequest) GetValidatorAddress() string {
 	if m != nil {
-		return m.ValidatorAddress
+		return m.Address
 	}
 	return ""
 }
@@ -655,10 +655,10 @@ func (m *QueryUnbondingEntriesRequest) MarshalToSizedBuffer(dAtA []byte) (int, e
 	_ = i
 	var l int
 	_ = l
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintQuery(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintQuery(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -899,7 +899,7 @@ func (m *QueryUnbondingEntriesRequest) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovQuery(uint64(l))
 	}
@@ -1408,7 +1408,7 @@ func (m *QueryUnbondingEntriesRequest) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		default:
 			iNdEx = preIndex

@@ -7,8 +7,8 @@ import (
 	abci "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	"github.com/hashicorp/go-plugin"
 
-	streamingabci "cosmossdk.io/store/streaming/abci"
-	store "cosmossdk.io/store/types"
+	streamingabci "github.com/depinnetwork/depin-sdk/store/streaming/abci"
+	store "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // StdoutPlugin is the implementation of the ABCIListener interface

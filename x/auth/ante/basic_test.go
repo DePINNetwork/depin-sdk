@@ -11,7 +11,7 @@ import (
 	apisigning "cosmossdk.io/api/cosmos/tx/signing/v1beta1"
 	appmodulev2 "cosmossdk.io/core/appmodule/v2"
 	"cosmossdk.io/core/header"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	cryptotypes "github.com/depinnetwork/depin-sdk/crypto/types"
 	"github.com/depinnetwork/depin-sdk/crypto/types/multisig"

@@ -100,7 +100,7 @@ func newMockContext(t *testing.T) (context.Context, store.KVStoreService) {
 				return &stakingtypes.QueryUnbondingDelegationResponse{
 					Unbond: stakingtypes.UnbondingDelegation{
 						DelegatorAddress: "sender",
-						ValidatorAddress: valAddress,
+						Address: valAddress,
 						Entries: []stakingtypes.UnbondingDelegationEntry{
 							{
 								CreationHeight: 1,

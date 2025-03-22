@@ -12,7 +12,7 @@ import (
 	"cosmossdk.io/core/header"
 	"cosmossdk.io/core/server"
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/upgrade"
 	"cosmossdk.io/x/upgrade/keeper"
 	upgradetestutil "cosmossdk.io/x/upgrade/testutil"

@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/header"
 	coretesting "cosmossdk.io/core/testing"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	epochskeeper "cosmossdk.io/x/epochs/keeper"
 	"cosmossdk.io/x/epochs/types"
 

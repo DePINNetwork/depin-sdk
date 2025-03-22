@@ -39,7 +39,7 @@ func TestPermanentAccountDelegate(t *testing.T) {
 
 	acc := setupPermanentAccount(t, sdkCtx, ss)
 	_, err := acc.Delegate(sdkCtx, &lockuptypes.MsgDelegate{
-		ValidatorAddress: valAddress,
+		Address: valAddress,
 		Amount:           sdk.NewCoin("test", math.NewInt(1)),
 	})
 	require.NoError(t, err)
@@ -58,7 +58,7 @@ func TestPermanentAccountUndelegate(t *testing.T) {
 	acc := setupPermanentAccount(t, sdkCtx, ss)
 	// Delegate first
 	_, err := acc.Delegate(sdkCtx, &lockuptypes.MsgDelegate{
-		ValidatorAddress: valAddress,
+		Address: valAddress,
 		Amount:           sdk.NewCoin("test", math.NewInt(1)),
 	})
 	require.NoError(t, err)
@@ -69,7 +69,7 @@ func TestPermanentAccountUndelegate(t *testing.T) {
 
 	// Undelegate
 	_, err = acc.Undelegate(sdkCtx, &lockuptypes.MsgUndelegate{
-		ValidatorAddress: valAddress,
+		Address: valAddress,
 		Amount:           sdk.NewCoin("test", math.NewInt(1)),
 	})
 	require.NoError(t, err)

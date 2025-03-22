@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/core/codec"
 	storetypes "cosmossdk.io/core/store"
 	errorsmod "cosmossdk.io/errors"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/group/errors"
 	"cosmossdk.io/x/group/internal/orm/prefixstore"
 

@@ -165,7 +165,7 @@ func RandomRequestFinalizeBlock(
 				Address: SumTruncated(mVal.val.PubKeyBytes),
 				Power:   mVal.val.Power,
 			},
-			BlockIdFlag: commitStatus,
+			BlockIDFlag: commitStatus,
 		}
 	}
 

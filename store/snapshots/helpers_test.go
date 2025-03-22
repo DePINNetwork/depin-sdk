@@ -17,9 +17,9 @@ import (
 	coretesting "cosmossdk.io/core/testing"
 	errorsmod "cosmossdk.io/errors"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/snapshots"
-	snapshottypes "cosmossdk.io/store/snapshots/types"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/snapshots"
+	snapshottypes "github.com/depinnetwork/depin-sdk/store/snapshots/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func checksums(slice [][]byte) [][]byte {

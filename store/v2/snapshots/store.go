@@ -18,8 +18,8 @@ import (
 
 	corestore "cosmossdk.io/core/store"
 	"cosmossdk.io/errors/v2"
-	storeerrors "cosmossdk.io/store/v2/errors"
-	"cosmossdk.io/store/v2/snapshots/types"
+	storeerrors "github.com/depinnetwork/depin-sdk/store/v2/errors"
+	"github.com/depinnetwork/depin-sdk/store/v2/snapshots/types"
 )
 
 const (

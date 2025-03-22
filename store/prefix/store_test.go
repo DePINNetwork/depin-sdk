@@ -9,11 +9,11 @@ import (
 
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/gaskv"
-	"cosmossdk.io/store/iavl"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
+	"github.com/depinnetwork/depin-sdk/store/gaskv"
+	"github.com/depinnetwork/depin-sdk/store/iavl"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // copied from iavl/store_test.go

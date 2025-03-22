@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 
 	"cosmossdk.io/core/store"
-	storev2 "cosmossdk.io/store/v2"
+	storev2 "github.com/depinnetwork/depin-sdk/store/v2"
 
 	"github.com/depinnetwork/depin-sdk/types/kv"
 	"github.com/depinnetwork/depin-sdk/types/simulation"

@@ -11,7 +11,7 @@ import (
 	corecontext "cosmossdk.io/core/context"
 	coregas "cosmossdk.io/core/gas"
 	coreheader "cosmossdk.io/core/header"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	stakingtypes "cosmossdk.io/x/staking/types"
 
 	codectestutil "github.com/depinnetwork/depin-sdk/codec/testutil"

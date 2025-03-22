@@ -16,7 +16,7 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 type PluginTestSuite struct {

@@ -7,12 +7,12 @@ import (
 	"sync"
 
 	"cosmossdk.io/math"
-	"cosmossdk.io/store/cachekv/internal"
-	dbm "cosmossdk.io/store/db"
-	"cosmossdk.io/store/internal/conv"
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/tracekv"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachekv/internal"
+	dbm "github.com/depinnetwork/depin-sdk/store/db"
+	"github.com/depinnetwork/depin-sdk/store/internal/conv"
+	"github.com/depinnetwork/depin-sdk/store/internal/kv"
+	"github.com/depinnetwork/depin-sdk/store/tracekv"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // cValue represents a cached value.

@@ -8,15 +8,15 @@ import (
 
 	"cosmossdk.io/core/log"
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/v2"
-	"cosmossdk.io/store/v2/commitment"
-	"cosmossdk.io/store/v2/commitment/iavl"
-	"cosmossdk.io/store/v2/commitment/iavlv2"
-	"cosmossdk.io/store/v2/commitment/mem"
-	"cosmossdk.io/store/v2/db"
-	"cosmossdk.io/store/v2/internal"
-	"cosmossdk.io/store/v2/metrics"
-	"cosmossdk.io/store/v2/pruning"
+	"github.com/depinnetwork/depin-sdk/store/v2"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment/iavl"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment/iavlv2"
+	"github.com/depinnetwork/depin-sdk/store/v2/commitment/mem"
+	"github.com/depinnetwork/depin-sdk/store/v2/db"
+	"github.com/depinnetwork/depin-sdk/store/v2/internal"
+	"github.com/depinnetwork/depin-sdk/store/v2/metrics"
+	"github.com/depinnetwork/depin-sdk/store/v2/pruning"
 )
 
 type (

@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/status"
 
 	corestore "cosmossdk.io/core/store"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // DefaultPage is the default `page` number for queries.

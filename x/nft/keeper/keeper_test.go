@@ -9,7 +9,7 @@ import (
 
 	"cosmossdk.io/core/header"
 	"cosmossdk.io/log"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 	"cosmossdk.io/x/nft"
 	"cosmossdk.io/x/nft/keeper"
 	"cosmossdk.io/x/nft/module"

@@ -10,7 +10,7 @@ import (
 	"cosmossdk.io/core/appmodule"
 	"cosmossdk.io/core/genesis"
 	"cosmossdk.io/core/registry"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/client"
 	sdk "github.com/depinnetwork/depin-sdk/types"

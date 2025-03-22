@@ -9,11 +9,11 @@ import (
 	"github.com/stretchr/testify/require"
 
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/internal/kv"
-	"cosmossdk.io/store/prefix"
-	"cosmossdk.io/store/tracekv"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
+	"github.com/depinnetwork/depin-sdk/store/internal/kv"
+	"github.com/depinnetwork/depin-sdk/store/prefix"
+	"github.com/depinnetwork/depin-sdk/store/tracekv"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func bz(s string) []byte { return []byte(s) }

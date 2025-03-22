@@ -1,6 +1,7 @@
 package client
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	"context"
 	"errors"
 	"fmt"
@@ -11,7 +12,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"cosmossdk.io/store/rootmulti"
+	"github.com/depinnetwork/depin-sdk/store/rootmulti"
 
 	sdk "github.com/depinnetwork/depin-sdk/types"
 	sdkerrors "github.com/depinnetwork/depin-sdk/types/errors"

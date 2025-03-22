@@ -53,7 +53,7 @@ var deeplyNestedRepeatedSigner = &testpb.DeeplyNestedRepeatedSigner{
 func TestGetGetSignersFnConcurrent(t *testing.T) {
 	ctx, err := NewContext(Options{
 		AddressCodec:          dummyAddressCodec{},
-		ValidatorAddressCodec: dummyValidatorAddressCodec{},
+		ValidatorAddressCodec: dumm.AddressCodec{},
 	})
 	require.NoError(t, err)
 
@@ -68,7 +68,7 @@ func TestGetGetSignersFnConcurrent(t *testing.T) {
 func TestGetSigners(t *testing.T) {
 	ctx, err := NewContext(Options{
 		AddressCodec:          dummyAddressCodec{},
-		ValidatorAddressCodec: dummyValidatorAddressCodec{},
+		ValidatorAddressCodec: dumm.AddressCodec{},
 	})
 	require.NoError(t, err)
 	tests := []struct {
@@ -215,7 +215,7 @@ func TestGetSigners(t *testing.T) {
 func TestMaxRecursionDepth(t *testing.T) {
 	ctx, err := NewContext(Options{
 		AddressCodec:          dummyAddressCodec{},
-		ValidatorAddressCodec: dummyValidatorAddressCodec{},
+		ValidatorAddressCodec: dumm.AddressCodec{},
 		MaxRecursionDepth:     1,
 	})
 	require.NoError(t, err)
@@ -225,7 +225,7 @@ func TestMaxRecursionDepth(t *testing.T) {
 
 	ctx, err = NewContext(Options{
 		AddressCodec:          dummyAddressCodec{},
-		ValidatorAddressCodec: dummyValidatorAddressCodec{},
+		ValidatorAddressCodec: dumm.AddressCodec{},
 		MaxRecursionDepth:     5,
 	})
 	require.NoError(t, err)
@@ -238,7 +238,7 @@ func TestDefineCustomGetSigners(t *testing.T) {
 	signers := [][]byte{[]byte("foo")}
 	options := Options{
 		AddressCodec:          dummyAddressCodec{},
-		ValidatorAddressCodec: dummyValidatorAddressCodec{},
+		ValidatorAddressCodec: dumm.AddressCodec{},
 	}
 	context, err := NewContext(options)
 	require.NoError(t, err)
@@ -279,12 +279,12 @@ func (d dummyAddressCodec) BytesToString(bz []byte) (string, error) {
 	return hex.EncodeToString(bz), nil
 }
 
-type dummyValidatorAddressCodec struct{}
+type dumm.AddressCodec struct{}
 
-func (d dummyValidatorAddressCodec) StringToBytes(text string) ([]byte, error) {
+func (d dumm.AddressCodec) StringToBytes(text string) ([]byte, error) {
 	return hex.DecodeString(strings.TrimPrefix(text, "val"))
 }
 
-func (d dummyValidatorAddressCodec) BytesToString(bz []byte) (string, error) {
+func (d dumm.AddressCodec) BytesToString(bz []byte) (string, error) {
 	return "val" + hex.EncodeToString(bz), nil
 }

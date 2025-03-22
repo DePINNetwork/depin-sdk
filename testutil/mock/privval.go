@@ -1,6 +1,7 @@
 package mock
 
 import (
+	"github.com/depinnetwork/depin-sdk/types/adapters"
 	cmtproto "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	"github.com/depinnetwork/por-consensus/crypto"
 	cmttypes "github.com/depinnetwork/por-consensus/types"

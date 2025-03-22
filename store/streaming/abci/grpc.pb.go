@@ -5,7 +5,7 @@ package abci
 
 import (
 	context "context"
-	types "cosmossdk.io/store/types"
+	types "github.com/depinnetwork/depin-sdk/store/types"
 	fmt "fmt"
 	v1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	grpc1 "github.com/cosmos/gogoproto/grpc"

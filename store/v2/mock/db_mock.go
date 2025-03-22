@@ -13,7 +13,7 @@ import (
 	reflect "reflect"
 
 	store "cosmossdk.io/core/store"
-	proof "cosmossdk.io/store/v2/proof"
+	proof "github.com/depinnetwork/depin-sdk/store/v2/proof"
 	gomock "go.uber.org/mock/gomock"
 )
 

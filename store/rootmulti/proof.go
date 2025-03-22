@@ -3,7 +3,7 @@ package rootmulti
 import (
 	"github.com/depinnetwork/por-consensus/crypto/merkle"
 
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
 
 // RequireProof returns whether proof is required for the subpath.

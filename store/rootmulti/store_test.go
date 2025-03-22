@@ -13,12 +13,12 @@ import (
 	coretesting "cosmossdk.io/core/testing"
 	"cosmossdk.io/errors"
 	"cosmossdk.io/log"
-	"cosmossdk.io/store/cachemulti"
-	"cosmossdk.io/store/iavl"
-	sdkmaps "cosmossdk.io/store/internal/maps"
-	"cosmossdk.io/store/metrics"
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachemulti"
+	"github.com/depinnetwork/depin-sdk/store/iavl"
+	sdkmaps "github.com/depinnetwork/depin-sdk/store/internal/maps"
+	"github.com/depinnetwork/depin-sdk/store/metrics"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func TestStoreType(t *testing.T) {

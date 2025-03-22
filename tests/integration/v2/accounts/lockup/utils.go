@@ -231,7 +231,7 @@ func (s *IntegrationTestSuite) queryLockupAccInfo(ctx context.Context, ak accoun
 
 func (s *IntegrationTestSuite) queryUnbondingEntries(ctx context.Context, ak accounts.Keeper, accAddr []byte, valAddr string) *types.QueryUnbondingEntriesResponse {
 	req := &types.QueryUnbondingEntriesRequest{
-		ValidatorAddress: valAddr,
+		Address: valAddr,
 	}
 	resp, err := s.queryAcc(ctx, req, ak, accAddr)
 	require.NoError(s.T(), err)

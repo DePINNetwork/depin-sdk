@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	corestore "cosmossdk.io/core/store"
-	storetypes "cosmossdk.io/store/types"
+	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 
 	"github.com/depinnetwork/depin-sdk/runtime"
 	"github.com/depinnetwork/depin-sdk/types/kv"

@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	pruningtypes "cosmossdk.io/store/pruning/types"
-	"cosmossdk.io/store/transient"
+	pruningtypes "github.com/depinnetwork/depin-sdk/store/pruning/types"
+	"github.com/depinnetwork/depin-sdk/store/transient"
 )
 
 var k, v = []byte("hello"), []byte("world")

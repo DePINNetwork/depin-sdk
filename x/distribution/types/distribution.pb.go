@@ -1554,10 +1554,10 @@ func (m *DelegationDelegatorReward) MarshalToSizedBuffer(dAtA []byte) (int, erro
 			dAtA[i] = 0x12
 		}
 	}
-	if len(m.ValidatorAddress) > 0 {
-		i -= len(m.ValidatorAddress)
-		copy(dAtA[i:], m.ValidatorAddress)
-		i = encodeVarintDistribution(dAtA, i, uint64(len(m.ValidatorAddress)))
+	if len(m.Address) > 0 {
+		i -= len(m.Address)
+		copy(dAtA[i:], m.Address)
+		i = encodeVarintDistribution(dAtA, i, uint64(len(m.Address)))
 		i--
 		dAtA[i] = 0xa
 	}
@@ -1817,7 +1817,7 @@ func (m *DelegationDelegatorReward) Size() (n int) {
 	}
 	var l int
 	_ = l
-	l = len(m.ValidatorAddress)
+	l = len(m.Address)
 	if l > 0 {
 		n += 1 + l + sovDistribution(uint64(l))
 	}
@@ -3077,7 +3077,7 @@ func (m *DelegationDelegatorReward) Unmarshal(dAtA []byte) error {
 			if postIndex > l {
 				return io.ErrUnexpectedEOF
 			}
-			m.ValidatorAddress = string(dAtA[iNdEx:postIndex])
+			m.Address = string(dAtA[iNdEx:postIndex])
 			iNdEx = postIndex
 		case 2:
 			if wireType != 2 {

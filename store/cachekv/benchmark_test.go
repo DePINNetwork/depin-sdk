@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/require"
 
 	coretesting "cosmossdk.io/core/testing"
-	"cosmossdk.io/store/cachekv"
-	"cosmossdk.io/store/dbadapter"
-	"cosmossdk.io/store/types"
+	"github.com/depinnetwork/depin-sdk/store/cachekv"
+	"github.com/depinnetwork/depin-sdk/store/dbadapter"
+	"github.com/depinnetwork/depin-sdk/store/types"
 )
 
 func DoBenchmarkDeepCacheStack(b *testing.B, depth int) {
