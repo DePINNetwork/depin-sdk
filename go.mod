@@ -19,6 +19,7 @@ require (
 	filippo.io/edwards25519 v1.1.0
 	github.com/99designs/keyring v1.2.2
 	github.com/bgentry/speakeasy v0.2.0
+	github.com/cometbft/cometbft/api v1.0.0
 	github.com/cosmos/cosmos-db v1.1.1
 	github.com/cosmos/cosmos-proto v1.0.0-beta.5
 	github.com/cosmos/gogoproto v1.7.0
@@ -26,7 +27,7 @@ require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.4.0
 	github.com/depinnetwork/bip39 v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/btcutil v0.0.0-00010101000000-000000000000
-	github.com/depinnetwork/por-consensus v0.0.0-20250321114042-ad1fc897e07e-20250321113431-d202622238c6-20250321112806-4b08bd2e2b2b-20250321112100-653b8b4dd1bc-20250321110407-c5e8a59ea541-20250321110407-c5e8a59ea541
+	github.com/depinnetwork/por-consensus v0.0.0-20250322020112-8b685c2363ae-20250321114042-ad1fc897e07e-20250321113431-d202622238c6-20250321112806-4b08bd2e2b2b-20250321112100-653b8b4dd1bc-20250321110407-c5e8a59ea541-20250321110407-c5e8a59ea541
 	github.com/depinnetwork/por-consensus/api/cometbft/abci v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/por-consensus/api/cometbft/crypto v0.0.0-00010101000000-000000000000
 	github.com/depinnetwork/por-consensus/api/cometbft/p2p v0.0.0-00010101000000-000000000000
@@ -84,7 +85,6 @@ require (
 	github.com/cockroachdb/redact v1.1.5 // indirect
 	github.com/cockroachdb/tokenbucket v0.0.0-20230807174530-cc333fc44b06 // indirect
 	github.com/cometbft/cometbft v1.0.1 // indirect
-	github.com/cometbft/cometbft/api v1.0.0 // indirect
 	github.com/cosmos/iavl v1.3.4 // indirect
 	github.com/cosmos/ics23/go v0.11.0 // indirect
 	github.com/danieljoos/wincred v1.2.1 // indirect
