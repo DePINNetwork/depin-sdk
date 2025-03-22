@@ -1,7 +1,7 @@
 package snapshots
 
 import (
-	cmtabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
+	cmtabciv1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
 	depinabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 )
 
