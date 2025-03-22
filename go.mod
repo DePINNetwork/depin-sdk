@@ -43,7 +43,7 @@ require (
 	github.com/huandu/skiplist v1.2.1
 	github.com/magiconair/properties v1.8.9
 	github.com/mattn/go-isatty v0.0.20
-	github.com/mdp/qrterminal/v3 v3.2.0
+	github.com/mdp/qrterminal/v3 v3.2.1
 	github.com/muesli/termenv v0.15.2
 	github.com/prometheus/client_golang v1.21.1
 	github.com/prometheus/common v0.62.0
@@ -123,7 +123,7 @@ require (
 	github.com/linxGnu/grocksdb v1.9.7 // indirect
 	github.com/lmittmann/tint v1.0.7 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
-	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-runewidth v0.0.15 // indirect
 	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mtibben/percent v0.2.1 // indirect
