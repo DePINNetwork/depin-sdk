@@ -13,7 +13,7 @@ func Sha256(bz []byte) []byte {
 	return crypto.Sha256(bz)
 }
 
-// Other crypto functions as needed
+// RipemdHash is a compatibility function that redirects to the appropriate implementation
 func RipemdHash(bz []byte) []byte {
 	if len(bz) == 0 {
 		return nil
@@ -21,6 +21,7 @@ func RipemdHash(bz []byte) []byte {
 	return crypto.Ripemd160(bz)
 }
 
+// Sha512 is a compatibility function that redirects to the appropriate implementation
 func Sha512(bz []byte) []byte {
 	if len(bz) == 0 {
 		return nil
