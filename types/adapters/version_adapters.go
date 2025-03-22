@@ -5,7 +5,7 @@ import (
 	abciv2 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v2"
 	typesv1 "github.com/depinnetwork/por-consensus/api/cometbft/types/v1"
 	typesv2 "github.com/depinnetwork/por-consensus/api/cometbft/types/v2"
-	cmtabciv1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	cmtabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	abcitypes "github.com/depinnetwork/por-consensus/abci/types"
 )
 
