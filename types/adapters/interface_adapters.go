@@ -3,7 +3,7 @@ package adapters
 import (
 	"context"
 	
-	cmtabciv1 "github.com/cometbft/cometbft/api/cometbft/abci/v1"
+	cmtabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	depinabciv1 "github.com/depinnetwork/por-consensus/api/cometbft/abci/v1"
 	storetypes "github.com/depinnetwork/depin-sdk/store/types"
 )
