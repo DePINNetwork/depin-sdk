@@ -26,14 +26,14 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger"
-	"github.com/algorand/go-algorand/ledger/encoded"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/rpcs"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger"
+	"github.com/DePINNetwork/depin-sdk/ledger/encoded"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 var errNoLedgerForRound = errors.New("no ledger available for given round")

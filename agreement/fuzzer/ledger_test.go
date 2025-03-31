@@ -21,14 +21,14 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/algorand/go-algorand/agreement"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/data/committee"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/agreement"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/data/committee"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 const randseed = 0

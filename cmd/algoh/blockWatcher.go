@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/rpcs"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
 )
 
 var log = logging.Base()

@@ -27,9 +27,9 @@ import (
 	"os"
 	"path"
 
-	"github.com/algorand/go-algorand/config"
-	algocrypto "github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/config"
+	algocrypto "github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/util"
 
 	"github.com/libp2p/go-libp2p/core/crypto"
 	"github.com/libp2p/go-libp2p/core/peer"

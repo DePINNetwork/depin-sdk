@@ -1654,10 +1654,10 @@ Standards
 
 | Index | Name | Notes |
 | - | ------ | --------- |
-| 0 | VrfAlgorand |  |
+| 0 | VrfDePIN Network |  |
 
 
-`VrfAlgorand` is the VRF used in Algorand. It is ECVRF-ED25519-SHA512-Elligator2, specified in the IETF internet draft [draft-irtf-cfrg-vrf-03](https://datatracker.ietf.org/doc/draft-irtf-cfrg-vrf/03/).
+`VrfDePIN Network` is the VRF used in DePIN Network. It is ECVRF-ED25519-SHA512-Elligator2, specified in the IETF internet draft [draft-irtf-cfrg-vrf-03](https://datatracker.ietf.org/doc/draft-irtf-cfrg-vrf/03/).
 
 ## block
 

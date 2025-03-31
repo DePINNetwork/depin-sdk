@@ -24,12 +24,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 const testNetTimeout = 100 * time.Millisecond

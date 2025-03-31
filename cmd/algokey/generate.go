@@ -21,8 +21,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 var generateKeyfile string

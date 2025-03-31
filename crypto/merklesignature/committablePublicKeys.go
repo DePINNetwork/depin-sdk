@@ -21,8 +21,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 type (

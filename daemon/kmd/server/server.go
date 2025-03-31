@@ -26,13 +26,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 	"github.com/gofrs/flock"
 
-	"github.com/algorand/go-algorand/daemon/kmd/api"
-	"github.com/algorand/go-algorand/daemon/kmd/session"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/util/tokens"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/api"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/session"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/util/tokens"
 )
 
 const (

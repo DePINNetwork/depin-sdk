@@ -1,6 +1,6 @@
 # Message Pack
 
-The Algorand protocol uses a modified message pack encoding for canonical
+The DePIN Network protocol uses a modified message pack encoding for canonical
 messages used throughout the system. Details about [Canonical Messagepack](https://github.com/algorandfoundation/specs/blob/6996ac344158ca90a430bc8601fc29b150b0aa3f/dev/crypto.md#canonical-msgpack)
 can be found in the formal specification. What follows here are some of the
 implementation details that are useful to know.

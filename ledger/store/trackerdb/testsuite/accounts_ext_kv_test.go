@@ -19,12 +19,12 @@ package testsuite
 import (
 	"context"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 	"github.com/stretchr/testify/require"
 )
 

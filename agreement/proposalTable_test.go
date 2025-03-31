@@ -20,9 +20,9 @@ import (
 	"encoding/base64"
 	"testing"
 
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 

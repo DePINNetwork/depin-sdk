@@ -26,10 +26,10 @@ import (
 	"hash"
 	"math/big"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/crypto/secp256k1"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-sumhash"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto/secp256k1"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/go-sumhash"
 	"golang.org/x/crypto/sha3"
 
 	bls12_381mimc "github.com/consensys/gnark-crypto/ecc/bls12-381/fr/mimc"

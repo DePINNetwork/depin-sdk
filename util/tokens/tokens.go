@@ -22,7 +22,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 const minimumAPITokenLength = 64

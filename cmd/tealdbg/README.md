@@ -1,6 +1,6 @@
-# Algorand TEAL Debugger
+# DePIN Network TEAL Debugger
 
-- [Algorand TEAL Debugger](#algorand-teal-debugger)
+- [DePIN Network TEAL Debugger](#algorand-teal-debugger)
   - [Quick Start](#quick-start)
   - [Features Overview](#features-overview)
     - [Local vs Remote Debugging](#local-vs-remote-debugging)

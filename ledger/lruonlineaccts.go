@@ -17,10 +17,10 @@
 package ledger
 
 import (
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 // lruAccounts provides a storage class for the most recently used accounts data.

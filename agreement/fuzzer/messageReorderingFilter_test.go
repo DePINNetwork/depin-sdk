@@ -23,9 +23,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 type NodeShuffleConfig struct {

@@ -20,9 +20,9 @@ import (
 	"sort"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto"
 )
 
 //msgp:ignore pmStage

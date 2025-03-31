@@ -21,9 +21,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/algorand/go-algorand/network/phonebook"
-	"github.com/algorand/go-algorand/tools/network/dnssec"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/network/phonebook"
+	"github.com/DePINNetwork/depin-sdk/tools/network/dnssec"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 type netDialer interface {

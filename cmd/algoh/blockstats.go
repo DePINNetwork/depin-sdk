@@ -19,8 +19,8 @@ package main
 import (
 	"time"
 
-	"github.com/algorand/go-algorand/logging/telemetryspec"
-	"github.com/algorand/go-algorand/rpcs"
+	"github.com/DePINNetwork/depin-sdk/logging/telemetryspec"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
 )
 
 const downtimeLimit time.Duration = 5 * time.Minute

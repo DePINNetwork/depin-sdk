@@ -23,8 +23,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/go-codec/codec"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/go-codec/codec"
 	"github.com/stretchr/testify/require"
 )
 

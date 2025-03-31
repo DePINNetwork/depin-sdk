@@ -27,12 +27,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/logging/telemetryspec"
-	"github.com/algorand/go-algorand/network/addr"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/logging/telemetryspec"
+	"github.com/DePINNetwork/depin-sdk/network/addr"
 )
 
 const (

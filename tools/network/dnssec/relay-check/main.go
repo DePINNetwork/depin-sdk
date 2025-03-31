@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/tools/network/dnssec"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/tools/network/dnssec"
 )
 
 func main() {

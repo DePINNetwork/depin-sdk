@@ -21,9 +21,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/crypto/merklesignature"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto/merklesignature"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func TestVerifyRevelForEachPosition(t *testing.T) {

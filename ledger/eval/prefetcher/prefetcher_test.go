@@ -23,15 +23,15 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/ledger/eval/prefetcher"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/ledger/eval/prefetcher"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func makeAddressPtr(seed int) (o *basics.Address) {

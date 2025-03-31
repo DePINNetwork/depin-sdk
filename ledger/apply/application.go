@@ -19,10 +19,10 @@ package apply
 import (
 	"fmt"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/data/transactions/logic"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
 )
 
 // getAppParams fetches the creator address and basics.AppParams for the app index,

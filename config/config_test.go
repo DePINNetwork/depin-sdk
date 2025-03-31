@@ -30,9 +30,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 var defaultConfig = Local{
@@ -359,7 +359,7 @@ func TestConsensusUpgrades(t *testing.T) {
 func checkConsensusVersionName(a *require.Assertions, name string) {
 	// ensure versions come from official specs repo
 	prefix1 := "https://github.com/algorandfoundation/specs/tree/"
-	prefix2 := "https://github.com/algorand/spec/tree/"
+	prefix2 := "https://github.com/DePINNetwork/spec/tree/"
 
 	whitelist := map[string]bool{"v7": true, "v8": true, "v9": true, "v10": true, "v11": true, "v12": true}
 	if !whitelist[name] {

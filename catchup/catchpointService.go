@@ -23,17 +23,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/agreement"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/ledger"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/stateproof"
+	"github.com/DePINNetwork/depin-sdk/agreement"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/ledger"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/stateproof"
 )
 
 const (

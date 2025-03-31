@@ -23,8 +23,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/algorand/go-codec/codec"
-	"github.com/algorand/msgp/msgp"
+	"github.com/DePINNetwork/go-codec/codec"
+	"github.com/DePINNetwork/msgp/msgp"
 )
 
 // ErrInvalidObject is used to state that an object decoding has failed because it's invalid.

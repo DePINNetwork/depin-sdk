@@ -30,14 +30,14 @@ import (
 	"github.com/spf13/cobra/doc"
 	"golang.org/x/crypto/ssh/terminal"
 
-	"github.com/algorand/go-algorand/cmd/util/datadir"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/daemon/algod/api/spec/common"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/libgoal"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/cmd/util/datadir"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/spec/common"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 var log = logging.Base()
@@ -99,7 +99,7 @@ func init() {
 }
 
 var rootCmd = &cobra.Command{
-	Use:   "goal",
+	Use:   "depin",
 	Short: "CLI for interacting with Algorand",
 	Long:  `GOAL is the CLI for interacting Algorand software instance. The binary 'goal' is installed alongside the algod binary and is considered an integral part of the complete installation. The binaries should be used in tandem - you should not try to use a version of goal with a different version of algod.`,
 	Args:  validateNoPosArgsFn,
@@ -270,7 +270,7 @@ func resolveKmdDataDir(dataDir string) string {
 	if err != nil {
 		reportErrorf("could not read genesis.json: %s", err)
 	}
-	return filepath.Join(cu.HomeDir, ".algorand", genesis.ID(), libgoal.DefaultKMDDataDir)
+	return filepath.Join(cu.HomeDir, ".depin", genesis.ID(), libgoal.DefaultKMDDataDir)
 }
 
 func ensureCacheDir(dataDir string) string {

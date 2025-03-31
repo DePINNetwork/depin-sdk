@@ -21,8 +21,8 @@ import (
 	"maps"
 	"slices"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // EvalDelta stores StateDeltas for an application's global key/value store, as

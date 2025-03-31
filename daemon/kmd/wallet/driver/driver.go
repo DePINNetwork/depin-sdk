@@ -19,10 +19,10 @@ package driver
 import (
 	"fmt"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/daemon/kmd/config"
-	"github.com/algorand/go-algorand/daemon/kmd/wallet"
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/wallet"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 var walletDrivers = map[string]Driver{

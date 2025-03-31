@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // An event represents the communication of an event to a state machine.

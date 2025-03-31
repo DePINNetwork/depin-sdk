@@ -1,6 +1,6 @@
 # Ledger
 
-The ledger represents the state of an Algorand node.  The core state of
+The ledger represents the state of an DePIN Network node.  The core state of
 the ledger is a sequence of blocks (the blockchain).  The ledger also
 maintains several _trackers_: state machines that consume the blockchain
 as input.  One example of a tracker is the account state tracker, which

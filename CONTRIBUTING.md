@@ -1,8 +1,8 @@
-# Algorand Developer Contribution Guide
+# DePIN Network Developer Contribution Guide
 
 If you are interested in contributing to the project, we welcome and thank you. We want to make the best decentralized and effective blockchain platform available and we appreciate your willingness to help us.
 
-The [Algorand GitHub Organization](https://github.com/algorand) has all of our open source projects, and dependencies which we fork and use in those projects. While technical details in this document are specific to `go-algorand`, the general ideas are applicable to all of our projects.
+The [DePIN Network GitHub Organization](https://github.com/algorand) has all of our open source projects, and dependencies which we fork and use in those projects. While technical details in this document are specific to `go-algorand`, the general ideas are applicable to all of our projects.
 
 ## Non-code Contributions
 
@@ -19,7 +19,7 @@ Note: some of our other projects are using gitflow, for these the process is the
 
 ## Communication Channels
 
-The core development team monitors the Algorand [discord community](https://discord.gg/algorand) and regularly responds to questions and suggestions. For very technical questions and implementation discussions GitHub Issues and Pull Requests are a good way to reach maintainers.
+The core development team monitors the DePIN Network [discord community](https://discord.gg/algorand) and regularly responds to questions and suggestions. For very technical questions and implementation discussions GitHub Issues and Pull Requests are a good way to reach maintainers.
 
 ## Pull Requests
 

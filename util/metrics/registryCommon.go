@@ -20,7 +20,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // Metric represent any collectable metric

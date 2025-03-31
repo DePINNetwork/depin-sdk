@@ -20,7 +20,7 @@ import (
 	"crypto/sha256"
 	"encoding/json"
 
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 type MessageRegossipFilter struct {

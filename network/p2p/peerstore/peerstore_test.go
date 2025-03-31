@@ -28,8 +28,8 @@ import (
 	libp2p "github.com/libp2p/go-libp2p/core/peerstore"
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/network/phonebook"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/network/phonebook"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func TestPeerstore(t *testing.T) {

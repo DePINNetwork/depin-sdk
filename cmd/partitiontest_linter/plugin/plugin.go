@@ -17,7 +17,7 @@
 package main
 
 import (
-	linter "github.com/algorand/go-algorand/cmd/partitiontest_linter"
+	linter "github.com/DePINNetwork/depin-sdk/cmd/partitiontest_linter"
 	"golang.org/x/tools/go/analysis"
 	"golang.org/x/tools/go/analysis/singlechecker"
 )

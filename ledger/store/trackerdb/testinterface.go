@@ -20,10 +20,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // testinterface.go contains interface extensions specific to testing

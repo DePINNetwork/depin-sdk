@@ -23,9 +23,9 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/algorand/go-algorand/components/mocks"
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/network/p2p"
+	"github.com/DePINNetwork/depin-sdk/components/mocks"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/network/p2p"
 	"github.com/libp2p/go-libp2p"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/peer"

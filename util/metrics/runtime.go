@@ -21,7 +21,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // defaultRuntimeMetrics contains all the Go runtime metrics, except histograms.

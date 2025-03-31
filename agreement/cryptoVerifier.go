@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/util/metrics"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/util/metrics"
 )
 
 var voteVerifierOutFullCounter = metrics.MakeCounter(

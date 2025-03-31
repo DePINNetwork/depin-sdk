@@ -19,11 +19,11 @@ package main
 import (
 	"testing"
 
-	"github.com/algorand/go-algorand/config"
+	"github.com/DePINNetwork/depin-sdk/config"
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func Test_getConfigForArg(t *testing.T) {

@@ -31,9 +31,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/data/transactions/logic"
-	"github.com/algorand/go-algorand/libgoal"
-	"github.com/algorand/go-algorand/shared/pingpong"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
+	"github.com/DePINNetwork/depin-sdk/shared/pingpong"
 )
 
 var dataDir string

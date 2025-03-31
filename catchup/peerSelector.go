@@ -23,10 +23,10 @@ import (
 	"sort"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/network"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/network"
 )
 
 const (

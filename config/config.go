@@ -25,8 +25,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 // Devnet identifies the 'development network' use for development and not generally accessible publicly
@@ -285,7 +285,7 @@ func GetDefaultConfigFilePath() (string, error) {
 	if currentUser.HomeDir == "" {
 		return "", errors.New("GetDefaultConfigFilePath fail - current user has no home directory")
 	}
-	return filepath.Join(currentUser.HomeDir, ".algorand"), nil
+	return filepath.Join(currentUser.HomeDir, ".depin"), nil
 }
 
 const (

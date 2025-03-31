@@ -22,10 +22,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/daemon/algod/api/client"
-	"github.com/algorand/go-algorand/test/framework/fixtures"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/client"
+	"github.com/DePINNetwork/depin-sdk/test/framework/fixtures"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 // Overview of this test:

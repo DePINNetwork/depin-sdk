@@ -22,8 +22,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/libgoal"
-	"github.com/algorand/go-algorand/test/framework/fixtures"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
+	"github.com/DePINNetwork/depin-sdk/test/framework/fixtures"
 )
 
 func BenchmarkLibGoalPerf(b *testing.B) {
@@ -37,7 +37,7 @@ func BenchmarkLibGoalPerf(b *testing.B) {
 	a := require.New(fixtures.SynchronizedTest(b))
 	a.NoError(err)
 
-	b.Run("algod", func(b *testing.B) {
+	b.Run("depind", func(b *testing.B) {
 		for i := 0; i < b.N; i++ {
 			_, err := c.AlgodVersions()
 			a.NoError(err)

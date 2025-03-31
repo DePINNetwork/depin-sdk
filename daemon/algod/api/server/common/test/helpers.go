@@ -21,10 +21,10 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/node"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/node"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 var cannedStatusReportCaughtUpAndReadyGolden = node.StatusReport{

@@ -19,8 +19,8 @@ package crypto
 import (
 	"testing"
 
-	"github.com/algorand/falcon"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/falcon"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 

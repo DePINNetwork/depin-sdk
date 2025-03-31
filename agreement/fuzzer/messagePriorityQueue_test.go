@@ -18,7 +18,7 @@ package fuzzer
 
 import (
 	"container/heap"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // PriorityQueue implements heap.Interface and holds QueueItem which contains an AlgoMessage.

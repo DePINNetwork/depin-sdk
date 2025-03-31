@@ -24,17 +24,17 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/netdeploy"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/netdeploy"
 
-	"github.com/algorand/go-algorand/daemon/algod/api/client"
-	v2 "github.com/algorand/go-algorand/daemon/algod/api/server/v2"
-	"github.com/algorand/go-algorand/daemon/algod/api/server/v2/generated/model"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/client"
+	v2 "github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2/generated/model"
 
-	"github.com/algorand/go-algorand/libgoal"
-	"github.com/algorand/go-algorand/nodecontrol"
-	"github.com/algorand/go-algorand/util/tokens"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
+	"github.com/DePINNetwork/depin-sdk/nodecontrol"
+	"github.com/DePINNetwork/depin-sdk/util/tokens"
 )
 
 // RestClientFixture is a test fixture for tests requiring a running node with a REST client

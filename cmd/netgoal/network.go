@@ -25,9 +25,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/netdeploy/remote"
-	"github.com/algorand/go-algorand/util"
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote"
+	"github.com/DePINNetwork/depin-sdk/util"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 var networkRootDir string

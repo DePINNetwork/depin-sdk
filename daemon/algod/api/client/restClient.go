@@ -30,18 +30,18 @@ import (
 
 	"github.com/google/go-querystring/query"
 
-	"github.com/algorand/go-algorand/crypto"
-	v2 "github.com/algorand/go-algorand/daemon/algod/api/server/v2"
-	"github.com/algorand/go-algorand/daemon/algod/api/server/v2/generated/model"
-	"github.com/algorand/go-algorand/daemon/algod/api/spec/common"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/data/transactions/logic"
-	"github.com/algorand/go-algorand/ledger/eval"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/rpcs"
-	"github.com/algorand/go-algorand/test/e2e-go/globals"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	v2 "github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2/generated/model"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/spec/common"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/ledger/eval"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
+	"github.com/DePINNetwork/depin-sdk/test/e2e-go/globals"
 )
 
 const (

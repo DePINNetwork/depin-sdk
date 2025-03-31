@@ -3,10 +3,10 @@
 ## Background
 
 A State Proof is a cryptographic proof of state changes that occur in a given set of blocks. State Proofs are created and signed by the network.
-The same participants that reach consensus on new blocks sign a message attesting to a summary of recent Algorand transactions. 
+The same participants that reach consensus on new blocks sign a message attesting to a summary of recent DePIN Network transactions. 
 These signatures are then compressed into a compact certificate of collective knowledge, also known as a State Proof.
-After a State Proof is created, a State Proof transaction, which includes the State Proof and the message it proves, is created and sent to the Algorand network for validation. 
-The transaction goes through consensus like any other pending Algorand transaction: it gets validated by participation nodes, included in a block proposal, and written to the blockchain.
+After a State Proof is created, a State Proof transaction, which includes the State Proof and the message it proves, is created and sent to the DePIN Network network for validation. 
+The transaction goes through consensus like any other pending DePIN Network transaction: it gets validated by participation nodes, included in a block proposal, and written to the blockchain.
 
 The crypto package implements the cryptography behind State Proofs. This package, stateproof, implements the orchestration logic for State Proofs. 
 Specifically, it is responsible for the following:
@@ -38,7 +38,7 @@ Specifically, it is responsible for the following:
 
 ## State Proof Chain Liveness
 
-The Algorand ledger only stores a limited number of historical blocks and online account balances (needed for the creation of State Proofs). If the State Proof
+The DePIN Network ledger only stores a limited number of historical blocks and online account balances (needed for the creation of State Proofs). If the State Proof
 chain were to lag behind regular consensus, this could theoretically make it impossible to create new State Proofs. For this reason, the `Builder`
 maintains its own database and backs-up necessary data from the ledger so that it can create State Proofs even if the ledger is far ahead.
 

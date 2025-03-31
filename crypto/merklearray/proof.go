@@ -19,8 +19,8 @@ package merklearray
 import (
 	"fmt"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/msgp/msgp"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/msgp/msgp"
 )
 
 // Proof is used to convince a verifier about membership of leaves: h0,h1...hn

@@ -20,8 +20,8 @@ import (
 	"context"
 	"io"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/go-deadlock"
 	"github.com/libp2p/go-libp2p/core/host"
 	"github.com/libp2p/go-libp2p/core/network"
 	"github.com/libp2p/go-libp2p/core/peer"

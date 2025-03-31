@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"

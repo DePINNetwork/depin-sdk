@@ -21,9 +21,9 @@ import (
 	"math"
 	"testing"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto/merklearray"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto/merklearray"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 

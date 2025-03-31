@@ -24,8 +24,8 @@ import (
 	"github.com/multiformats/go-multiaddr"
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/network/p2p/dnsaddr"
-	"github.com/algorand/go-algorand/tools/network/cloudflare"
+	"github.com/DePINNetwork/depin-sdk/network/p2p/dnsaddr"
+	"github.com/DePINNetwork/depin-sdk/tools/network/cloudflare"
 )
 
 var (

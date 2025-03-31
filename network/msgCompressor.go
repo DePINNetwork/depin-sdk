@@ -23,8 +23,8 @@ import (
 
 	"github.com/DataDog/zstd"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 var zstdCompressionMagic = [4]byte{0x28, 0xb5, 0x2f, 0xfd}

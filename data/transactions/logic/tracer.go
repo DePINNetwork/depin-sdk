@@ -17,9 +17,9 @@
 package logic
 
 import (
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
 )
 
 // EvalTracer functions are called by eval function during AVM program execution, if a tracer

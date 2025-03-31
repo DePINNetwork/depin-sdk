@@ -21,7 +21,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/algorand/go-algorand/util/execpool"
+	"github.com/DePINNetwork/depin-sdk/util/execpool"
 )
 
 type asyncVerifyVoteRequest struct {

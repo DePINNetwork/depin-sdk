@@ -17,8 +17,8 @@
 package logic
 
 import (
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // Program is byte code to be interpreted for validating transactions.

@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/algorand/go-algorand/libgoal"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 // GoalFixture is a fixture for tests against the goal CLI
@@ -38,7 +38,7 @@ var ErrAccountAlreadyTaken = fmt.Errorf("account name already taken")
 var ErrAccountNewCall = fmt.Errorf("account new failed")
 
 const (
-	goalCmd = "goal"
+	goalCmd = "depin"
 
 	accountCmd       = "account"
 	listCmd          = "list"

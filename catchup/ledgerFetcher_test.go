@@ -26,14 +26,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/components/mocks"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger"
-	"github.com/algorand/go-algorand/logging"
-	p2ptesting "github.com/algorand/go-algorand/network/p2p/testing"
-	"github.com/algorand/go-algorand/rpcs"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/components/mocks"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	p2ptesting "github.com/DePINNetwork/depin-sdk/network/p2p/testing"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 type dummyLedgerFetcherReporter struct {

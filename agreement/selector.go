@@ -19,10 +19,10 @@ package agreement
 import (
 	"fmt"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/committee"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/committee"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // A Selector is the input used to define proposers and members of voting

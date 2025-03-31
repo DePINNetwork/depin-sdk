@@ -27,15 +27,15 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
-	kmdconfig "github.com/algorand/go-algorand/daemon/kmd/config"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/gen"
-	"github.com/algorand/go-algorand/libgoal"
-	"github.com/algorand/go-algorand/netdeploy/remote"
-	"github.com/algorand/go-algorand/network/p2p"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	kmdconfig "github.com/DePINNetwork/depin-sdk/daemon/kmd/config"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/gen"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote"
+	"github.com/DePINNetwork/depin-sdk/network/p2p"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 // NetworkTemplate represents the template used for creating private named networks
@@ -76,7 +76,7 @@ func (t NetworkTemplate) createNodeDirectories(targetFolder string, binDir strin
 	genesisFile := filepath.Join(targetFolder, genesisFileName)
 
 	nodeDirs = make(map[string]string)
-	importKeysCmd := filepath.Join(binDir, "goal")
+	importKeysCmd := filepath.Join(binDir, "depin")
 
 	genesis, err := bookkeeping.LoadGenesisFromFile(filepath.Join(targetFolder, "genesis.json"))
 	if err != nil {

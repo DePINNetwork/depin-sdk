@@ -39,24 +39,24 @@ import (
 	"testing"
 	"time"
 
-	"github.com/algorand/go-algorand/internal/rapidgen"
-	"github.com/algorand/go-algorand/network/phonebook"
+	"github.com/DePINNetwork/depin-sdk/internal/rapidgen"
+	"github.com/DePINNetwork/depin-sdk/network/phonebook"
 	"pgregory.net/rapid"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-deadlock"
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/go-deadlock"
+	"github.com/DePINNetwork/websocket"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/logging/telemetryspec"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/go-algorand/util"
-	"github.com/algorand/go-algorand/util/metrics"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/logging/telemetryspec"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/util"
+	"github.com/DePINNetwork/depin-sdk/util/metrics"
 )
 
 const sendBufferLength = 1000

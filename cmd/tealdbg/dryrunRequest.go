@@ -19,11 +19,11 @@ package main
 import (
 	"log"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 
-	v2 "github.com/algorand/go-algorand/daemon/algod/api/server/v2"
-	"github.com/algorand/go-algorand/daemon/algod/api/server/v2/generated/model"
+	v2 "github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2/generated/model"
 )
 
 // ddrFromParams converts serialized DryrunRequest to v2.DryrunRequest

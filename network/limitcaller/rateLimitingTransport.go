@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 // ConnectionTimeStore is a subset of the phonebook that is used to store the connection times.

@@ -24,9 +24,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/util"
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/util"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 // Local holds the per-node-instance configuration settings for the protocol.

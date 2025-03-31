@@ -17,9 +17,9 @@
 package testsuite
 
 import (
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
-	ledgertesting "github.com/algorand/go-algorand/ledger/testing"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
+	ledgertesting "github.com/DePINNetwork/depin-sdk/ledger/testing"
 	"github.com/stretchr/testify/require"
 )
 

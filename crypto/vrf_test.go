@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func mustDecode(t *testing.T, out []byte, hexIn string) {

@@ -19,8 +19,8 @@ package agreement
 import (
 	"time"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/logging/telemetryspec"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/logging/telemetryspec"
 )
 
 // We call all of the following messages post-filtering, such that

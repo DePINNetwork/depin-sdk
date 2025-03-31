@@ -22,10 +22,10 @@ import (
 	"io"
 	"strings"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // KvRead is a low level KV db interface for reading.

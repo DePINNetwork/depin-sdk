@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/algorand/go-algorand/agreement"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/agreement"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
 )
 
 var errKeyregGoingOnlineExpiredParticipationKey = errors.New("transaction tries to mark an account as online with last voting round in the past")

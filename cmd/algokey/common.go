@@ -21,8 +21,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/crypto/passphrase"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto/passphrase"
 )
 
 const (

@@ -18,10 +18,10 @@ package libgoal
 
 import (
 	"fmt"
-	"github.com/algorand/go-algorand/daemon/algod/api/server/v2/generated/model"
-	"github.com/algorand/go-algorand/data/account"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/libgoal/participation"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2/generated/model"
+	"github.com/DePINNetwork/depin-sdk/data/account"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/libgoal/participation"
 )
 
 // chooseParticipation chooses which participation keys to use for going online

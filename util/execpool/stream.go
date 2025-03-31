@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 // ErrShuttingDownError is the error returned when a job is not processed because the service is shutting down

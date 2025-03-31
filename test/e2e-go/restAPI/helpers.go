@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	v2 "github.com/algorand/go-algorand/daemon/algod/api/server/v2"
-	"github.com/algorand/go-algorand/libgoal"
-	"github.com/algorand/go-algorand/test/framework/fixtures"
+	v2 "github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
+	"github.com/DePINNetwork/depin-sdk/test/framework/fixtures"
 	"github.com/stretchr/testify/require"
 )
 

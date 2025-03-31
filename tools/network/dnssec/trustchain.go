@@ -22,7 +22,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 	"github.com/miekg/dns"
 )
 

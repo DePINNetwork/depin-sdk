@@ -20,8 +20,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
 )
 
 // ErrNoSpace indicates insufficient space for transaction in block

@@ -22,9 +22,9 @@ import (
 	"path"
 	"testing"
 
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/network/addr"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/network/addr"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 

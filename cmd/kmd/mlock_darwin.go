@@ -17,7 +17,7 @@
 package main
 
 import (
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 func tryMlockall(log logging.Logger) {

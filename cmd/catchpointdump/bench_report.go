@@ -24,7 +24,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/util"
 	"github.com/google/uuid"
 	"github.com/klauspost/cpuid/v2"
 )

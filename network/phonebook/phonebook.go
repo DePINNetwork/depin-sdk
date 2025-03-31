@@ -22,7 +22,7 @@ import (
 	"slices"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // getAllAddresses when using GetAddresses with getAllAddresses, all the addresses will be retrieved, regardless

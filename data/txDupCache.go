@@ -23,9 +23,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/go-deadlock"
 
 	"golang.org/x/crypto/blake2b"
 )

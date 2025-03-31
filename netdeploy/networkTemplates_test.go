@@ -25,10 +25,10 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/gen"
-	"github.com/algorand/go-algorand/netdeploy/remote"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/gen"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func TestLoadConfig(t *testing.T) {

@@ -25,7 +25,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/websocket"
 	"github.com/gorilla/mux"
 )
 

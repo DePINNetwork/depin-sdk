@@ -17,8 +17,8 @@
 package agreementtest
 
 import (
-	"github.com/algorand/go-algorand/data/account"
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/account"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 // SimpleKeyManager provides a simple implementation of a KeyManager for unit tests.

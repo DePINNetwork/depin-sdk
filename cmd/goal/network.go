@@ -26,11 +26,11 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/cmd/util/datadir"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/gen"
-	"github.com/algorand/go-algorand/netdeploy"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/cmd/util/datadir"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/gen"
+	"github.com/DePINNetwork/depin-sdk/netdeploy"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 var networkRootDir string

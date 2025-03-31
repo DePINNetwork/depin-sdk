@@ -27,7 +27,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 // var levelsMap = map[logging.Level]zapcore.Level{

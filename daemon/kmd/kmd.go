@@ -20,12 +20,12 @@ import (
 	"os"
 	"time"
 
-	"github.com/algorand/go-algorand/daemon/kmd/config"
-	"github.com/algorand/go-algorand/daemon/kmd/server"
-	"github.com/algorand/go-algorand/daemon/kmd/session"
-	"github.com/algorand/go-algorand/daemon/kmd/wallet/driver"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/util/tokens"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/server"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/session"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/wallet/driver"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/util/tokens"
 )
 
 // StartConfig contains configuration information used for starting up kmd

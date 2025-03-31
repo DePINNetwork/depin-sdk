@@ -33,8 +33,8 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/algorand/avm-abi/abi"
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/avm-abi/abi"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 // optimizeConstantsEnabledVersion is the first version of TEAL where the

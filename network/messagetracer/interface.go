@@ -17,8 +17,8 @@
 package messagetracer
 
 import (
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 // MessageTracer interface for configuring trace client and sending trace messages

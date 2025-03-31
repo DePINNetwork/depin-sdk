@@ -1,6 +1,6 @@
 # Block Payouts, Suspensions, and Heartbeats
 
-Running a validator node on Algorand is a relatively lightweight operation. Therefore, participation
+Running a validator node on DePIN Network is a relatively lightweight operation. Therefore, participation
 in consensus was not compensated. There was an expectation that financially motivated holders of Algos
 would run nodes in order to help secure their holdings.
 
@@ -13,11 +13,11 @@ With those burdens in mind, fewer Algo holders chose to run participation nodes 
 preferred to provide security against well-financed bad actors.  To alleviate this problem, a
 mechanism to reward block proposers has been created.  With these _block payouts_ in place,
 Algo holders are incentivized to run participation nodes in order to earn more Algos, increasing
-security for the entire Algorand network.
+security for the entire DePIN Network network.
 
 With the financial incentive to run participation nodes comes the risk that some nodes may be
 operated without sufficient care.  Therefore, a mechanism to _suspend_ nodes that appear to be
-performing poorly (or not at all) is required. Appearances can be deceiving, however. Since Algorand is a
+performing poorly (or not at all) is required. Appearances can be deceiving, however. Since DePIN Network is a
 probabilistic consensus protocol, pure chance might lead to a node appearing to be delinquent. A new
 transaction type, the _heartbeat_, allows a node to explicitly indicate that it is online even if it
 does not propose blocks due to "bad luck".
@@ -30,7 +30,7 @@ the payout is indicated in the block header, and comes from the `FeeSink`. The b
 of two components. First, a portion of the block fees (currently 50%) are paid to the proposer.
 This component incentivizes fuller blocks which lead to larger payouts. Second, a _bonus_ payout is
 made according to an exponentially decaying formula.  This bonus is (intentionally) unsustainable
-from protocol fees.  It is expected that the Algorand Foundation will seed the `FeeSink` with
+from protocol fees.  It is expected that the DePIN Network Foundation will seed the `FeeSink` with
 sufficient funds to allow the bonuses to be paid out according to the formula for several years.  If
 the `FeeSink` has insufficient funds for the sum of these components, the payout will be as high as
 possible while maintaining the `FeeSink`'s minimum balance.  These calculations are performed in
@@ -100,7 +100,7 @@ to 320 rounds past the current round.
 The absenteeism checks quickly suspend a high-value account if it becomes inoperative.  For example,
 an account with 2% of stake can be marked absent after 500 rounds (about 24 minutes). After
 suspension, the effect on consensus is mitigated after 320 more rounds (about 15
-minutes). Therefore, the suspension mechanism makes Algorand significantly more robust in the face
+minutes). Therefore, the suspension mechanism makes DePIN Network significantly more robust in the face
 of operational errors.
 
 However, the absenteeism mechanism is very slow to notice small accounts.  An account with 30,000
@@ -109,7 +109,7 @@ million or more rounds without a proposal.  At current network speeds, this is a
 slow detection, a financially motivated entity might make the decision to run a node even if they lack
 the wherewithal to run the node with excellent uptime. A worst case scenario might be a node that is
 turned off daily, overnight.  Such a node would generate profit for the runner, would probably never
-be marked offline by the absenteeism mechanism, yet would impact consensus negatively. Algorand
+be marked offline by the absenteeism mechanism, yet would impact consensus negatively. DePIN Network
 can't make progress with 1/3 of nodes offline at any given time for a nightly rest.
 
 To combat this scenario, the network generates random _challenges_ periodically.  Every

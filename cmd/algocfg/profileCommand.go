@@ -25,9 +25,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/cmd/util/datadir"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/cmd/util/datadir"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 // configUpdater updates the provided config for non-defaults in a given profile

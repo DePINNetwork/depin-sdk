@@ -19,7 +19,7 @@ package txntest
 import (
 	"fmt"
 
-	"github.com/algorand/go-algorand/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
 )
 
 // GenerateProgramOfSize return a TEAL bytecode of `size` bytes which always succeeds.

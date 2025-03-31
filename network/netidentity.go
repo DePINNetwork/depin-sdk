@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // netidentity.go implements functionality to participate in an "Identity Challenge Exchange"

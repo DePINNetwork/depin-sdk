@@ -25,11 +25,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/netdeploy/remote"
-	"github.com/algorand/go-algorand/tools/network/cloudflare"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote"
+	"github.com/DePINNetwork/depin-sdk/tools/network/cloudflare"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 type nodeConfigurator struct {
@@ -134,7 +134,7 @@ func (nc *nodeConfigurator) prepareNodeDirs(configs []remote.NodeConfig, rootCon
 	if err != nil {
 		return
 	}
-	importKeysCmd := filepath.Join(goalPath, "goal")
+	importKeysCmd := filepath.Join(goalPath, "depin")
 
 	for _, node := range configs {
 		nodeSrc := filepath.Join(rootHostDir, node.Name)

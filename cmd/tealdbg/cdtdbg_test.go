@@ -27,9 +27,9 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/cmd/tealdbg/cdt"
-	"github.com/algorand/go-algorand/data/transactions/logic"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/cmd/tealdbg/cdt"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func TestCdtHandlers(t *testing.T) {

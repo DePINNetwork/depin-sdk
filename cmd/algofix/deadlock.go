@@ -87,7 +87,7 @@ func deadlock(f *ast.File) bool {
 	}
 
 	if fixed {
-		addImport(f, "github.com/algorand/go-deadlock")
+		addImport(f, "github.com/DePINNetwork/go-deadlock")
 	}
 
 	return fixed

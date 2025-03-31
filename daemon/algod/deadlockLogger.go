@@ -23,9 +23,9 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 type deadlockLogger struct {

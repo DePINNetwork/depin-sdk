@@ -17,8 +17,8 @@
 package agreement
 
 import (
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/msgp/msgp"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/msgp/msgp"
 )
 
 // A message represents an internal message which is passed between components

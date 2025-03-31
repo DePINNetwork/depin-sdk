@@ -21,7 +21,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/algorand/go-algorand/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
 )
 
 // TEAL syntax highlighter as TM grammar.

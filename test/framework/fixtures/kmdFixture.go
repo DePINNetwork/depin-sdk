@@ -24,11 +24,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/daemon/kmd/client"
-	"github.com/algorand/go-algorand/daemon/kmd/config"
-	"github.com/algorand/go-algorand/daemon/kmd/lib/kmdapi"
-	"github.com/algorand/go-algorand/nodecontrol"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/client"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/lib/kmdapi"
+	"github.com/DePINNetwork/depin-sdk/nodecontrol"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 // defaultConfig lowers scrypt params to make tests faster

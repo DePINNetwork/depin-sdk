@@ -19,7 +19,7 @@ package metrics
 import (
 	"strings"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 var defaultRegistry *Registry

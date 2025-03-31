@@ -21,9 +21,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/nodecontrol"
-	"github.com/algorand/go-algorand/test/framework/fixtures"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/nodecontrol"
+	"github.com/DePINNetwork/depin-sdk/test/framework/fixtures"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func TestGoalNodeCleanup(t *testing.T) {

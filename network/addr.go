@@ -20,7 +20,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/algorand/go-algorand/network/addr"
+	"github.com/DePINNetwork/depin-sdk/network/addr"
 )
 
 // addrToGossipAddr parses host:port or a URL and returns the URL to the websocket interface at that address.

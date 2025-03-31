@@ -20,7 +20,7 @@ package metrics
 import (
 	"context"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // ServiceConfig would contain all the information we need in order to create a listening server endpoint.

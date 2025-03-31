@@ -22,10 +22,10 @@ package messagetracer
 import (
 	"hash/fnv"
 
-	"github.com/algorand/graphtrace/graphtrace"
+	"github.com/DePINNetwork/graphtrace/graphtrace"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 type graphtraceMessageTracer struct {

@@ -26,8 +26,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/algorand/go-algorand/util/metrics"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/util/metrics"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 var errConManDropped = errors.New("congestionManager prevented client from consuming capacity")

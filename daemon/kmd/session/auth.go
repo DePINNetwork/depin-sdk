@@ -24,7 +24,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/algorand/go-algorand/daemon/kmd/wallet"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/wallet"
 )
 
 const (

@@ -20,12 +20,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/logging/telemetryspec"
-	"github.com/algorand/go-algorand/rpcs"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/logging/telemetryspec"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 

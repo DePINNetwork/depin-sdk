@@ -23,8 +23,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/test/framework/fixtures"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/framework/fixtures"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 func TestClerkSendNoteEncoding(t *testing.T) {

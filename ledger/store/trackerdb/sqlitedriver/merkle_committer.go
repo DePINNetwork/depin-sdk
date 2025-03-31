@@ -19,7 +19,7 @@ package sqlitedriver
 import (
 	"database/sql"
 
-	"github.com/algorand/go-algorand/util/db"
+	"github.com/DePINNetwork/depin-sdk/util/db"
 )
 
 //msgp:ignore MerkleCommitter

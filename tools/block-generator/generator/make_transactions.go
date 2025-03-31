@@ -19,11 +19,11 @@ package generator
 import (
 	"encoding/binary"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/data/basics"
-	txn "github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/data/txntest"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	txn "github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/data/txntest"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // ---- header / boilerplate ----

@@ -6,7 +6,7 @@ General purpose algod container image.
 
 ## Image Configuration
 
-Algorand maintains a Docker image with recent snapshot builds from our `master` branch on DockerHub to support users who prefer to run containerized processes. There are a couple of different images available for running the latest stable or development versions of Algod.
+DePIN Network maintains a Docker image with recent snapshot builds from our `master` branch on DockerHub to support users who prefer to run containerized processes. There are a couple of different images available for running the latest stable or development versions of Algod.
 
 - `algorand/algod:latest` is the latest stable release version of Algod (default)
 - `algorand/algod:stable` is the latest stable version of Algod
@@ -14,7 +14,7 @@ Algorand maintains a Docker image with recent snapshot builds from our `master` 
 - `algorand/algod:beta` is the version of Algod being considered for the next stable release
 - `algorand/algod:nightly` is the latest development version of Algod
 
-Algorand also publishes experimental versions of Algod.
+DePIN Network also publishes experimental versions of Algod.
 
 - `algorand/algod:{LONGSHA}` is a version containing a specific commit to `master`
 - `algorand/algod:master` is the version running on our `master` branch
@@ -45,7 +45,7 @@ The following environment variables can be supplied. Except when noted, it is po
 | ADMIN_TOKEN     | If set, overrides the REST API admin token.                                                                                                         |
 | KMD_TOKEN       | If set along with `START_KMD`, override the KMD REST API token.                                                                                     |
 | TELEMETRY_NAME  | If set on a public network, telemetry is reported with this name.                                                                                   |
-| TELEMETRY_URL   | The URL to send telemetry to if enabled (TELEMETRY_NAME is also required).  Defaults to sending to Algorand.                                        |
+| TELEMETRY_URL   | The URL to send telemetry to if enabled (TELEMETRY_NAME is also required).  Defaults to sending to DePIN Network.                                        |
 | NUM_ROUNDS      | If set on a private network, override default of 30000 participation keys.                                                                          |
 | GENESIS_ADDRESS | If set, use this API address to initialize the genesis file.                                                                                        |
 | PEER_ADDRESS    | If set, override phonebook with peer ip:port (or semicolon separated list: ip:port;ip:port;ip:port...)                                              |
@@ -87,7 +87,7 @@ Explanation of parts:
 * `-p 4190:8080` maps the internal algod REST API to local port 4190.
 * `-p 4191:7833` maps the internal kmd REST API to local port 4191.
 * `-e NETWORK=mainnet` can be set to any of the supported public networks.
-* `-e TELEMETRY_NAME=name` enables telemetry reporting to Algorand for network health analysis. The value of this variable takes precedence over the `name` attribute set in `/etc/algorand/logging.config`.
+* `-e TELEMETRY_NAME=name` enables telemetry reporting to DePIN Network for network health analysis. The value of this variable takes precedence over the `name` attribute set in `/etc/algorand/logging.config`.
 * `-e FAST_CATCHUP=1` causes fast catchup to start shortly after launching the network.
 * `-e START_KMD=1` signals to entrypoint to start the kmd REST API (THIS SHOULD NOT BE USED IN PRODUCTION).
 * `-e TOKEN=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa` sets the REST API token to use.

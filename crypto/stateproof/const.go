@@ -17,7 +17,7 @@
 package stateproof
 
 import (
-	"github.com/algorand/go-algorand/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto"
 )
 
 // HashType/ hashSize relate to the type of hash this package uses.

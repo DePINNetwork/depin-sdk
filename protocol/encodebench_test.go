@@ -19,7 +19,7 @@ package protocol
 import (
 	"testing"
 
-	"github.com/algorand/go-codec/codec"
+	"github.com/DePINNetwork/go-codec/codec"
 )
 
 type s struct {

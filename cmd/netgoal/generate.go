@@ -28,10 +28,10 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/gen"
-	"github.com/algorand/go-algorand/netdeploy"
-	"github.com/algorand/go-algorand/netdeploy/remote"
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/gen"
+	"github.com/DePINNetwork/depin-sdk/netdeploy"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 var outputFilename string

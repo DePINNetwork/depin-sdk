@@ -2203,7 +2203,7 @@ func init() {
   "fees": "A7NMWS3NT3IUDMLVO26ULGXGIIOUQ3ND2TXSER6EBGRZNOBOUIQXHIBGDE",
   "id": "v1.0",
   "network": "testnet",
-  "proto": "https://github.com/algorand/spec/tree/a26ed78ed8f834e2b9ccb6eb7d3ee9f629a6e622",
+  "proto": "https://github.com/DePINNetwork/spec/tree/a26ed78ed8f834e2b9ccb6eb7d3ee9f629a6e622",
   "rwd": "7777777777777777777777777777777777777777777777777774MSJUVU",
   "timestamp": 1560210455
 }`)
@@ -2495,7 +2495,7 @@ func init() {
   "fees": "A7NMWS3NT3IUDMLVO26ULGXGIIOUQ3ND2TXSER6EBGRZNOBOUIQXHIBGDE",
   "id": "v1.0",
   "network": "betanet",
-  "proto": "https://github.com/algorand/spec/tree/a26ed78ed8f834e2b9ccb6eb7d3ee9f629a6e622",
+  "proto": "https://github.com/DePINNetwork/spec/tree/a26ed78ed8f834e2b9ccb6eb7d3ee9f629a6e622",
   "rwd": "7777777777777777777777777777777777777777777777777774MSJUVU",
   "timestamp": 1564572341
 }`)

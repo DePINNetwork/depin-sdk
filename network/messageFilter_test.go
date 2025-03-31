@@ -19,8 +19,8 @@ package network
 import (
 	"testing"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 func BenchmarkGenerateMessageDigest(b *testing.B) {

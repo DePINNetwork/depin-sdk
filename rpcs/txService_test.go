@@ -29,13 +29,13 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/components/mocks"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/network"
-	p2ptesting "github.com/algorand/go-algorand/network/p2p/testing"
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/go-algorand/util/bloom"
+	"github.com/DePINNetwork/depin-sdk/components/mocks"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/network"
+	p2ptesting "github.com/DePINNetwork/depin-sdk/network/p2p/testing"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/util/bloom"
 )
 
 func TestMain(m *testing.M) {

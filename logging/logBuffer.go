@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 type logBuffer struct {

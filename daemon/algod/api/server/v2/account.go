@@ -23,11 +23,11 @@ import (
 	"slices"
 	"sort"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/crypto/merklesignature"
-	"github.com/algorand/go-algorand/daemon/algod/api/server/v2/generated/model"
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto/merklesignature"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2/generated/model"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 // AssetHolding converts between basics.AssetHolding and model.AssetHolding

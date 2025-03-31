@@ -19,9 +19,9 @@ package crypto
 import (
 	"testing"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	// "github.com/stretchr/testify/require"
-	// "github.com/algorand/go-algorand/protocol"
+	// "github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 func TestEmptyEncoding(t *testing.T) {

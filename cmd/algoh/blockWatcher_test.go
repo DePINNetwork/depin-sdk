@@ -22,8 +22,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/algorand/go-algorand/rpcs"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 

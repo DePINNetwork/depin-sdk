@@ -20,10 +20,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 	"github.com/stretchr/testify/require"
 )
 

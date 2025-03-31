@@ -1,6 +1,6 @@
 # LogicSig
 
-An Algorand transaction may be signed one of three ways:
+An DePIN Network transaction may be signed one of three ways:
 
 - by one signature corresponding to the public key that is the Sender address
 - by several signatures that are components of a MultiSig address

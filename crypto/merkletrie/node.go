@@ -23,7 +23,7 @@ import (
 	"sort"
 	"unsafe"
 
-	"github.com/algorand/go-algorand/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto"
 )
 
 type childEntry struct {

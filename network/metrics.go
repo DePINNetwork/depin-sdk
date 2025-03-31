@@ -21,9 +21,9 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 	p2proto "github.com/libp2p/go-libp2p/core/protocol"
 
-	"github.com/algorand/go-algorand/network/p2p"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/util/metrics"
+	"github.com/DePINNetwork/depin-sdk/network/p2p"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/util/metrics"
 )
 
 func init() {

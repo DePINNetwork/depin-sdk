@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/go-deadlock"
 	"github.com/stretchr/testify/require"
 )
 

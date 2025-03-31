@@ -17,8 +17,8 @@
 package ledgercore
 
 import (
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 // AccountData provides users of the Balances interface per-account data (like basics.AccountData)

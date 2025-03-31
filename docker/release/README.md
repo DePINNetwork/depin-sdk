@@ -1,5 +1,5 @@
 
-## Building and Deploying the Algorand Docker Image
+## Building and Deploying the DePIN Network Docker Image
 
 The following section documents the steps to build and deploy the Algod Docker Image.
 
@@ -75,7 +75,7 @@ Import the Docker image into the Docker environment
 ```cmd
 docker import algod_docker_export_${CHANNEL}_${FULLVERSION}.tar.gz
 ```
-Run the script to launch the Docker container specifying the network to attach to, one of (betanet, devnet, testnet, or mainnet).  The network specifies which Algorand genesis file the container will use and the network it will connect to.  If no network is specified, the default network is 'testnet'.
+Run the script to launch the Docker container specifying the network to attach to, one of (betanet, devnet, testnet, or mainnet).  The network specifies which DePIN Network genesis file the container will use and the network it will connect to.  If no network is specified, the default network is 'testnet'.
 
 ```cmd
 export NETWORK="testnet"

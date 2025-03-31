@@ -21,8 +21,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // Peer opaque interface for referring to a neighbor in the network

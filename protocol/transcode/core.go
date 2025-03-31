@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/algorand/go-codec/codec"
+	"github.com/DePINNetwork/go-codec/codec"
 )
 
 type decoder interface {

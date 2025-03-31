@@ -29,8 +29,8 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/tools/network"
-	"github.com/algorand/go-algorand/tools/network/cloudflare"
+	"github.com/DePINNetwork/depin-sdk/tools/network"
+	"github.com/DePINNetwork/depin-sdk/tools/network/cloudflare"
 )
 
 var (

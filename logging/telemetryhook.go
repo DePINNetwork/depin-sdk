@@ -24,7 +24,7 @@ import (
 	"github.com/sirupsen/logrus"
 	"gopkg.in/sohlich/elogrus.v3"
 
-	"github.com/algorand/go-algorand/util/metrics"
+	"github.com/DePINNetwork/depin-sdk/util/metrics"
 )
 
 var telemetryDrops = metrics.MakeCounter(metrics.MetricName{Name: "algod_telemetry_drops_total", Description: "telemetry messages dropped due to full queues"})

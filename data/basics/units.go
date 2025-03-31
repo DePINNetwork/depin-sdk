@@ -19,11 +19,11 @@ package basics
 import (
 	"math"
 
-	"github.com/algorand/go-codec/codec"
-	"github.com/algorand/msgp/msgp"
+	"github.com/DePINNetwork/go-codec/codec"
+	"github.com/DePINNetwork/msgp/msgp"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
 )
 
 // RoundInterval is a number of rounds

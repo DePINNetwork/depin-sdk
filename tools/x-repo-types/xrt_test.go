@@ -19,7 +19,7 @@ package main
 import (
 	"testing"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 
@@ -38,18 +38,18 @@ func TestCrossRepoTypes(t *testing.T) {
 	testCases := []testCase{
 		{
 			name:    "SDK: StateDelta",
-			xPkg:    "github.com/algorand/go-algorand/ledger/ledgercore",
+			xPkg:    "github.com/DePINNetwork/depin-sdk/ledger/ledgercore",
 			xBranch: "",
 			xType:   "StateDelta",
-			yPkg:    "github.com/algorand/go-algorand-sdk/v2/types",
+			yPkg:    "github.com/DePINNetwork/depin-sdk-sdk/v2/types",
 			yBranch: "develop",
 			yType:   "LedgerStateDelta",
 		},
 		{
 			name:       "goal-v-sdk-genesis",
-			xPkg:       "github.com/algorand/go-algorand/data/bookkeeping",
+			xPkg:       "github.com/DePINNetwork/depin-sdk/data/bookkeeping",
 			xType:      "Genesis",
-			yPkg:       "github.com/algorand/go-algorand-sdk/v2/types",
+			yPkg:       "github.com/DePINNetwork/depin-sdk-sdk/v2/types",
 			yBranch:    "develop",
 			yType:      "Genesis",
 			skip:       true,
@@ -57,9 +57,9 @@ func TestCrossRepoTypes(t *testing.T) {
 		},
 		{
 			name:       "goal-v-sdk-block",
-			xPkg:       "github.com/algorand/go-algorand/data/bookkeeping",
+			xPkg:       "github.com/DePINNetwork/depin-sdk/data/bookkeeping",
 			xType:      "Block",
-			yPkg:       "github.com/algorand/go-algorand-sdk/v2/types",
+			yPkg:       "github.com/DePINNetwork/depin-sdk-sdk/v2/types",
 			yBranch:    "develop",
 			yType:      "Block",
 			skip:       true,
@@ -67,41 +67,41 @@ func TestCrossRepoTypes(t *testing.T) {
 		},
 		{
 			name:    "goal-v-sdk-eval-delta",
-			xPkg:    "github.com/algorand/go-algorand/data/transactions",
+			xPkg:    "github.com/DePINNetwork/depin-sdk/data/transactions",
 			xType:   "EvalDelta",
-			yPkg:    "github.com/algorand/go-algorand-sdk/v2/types",
+			yPkg:    "github.com/DePINNetwork/depin-sdk-sdk/v2/types",
 			yBranch: "develop",
 			yType:   "EvalDelta",
 		},
 		{
 			name:    "goal-v-sdk-consensus",
-			xPkg:    "github.com/algorand/go-algorand/config",
+			xPkg:    "github.com/DePINNetwork/depin-sdk/config",
 			xType:   "ConsensusParams",
-			yPkg:    "github.com/algorand/go-algorand-sdk/v2/protocol/config",
+			yPkg:    "github.com/DePINNetwork/depin-sdk-sdk/v2/protocol/config",
 			yBranch: "develop",
 			yType:   "ConsensusParams",
 		},
 		{
 			name:    "goal-v-sdk-blockheader",
-			xPkg:    "github.com/algorand/go-algorand/data/bookkeeping",
+			xPkg:    "github.com/DePINNetwork/depin-sdk/data/bookkeeping",
 			xType:   "BlockHeader",
-			yPkg:    "github.com/algorand/go-algorand-sdk/v2/types",
+			yPkg:    "github.com/DePINNetwork/depin-sdk-sdk/v2/types",
 			yBranch: "develop",
 			yType:   "BlockHeader",
 		},
 		{
 			name:    "goal-v-sdk-stateproof",
-			xPkg:    "github.com/algorand/go-algorand/crypto/stateproof",
+			xPkg:    "github.com/DePINNetwork/depin-sdk/crypto/stateproof",
 			xType:   "StateProof",
-			yPkg:    "github.com/algorand/go-algorand-sdk/v2/types",
+			yPkg:    "github.com/DePINNetwork/depin-sdk-sdk/v2/types",
 			yBranch: "develop",
 			yType:   "StateProof",
 		},
 		{
 			name:  "goal-v-spv-stateproof",
-			xPkg:  "github.com/algorand/go-algorand/crypto/stateproof",
+			xPkg:  "github.com/DePINNetwork/depin-sdk/crypto/stateproof",
 			xType: "StateProof",
-			yPkg:  "github.com/algorand/go-stateproof-verification/stateproof",
+			yPkg:  "github.com/DePINNetwork/go-stateproof-verification/stateproof",
 			yType: "StateProof",
 		},
 	}

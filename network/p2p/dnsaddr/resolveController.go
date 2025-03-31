@@ -22,8 +22,8 @@ import (
 	"github.com/multiformats/go-multiaddr"
 	madns "github.com/multiformats/go-multiaddr-dns"
 
-	log "github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/tools/network"
+	log "github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/tools/network"
 )
 
 // Resolver is an interface for resolving dnsaddrs

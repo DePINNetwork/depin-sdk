@@ -20,7 +20,7 @@ import (
 	"bytes"
 	"strings"
 
-	"github.com/algorand/go-algorand/cmd/util/datadir"
+	"github.com/DePINNetwork/depin-sdk/cmd/util/datadir"
 	"github.com/spf13/cobra"
 )
 

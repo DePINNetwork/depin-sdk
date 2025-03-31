@@ -18,8 +18,8 @@
 package v2
 
 import (
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
 )
 
 // AccountAssetModel is returned by AccountAssetInformation when msgpack format is specified

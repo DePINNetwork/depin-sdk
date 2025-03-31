@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/algorand/go-algorand/logging/logspec"
-	"github.com/algorand/go-algorand/logging/telemetryspec"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/logging/logspec"
+	"github.com/DePINNetwork/depin-sdk/logging/telemetryspec"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 //go:generate stringer -type=actionType

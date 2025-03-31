@@ -31,10 +31,10 @@ import (
 // would be evaluated as different by the diff algorithm if not for this exclusion.
 var diffExclusions = map[string]bool{
 	// MicroAlgos is a struct with custom marshal override in go-algorand. In other repos it is a uint64.
-	`github.com/algorand/go-algorand/data/basics :: "basics.MicroAlgos" (struct)`: true,
+	`github.com/DePINNetwork/depin-sdk/data/basics :: "basics.MicroAlgos" (struct)`: true,
 
 	// crypto.PublicKey is an array [32]byte in go-algorand, but is a byte-slice elsewhere.
-	`github.com/algorand/go-algorand/crypto :: "crypto.PublicKey" (array)`: true,
+	`github.com/DePINNetwork/depin-sdk/crypto :: "crypto.PublicKey" (array)`: true,
 }
 
 // --------------- TYPE TREE DATA STRUCTURES --------------- //
@@ -503,7 +503,7 @@ func (t *TypeNode) Print() {
 }
 
 // PrintSerializable prints the information that determines go-codec serialization.
-// cf: https://github.com/algorand/go-codec/blob/master/codec/encode.go#L1416-L1436
+// cf: https://github.com/DePINNetwork/go-codec/blob/master/codec/encode.go#L1416-L1436
 func (tgt Target) PrintSerializable() {
 	action := func(tgt Target) {
 		ttype := tgt.TypeNode

@@ -27,11 +27,11 @@ import (
 	"strings"
 	"sync/atomic"
 
-	"github.com/algorand/go-deadlock"
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/go-deadlock"
+	"github.com/DePINNetwork/websocket"
 
-	"github.com/algorand/go-algorand/cmd/tealdbg/cdt"
-	"github.com/algorand/go-algorand/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/cmd/tealdbg/cdt"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
 )
 
 type cdtSession struct {

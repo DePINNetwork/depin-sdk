@@ -21,7 +21,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 func main() {

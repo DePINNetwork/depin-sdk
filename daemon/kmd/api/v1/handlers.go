@@ -21,15 +21,15 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/daemon/kmd/lib/kmdapi"
-	"github.com/algorand/go-algorand/daemon/kmd/session"
-	"github.com/algorand/go-algorand/daemon/kmd/wallet"
-	"github.com/algorand/go-algorand/daemon/kmd/wallet/driver"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/lib/kmdapi"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/session"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/wallet"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/wallet/driver"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // reqContext is passed to each of the handlers below via wrapCtx, allowing

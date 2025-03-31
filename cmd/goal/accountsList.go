@@ -24,9 +24,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/algorand/go-algorand/daemon/algod/api/server/v2/generated/model"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/libgoal"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2/generated/model"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/libgoal"
 )
 
 // AccountsList holds a mapping between the account's address, its friendly name and whether it's a default one.
@@ -67,7 +67,7 @@ func (accountList *AccountsList) accountListFileName() string {
 	if err != nil {
 		reportErrorln("could not get current user info")
 	}
-	return filepath.Join(cu.HomeDir, ".algorand", gid, "accountList.json")
+	return filepath.Join(cu.HomeDir, ".depin", gid, "accountList.json")
 }
 
 // isDefault returns true, if the account is marked is default, false otherwise. If account doesn't exist isDefault

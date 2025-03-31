@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 var errUnableUnmarshallMessage = errors.New("unmarshalMessageOfInterest: could not unmarshall message")

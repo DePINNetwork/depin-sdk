@@ -25,9 +25,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-deadlock"
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/go-deadlock"
+	"github.com/DePINNetwork/websocket"
 	"github.com/gorilla/mux"
 )
 

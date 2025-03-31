@@ -23,10 +23,10 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/websocket"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/test/commandandcontrol/lib"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/test/commandandcontrol/lib"
 )
 
 type arrayFlags []string

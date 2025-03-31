@@ -19,7 +19,7 @@ package ledger
 import (
 	"bytes"
 
-	"github.com/algorand/go-algorand/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
 )
 
 // onlineTopHeap implements heap.Interface for tracking top N online accounts.

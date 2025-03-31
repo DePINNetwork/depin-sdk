@@ -17,7 +17,7 @@
 package generickv
 
 import (
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
 )
 
 type catchpoint struct{}

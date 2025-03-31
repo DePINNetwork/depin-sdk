@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 // WebProxyInterceptFunc expose the web proxy intercept function

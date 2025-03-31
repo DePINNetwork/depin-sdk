@@ -21,4 +21,4 @@ Some of the earliest tools we built for working with TEAL programs. A lot of the
 ## x-repo-types
 
 A tool for checking that `go-algorand` types get serialized in the same way as
-purportedly clone types in other Algorand repositories.
+purportedly clone types in other DePIN Network repositories.

@@ -17,8 +17,8 @@
 package libgoal
 
 import (
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
 )
 
 // Compile compiles the given program and returned the compiled program

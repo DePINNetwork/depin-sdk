@@ -22,12 +22,12 @@ import (
 	"io"
 	"time"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/util/db"
-	"github.com/algorand/go-algorand/util/execpool"
-	"github.com/algorand/go-algorand/util/timers"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/util/db"
+	"github.com/DePINNetwork/depin-sdk/util/execpool"
+	"github.com/DePINNetwork/depin-sdk/util/timers"
 )
 
 const (

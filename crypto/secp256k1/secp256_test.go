@@ -12,7 +12,7 @@ import (
 	"io"
 	"testing"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 const TestCount = 1000

@@ -24,7 +24,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/config"
+	"github.com/DePINNetwork/depin-sdk/config"
 )
 
 func BenchmarkAlgodStartup(b *testing.B) {

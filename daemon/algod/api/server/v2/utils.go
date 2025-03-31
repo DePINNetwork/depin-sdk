@@ -27,19 +27,19 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/algorand/go-codec/codec"
+	"github.com/DePINNetwork/go-codec/codec"
 	"github.com/labstack/echo/v4"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/daemon/algod/api/server/v2/generated/model"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/data/transactions/logic"
-	"github.com/algorand/go-algorand/ledger/ledgercore"
-	"github.com/algorand/go-algorand/ledger/simulation"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/node"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/v2/generated/model"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/ledger/ledgercore"
+	"github.com/DePINNetwork/depin-sdk/ledger/simulation"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/node"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // returnError logs an internal message while returning the encoded response.

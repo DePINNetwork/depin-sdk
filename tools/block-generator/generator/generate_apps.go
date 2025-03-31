@@ -22,9 +22,9 @@ import (
 	"math/rand"
 	"time"
 
-	txn "github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/data/transactions/logic"
-	"github.com/algorand/go-algorand/tools/block-generator/util"
+	txn "github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/data/transactions/logic"
+	"github.com/DePINNetwork/depin-sdk/tools/block-generator/util"
 )
 
 // ---- templates ----

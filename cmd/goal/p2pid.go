@@ -23,10 +23,10 @@ import (
 	"os"
 	"path"
 
-	"github.com/algorand/go-algorand/cmd/util/datadir"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/network/p2p"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/cmd/util/datadir"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/network/p2p"
+	"github.com/DePINNetwork/depin-sdk/util"
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/spf13/cobra"
 )

@@ -19,7 +19,7 @@ package logic
 import (
 	"strings"
 
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // OpDesc contains the human readable descriptions of opcodes and their

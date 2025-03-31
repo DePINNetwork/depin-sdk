@@ -20,8 +20,8 @@ import (
 	"container/heap"
 	"encoding/json"
 
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // Simulate a 2 way mirror where messages are passed through and also reflected back to sender with a delay

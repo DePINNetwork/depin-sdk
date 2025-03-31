@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 
@@ -72,7 +72,7 @@ func (ef *ExpectFixture) getTestDir(testName string) (workingDir, algoDir string
 		ef.t.Errorf("error creating test dir %s, with error %v", workingDir, err)
 		return
 	}
-	algoDir = filepath.Join(workingDir, "algod")
+	algoDir = filepath.Join(workingDir, "depind")
 	err = os.Mkdir(algoDir, 0755)
 	if err != nil {
 		ef.t.Errorf("error creating algo dir %s, with error %v", algoDir, err)

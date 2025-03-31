@@ -21,7 +21,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 // NodeController provides an object for controlling a specific algod node instance
@@ -40,7 +40,7 @@ type NodeController struct {
 // specific data directory (and an associated binary directory)
 func MakeNodeController(binDir, algodDataDir string) NodeController {
 	nc := NodeController{
-		algod:              filepath.Join(binDir, "algod"),
+		algod:              filepath.Join(binDir, "depind"),
 		algoh:              filepath.Join(binDir, "algoh"),
 		algodDataDir:       algodDataDir,
 		algodPidFile:       filepath.Join(algodDataDir, "algod.pid"),

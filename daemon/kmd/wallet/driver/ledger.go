@@ -26,15 +26,15 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/daemon/kmd/config"
-	"github.com/algorand/go-algorand/daemon/kmd/wallet"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/transactions"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/wallet"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/transactions"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 const (
@@ -57,7 +57,7 @@ var ledgerWalletSupportedTxs = []protocol.TxType{protocol.PaymentTx, protocol.Ke
 
 // LedgerWalletDriver provides access to a hardware wallet on the
 // Ledger Nano S device.  The device must run the Algorand wallet
-// application from https://github.com/algorand/ledger-app-algorand
+// application from https://github.com/DePINNetwork/ledger-app-algorand
 type LedgerWalletDriver struct {
 	mu      deadlock.Mutex
 	wallets map[string]*LedgerWallet

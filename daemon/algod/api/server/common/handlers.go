@@ -23,12 +23,12 @@ import (
 
 	"github.com/labstack/echo/v4"
 
-	"github.com/algorand/go-algorand/agreement"
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/daemon/algod/api"
-	"github.com/algorand/go-algorand/daemon/algod/api/server/lib"
-	"github.com/algorand/go-algorand/daemon/algod/api/spec/common"
-	"github.com/algorand/go-algorand/node"
+	"github.com/DePINNetwork/depin-sdk/agreement"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/server/lib"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/spec/common"
+	"github.com/DePINNetwork/depin-sdk/node"
 )
 
 // GenesisJSON is an httpHandler for route GET /genesis

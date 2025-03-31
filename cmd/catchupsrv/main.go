@@ -26,13 +26,13 @@ import (
 	"path"
 	"strconv"
 
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/websocket"
 	"github.com/gorilla/mux"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/rpcs"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/rpcs"
 )
 
 var addrFlag = flag.String("addr", "127.0.0.1:4160", "Address to listen on")

@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-sumhash"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/go-sumhash"
 )
 
 // HashType represents different hash functions

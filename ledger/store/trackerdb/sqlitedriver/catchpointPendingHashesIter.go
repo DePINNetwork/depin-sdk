@@ -20,7 +20,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/algorand/go-algorand/util/db"
+	"github.com/DePINNetwork/depin-sdk/util/db"
 )
 
 // catchpointPendingHashesIterator allows us to iterate over the hashes in the catchpointpendinghashes table in their order.

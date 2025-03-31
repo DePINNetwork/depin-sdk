@@ -30,9 +30,9 @@ import (
 	manet "github.com/multiformats/go-multiaddr/net"
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/network/p2p/peerstore"
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/network/p2p/peerstore"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 )
 
 // Tests the helper function netAddressToListenAddress which converts

@@ -25,7 +25,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/algorand/go-algorand/tools/block-generator/generator"
+	"github.com/DePINNetwork/depin-sdk/tools/block-generator/generator"
 )
 
 const initialRound = 1234

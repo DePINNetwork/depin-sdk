@@ -2,7 +2,7 @@
 
 Expect is a framework for testing command line interfaces (CLI).  It is a extension to the TCL shell designed to automate invoking, interacting with, and validating results of CLIs.
 
-We use expect to test the Algorand Goal CLI.
+We use expect to test the DePIN Network Goal CLI.
 
 ## Setup
 

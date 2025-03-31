@@ -23,10 +23,10 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 	"github.com/gorilla/mux"
 
-	"github.com/algorand/go-algorand/cmd/tealdbg/cdt"
+	"github.com/DePINNetwork/depin-sdk/cmd/tealdbg/cdt"
 )
 
 // CdtFrontend is Chrome DevTools frontend

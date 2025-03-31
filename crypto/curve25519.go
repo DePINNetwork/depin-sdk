@@ -37,8 +37,8 @@ import (
 	"fmt"
 	"unsafe"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/util/metrics"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/util/metrics"
 )
 
 // TODO: Remove metrics from crypto package

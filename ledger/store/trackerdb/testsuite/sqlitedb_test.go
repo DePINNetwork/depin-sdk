@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb/sqlitedriver"
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb/sqlitedriver"
+	"github.com/DePINNetwork/depin-sdk/logging"
 	"github.com/stretchr/testify/require"
 )
 

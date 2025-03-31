@@ -19,9 +19,9 @@ package fuzzer
 import (
 	"container/heap"
 	"encoding/json"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // Limit messages by bandwidth/tic

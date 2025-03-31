@@ -36,11 +36,11 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/tools/block-generator/generator"
-	"github.com/algorand/go-algorand/tools/block-generator/util"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/tools/block-generator/generator"
+	"github.com/DePINNetwork/depin-sdk/tools/block-generator/util"
 )
 
 //go:embed template/conduit_pg_exporter.tmpl

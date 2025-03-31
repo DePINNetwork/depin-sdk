@@ -26,8 +26,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/util/uuid"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/util/uuid"
 )
 
 // TelemetryConfigFilename default file name for telemetry config "logging.config"

@@ -26,7 +26,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/algorand/go-algorand/config"
+	"github.com/DePINNetwork/depin-sdk/config"
 )
 
 const defaultLocalVariableDeclaration = "var defaultLocal"

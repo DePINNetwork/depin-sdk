@@ -17,7 +17,7 @@
 package main
 
 import (
-	"github.com/algorand/go-algorand/cmd/tealdbg/cdt"
+	"github.com/DePINNetwork/depin-sdk/cmd/tealdbg/cdt"
 )
 
 // Object IDs

@@ -19,10 +19,10 @@ package testdb
 import (
 	"testing"
 
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb/dualdriver"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb/pebbledbdriver"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb/sqlitedriver"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb/dualdriver"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb/pebbledbdriver"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb/sqlitedriver"
 )
 
 // OpenForTesting will create a testing store to be used on tests outside of the trackerdb package.

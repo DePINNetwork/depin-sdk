@@ -22,7 +22,7 @@ import (
 	"flag"
 	"fmt"
 
-	"github.com/algorand/avm-abi/apps"
+	"github.com/DePINNetwork/avm-abi/apps"
 )
 
 func main() {

@@ -27,10 +27,10 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 	libpeerstore "github.com/libp2p/go-libp2p/core/peerstore"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
-	algoDht "github.com/algorand/go-algorand/network/p2p/dht"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	algoDht "github.com/DePINNetwork/depin-sdk/network/p2p/dht"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // Capability represents functions that some nodes may provide and other nodes would want to know about

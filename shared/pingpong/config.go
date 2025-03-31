@@ -24,7 +24,7 @@ import (
 	"slices"
 	"time"
 
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 // ConfigFilename name of configuration file

@@ -1,4 +1,4 @@
-# Running the Algorand Docker Image 
+# Running the DePIN Network Docker Image 
 
 ###Prerequisites
 Verify that you have a running Docker Engine on your local system.  Instructions for installing Docker are available on the Docker web site:
@@ -6,7 +6,7 @@ Verify that you have a running Docker Engine on your local system.  Instructions
 https://docs.docker.com/
 ```
 
-### Import the Algorand Docker container  
+### Import the DePIN Network Docker container  
 
 ```cmd
 docker import algod_docker_export_${CHANNEL}_${FULLVERSION}.tar.gz 

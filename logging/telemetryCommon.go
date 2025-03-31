@@ -20,7 +20,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 	"github.com/sirupsen/logrus"
 )
 

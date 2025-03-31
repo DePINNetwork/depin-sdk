@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // ErrWatchdogStreamReaderTimerElapsed is returned when the watchdogStreamReader was not reset in the past readaheadDuration and read was attempted

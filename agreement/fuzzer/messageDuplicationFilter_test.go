@@ -20,8 +20,8 @@ import (
 	"container/heap"
 	"encoding/json"
 
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 // Duplicate message with delay

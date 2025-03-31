@@ -22,8 +22,8 @@ import (
 
 	madns "github.com/multiformats/go-multiaddr-dns"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/tools/network/dnssec"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/tools/network/dnssec"
 )
 
 // ResolverIf is re-import from dnssec.ResolverIf

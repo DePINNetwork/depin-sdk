@@ -1,6 +1,6 @@
 # Command and Control Center
 
-Command and Control Service and distributed Agents are designed to help test the Algorand blockchain network.  Through a central service node, agents deployed to Algorand host nodes can be controlled and monitored by clients.
+Command and Control Service and distributed Agents are designed to help test the DePIN Network blockchain network.  Through a central service node, agents deployed to DePIN Network host nodes can be controlled and monitored by clients.
 The initial version support launching the ping pong utility on target hosts and nodes.
 
 ```

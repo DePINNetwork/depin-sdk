@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 // LogicVersion defines default assembler and max eval versions

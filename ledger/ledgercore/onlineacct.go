@@ -17,8 +17,8 @@
 package ledgercore
 
 import (
-	"github.com/algorand/go-algorand/crypto/merklesignature"
-	"github.com/algorand/go-algorand/data/basics"
+	"github.com/DePINNetwork/depin-sdk/crypto/merklesignature"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
 )
 
 // An OnlineAccount corresponds to an account whose AccountData.Status

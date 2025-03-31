@@ -25,12 +25,12 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/netdeploy/remote"
-	"github.com/algorand/go-algorand/network/p2p"
-	"github.com/algorand/go-algorand/shared/algoh"
-	"github.com/algorand/go-algorand/util/tokens"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote"
+	"github.com/DePINNetwork/depin-sdk/network/p2p"
+	"github.com/DePINNetwork/depin-sdk/shared/algoh"
+	"github.com/DePINNetwork/depin-sdk/util/tokens"
 )
 
 type nodeDir struct {

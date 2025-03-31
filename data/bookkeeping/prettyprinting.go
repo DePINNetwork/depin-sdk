@@ -21,7 +21,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/algorand/go-algorand/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto"
 )
 
 func (b BlockHash) String() string {

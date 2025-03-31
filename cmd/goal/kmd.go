@@ -19,9 +19,9 @@ package main
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/cmd/util/datadir"
-	"github.com/algorand/go-algorand/nodecontrol"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/cmd/util/datadir"
+	"github.com/DePINNetwork/depin-sdk/nodecontrol"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 var kmdTimeoutSecs uint64

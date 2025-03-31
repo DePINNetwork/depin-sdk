@@ -15,7 +15,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 // RejectingLimitListener returns a Listener that accepts at most n simultaneous

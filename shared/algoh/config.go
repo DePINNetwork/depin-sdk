@@ -19,7 +19,7 @@ package algoh
 import (
 	"io"
 
-	"github.com/algorand/go-algorand/util/codecs"
+	"github.com/DePINNetwork/depin-sdk/util/codecs"
 )
 
 // ConfigFilename is the name of algoh's config file

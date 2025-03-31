@@ -26,10 +26,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/test/framework/fixtures"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/test/framework/fixtures"
 )
 
 var webProxyDestination = flag.String("targetEndpoint", "", "target endpoint")

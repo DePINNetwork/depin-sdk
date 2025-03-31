@@ -27,8 +27,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/go-deadlock"
 )
 
 type tarBlockSet struct {

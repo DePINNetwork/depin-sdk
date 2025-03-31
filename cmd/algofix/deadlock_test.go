@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/algorand/go-algorand/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
 	"github.com/stretchr/testify/require"
 )
 
@@ -52,7 +52,7 @@ func main() {
 const deadlockSimpleDest = `package main
 
 import (
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 	"sync"
 )
 
@@ -105,7 +105,7 @@ func main() {
 const deadlockTestFin = `package main
 
 import (
-	"github.com/algorand/go-deadlock"
+	"github.com/DePINNetwork/go-deadlock"
 	"sync"
 )
 

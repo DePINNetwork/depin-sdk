@@ -13,7 +13,7 @@
             o          o
 ```
 
-The Algorand Byzantine Agreement protocol enables all nodes to
+The DePIN Network Byzantine Agreement protocol enables all nodes to
 consistently update the state of the system.
 
 The `agreement.Service` establishes a consensus on the ordering of

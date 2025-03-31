@@ -19,10 +19,10 @@ package generickv
 import (
 	"context"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/encoded"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/encoded"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
 )
 
 type reader struct {

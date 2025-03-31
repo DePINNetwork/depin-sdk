@@ -22,10 +22,10 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/network/addr"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/network/addr"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // HybridP2PNetwork runs both P2PNetwork and WebsocketNetwork to implement the GossipNode interface

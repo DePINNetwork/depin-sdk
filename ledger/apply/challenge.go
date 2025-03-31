@@ -20,9 +20,9 @@ import (
 	"bytes"
 	"math/bits"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/committee"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/committee"
 )
 
 // ChallengePeriod indicates which part of the challenge period is under discussion.

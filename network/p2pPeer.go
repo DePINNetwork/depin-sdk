@@ -23,8 +23,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/websocket"
 
 	"github.com/libp2p/go-libp2p/core/network"
 	yamux "github.com/libp2p/go-yamux/v4"

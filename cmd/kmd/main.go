@@ -27,10 +27,10 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
 
-	"github.com/algorand/go-algorand/cmd/kmd/codes"
-	"github.com/algorand/go-algorand/daemon/kmd"
-	"github.com/algorand/go-algorand/daemon/kmd/server"
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/cmd/kmd/codes"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd"
+	"github.com/DePINNetwork/depin-sdk/daemon/kmd/server"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 const (

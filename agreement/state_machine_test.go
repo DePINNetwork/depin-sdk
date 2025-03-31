@@ -22,7 +22,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/algorand/go-algorand/logging"
+	"github.com/DePINNetwork/depin-sdk/logging"
 )
 
 const truncateIOTrace = false

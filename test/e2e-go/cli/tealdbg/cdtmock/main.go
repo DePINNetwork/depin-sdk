@@ -24,9 +24,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/websocket"
 
-	"github.com/algorand/go-algorand/cmd/tealdbg/cdt"
+	"github.com/DePINNetwork/depin-sdk/cmd/tealdbg/cdt"
 )
 
 type wsClient struct {

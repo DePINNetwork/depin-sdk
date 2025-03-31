@@ -19,7 +19,7 @@ package telemetryspec
 import (
 	"time"
 
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 // Telemetry Events

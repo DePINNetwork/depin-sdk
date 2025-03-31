@@ -23,9 +23,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/algorand/go-algorand/netdeploy/remote"
-	"github.com/algorand/go-algorand/netdeploy/remote/nodecfg"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote"
+	"github.com/DePINNetwork/depin-sdk/netdeploy/remote/nodecfg"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 var applyChannel string
@@ -68,7 +68,7 @@ var applyCmd = &cobra.Command{
 			reportInfof("--rootnodedir / -n not specified, defaulting to %s", applyRootNodeDir)
 		}
 
-		if !util.FileExists(filepath.Join(applyRootNodeDir, "algod")) {
+		if !util.FileExists(filepath.Join(applyRootNodeDir, "depind")) {
 			reportErrorf("rootnodedir does not appear to be a valid algod installation - algod is missing\n")
 		}
 

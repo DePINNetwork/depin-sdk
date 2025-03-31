@@ -17,7 +17,7 @@
 package fuzzer
 
 import (
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // DownstreamFilter is the network filter downsteam filter interface

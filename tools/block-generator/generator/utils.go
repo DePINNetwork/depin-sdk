@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"math/rand"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-codec/codec"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/go-codec/codec"
 )
 
 func weightedSelection(weights []float32, options []interface{}, defaultOption interface{}) (selection interface{}, err error) {

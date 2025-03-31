@@ -26,12 +26,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/daemon/algod/api/client"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/protocol"
-	"github.com/algorand/go-algorand/util"
-	"github.com/algorand/go-algorand/util/tokens"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/client"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/protocol"
+	"github.com/DePINNetwork/depin-sdk/util"
+	"github.com/DePINNetwork/depin-sdk/util/tokens"
 )
 
 // StdErrFilename is the name of the file in <datadir> where stderr will be captured if not redirected to host
@@ -204,8 +204,8 @@ func (nc *NodeController) StartAlgod(args AlgodStartArgs) (alreadyRunning bool, 
 
 	var errLogger, outLogger *LaggedStdIo
 	if args.RedirectOutput {
-		errLogger = NewLaggedStdIo(os.Stderr, "algod")
-		outLogger = NewLaggedStdIo(os.Stdout, "algod")
+		errLogger = NewLaggedStdIo(os.Stderr, "depind")
+		outLogger = NewLaggedStdIo(os.Stdout, "depind")
 		algodCmd.Stderr = errLogger
 		algodCmd.Stdout = outLogger
 	} else if !args.RunUnderHost {

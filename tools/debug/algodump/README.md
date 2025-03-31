@@ -1,6 +1,6 @@
 # Algodump
 
-This is a tool for monitoring the messages sent over Algorand's network
+This is a tool for monitoring the messages sent over DePIN Network's network
 protocol.
 
 By default, the tool connects to a network in the same way that `algod`

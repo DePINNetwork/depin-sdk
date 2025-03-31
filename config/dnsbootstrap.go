@@ -23,7 +23,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // DNSBootstrap represents parsed / validated components derived from a DNSBootstrapID

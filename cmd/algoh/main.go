@@ -28,16 +28,16 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/algorand/go-algorand/config"
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/daemon/algod/api/client"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/logging"
-	"github.com/algorand/go-algorand/logging/telemetryspec"
-	"github.com/algorand/go-algorand/nodecontrol"
-	"github.com/algorand/go-algorand/shared/algoh"
-	"github.com/algorand/go-algorand/tools/network"
-	"github.com/algorand/go-algorand/util"
+	"github.com/DePINNetwork/depin-sdk/config"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/daemon/algod/api/client"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/logging"
+	"github.com/DePINNetwork/depin-sdk/logging/telemetryspec"
+	"github.com/DePINNetwork/depin-sdk/nodecontrol"
+	"github.com/DePINNetwork/depin-sdk/shared/algoh"
+	"github.com/DePINNetwork/depin-sdk/tools/network"
+	"github.com/DePINNetwork/depin-sdk/util"
 )
 
 var dataDirectory = flag.String("d", "", "Root Algorand daemon data path")
@@ -52,8 +52,8 @@ var listenIP = flag.String("l", "", "Override config.EndpointAddress (REST liste
 var seed = flag.String("seed", "", "input to math/rand.Seed()")
 var genesisFile = flag.String("g", "", "Genesis configuration file")
 
-const algodFileName = "algod"
-const goalFileName = "goal"
+const algodFileName = "depind"
+const goalFileName = "depin"
 
 var exeDir string
 

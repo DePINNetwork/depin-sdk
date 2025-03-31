@@ -24,7 +24,7 @@ import (
 	"slices"
 	"sort"
 
-	"github.com/algorand/go-algorand/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto"
 )
 
 const (

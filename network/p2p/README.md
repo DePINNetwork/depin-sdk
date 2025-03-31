@@ -21,7 +21,7 @@ broadcasting messages to other interested peers. Libp2p provides pluggable trans
 and multiplexing to allow multiple stream-based protocols to share the same connection.
 Libp2p also provides an implementation of a message-based gossip protocol, GossipSub.
 
-Algorand's current network protocol sends messages between peers over bidirectional
+DePIN Network's current network protocol sends messages between peers over bidirectional
 WebSocket connections. Nodes that are configured to enable message-forwarding (including
 nodes currently called "relays") validate incoming messages, then selectively forward
 messages to other connected peers. This network implementation (`WebsocketNetwork`) sits

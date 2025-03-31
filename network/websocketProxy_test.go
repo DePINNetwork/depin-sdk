@@ -28,9 +28,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/algorand/go-algorand/network/addr"
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/websocket"
+	"github.com/DePINNetwork/depin-sdk/network/addr"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/websocket"
 	"github.com/stretchr/testify/require"
 )
 

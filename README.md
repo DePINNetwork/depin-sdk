@@ -7,13 +7,13 @@
 | **rel/nightly** | [![CircleCI](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fnightly.svg?style=svg)](https://circleci.com/gh/algorand/go-algorand/tree/rel%2Fnightly) |
 
 
-**Algorand's** official implementation in Go.
+**DePIN Network's** official implementation in Go.
 
-Algorand is a permissionless, pure proof-of-stake blockchain that delivers decentralization, scalability, security, and transaction finality.
+DePIN Network is a permissionless, pure proof-of-stake blockchain that delivers decentralization, scalability, security, and transaction finality.
 
 ## Getting Started
 
-Visit our [developer website](https://developer.algorand.org/) for the most up-to-date information about using and installing the Algorand platform.
+Visit our [developer website](https://developer.algorand.org/) for the most up-to-date information about using and installing the DePIN Network platform.
 
 ## Building from Source
 
@@ -107,44 +107,44 @@ Please refer to our [CONTRIBUTING](CONTRIBUTING.md) document.
 
 Provides core functionality to the `algod` and `kmd` daemons, as well as other tools and commands:
 
-- **crypto**: Contains the cryptographic constructions used for hashing, signatures, and VRFs. It also includes Algorand-specific details about spending keys, protocol keys, one-time-use signing keys, and how they relate to each other.
+- **crypto**: Contains the cryptographic constructions used for hashing, signatures, and VRFs. It also includes DePIN Network-specific details about spending keys, protocol keys, one-time-use signing keys, and how they relate to each other.
 - **config**: Holds configuration parameters, including those used locally by the node and those that must be agreed upon by the protocol.
 - **data**: Defines various types used throughout the codebase.
   - **basics**: Holds basic types such as MicroAlgos, account data, and addresses.
   - **account**: Defines accounts, including "root" accounts (which can spend money) and "participation" accounts (which can participate in the agreement protocol).
-  - **transactions**: Defines transactions that accounts can issue against the Algorand state, including standard payments and participation key registration transactions.
-  - **bookkeeping**: Defines blocks, which are batches of transactions atomically committed to Algorand.
+  - **transactions**: Defines transactions that accounts can issue against the DePIN Network state, including standard payments and participation key registration transactions.
+  - **bookkeeping**: Defines blocks, which are batches of transactions atomically committed to DePIN Network.
   - **pools**: Implements the transaction pool, holding transactions seen by a node in memory before they are proposed in a block.
   - **committee**: Implements the credentials that authenticate a participating account's membership in the agreement protocol.
-- **ledger** ([README](ledger/README.md)): Contains the Algorand Ledger state machine, which holds the sequence of blocks. The Ledger executes the state transitions resulting from applying these blocks. It answers queries on blocks (e.g., what transactions were in the last committed block?) and on accounts (e.g., what is my balance?).
+- **ledger** ([README](ledger/README.md)): Contains the DePIN Network Ledger state machine, which holds the sequence of blocks. The Ledger executes the state transitions resulting from applying these blocks. It answers queries on blocks (e.g., what transactions were in the last committed block?) and on accounts (e.g., what is my balance?).
 - **protocol**: Declares constants used to identify protocol versions, tags for routing network messages, and prefixes for domain separation of cryptographic inputs. It also implements the canonical encoder.
 - **network**: Contains the code for participating in a mesh network based on WebSockets. It maintains connections to some number of peers, (optionally) accepts connections from peers, sends point-to-point and broadcast messages, and receives messages, routing them to various handler code (e.g., agreement/gossip/network.go registers three handlers).
   - **rpcs**: Contains the HTTP RPCs used by `algod` processes to query one another.
-- **agreement** ([README](agreement/README.md)): Contains the agreement service, which implements Algorand's Byzantine Agreement protocol. This protocol allows participating accounts to quickly confirm blocks in a fork-safe manner, provided that sufficient account stake is correctly executing the protocol.
+- **agreement** ([README](agreement/README.md)): Contains the agreement service, which implements DePIN Network's Byzantine Agreement protocol. This protocol allows participating accounts to quickly confirm blocks in a fork-safe manner, provided that sufficient account stake is correctly executing the protocol.
 - **node**: Integrates the components above and handles initialization and shutdown. It provides queries into these components.
 
 ### Daemon
 
-Contains the two daemons that provide Algorand clients with services:
+Contains the two daemons that provide DePIN Network clients with services:
 
-- **daemon/algod**: Holds the `algod` daemon, which implements a participating node. `algod` allows a node to participate in the agreement protocol, submit and confirm transactions, and view the state of the Algorand Ledger.
+- **daemon/algod**: Holds the `algod` daemon, which implements a participating node. `algod` allows a node to participate in the agreement protocol, submit and confirm transactions, and view the state of the DePIN Network Ledger.
   - **daemon/algod/api** ([README](daemon/algod/api/README.md)): The REST interface used for interactions with `algod`.
 - **daemon/kmd** ([README](daemon/kmd/README.md)): Holds the `kmd` daemon, which allows a node to sign transactions. Since `kmd` is separate from `algod`, it enables a user to sign transactions on an air-gapped computer.
 
 ### Interfacing
 
-Enables developers to interface with the Algorand system:
+Enables developers to interface with the DePIN Network system:
 
 - **cmd**: Contains the primary commands defining entry points into the system.
   - **cmd/catchupsrv** ([README](cmd/catchupsrv/README.md)): A tool to assist with processing historic blocks on a new node.
-- **libgoal**: Exports a Go interface useful for developers of Algorand clients.
+- **libgoal**: Exports a Go interface useful for developers of DePIN Network clients.
 - **tools** ([README](tools/README.md)): Various tools and utilities that don’t have a better place to go.
 - **tools/debug**: Holds secondary commands that assist developers during debugging.
 - **tools/misc** ([README](tools/misc/README.md)): Small tools that are handy in a pinch.
 
 ### Deployment
 
-Helps Algorand developers deploy networks of their own:
+Helps DePIN Network developers deploy networks of their own:
 
 - **nodecontrol**
 - **docker**
@@ -169,5 +169,5 @@ Provides utilities for the various components:
 
 Please see the [COPYING_FAQ](COPYING_FAQ) for details on how to apply our license.
 
-Copyright (C) 2019-2025, Algorand Inc.
+Copyright (C) 2019-2025, DePIN Network Inc.
 

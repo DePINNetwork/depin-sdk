@@ -20,11 +20,11 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/ledger/encoded"
-	"github.com/algorand/go-algorand/ledger/store/trackerdb"
-	"github.com/algorand/go-algorand/util/db"
-	"github.com/algorand/msgp/msgp"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/ledger/encoded"
+	"github.com/DePINNetwork/depin-sdk/ledger/store/trackerdb"
+	"github.com/DePINNetwork/depin-sdk/util/db"
+	"github.com/DePINNetwork/msgp/msgp"
 )
 
 // encodedAccountsBatchIter allows us to iterate over the accounts data stored in the accountbase table.

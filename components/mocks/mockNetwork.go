@@ -21,8 +21,8 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/algorand/go-algorand/network"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/network"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // MockNetwork is a dummy network that doesn't do anything

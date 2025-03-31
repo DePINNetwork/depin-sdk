@@ -19,11 +19,11 @@ package transactions
 import (
 	"errors"
 
-	"github.com/algorand/go-algorand/crypto"
-	"github.com/algorand/go-algorand/crypto/stateproof"
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/stateproofmsg"
-	"github.com/algorand/go-algorand/protocol"
+	"github.com/DePINNetwork/depin-sdk/crypto"
+	"github.com/DePINNetwork/depin-sdk/crypto/stateproof"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/stateproofmsg"
+	"github.com/DePINNetwork/depin-sdk/protocol"
 )
 
 // StateProofTxnFields captures the fields used for stateproof transactions.

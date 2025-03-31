@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"maps"
 
-	"github.com/algorand/go-algorand/config"
+	"github.com/DePINNetwork/depin-sdk/config"
 )
 
 // DeltaAction is an enum of actions that may be performed when applying a

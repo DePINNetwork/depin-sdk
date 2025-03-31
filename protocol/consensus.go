@@ -80,23 +80,23 @@ const ConsensusV12 = ConsensusVersion("v12")
 // ConsensusV13 makes the consensus version a meaningful string.
 const ConsensusV13 = ConsensusVersion(
 	// Points to version of the Algorand spec as of May 21, 2019.
-	"https://github.com/algorand/spec/tree/0c8a9dc44d7368cc266d5407b79fb3311f4fc795",
+	"https://github.com/DePINNetwork/spec/tree/0c8a9dc44d7368cc266d5407b79fb3311f4fc795",
 )
 
 // ConsensusV14 adds tracking of closing amounts in ApplyData,
 // and enables genesis hash in transactions.
 const ConsensusV14 = ConsensusVersion(
-	"https://github.com/algorand/spec/tree/2526b6ae062b4fe5e163e06e41e1d9b9219135a9",
+	"https://github.com/DePINNetwork/spec/tree/2526b6ae062b4fe5e163e06e41e1d9b9219135a9",
 )
 
 // ConsensusV15 adds tracking of reward distributions in ApplyData.
 const ConsensusV15 = ConsensusVersion(
-	"https://github.com/algorand/spec/tree/a26ed78ed8f834e2b9ccb6eb7d3ee9f629a6e622",
+	"https://github.com/DePINNetwork/spec/tree/a26ed78ed8f834e2b9ccb6eb7d3ee9f629a6e622",
 )
 
 // ConsensusV16 fixes domain separation in Credentials and requires GenesisHash.
 const ConsensusV16 = ConsensusVersion(
-	"https://github.com/algorand/spec/tree/22726c9dcd12d9cddce4a8bd7e8ccaa707f74101",
+	"https://github.com/DePINNetwork/spec/tree/22726c9dcd12d9cddce4a8bd7e8ccaa707f74101",
 )
 
 // ConsensusV17 points to 'final' spec commit for 2019 june release

@@ -17,8 +17,8 @@
 package encoded
 
 import (
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/msgp/msgp"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/msgp/msgp"
 )
 
 // BalanceRecordV5 is the encoded account balance record.

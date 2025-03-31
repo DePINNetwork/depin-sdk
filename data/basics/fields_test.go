@@ -20,10 +20,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/algorand/go-algorand/data/basics"
-	"github.com/algorand/go-algorand/data/bookkeeping"
-	"github.com/algorand/go-algorand/test/partitiontest"
-	"github.com/algorand/go-algorand/test/reflectionhelpers"
+	"github.com/DePINNetwork/depin-sdk/data/basics"
+	"github.com/DePINNetwork/depin-sdk/data/bookkeeping"
+	"github.com/DePINNetwork/depin-sdk/test/partitiontest"
+	"github.com/DePINNetwork/depin-sdk/test/reflectionhelpers"
 )
 
 func makeTypeCheckFunction(t *testing.T, exceptions []reflectionhelpers.TypePath, startType reflect.Type) reflectionhelpers.ReferencedTypesIterationAction {
